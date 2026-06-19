@@ -4,7 +4,7 @@
 
 Il formato di cartuccia **Magic Desk** nacque originariamente nel 1983 da un progetto di Commodore Business Machines, concepito per ospitare una suite di software di produttività semplificata (comprendente moduli come *Type and File*, *Spreadsheet* e *Financial Planning*). L'obiettivo fondamentale dei progettisti era mantenere il software residente in memoria, azzerando completamente i tempi di caricamento estenuanti del drive a disco o del Datassette. Sebbene commercialmente sia stato rilasciato solo il modulo *Type and File*, l'eredità tecnica dell'architettura hardware è sopravvissuta per decenni.
 
-### Interfaccia Hardware e Segnali del Porto di Espansione
+### Interfaccia Hardware e Segnali della Porta di Espansione
 L'operatività di una cartuccia Magic Desk standard è legata alla gestione dei segnali elettrici sul porto di espansione a 44 pin del Commodore 64. La configurazione standard prevede il segnale `/EXROM` portato a livello basso (massa) e il segnale `/GAME` mantenuto a livello alto. 
 
 Questa impostazione istruisce il PLA (Programmable Logic Array) del C64 a mappare 8 KB di ROM esterna nella finestra di memoria compresa tra `$8000` e `$9FFF`, mantenendo inalterati il BASIC ROM e il KERNAL ROM.
