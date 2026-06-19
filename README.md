@@ -3,7 +3,7 @@
 ## 1. Introduzione: Il Formato Magic Desk Standard
 Il formato di cartuccia **Magic Desk** nacque originariamente nel 1983 da un progetto di Commodore Business Machines volto a ospitare una suite di software di produttività semplificata residente in memoria, azzerando i tempi di caricamento dei drive a disco o a nastro. 
 
-L'architettura hardware di una Magic Desk standard prevede l'attivazione della cartuccia tramite i segnali del porto di espansione, configurando la linea `/EXROM` a livello basso e `/GAME` a livello alto[cite: 79, 80]. Questa impostazione istruisce il PLA (Programmable Logic Array) del Commodore 64 a mappare una finestra fissa di ROM esterna da **8 KB** nell'intervallo di indirizzi **`$8000 - $9FFF`**.
+L'architettura hardware di una Magic Desk standard prevede l'attivazione della cartuccia tramite i segnali del porto di espansione, configurando la linea `/EXROM` a livello basso e `/GAME` a livello alto. Questa impostazione istruisce il PLA (Programmable Logic Array) del Commodore 64 a mappare una finestra fissa di ROM esterna da **8 KB** nell'intervallo di indirizzi **`$8000 - $9FFF`**.
 
 Il cuore del meccanismo di *bank switching* (commutazione dei banchi) risiede nel registro ad indirizzo **`$DE00`** (attivato dal segnale di I/O `/IO1`). A differenza di altri formati, la Magic Desk adotta un *data-type banking*, in cui la selezione del banco avviene tramite il valore del byte scritto nel registro:
 * **Bit 0-5 (o 0-6):** Definiscono quale sezione da 8 KB della ROM debba slittare sotto la finestra `$8000-$9FFF`, consentendo di indirizzare fino a 64 banchi (512 KB) o 128 banchi (1 MB).
