@@ -1,29 +1,29 @@
 # Specifiche Tecniche: Cartuccia Magic Desk Plus per Commodore 64
 
 ## 1. Introduzione: Il Formato Magic Desk Standard
-[cite_start]Il formato di cartuccia **Magic Desk** nacque originariamente nel 1983 da un progetto di Commodore Business Machines volto a ospitare una suite di software di produttività semplificata residente in memoria, azzerando i tempi di caricamento dei drive a disco o a nastro[cite: 70]. 
+Il formato di cartuccia **Magic Desk** nacque originariamente nel 1983 da un progetto di Commodore Business Machines volto a ospitare una suite di software di produttività semplificata residente in memoria, azzerando i tempi di caricamento dei drive a disco o a nastro. 
 
-[cite_start]L'architettura hardware di una Magic Desk standard prevede l'attivazione della cartuccia tramite i segnali del porto di espansione, configurando la linea `/EXROM` a livello basso e `/GAME` a livello alto[cite: 79, 80]. [cite_start]Questa impostazione istruisce il PLA (Programmable Logic Array) del Commodore 64 a mappare una finestra fissa di ROM esterna da **8 KB** nell'intervallo di indirizzi **`$8000 - $9FFF`**[cite: 72, 81].
+L'architettura hardware di una Magic Desk standard prevede l'attivazione della cartuccia tramite i segnali del porto di espansione, configurando la linea `/EXROM` a livello basso e `/GAME` a livello alto[cite: 79, 80]. Questa impostazione istruisce il PLA (Programmable Logic Array) del Commodore 64 a mappare una finestra fissa di ROM esterna da **8 KB** nell'intervallo di indirizzi **`$8000 - $9FFF`**.
 
-[cite_start]Il cuore del meccanismo di *bank switching* (commutazione dei banchi) risiede nel registro ad indirizzo **`$DE00`** (attivato dal segnale di I/O `/IO1`)[cite: 79, 88]. [cite_start]A differenza di altri formati, la Magic Desk adotta un *data-type banking*, in cui la selezione del banco avviene tramite il valore del byte scritto nel registro[cite: 91, 92]:
-* [cite_start]**Bit 0-5 (o 0-6):** Definiscono quale sezione da 8 KB della ROM debba slittare sotto la finestra `$8000-$9FFF`, consentendo di indirizzare fino a 64 banchi (512 KB) o 128 banchi (1 MB)[cite: 94, 95, 104].
-* [cite_start]**Bit 7 (Controllo di Disabilitazione):** Se impostato a 1 (valori `>=$80`), il circuito hardware forza la linea `/EXROM` a livello alto, disattivando istantaneamente la visibilità della cartuccia e ripristinando la RAM interna del C64 nell'area `$8000-$9FFF`[cite: 96, 97, 98].
+Il cuore del meccanismo di *bank switching* (commutazione dei banchi) risiede nel registro ad indirizzo **`$DE00`** (attivato dal segnale di I/O `/IO1`). A differenza di altri formati, la Magic Desk adotta un *data-type banking*, in cui la selezione del banco avviene tramite il valore del byte scritto nel registro:
+* **Bit 0-5 (o 0-6):** Definiscono quale sezione da 8 KB della ROM debba slittare sotto la finestra `$8000-$9FFF`, consentendo di indirizzare fino a 64 banchi (512 KB) o 128 banchi (1 MB).
+* **Bit 7 (Controllo di Disabilitazione):** Se impostato a 1 (valori `>=$80`), il circuito hardware forza la linea `/EXROM` a livello alto, disattivando istantaneamente la visibilità della cartuccia e ripristinando la RAM interna del C64 nell'area `$8000-$9FFF`.
 
-[cite_start]A livello software, il cambio di banco richiede l'adozione di una routine di "trampolino" (*trampoline code*) preventivamente copiata nella RAM di sistema (es. in pagina tre o nello stack)[cite: 131]. [cite_start]Questo impedisce il crash della CPU dovuto alla scomparsa del codice in esecuzione "sotto se stessa" al momento della scrittura in `$DE00`[cite: 126, 128, 129]. [cite_start]Per l'avvio automatico al boot, il banco 0 deve tassativamente ospitare la stringa di identificazione PETSCII **`"CBM80"`** all'indirizzo `$8004`, unitamente ai vettori di Cold e Warm Start nei primi quattro byte[cite: 138, 139, 140].
+A livello software, il cambio di banco richiede l'adozione di una routine di "trampolino" (*trampoline code*) preventivamente copiata nella RAM di sistema (es. in pagina tre o nello stack)[cite: 131]. Questo impedisce il crash della CPU dovuto alla scomparsa del codice in esecuzione "sotto se stessa" al momento della scrittura in `$DE00`. Per l'avvio automatico al boot, il banco 0 deve tassativamente ospitare la stringa di identificazione PETSCII **`"CBM80"`** all'indirizzo `$8004`, unitamente ai vettori di Cold e Warm Start nei primi quattro byte.
 
 ---
 
 ## 2. Architettura Hardware della Magic Desk Plus
-[cite_start]La **Magic Desk Plus** rappresenta un'evoluzione massiccia dello standard di base[cite: 1]. Essa espande lo spazio di memorizzazione portando la capacità della ROM fino a **1 MByte** e introducendo una **SRAM statica persistente da 128 KByte** (mantenuta da una batteria tampone) affiancata, in alcune varianti, da una memoria **EEPROM** da 8 KB o 32 KB.
+La **Magic Desk Plus** rappresenta un'evoluzione massiccia dello standard di base[cite: 1]. Essa espande lo spazio di memorizzazione portando la capacità della ROM fino a **1 MByte** e introducendo una **SRAM statica persistente da 128 KByte** (mantenuta da una batteria tampone) affiancata, in alcune varianti, da una memoria **EEPROM** da 8 KB o 32 KB.
 
-[cite_start]Mentre il registro `$DE00` conserva la sua funzione nativa per la commutazione dei banchi di ROM, l'accesso e il controllo della memoria persistente avvengono mediante l'introduzione di due nuovi registri mappati nell'area di I/O 1 (`$DE01` e `$DE03`) e di una finestra di transito dati dedicata[cite: 1, 2, 3]:
+Mentre il registro `$DE00` conserva la sua funzione nativa per la commutazione dei banchi di ROM, l'accesso e il controllo della memoria persistente avvengono mediante l'introduzione di due nuovi registri mappati nell'area di I/O 1 (`$DE01` e `$DE03`) e di una finestra di transito dati dedicata:
 
 * **Finestra di I/O Dati (`$DF00 - $DFFF`):** È una finestra di accesso fissa da 256 byte mappata sulla pagina di memoria persistente (SRAM o EEPROM) attualmente attiva.
 * **Registro di Pagina (`$DE01` - PAGE_REG):** Registro in sola scrittura (*Write-only*) adibito alla selezione della pagina da 256 byte da proiettare nella finestra `$DF00-$DFFF`.
 * **Registro di Controllo (`$DE03` - CTRL_REG):** Registro in sola scrittura (*Write-only*) deputato alla configurazione e abilitazione dei chip di memoria volatile e non volatile.
 
 ### Strategia dello Shadow Register per `$DE03`
-Essendo `$DE03` un registro *Write-only*, la CPU 6502 non è in grado di rileggerne lo stato tramite istruzioni di *Load* (es. `LDA`). È obbligo dello sviluppatore riservare una locazione nella RAM interna del C64 (denominata `mdp_ctrl_shadow`) per conservare una copia specchio dello stato dei bit. [cite_start]Qualsiasi modifica deve essere applicata prima sulla variabile shadow tramite operatori logici bitwise (`AND`/`OR`) e successivamente trasmessa fisicamente al registro hardware[cite: 63].
+Essendo `$DE03` un registro *Write-only*, la CPU 6502 non è in grado di rileggerne lo stato tramite istruzioni di *Load* (es. `LDA`). È obbligo dello sviluppatore riservare una locazione nella RAM interna del C64 (denominata `mdp_ctrl_shadow`) per conservare una copia specchio dello stato dei bit. Qualsiasi modifica deve essere applicata prima sulla variabile shadow tramite operatori logici bitwise (`AND`/`OR`) e successivamente trasmessa fisicamente al registro hardware.
 
 La allocazione dei bit del registro `$DE03` è strutturata come segue:
 * **Bit 0 (SRAM_BANK_SELECT):** Seleziona la porzione attiva di SRAM da 64 KB. Lo stato `0` seleziona la prima porzione (Portion 0); lo stato `1` seleziona la seconda porzione (Portion 1).
