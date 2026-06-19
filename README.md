@@ -9,12 +9,12 @@ Il cuore del meccanismo di *bank switching* (commutazione dei banchi) risiede ne
 * **Bit 0-5 (o 0-6):** Definiscono quale sezione da 8 KB della ROM debba slittare sotto la finestra `$8000-$9FFF`, consentendo di indirizzare fino a 64 banchi (512 KB) o 128 banchi (1 MB).
 * **Bit 7 (Controllo di Disabilitazione):** Se impostato a 1 (valori `>=$80`), il circuito hardware forza la linea `/EXROM` a livello alto, disattivando istantaneamente la visibilità della cartuccia e ripristinando la RAM interna del C64 nell'area `$8000-$9FFF`.
 
-A livello software, il cambio di banco richiede l'adozione di una routine di "trampolino" (*trampoline code*) preventivamente copiata nella RAM di sistema (es. in pagina tre o nello stack)[cite: 131]. Questo impedisce il crash della CPU dovuto alla scomparsa del codice in esecuzione "sotto se stessa" al momento della scrittura in `$DE00`. Per l'avvio automatico al boot, il banco 0 deve tassativamente ospitare la stringa di identificazione PETSCII **`"CBM80"`** all'indirizzo `$8004`, unitamente ai vettori di Cold e Warm Start nei primi quattro byte.
+A livello software, il cambio di banco richiede l'adozione di una routine di "trampolino" (*trampoline code*) preventivamente copiata nella RAM di sistema (es. in pagina tre o nello stack). Questo impedisce il crash della CPU dovuto alla scomparsa del codice in esecuzione "sotto se stessa" al momento della scrittura in `$DE00`. Per l'avvio automatico al boot, il banco 0 deve tassativamente ospitare la stringa di identificazione PETSCII **`"CBM80"`** all'indirizzo `$8004`, unitamente ai vettori di Cold e Warm Start nei primi quattro byte.
 
 ---
 
 ## 2. Architettura Hardware della Magic Desk Plus
-La **Magic Desk Plus** rappresenta un'evoluzione massiccia dello standard di base[cite: 1]. Essa espande lo spazio di memorizzazione portando la capacità della ROM fino a **1 MByte** e introducendo una **SRAM statica persistente da 128 KByte** (mantenuta da una batteria tampone) affiancata, in alcune varianti, da una memoria **EEPROM** da 8 KB o 32 KB.
+La **Magic Desk Plus** rappresenta un'evoluzione massiccia dello standard di base. Essa espande lo spazio di memorizzazione portando la capacità della ROM fino a **1 MByte** e introducendo una **SRAM statica persistente da 128 KByte** (mantenuta da una batteria tampone) affiancata, in alcune varianti, da una memoria **EEPROM** da 8 KB o 32 KB.
 
 Mentre il registro `$DE00` conserva la sua funzione nativa per la commutazione dei banchi di ROM, l'accesso e il controllo della memoria persistente avvengono mediante l'introduzione di due nuovi registri mappati nell'area di I/O 1 (`$DE01` e `$DE03`) e di una finestra di transito dati dedicata:
 
