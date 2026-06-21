@@ -126,7 +126,7 @@ Per contestualizzare la Magic Desk Plus nell'ecosistema di retrocomputing, è es
 | Caratteristica | Magic Desk Standard | Magic Desk Plus | Formato Ocean | EasyFlash |
 | :--- | :--- | :--- | :--- | :--- |
 | **Finestra di Memoria** | `$8000-$9FFF` (8 KB)  | `$8000-$9FFF` (8 KB) | `$8000` / `$A000` (8 o 16 KB)  | `$8000` + `$A000` (16 KB)  |
-| **Memoria Persistente** | Assente | **SRAM 128 KB** + EEPROM | Assente | Flash ROM (1 MB)  |
+| **Memoria Persistente** | Assente | **SRAM 128 KB** + EEPROM | Assente | Flash ROM (1 MB) + 256 Byte di SRAM |
 | **RAM di Servizio I/O** | Assente | **Finestra da 256 Byte** | Assente | Finestra da 256 Byte  |
 | **Logica di Banking** | Scrittura in `$DE00`  | Scrittura in `$DE00`, `$DE01`, `$DE03` | Scrittura in `$DE00`  | Registri `$DE00` e `$DE02`  |
 | **Complessità Hardware** | Molto Bassa  | **Bassa** (Nessun componente custom)  | Bassa  | Media/Alta (Richiede CPLD)  |
