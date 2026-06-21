@@ -1,16 +1,16 @@
-# Specifiche Tecniche Avanzate: Cartuccia Magic Desk Plus per Commodore 64
+# Cartuccia Magic Desk Plus per Commodore 64
 
 ## 1. Introduzione: Il Formato Magic Desk Standard
 
 Il formato di cartuccia **Magic Desk** nacque originariamente nel 1983 da un progetto di Commodore Business Machines, concepito per ospitare una suite di software di produttività semplificata (comprendente moduli come *Type and File*, *Spreadsheet* e *Financial Planning*). L'obiettivo fondamentale dei progettisti era mantenere il software residente in memoria, azzerando completamente i tempi di caricamento estenuanti del drive a disco o del Datassette. Sebbene commercialmente sia stato rilasciato solo il modulo *Type and File*, l'eredità tecnica dell'architettura hardware è sopravvissuta per decenni.
 
 ### Interfaccia Hardware e Segnali della Porta di Espansione
-L'operatività di una cartuccia Magic Desk standard è legata alla gestione dei segnali elettrici sul porto di espansione a 44 pin del Commodore 64. La configurazione standard prevede il segnale `/EXROM` portato a livello basso (massa) e il segnale `/GAME` mantenuto a livello alto. 
+L'operatività di una cartuccia Magic Desk standard è legata alla gestione dei segnali elettrici sulla porta di espansione a 44 pin del Commodore 64. La configurazione standard prevede il segnale `/EXROM` portato a livello basso (massa) e il segnale `/GAME` mantenuto a livello alto. 
 
 Questa impostazione istruisce il PLA (Programmable Logic Array) del C64 a mappare 8 KB di ROM esterna nella finestra di memoria compresa tra `$8000` e `$9FFF`, mantenendo inalterati il BASIC ROM e il KERNAL ROM.
 
 ### Architettura del Memory Banking: Il Registro `$DE00`
-A differenza di altre cartucce, la Magic Desk adotta un *data-type banking*, dove il cambio di banco è innescato dal valore del dato scritto. Il cuore del sistema è un registro hardware di *latching* (solitamente un chip 74LS273) che si attiva quando la CPU scrive un byte nell'area di I/O compresa tra `$DE00` e `$DEFF`.
+Come altri tipi di cartucce, la Magic Desk adotta un *data-type banking*, dove il cambio di banco è innescato dal valore del dato scritto. Il cuore del sistema è un registro hardware di *latching* (solitamente un chip 74LS273) che si attiva quando la CPU scrive un byte nell'area di I/O compresa tra `$DE00` e `$DEFF`.
 
 La struttura del byte di controllo scritto in `$DE00` è la seguente:
 * **Bit 0-5 (o 0-6):** Definiscono quale banco da 8 KB della ROM debba slittare sotto la finestra `$8000-$9FFF`. Con 7 bit è possibile indirizzare fino a 128 banchi, pari a 1 MB di memoria.
@@ -25,25 +25,25 @@ Affinché il KERNAL avvii automaticamente la cartuccia all'accensione, il Banco 
 
 ## 2. Architettura Hardware della Magic Desk Plus
 
-La **Magic Desk Plus** espande radicalmente le specifiche del formato classico. Oltre a supportare una memoria ROM fino a 1 MByte, introduce una **SRAM statica da 128 KByte** supportata da una batteria tampone, affiancata in alcune varianti da una memoria EEPROM.
+La **Magic Desk Plus** espande radicalmente le specifiche del formato classico. Oltre a supportare una memoria ROM di 256/512/1024 Kbyte, introduce una **SRAM statica da 128 KByte** supportata da una batteria tampone, affiancata da una memoria EEPROM da 8/32/Kbyte. Una configurazione con solo la SRAM o solo la EEPROM è ammessa.
 
 Per gestire questo spazio aggiuntivo mantenendo il registro `$DE00` inalterato, la cartuccia introduce una finestra di transito dati dedicata e due nuovi registri nell'area di I/O 1:
 
 * **Finestra di I/O Dati (`$DF00 - $DFFF`):** Una finestra di accesso fissa da 256 byte mappata direttamente sulla pagina di memoria SRAM o EEPROM attualmente attiva.
 * **Registro di Pagina (`$DE01`):** Registro *Write-only* preposto alla selezione della pagina da 256 byte (valori da 0 a 255) da proiettare nella finestra di transito.
-* **Registro di Controllo (`$DE03`):** Registro *Write-only* deputato all'abilitazione e alla configurazione della SRAM.
+* **Registro di Controllo (`$DE03`):** Registro *Write-only* deputato all'abilitazione e alla configurazione della SRAM/EEPROM.
 
 ### Configurazione del Registro di Controllo `$DE03`
-Essendo `$DE03` un registro in sola scrittura, il processore 6502 non può leggerne lo stato. È perciò obbligatorio mantenere una copia ombra (*shadow register*) nella RAM di sistema (es. `mdp_ctrl_shadow`) per applicare modifiche bitwise in modo sicuro.
+Essendo `$DE03` un registro in sola scrittura, il processore 6502 non può leggerne lo stato. È perciò utile mantenere una copia ombra (*shadow register*) nella RAM di sistema (es. `mdp_ctrl_shadow`) per applicare modifiche bitwise in modo sicuro (gli eventuali *shadow registers*  sia per `$DE01` che per `$DE03` non sono strettamente necessari). 
 
 * **Bit 0:** Seleziona le due porzioni di SRAM. Scrivendo `0` si utilizza la prima porzione da 64 KByte; scrivendo `1` si utilizza la seconda porzione da 64 KByte. All'accensione è selezionata di default la prima porzione.
-* **Bit 3 o Bit 5:** Attiva o disattiva la SRAM effettuando la commutazione con l'eventuale EEPROM. Se impostato a `1`, la SRAM è abilitata; se impostato a `0`, la SRAM è disattivata e subentra la EEPROM. All'accensione, la SRAM è disattivata per default.
+* **Bit 5:** Attiva o disattiva la SRAM effettuando la commutazione con l'eventuale EEPROM. Se impostato a `1`, la SRAM è abilitata; se impostato a `0`, la SRAM è disattivata e subentra la EEPROM. All'accensione, la EEPROM è attiva per default.
 
 ---
 
 ## 3. Gestione e Programmazione della EEPROM
 
-L'architettura Magic Desk Plus prevede la coesistenza della SRAM con memorie non volatili di tipo EEPROM (nei tagli da 8 KB o 32 KB). EEPROM e SRAM condividono la stessa finestra hardware di I/O (`$DF00-$DFFF`) e lo stesso registro di pagina `$DE01`. La selezione esclusiva dell'una o dell'altra si effettua disabilitando il flag della SRAM in `$DE03`.
+L'architettura Magic Desk Plus prevede la coesistenza della SRAM con memorie non volatili di tipo EEPROM (nei tagli da 8 KB o 32 KB). EEPROM e SRAM condividono la stessa finestra hardware di I/O (`$DF00-$DFFF`) e lo stesso registro di pagina `$DE01`. La selezione esclusiva dell'una o dell'altra si effettua settando il bit 5 in `$DE03`.
 
 A seconda della EEPROM installata, la selezione della pagina risponde a maschere hardware fisse. Una EEPROM da 8 KB (32 pagine) risponde alla maschera `0x1F` ignorando i bit superiori di `$DE01`, mentre una da 32 KB (128 pagine) usa la maschera `0x7F` e ignora il bit 7.
 
@@ -51,9 +51,9 @@ A differenza della SRAM che permette scritture immediate, la programmazione di u
 
 ---
 
-## 4. Il File System MDP-FS (MagicDesk Plus File System)
+## 4. Case Study per l'utilizzo della SRAM: il File System MDP-FS (MagicDesk Plus File System)
 
-Il **MagicDesk Plus File System (MDP-FS)** è un'architettura software progettata per gestire i 128 KiB di SRAM persistente e trasformarli in un "RAM Disk" ad altissime prestazioni.
+Il **MagicDesk Plus File System (MDP-FS)** è un'architettura software progettata per gestire i 128 KByte di SRAM persistente (tramite batteria tampone) e trasformarli in un "RAM Disk" ad altissime prestazioni.
 
 ### Filosofia di Allocazione Concatenata (1541-Style)
 Per eliminare la frammentazione ed alleggerire il carico sul processore MOS 6502, MDP-FS adotta un'allocazione a blocchi concatenati ispirata alla logica di formattazione del Commodore 1541. Ogni pagina hardware da 256 byte corrisponde esattamente a un singolo blocco logico.
@@ -92,9 +92,9 @@ Durante la scrittura con `mdp_fwrite`, al termine di un blocco l'API interroga l
 
 Per identificare le memorie installate, le librerie software eseguono routine di rilevamento sicure. 
 
-Per effettuare il rilevamento della SRAM, il sistema preleva il registro shadow, abilita la Portion 1 e la Pagina 255 per poi leggere gli offset `$FE` e `$FF`. Se i valori letti corrispondono alla firma esadecimale `$CA, $F1`, la SRAM è marcata come hardware presente e già inizializzato. In caso di firma mancante o dati casuali, la libreria tenta una sequenza di memorizzazione e rilettura dei valori firma per appurare la presenza del chip. Se il chip risponde ma il drive risulta non formattato, si può invocare la funzione `mdp_format`, che azzera la RAM, imposta la BAM e inscrive permanentemente la firma fisica nell'ultimo blocco.
+Per effettuare il rilevamento della SRAM, il sistema abilita la Portion 1 e la Pagina 255 per poi leggere gli offset `$FE` e `$FF`. Se i valori letti corrispondono alla firma esadecimale `$CA, $F1`, la SRAM è marcata come hardware presente e già inizializzato. In caso di firma mancante o dati casuali, la libreria tenta una sequenza di memorizzazione e rilettura dei valori firma per appurare la presenza del chip. Se il chip risponde ma il drive risulta non formattato, si può invocare la funzione `mdp_format`, che azzera la RAM, imposta la BAM e inscrive permanentemente la firma fisica nell'ultimo blocco.
 
-Algoritmi simili vengono eseguiti scansionando le pagine 31 e 127 a SRAM disattivata per identificare l'eventuale presenza e taglio delle memorie EEPROM basandosi sull'aliasing degli indirizzi.
+Algoritmi simili vengono eseguiti scansionando le pagine 31 e 127 a EEPROM attivata per identificare l'eventuale presenza e taglio delle memorie EEPROM basandosi sull'aliasing degli indirizzi.
 
 ---
 
@@ -113,7 +113,7 @@ Nelle implementazioni hardware meno raffinate che non decodificano la linea `R/W
 Inoltre, poiché la ROM copre la finestra `$8000-$9FFF`, essa non sovrascrive i vettori di interrupt in cima alla memoria (`$FFFA-$FFFF`). Un segnale IRQ o NMI genererà un salto ai vettori del KERNAL ROM; qualora questo sia stato escluso dal layout memoria, il programmatore è obbligato a riprogettare la mappa allocando vettori personalizzati nei banchi attivi.
 
 ### Limiti di Velocità su Commodore 128
-Sebbene il progetto sia pienamente compatibile con un Commodore 128 in modalità emulazione, il suo utilizzo in modalità nativa a 2 MHz causa problemi a causa dei cicli di bus dimezzati. I chip standard come il `74LS273` richiedono di essere rimpiazzati con logiche più reattive quali la serie 74HCT o 74AHCT per tollerare la frequenza accelerata del sistema.
+Sebbene il progetto sia pienamente compatibile con un Commodore 128 in modalità emulazione, il suo utilizzo in modalità nativa a 2 MHz potrebbe causare problemi dovuti ai cicli di bus dimezzati. In questo caso potrebbe essere una buona idea sostituire i chip logici della serie `74LS` con quelli della serie `74HCT` o `74AHCT` per tollerare la frequenza accelerata del sistema.
 
 ---
 
