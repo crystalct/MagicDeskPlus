@@ -33,6 +33,8 @@ Per gestire questo spazio aggiuntivo mantenendo il registro `$DE00` inalterato, 
 * **Registro di Pagina (`$DE01`):** Registro *Write-only* preposto alla selezione della pagina da 256 byte (valori da 0 a 255) da proiettare nella finestra di transito.
 * **Registro di Controllo (`$DE03`):** Registro *Write-only* deputato all'abilitazione e alla configurazione della SRAM/EEPROM.
 
+**La finestra `$DF00 - $DFFF` sarà l'accesso, diretto sia in lettura che scrittura, alla memoria (SRAM o EEPROM) anche con la ROM principale della cartuccia disabilitata.**
+
 ### Configurazione del Registro di Controllo `$DE03`
 Essendo `$DE03` un registro in sola scrittura, il processore 6502 non può leggerne lo stato. È perciò utile mantenere una copia ombra (*shadow register*) nella RAM di sistema (es. `mdp_ctrl_shadow`) per applicare modifiche bitwise in modo sicuro (gli eventuali *shadow registers*  sia per `$DE01` che per `$DE03` non sono strettamente necessari). 
 
