@@ -2,3 +2,5 @@
 
 You can activate the Magic Desk Plus without necessarily loading the CRT and communicating with the SRAM and/or EEPROM.
 The version is for Windows only.
+
+x64sc.exe
