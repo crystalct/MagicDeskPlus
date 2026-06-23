@@ -1,0 +1,273 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "cartridge": {
+    "name": "Magic Desk Plus",
+    "description": "Commodore 64 cartridge format with up to 1MB ROM, 128KB battery-backed SRAM, and 8KB or 32KB EEPROM. Supports bank-switching and page-switching for reading and writing persistent memory.",
+    "version": "1.0",
+    "developer_notes": "SRAM and EEPROM share the same page-selection register and mapping window, selected mutually exclusively via a control register."
+  },
+  "memory_map": {
+    "rom": {
+      "address_range": {
+        "start_hex": "$8000",
+        "end_hex": "$9FFF",
+        "start_dec": 32768,
+        "end_dec": 40959
+      },
+      "window_size_bytes": 8192,
+      "max_size_bytes": 1048576,
+      "bank_switching_register": "$DE00"
+    },
+    "sram": {
+      "total_size_bytes": 131072,
+      "portions": [
+        {
+          "index": 0,
+          "size_bytes": 65536,
+          "pages": 256,
+          "description": "First 64KB SRAM portion"
+        },
+        {
+          "index": 1,
+          "size_bytes": 65536,
+          "pages": 256,
+          "description": "Second 64KB SRAM portion (contains the initialization signature)"
+        }
+      ]
+    },
+    "eeprom": {
+      "supported_sizes": [
+        {
+          "size_bytes": 8192,
+          "pages": 32,
+          "register_mask_hex": "0x1F",
+          "description": "8KB EEPROM, utilizes pages 0-31"
+        },
+        {
+          "size_bytes": 32768,
+          "pages": 128,
+          "register_mask_hex": "0x7F",
+          "description": "32KB EEPROM, utilizes pages 0-127"
+        }
+      ]
+    },
+    "io_window": {
+      "address_range": {
+        "start_hex": "$DF00",
+        "end_hex": "$DFFF",
+        "start_dec": 57088,
+        "end_dec": 57343
+      },
+      "window_size_bytes": 256,
+      "description": "Access window for the currently selected page of SRAM or EEPROM."
+    }
+  },
+  "registers": {
+    "DE00": {
+      "hex_address": "$DE00",
+      "dec_address": 56832,
+      "name": "ROM_BANK_REG",
+      "access": "Write-only",
+      "description": "Classic Magic Desk ROM bank switching register. Writing a bank number maps the corresponding 8KB ROM bank to the $8000-$9FFF memory range."
+    },
+    "DE01": {
+      "hex_address": "$DE01",
+      "dec_address": 56833,
+      "name": "PAGE_REG",
+      "access": "Write-only",
+      "description": "Selects the active 256-byte page of SRAM or EEPROM mapped to the $DF00-$DFFF window.",
+      "bit_allocation": {
+        "sram": {
+          "bits": "0-7",
+          "range": "0-255",
+          "description": "Selects page 0 to 255 of the currently active 64KB SRAM portion."
+        },
+        "eeprom_8kb": {
+          "bits": "0-4",
+          "range": "0-31",
+          "description": "Selects page 0 to 31. Bits 5-7 are ignored."
+        },
+        "eeprom_32kb": {
+          "bits": "0-6",
+          "range": "0-127",
+          "description": "Selects page 0 to 127. Bit 7 is ignored."
+        }
+      }
+    },
+    "DE03": {
+      "hex_address": "$DE03",
+      "dec_address": 56835,
+      "name": "CTRL_REG",
+      "access": "Write-only",
+      "description": "Control register for RAM/EEPROM mapping. Since this register is write-only, a shadow copy should be kept in system RAM to track and modify its state.",
+      "boot_default_hex": "0x00",
+      "bit_fields": [
+        {
+          "bit": 0,
+          "name": "SRAM_BANK_SELECT",
+          "description": "Selects the active 64KB portion of SRAM.",
+          "values": {
+            "0": "First portion of 64KB SRAM (Portion 0)",
+            "1": "Second portion of 64KB SRAM (Portion 1)"
+          }
+        },
+        {
+          "bit": 5,
+          "name": "MEMORY_SELECT",
+          "description": "Toggles between EEPROM and SRAM access.",
+          "values": {
+            "0": "SRAM disabled, EEPROM enabled (Default at power-on)",
+            "1": "SRAM enabled, EEPROM disabled"
+          }
+        }
+      ]
+    }
+  },
+  "signatures": {
+    "purpose": "Used to detect hardware presence and verify if the non-volatile memory has been initialized by software.",
+    "magic_bytes": {
+      "byte_0_hex": "0xCA",
+      "byte_1_hex": "0xF1",
+      "byte_0_dec": 202,
+      "byte_1_dec": 241
+    },
+    "locations": {
+      "sram": {
+        "portion": 1,
+        "page": 255,
+        "offsets": {
+          "byte_0_hex": "0xFE",
+          "byte_1_hex": "0xFF",
+          "byte_0_dec": 254,
+          "byte_1_dec": 255
+        },
+        "absolute_address_hex": "$1FFFE-$1FFFF",
+        "description": "The last two bytes of the 128KB SRAM."
+      },
+      "eeprom_8kb": {
+        "page": 31,
+        "offsets": {
+          "byte_0_hex": "0xFE",
+          "byte_1_hex": "0xFF",
+          "byte_0_dec": 254,
+          "byte_1_dec": 255
+        },
+        "absolute_address_hex": "$1FFE-$1FFF",
+        "description": "The last two bytes of the 8KB EEPROM."
+      },
+      "eeprom_32kb": {
+        "page": 127,
+        "offsets": {
+          "byte_0_hex": "0xFE",
+          "byte_1_hex": "0xFF",
+          "byte_0_dec": 254,
+          "byte_1_dec": 255
+        },
+        "absolute_address_hex": "$7FFE-$7FFF",
+        "description": "The last two bytes of the 32KB EEPROM."
+      }
+    }
+  },
+  "algorithms": {
+    "sram_detection": {
+      "steps": [
+        "1. Save current shadow register value of $DE03.",
+        "2. Enable SRAM and select SRAM portion 1 (set Bit 5 and Bit 0 of $DE03 shadow register, write to $DE03).",
+        "3. Select page 255 (write 255 to $DE01).",
+        "4. Read bytes at offsets 254 ($FE) and 255 ($FF) of the $DF00-$DFFF window.",
+        "5. If read values match the signature (0xCA, 0xF1), SRAM is PRESENT and INITIALIZED.",
+        "6. If values do not match: test SRAM functionality by saving current values, writing 0xCA and 0xF1, and reading them back.",
+        "7. If values read back match the signature, SRAM is PRESENT and UNINITIALIZED. Restore original saved values.",
+        "8. If values do not match, SRAM is ABSENT or non-functional.",
+        "9. Restore the saved shadow register value to $DE03."
+      ]
+    },
+    "eeprom_detection": {
+      "steps": [
+        "1. Save current shadow register value of $DE03.",
+        "2. Enable EEPROM (clear Bit 5 of $DE03 shadow register, write to $DE03).",
+        "3. Check for 32KB EEPROM initialized signature: select page 127, read offsets 254 and 255. If matched, it is 32KB PRESENT and INITIALIZED. Skip to step 9.",
+        "4. Check for 8KB EEPROM initialized signature: select page 31, read offsets 254 and 255. If matched, it is 8KB PRESENT and INITIALIZED. Skip to step 9.",
+        "5. Test 32KB EEPROM write functionality: write 0xCA and 0xF1 at page 127, offsets 254 and 255 (using the write-delay). Read back. If matched, 32KB EEPROM is PRESENT and UNINITIALIZED. Restore original values and skip to step 9.",
+        "6. Test 8KB EEPROM write functionality: write 0xCA and 0xF1 at page 31, offsets 254 and 255 (using the write-delay). Read back. If matched, 8KB EEPROM is PRESENT and UNINITIALIZED. Restore original values and skip to step 9.",
+        "7. If all tests fail, EEPROM is ABSENT or non-functional.",
+        "8. Restore the saved shadow register value to $DE03."
+      ]
+    },
+    "eeprom_programming": {
+      "description": "Standard EEPROMs (e.g., AT28C64 or AT28C256) require a programming delay of up to 10 milliseconds per write operation. When programming, the software must insert a delay loop after writing a byte to the $DF00-$DFFF window before changing the page, switching banks, or writing another byte.",
+      "c_example_delay": "for (volatile uint16_t d = 0; d < 2000; d++);"
+    }
+  },
+  "reference_code": {
+    "c_interface": {
+      "sram_enable": [
+        "static uint8_t mdp_ctrl_shadow = 0x00;",
+        "",
+        "void mdp_sram_enable(void) {",
+        "  mdp_ctrl_shadow |= 0x20; // Set bit 5 to enable SRAM",
+        "  *((volatile uint8_t *)0xDE03) = mdp_ctrl_shadow;",
+        "}"
+      ],
+      "sram_disable": [
+        "void mdp_sram_disable(void) {",
+        "  mdp_ctrl_shadow &= ~0x20; // Clear bit 5 to disable SRAM (enables EEPROM)",
+        "  *((volatile uint8_t *)0xDE03) = mdp_ctrl_shadow;",
+        "}"
+      ],
+      "sram_set_bank": [
+        "void mdp_set_bank(uint8_t bank) {",
+        "  if (bank) {",
+        "    mdp_ctrl_shadow |= 0x01; // Select Portion 1 (second 64KB)",
+        "  } else {",
+        "    mdp_ctrl_shadow &= ~0x01; // Select Portion 0 (first 64KB)",
+        "  }",
+        "  *((volatile uint8_t *)0xDE03) = mdp_ctrl_shadow;",
+        "}"
+      ],
+      "sram_set_page": [
+        "void mdp_set_page(uint8_t page) {",
+        "  *((volatile uint8_t *)0xDE01) = page;",
+        "}"
+      ],
+      "eeprom_write_byte": [
+        "void mdp_eeprom_write_byte(uint8_t page, uint8_t offset, uint8_t value) {",
+        "  mdp_eeprom_enable();",
+        "  mdp_set_page(page);",
+        "  ((volatile uint8_t *)0xDF00)[offset] = value;",
+        "  // Timing delay for EEPROM cell write verification",
+        "  for (volatile uint16_t delay = 0; delay < 2000; delay++);",
+        "}"
+      ]
+    },
+    "assembly_examples": {
+      "sram_enable": [
+        "; Enables SRAM and switches to the second 64KB portion",
+        "lda mdp_ctrl_shadow",
+        "ora #$21             ; Set Bit 5 (SRAM enable) and Bit 0 (Portion 1)",
+        "sta mdp_ctrl_shadow",
+        "sta $DE03"
+      ],
+      "eeprom_write": [
+        "; Write value to EEPROM page $12, offset $34",
+        "lda mdp_ctrl_shadow",
+        "and #$DF             ; Clear Bit 5 (EEPROM active)",
+        "sta mdp_ctrl_shadow",
+        "sta $DE03",
+        "lda #$12             ; Page $12",
+        "sta $DE01",
+        "lda #$A5             ; Value to write",
+        "sta $DF34            ; Write to target offset",
+        "; Delay loop for EEPROM write (~10ms)",
+        "ldx #$14",
+        "delay_outer:",
+        "ldy #$FF",
+        "delay_inner:",
+        "dey",
+        "bne delay_inner",
+        "dex",
+        "bne delay_outer"
+      ]
+    }
+  }
+}

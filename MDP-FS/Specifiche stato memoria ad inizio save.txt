@@ -1,0 +1,8 @@
+All'inizio della chiamata a mdp_save_hook l'accumulatore conterra un valore da non prendere in considerazione,
+Registro X: Contiene il Low Byte (byte basso) dell'indirizzo finale.
+Registro Y: Contiene l'High Byte (byte alto) dell'indirizzo finale.
+Registro Zero Page $2B: Contiene il Low Byte (byte basso) dell'indirizzo iniziale.
+Registro Zero Page $2C: Contiene l'High Byte (byte alto) dell'indirizzo iniziale.
+Registro Zero Page $BB: - FNADR_LO (byte basso) dell'indirizzo del nome del file.
+Registro Zero Page $BC: - FNADR_HI (byte alto) dell'indirizzo del nome del file.
+Registro Zero Page $B7: - FNLEN lunghezza del nome del file.
