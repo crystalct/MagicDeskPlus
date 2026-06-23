@@ -1,5 +1,8 @@
 # Magic Desk Plus Cartridge for Commodore 64
 
+**What the Magic Desk Plus is not:** a general-purpose memory expansion cartridge for the C64 <br>
+**What is the Magic Desk Plus:** An interesting platform that can be used to develop cartridge games that require a lot of ROM space, additional RAM, and non-volatile writable memory.
+
 ## 1. Introduction: The Standard Magic Desk Format
 
 The **Magic Desk** cartridge format originally emerged in 1983 from a Commodore Business Machines project, designed to host a simplified productivity software suite (including modules like *Type and File*, *Spreadsheet*, and *Financial Planning*). The fundamental goal of the designers was to keep the software resident in memory, completely eliminating the exhausting loading times of the disk drive or Datassette. Although only the *Type and File* module was commercially released, the technical legacy of the hardware architecture has survived for decades.
