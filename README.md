@@ -45,7 +45,7 @@ Essendo `$DE03` un registro in sola scrittura, il processore 6502 non può legge
 
 ## 3. Gestione e Programmazione della EEPROM
 
-L'architettura Magic Desk Plus prevede la coesistenza della SRAM con memorie non volatili di tipo EEPROM (nei tagli da 8 KB o 32 KB). EEPROM e SRAM condividono la stessa finestra hardware di I/O (`$DF00-$DFFF`) e lo stesso registro di pagina `$DE01`. La selezione esclusiva dell'una o dell'altra si effettua settando il bit 5 in `$DE03`.
+L'architettura Magic Desk Plus prevede anche la coesistenza della SRAM con una memoria non volatile di tipo EEPROM (da 8 KB o 32 KB). EEPROM e SRAM condividono la stessa finestra hardware di I/O (`$DF00-$DFFF`) e lo stesso registro di pagina `$DE01`. La selezione esclusiva dell'una o dell'altra si effettua settando il bit 5 in `$DE03`.
 
 A seconda della EEPROM installata, la selezione della pagina risponde a maschere hardware fisse. Una EEPROM da 8 KB (32 pagine) risponde alla maschera `0x1F` ignorando i bit superiori di `$DE01`, mentre una da 32 KB (128 pagine) usa la maschera `0x7F` e ignora il bit 7.
 
