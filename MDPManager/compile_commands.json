@@ -1,0 +1,7 @@
+[
+  {
+    "directory": "c:/Users/crystal/Documents/Antigravity/MDPManager",
+    "command": "oscar64 -i=include -dLANG=ITA main.c",
+    "file": "main.c"
+  }
+]

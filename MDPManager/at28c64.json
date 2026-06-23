@@ -1,0 +1,49 @@
+{
+  "device": "AT28C64",
+  "memory_organization": {
+    "total_bytes": 8192,
+    "data_width_bits": 8
+  },
+  "pins": {
+    "address_bus": "A0-A12",
+    "data_bus": "I/O0-I/O7",
+    "control": {
+      "CE": "Chip Enable (Active Low)",
+      "OE": "Output Enable (Active Low)",
+      "WE": "Write Enable (Active Low)"
+    },
+    "status": "RDY/BUSY (Open Drain Output)"
+  },
+  "electrical_specs": {
+    "vcc_operating_voltage": "5V ±10%",
+    "read_access_time_ns": [120, 150, 200, 250],
+    "byte_write_time_max_us": {
+      "AT28C64": 1000,
+      "AT28C64E": 200
+    }
+  },
+  "logic_operations": {
+    "read": {
+      "CE": 0,
+      "OE": 0,
+      "WE": 1,
+      "data_pins": "DOUT"
+    },
+    "write": {
+      "CE": 0,
+      "OE": 1,
+      "WE": 0,
+      "data_pins": "DIN"
+    },
+    "standby": {
+      "CE": 1,
+      "OE": "X",
+      "WE": "X",
+      "data_pins": "High Z"
+    }
+  },
+  "write_completion_polling": {
+    "hardware_method": "RDY/BUSY pin is actively pulled low during write cycle and released (high) at completion.",
+    "software_method": "DATA POLLING on I/O7: Attempted read outputs the complement of written data until completion, then true data."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "dispositivo": "AT28C256",
+  "tipo": "EEPROM (Electrically Erasable and Programmable Read Only Memory)",
+  "architettura": {
+    "capacita_totale_byte": 32768,
+    "organizzazione": "32K x 8 bit",
+    "bus_indirizzi": "A0 - A14 (15 bit)",
+    "bus_dati": "I/O0 - I/O7 (8 bit)"
+  },
+  "segnali_di_controllo": {
+    "CE": "Chip Enable (Attivo Basso)",
+    "OE": "Output Enable (Attivo Basso)",
+    "WE": "Write Enable (Attivo Basso)"
+  },
+  "operazioni_di_scrittura": {
+    "dimensione_pagina_byte": 64,
+    "metodi_rilevamento_fine_scrittura": {
+      "data_polling": "Lettura del bit I/O7",
+      "toggle_bit": "Lettura del bit I/O6"
+    }
+  },
+  "tempistiche_critiche": {
+    "tempo_accesso_lettura_ns": 150,
+    "tempo_scrittura_pagina_ms": "10 (Standard) / 3 (AT28C256F)",
+    "limite_caricamento_byte_consecutivi_us": 150
+  },
+  "protezione_dati_software_sdp": {
+    "stato_predefinito_fabbrica": "Disabilitato",
+    "sequenza_esadecimale_abilitazione": [
+      {"indirizzo": "0x5555", "dato": "0xAA"},
+      {"indirizzo": "0x2AAA", "dato": "0x55"},
+      {"indirizzo": "0x5555", "dato": "0xA0"}
+    ],
+    "sequenza_esadecimale_disabilitazione": [
+      {"indirizzo": "0x5555", "dato": "0xAA"},
+      {"indirizzo": "0x2AAA", "dato": "0x55"},
+      {"indirizzo": "0x5555", "dato": "0x80"},
+      {"indirizzo": "0x5555", "dato": "0xAA"},
+      {"indirizzo": "0x2AAA", "dato": "0x55"},
+      {"indirizzo": "0x5555", "dato": "0x20"}
+    ]
+  }
+}

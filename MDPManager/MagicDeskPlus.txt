@@ -1,0 +1,34 @@
+MAGIC DESK PLUS
+
+La magic desk plus è una magic desk da un 1Mbyte di rom con l'aggiunta di una SRAM da 128KByte ed una EEPROM da 8Kbyte o da 32Kbyte. La presenza della SRAM non esclude la presenza della EEPROM e viceversa.
+Il registro $DE00 rimane inalterato.
+L'accesso sia della SRAM che della EEPROM avviene tramite gli indirizzi $DF00 - $DFFF, quindi 256 byte.
+Si aggiungono altri due registri $DE01 e $DE03
+Scrivendo su $DE01 si cambia la pagina di lettura/scrittura sulla SRAM o sulla EEPROM, per un totale di 256 pagine sulla SRAM.
+Scrivendo nel registro $DE03 è possibile attivare la SRAM o la EEPROM, usando il bit n.5. Se si scrive un bite con il bit n.5 settato a 1 la SRAM è attivata e la EEPROM è disattivata. Se si scrive un bite con il bit n.5 settato a 0 la SRAM è disattivata e la EEPROM è attivata. All'accenzione la SRAM è disattiva e la EEPROM è attiva.
+
+Nel caso della SRAM si hanno 256 pagine di 256 byte ciascuna quindi 64Kbyte. Scrivendo nel registro $DE03 è possibile selezionare, tramite il bit n. 0, due differenti porzioni di 64kbyte. Se si scrive un byte con il bit n.0 settato a zero, si utilizza la prima porzione di 64kBye. Se si scrive un byte con il bit n.0 a 1 si utilizza la seconda porzione di 64KByte. Quindi un totale di 128Kbyte. All'accenzione è selezionata di defalut la prima porzione della SRAM.
+La SRAM non perde i valori in essa scritti grazie ad una batteria tampone.
+Gli ultimi due byte della SRAM, locazioni $1FFFE e $1FFFF sono i byte di identificazione: $CA, $F1. Essi devo essere intesi come "SRAM inizializzata". Servono anche a capire se la SRAM è presente e funzionale, scrivendoli alla fine della SRAM e cancellandoli e riscrivendoli per un test funzionalità.
+
+Nel caso della EEPROM da 8Kbyte, abbiamo 32 pagine, solo i primi 5 bit del registro $DE01. Nel caso della EEPROM da 32Kbyte, abbiamo 128 pagine, solo i primi 7 bit del registro $DE01.
+Gli ultimi due Byte della EEPROM (locazioni $1FFE e $1FFF nel caso della EEPROM da 8Kbyte, locazioni  $7FFE e $7FFF nel caso della EEPROM da 32Kbyte) sono i byte di identificazione: $CA, $F1. Essi devo essere intesi come "EEPROM inizializzata". Servono anche a capire se la EEPROM è presente e funzionale, scrivendoli alla fine della EEPROM e cancellandoli e riscrivendoli per un test funzionalità.
+Per identificare la presenza della EEPROM inizializzata, prima si controllano gli ultimi due byte nelle locazioni $7FFE e $7FFF se corrispondono a quelli di identificazione. In caso negativo si controllano gli ultimi due bye nelle locazioni $1FFE e $1FFF.
+Se in entrambi i casi non si riscontra la presenza dei byte di identificazione si procede a provare a scrivere i due byte, nel caso in cui una EPPROM è presente ma non inizializzata. Si procede sempre con la prova di scrittura e verifica per le locazioni finali della EPPROM da 32kbyte e, in caso negativo, per le locazioni finali della EPPROM da 8kbyte.
+
+
+Legenda:
+de00 (valore decimale 56832)
+
+de01 (valore decimale 56833)
+
+de03 (valore decimale 56835)
+
+df00 (valore decimale 57088)
+
+Esempi:
+poke 56835,32 -> SRAM attiva e prima porzione di 64Kbyte
+de03 56835,33 -> SRAM attiva e seconda porzione di 64Kbyte
+
+
+
