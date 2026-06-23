@@ -25,7 +25,7 @@ Affinché il KERNAL avvii automaticamente la cartuccia all'accensione, il Banco 
 
 ## 2. Architettura Hardware della Magic Desk Plus
 
-La **Magic Desk Plus** espande radicalmente le specifiche del formato classico. Oltre a supportare una memoria ROM di 256/512/1024 Kbyte, introduce una **SRAM statica da 128 KByte** supportata da una batteria tampone, affiancata da una memoria **EEPROM da 8/32/Kbyte**. Una configurazione con solo la SRAM o solo la EEPROM è ammessa.
+La **Magic Desk Plus** espande radicalmente le specifiche del formato classico. Oltre a supportare una memoria ROM di 256/512/1024 Kbyte, introduce una **SRAM statica da 128 KByte** supportata da una batteria tampone, affiancata da una memoria **EEPROM da 8/32 Kbyte**. Una configurazione con solo la SRAM o solo la EEPROM è ammessa.
 
 Per gestire questo spazio aggiuntivo mantenendo il registro `$DE00` inalterato, la cartuccia introduce una finestra di transito dati dedicata e due nuovi registri nell'area di I/O 1:
 
