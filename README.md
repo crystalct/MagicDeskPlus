@@ -1,7 +1,7 @@
 # Magic Desk Plus Cartridge for Commodore 64
 
-**What the Magic Desk Plus is not:** a general-purpose memory expansion cartridge for the C64 <br>
-**What is the Magic Desk Plus:** An interesting platform that can be used to develop cartridge games that require a lot of ROM space, additional RAM, and non-volatile writable memory.
+***What the Magic Desk Plus is not:*** a general-purpose memory expansion cartridge for the C64 <br>
+***What is the Magic Desk Plus:*** An interesting platform that can be used to develop cartridge games that require a lot of ROM space, additional RAM, and non-volatile writable memory.
 
 ## 1. Introduction: The Standard Magic Desk Format
 
