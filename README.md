@@ -38,7 +38,7 @@ Per gestire questo spazio aggiuntivo mantenendo il registro `$DE00` inalterato, 
 ### Configurazione del Registro di Controllo `$DE03`
 Essendo `$DE03` un registro in sola scrittura, il processore 6502 non può leggerne lo stato. È perciò utile mantenere una copia ombra (*shadow register*) nella RAM di sistema (es. `mdp_ctrl_shadow`) per applicare modifiche bitwise in modo sicuro (gli eventuali *shadow registers*  sia per `$DE01` che per `$DE03` non sono strettamente necessari). 
 
-* **Bit 0:** Seleziona le due porzioni di SRAM. Scrivendo `0` si utilizza la prima porzione da 64 KByte; scrivendo `1` si utilizza la seconda porzione da 64 KByte. All'accensione è selezionata di default la prima porzione.
+* **Bit 0:** Seleziona le due porzioni di SRAM. Scrivendo `0` si utilizza la prima porzione da 64 KByte; scrivendo `1` si utilizza la seconda porzione da 64 KByte. All'accensione è selezionata di default la prima porzione. Se la SRAM è disattivata il Bit 0 è irrilevante.
 * **Bit 5:** Attiva o disattiva la SRAM effettuando la commutazione con l'eventuale EEPROM. Se impostato a `1`, la SRAM è abilitata; se impostato a `0`, la SRAM è disattivata e subentra la EEPROM. All'accensione, la EEPROM è attiva per default.
 
 ---
