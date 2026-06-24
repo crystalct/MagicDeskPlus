@@ -29,7 +29,7 @@ Validation checks the integrity of the file system. In the future, this will saf
 
 *BASIC Syntax:*
 ```basic
-OPEN 1,7,15,"V0:" : CLOSE 1
+OPEN 15,7,15,"V0:" : CLOSE 1
 ```
 
 ### 3. Listing Disk Contents (Directory)
