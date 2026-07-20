@@ -130,3 +130,8 @@ To contextualize the Magic Desk Plus in the retrocomputing ecosystem, it is esse
 | **I/O Service RAM** | Absent | **256-Byte Window** | Absent | 256-Byte Window |
 | **Banking Logic** | Write to `$DE00` | Write to `$DE00`, `$DE01`, `$DE03` | Write to `$DE00` | `$DE00` and `$DE02` Registers |
 | **Hardware Complexity** | Very Low | **Low** (No custom components) | Low | Medium/High (Requires CPLD) |
+
+PCB
+---
+If you dont want wait, can get pcb right now at [PCBWay](https://www.pcbway.com/project/shareproject/Magic_Desk_Plus_Cartridge_for_Commodore_64_28e7cafd.html)
+<img width="225" height="225" alt="pcbway" src="https://github.com/user-attachments/assets/5558e825-dfe8-43b2-9b08-acfcac97edc4" />
