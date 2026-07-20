@@ -45,5 +45,6 @@ Jumper configuration
 **1 MByte ROM**
 
 | JP40 | JP80 |
+|:---:|:---:|
 |Short 1 and 2|Short 1 and 2|
 |<img width="100" height="64" alt="j1" src="https://github.com/user-attachments/assets/9a617420-88bc-4c8a-b896-771ad57910b7" />|<img width="100" height="64" alt="j1" src="https://github.com/user-attachments/assets/9a617420-88bc-4c8a-b896-771ad57910b7" />|
