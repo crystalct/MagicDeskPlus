@@ -1,7 +1,7 @@
 Components
 ---------
 - 27C020 or 27C040  or 27C080 PROM/EPROM/FLASH ROM Family (DIP_32) [U4]
-- 621025 SRAM Family (DIP_32) [U2]
+- 621024 SRAM Family (DIP_32) [U2]
 - AT28C64 or AT28C256 EEProm (PLCC_32) [IC1]
 - 74LS273 (or 74HCT273) x2 (SOP_20) [IC2 - IC3]
 - 74LS00 (or 74HCT00) (SO_14) [U3]
