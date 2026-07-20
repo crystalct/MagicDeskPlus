@@ -24,7 +24,8 @@ Components
 |<img width="876" height="601" alt="MagicDeskPlus" src="https://github.com/user-attachments/assets/d4079940-641e-46b6-a437-c79d52b66581" />|
 
 **Schematics**
-[MDPlus_schematics.pdf](https://github.com/user-attachments/files/30178454/MDPlus_schematics.pdf)
+<img width="1754" height="1102" alt="MDPlus_schematics" src="https://github.com/user-attachments/assets/febc2654-9733-49d7-8943-a61053a23d3b" />
+
 
 Jumper configuration
 --------------------
