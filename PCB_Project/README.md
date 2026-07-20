@@ -23,4 +23,17 @@ Components
 |:---:|
 |<img width="876" height="601" alt="MagicDeskPlus" src="https://github.com/user-attachments/assets/d4079940-641e-46b6-a437-c79d52b66581" />|
 
+**Schematics**
+[MDPlus_schematics.pdf](https://github.com/user-attachments/files/30178454/MDPlus_schematics.pdf)
+
+Jumper configuration
+--------------------
+**256 KByte ROM**
+
+| JP40 | JP80 |
+|:---:|:---:|
+|Short 2 and 3|Short 2 and 3|
+|<img width="100" height="63" alt="j2" src="https://github.com/user-attachments/assets/5e5e47a4-206f-4ab7-aa2a-175475e95891" />|<img width="100" height="63" alt="j2" src="https://github.com/user-attachments/assets/5e5e47a4-206f-4ab7-aa2a-175475e95891" />|
+
+
 
