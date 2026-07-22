@@ -35,6 +35,8 @@ Integrating dedicated utility software directly within the cartridge ROM elevate
 ### 5. Graphical Polish and Sprite Restyling
 To top off this comprehensive enhancement, an important graphical upgrade was performed: some character sprites were meticulously redrawn to closely resemble the original artwork and character "portraits."
 
+![newsprites](./murder.png)
+
 ---
 
 ### Why Not an EasyFlash Release?
