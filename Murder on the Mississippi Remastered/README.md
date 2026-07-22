@@ -46,3 +46,5 @@ Addressing this hypothetical question highlights why the Magic Desk Plus hardwar
 * **Lack of Extended Code RAM:** EasyFlash lacks the 128 KB of true random-access SRAM necessary to expand the game code beyond the C64's native 64 KB RAM limit.
 
 The **Magic Desk Plus** cartridge, featuring **128 KB of battery-backed static SRAM** (complemented by permanent EEPROM storage), solves both challenges simultaneously: it provides extra execution space to bypass the C64's RAM limitations and enables instantaneous, real-time updates to the notebook and game saves!
+
+https://crystalct.itch.io/c64-murder-on-the-mississippi-remastered

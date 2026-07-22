@@ -45,3 +45,5 @@ Ponendosi questa domanda si comprende a pieno il valore della scelta dell'hardwa
 * **RAM aggiuntiva per il codice:** L'EasyFlash non offre un'espansione di RAM da 128 KB ad accesso casuale in tempo reale indispensabile per estendere il codice del gioco oltre i 64 KB nativi del C64.
 
 La cartuccia **Magic Desk Plus**, con i suoi **128 KB di SRAM statica bufferizzata a batteria** (e l'EEPROM per il backup permanente), risolve entrambi i problemi: offre una memoria di lavoro aggiuntiva per superare il limite dei 64 KB del C64 e consente di aggiornare il taccuino e salvare la partita all'istante in tempo reale!
+
+https://crystalct.itch.io/c64-murder-on-the-mississippi-remastered
