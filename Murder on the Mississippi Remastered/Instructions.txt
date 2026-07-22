@@ -6,3 +6,7 @@ Then, select the binary image files for both SRAM and EEPROM (you can find these
 Finally, enable "Enable Magic Desk Plus emulation." 
 
 You can now launch the CRT file.
+
+To access the Save Manager, turn on or reset the Commodore 64 while holding down F1. 
+For the Magic Desk Plus Manager, hold down F7.
+To bypass the boot process, hold down Run/Stop.
