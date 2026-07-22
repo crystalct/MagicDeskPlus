@@ -1,0 +1,45 @@
+@c generated, do not edit
+
+@b{The TPI module}
+
+
+Version numbers: Major 1, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    UBYTE 
+@tab  PRA        
+@tab  Port A output register
+@item    UBYTE 
+@tab  PRB        
+@tab  Port B output register
+@item    UBYTE 
+@tab  PRC        
+@tab  Port C output register (doubles as IRQ latch register)
+@item    UBYTE 
+@tab  DDRA       
+@tab  Port A data direction register
+@item    UBYTE 
+@tab  DDRB       
+@tab  Port B data direction register
+@item    UBYTE 
+@tab  DDRC       
+@tab  Port C data direction register (doubles as IRQ mask register)
+@item    UBYTE 
+@tab  CR         
+@tab  Control Register
+@item    UBYTE 
+@tab  AIR        
+@tab  Active interrupt register
+@item    UBYTE 
+@tab  STACK      
+@tab  irq sources saved on stack
+@item    UBYTE 
+@tab  CABSTATE   
+@tab  state of CA and CB pins. Bit 7 = state of CA, Bit 6 = state of CB
+@end multitable
+
+@i{ src/core/tpicore.c }
+@sp 1

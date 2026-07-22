@@ -1,0 +1,57 @@
+@c generated, do not edit
+
+@b{The CPU6809 module}
+
+
+Version numbers: Major 1, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    CLOCK 
+@tab  clock        
+@tab  the current CPU clock value. All other clock values are relative to this.
+@item    WORD  
+@tab  x            
+@tab  the x register
+@item    WORD  
+@tab  y            
+@tab  the y register
+@item    WORD  
+@tab  u            
+@tab  the u register
+@item    WORD  
+@tab  s            
+@tab  the s register
+@item    WORD  
+@tab  pc           
+@tab  the program counter register
+@item    BYTE  
+@tab  dp           
+@tab  the direct page register
+@item    BYTE  
+@tab  cc           
+@tab  the condition code register
+@item    BYTE  
+@tab  a            
+@tab  the a register
+@item    BYTE  
+@tab  b            
+@tab  the b register
+@item    WORD  
+@tab  v            
+@tab  the V register (for 6309 compatibility)
+@item    BYTE  
+@tab  e            
+@tab  the e register (for 6309 compatibility)
+@item    BYTE  
+@tab  f            
+@tab  the f register (for 6309 compatibility)
+@item    BYTE  
+@tab  md           
+@tab  the md register (for 6309 compatibility)
+@end multitable
+
+@i{ src/pet/6809.c }
+@sp 1

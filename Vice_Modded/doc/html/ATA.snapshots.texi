@@ -1,0 +1,111 @@
+@c generated, do not edit
+
+@b{The ATA module}
+
+
+Version numbers: Major 0, Minor 7.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    STRING 
+@tab  filename                
+@tab 
+@item    DWORD  
+@tab  type                    
+@tab 
+@item    WORD   
+@tab  geometry.cylinders      
+@tab 
+@item    BYTE   
+@tab  geometry.heads          
+@tab 
+@item    BYTE   
+@tab  geometry.sectors        
+@tab 
+@item    DWORD  
+@tab  geometry.size           
+@tab 
+@item    BYTE   
+@tab  error                   
+@tab 
+@item    BYTE   
+@tab  features                
+@tab 
+@item    BYTE   
+@tab  sector_count            
+@tab 
+@item    BYTE   
+@tab  sector_count_internal   
+@tab 
+@item    BYTE   
+@tab  sector                  
+@tab 
+@item    WORD   
+@tab  cylinder                
+@tab 
+@item    BYTE   
+@tab  head,dev<<4,lba<<6,legacy   
+@tab 
+@item    BYTE   
+@tab  control                 
+@tab 
+@item    BYTE   
+@tab  cmd                     
+@tab 
+@item    BYTE   
+@tab  power                   
+@tab 
+@item    ARRAY  
+@tab  packet                  
+@tab  sizeof(packet)
+@item    WORD   
+@tab  bufp                    
+@tab 
+@item    ARRAY  
+@tab  buffer                  
+@tab  sector_size
+@item    WORD   
+@tab  cylinders               
+@tab 
+@item    BYTE   
+@tab  heads                   
+@tab 
+@item    BYTE   
+@tab  sectors                 
+@tab 
+@item    DWORD  
+@tab  pos                     
+@tab 
+@item    DWORD  
+@tab  pos / sector_size       
+@tab 
+@item    BYTE   
+@tab  wcache                  
+@tab 
+@item    BYTE   
+@tab  lookahead               
+@tab 
+@item    BYTE   
+@tab  busy                    
+@tab 
+@item    CLOCK  
+@tab  spindle_clk             
+@tab 
+@item    CLOCK  
+@tab  head_clk                
+@tab 
+@item    CLOCK  
+@tab  standby_clk             
+@tab 
+@item    DWORD  
+@tab  standby                 
+@tab 
+@item    DWORD  
+@tab  standby_max             
+@tab 
+@end multitable
+
+@i{ src/core/ata.c }
+@sp 1

@@ -1,0 +1,18 @@
+@c generated, do not edit
+
+@b{The DWWMEM module}
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    WORD  
+@tab  RAM size     
+@tab  size, 0 if not allocated
+@item    ARRAY 
+@tab  RAM data     
+@tab  "RAM size" bytes RAM content
+@end multitable
+
+@i{ src/pet/petdww.c }
+@sp 1

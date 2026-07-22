@@ -1,0 +1,36 @@
+@c generated, do not edit
+
+@b{The PIA module}
+
+
+Version numbers: Major 1, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    UBYTE   
+@tab  ORA         
+@tab  Output register A
+@item    UBYTE   
+@tab  DDRA        
+@tab  Data Direction Register A
+@item    UBYTE   
+@tab  CTRLA       
+@tab  Control Register A
+@item    UBYTE   
+@tab  ORB         
+@tab  Output register B
+@item    UBYTE   
+@tab  DDRB        
+@tab  Data Direction Register B
+@item    UBYTE   
+@tab  CTRLB       
+@tab  Control Register B
+@item    UBYTE   
+@tab  CABSTATE    
+@tab    Bit 7 = state of CA2, Bit 6 = state of CB2
+@end multitable
+
+@i{ src/piacore.c }
+@sp 1

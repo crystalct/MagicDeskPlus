@@ -1,0 +1,39 @@
+@c generated, do not edit
+
+@b{The C64DTVMEM module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  pport.data               
+@tab 
+@item    BYTE  
+@tab  pport.dir                
+@tab 
+@item    ARRAY 
+@tab  mem_ram                  
+@tab  0x200000
+@item    BYTE  
+@tab  c64dtvmem_memmapper[0]   
+@tab 
+@item    BYTE  
+@tab  c64dtvmem_memmapper[1]   
+@tab 
+@item    BYTE  
+@tab  pport.data_out           
+@tab 
+@item    BYTE  
+@tab  pport.data_read          
+@tab 
+@item    BYTE  
+@tab  pport.dir_read           
+@tab 
+@end multitable
+
+@i{ src/c64dtv/c64dtvmemsnapshot.c }
+@sp 1

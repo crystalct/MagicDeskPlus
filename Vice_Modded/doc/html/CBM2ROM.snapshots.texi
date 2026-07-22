@@ -1,0 +1,51 @@
+@c generated, do not edit
+
+@b{The CBM2ROM module}
+
+
+Version numbers: Major 1, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    UBYTE 
+@tab  CONFIG   
+@tab  Bit 1: cart1 ROM included
+@item          
+@tab           
+@tab      2: cart2 ROM included
+@item          
+@tab           
+@tab      3: cart4 ROM included
+@item          
+@tab           
+@tab      4: cart6 ROM included
+@item          
+@tab           
+@tab      5: chargen is of C510 type (VIC-II)
+@item    ARRAY 
+@tab  KERNAL   
+@tab  8k Kernal ROM ($e000-$ffff)
+@item    ARRAY 
+@tab  BASIC    
+@tab  16k Basic ROM ($8000-$bfff)
+@item    ARRAY 
+@tab  CHARGEN  
+@tab  4k chargen ROM image ($c*** for VIC-II)
+@item    ARRAY 
+@tab  ROM1     
+@tab  4k for cart1 (if config & 2)
+@item    ARRAY 
+@tab  ROM2     
+@tab  8k for cart2 (if config & 4)
+@item    ARRAY 
+@tab  ROM4     
+@tab  8k for cart4 (if config & 8)
+@item    ARRAY 
+@tab  ROM6     
+@tab  8k for cart6 (if config & 16)
+@end multitable
+
+@i{ src/cbm2/cbm2memsnapshot.c }
+@sp 1

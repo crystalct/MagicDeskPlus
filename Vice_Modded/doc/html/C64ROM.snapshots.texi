@@ -1,0 +1,24 @@
+@c generated, do not edit
+
+@b{The C64ROM module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY 
+@tab  KERNAL  
+@tab  8192 BYTES of KERNAL ROM data
+@item    ARRAY 
+@tab  BASIC   
+@tab  8192 BYTES of BASIC ROM data
+@item    ARRAY 
+@tab  CHARGEN 
+@tab  4096 BYTES of CHARGEN ROM data
+@end multitable
+
+@i{ src/c64/c64memsnapshot.c }
+@sp 1

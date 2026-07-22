@@ -1,0 +1,196 @@
+@c generated, do not edit
+
+@b{The CIA module}
+
+
+Version numbers: Major 2, Minor 5.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    UBYTE 
+@tab  ORA              
+@tab        
+@tab  Output register A
+@item    UBYTE 
+@tab  ORB              
+@tab        
+@tab  Output register B
+@item    UBYTE 
+@tab  DDRA             
+@tab        
+@tab  Data direction register A
+@item    UBYTE 
+@tab  DDRB             
+@tab        
+@tab  Data direction register B
+@item    UWORD 
+@tab  TA               
+@tab        
+@tab  Timer A counter value
+@item    UWORD 
+@tab  TB               
+@tab        
+@tab  Timer B counter value
+@item    UBYTE 
+@tab  TOD_TEN          
+@tab        
+@tab  Time of Day - current tenth of second
+@item    UBYTE 
+@tab  TOD_SEC          
+@tab        
+@tab  Time of Day - current seconds
+@item    UBYTE 
+@tab  TOD_MIN          
+@tab        
+@tab  Time of Day - current minutes
+@item    UBYTE 
+@tab  TOD_HR           
+@tab        
+@tab  Time of Day - current hours
+@item    UBYTE 
+@tab  SDR              
+@tab        
+@tab  contents of shift register
+@item    UBYTE 
+@tab  IER              
+@tab        
+@tab  mask of enabled interrupt masks
+@item    UBYTE 
+@tab  CRA              
+@tab        
+@tab  Control register A
+@item    UBYTE 
+@tab  CRB              
+@tab        
+@tab  Control register B
+@item    UWORD 
+@tab  TAL              
+@tab        
+@tab  Timer A latch value
+@item    UWORD 
+@tab  TBL              
+@tab        
+@tab  Timer B latch value
+@item    UBYTE 
+@tab  IFR              
+@tab        
+@tab  mask of currently active interrupts
+@item    UBYTE 
+@tab  PBSTATE          
+@tab        
+@tab  Bit 6/7 reflect the PB6/7 toggle bit state.Bit 2/3 reflect the corresponding port bit state.
+@item    UBYTE 
+@tab  SRHBITS          
+@tab        
+@tab  number of half-bits to still shift in/out SDR
+@item    UBYTE 
+@tab  ALARM_TEN        
+@tab        
+@tab  Time of Day - alarm tenth of second
+@item    UBYTE 
+@tab  ALARM_SEC        
+@tab        
+@tab  Time of Day - alarm seconds
+@item    UBYTE 
+@tab  ALARM_MIN        
+@tab        
+@tab  Time of Day - alarm minutes
+@item    UBYTE 
+@tab  ALARM_HR         
+@tab        
+@tab  Time of Day - alarm hours
+@item    UBYTE 
+@tab  READICR          
+@tab        
+@tab  current clock minus the clock when ICR was read last plus 128.
+@item    UBYTE 
+@tab  TODLATCHED       
+@tab        
+@tab  Bit 0: 1= latched for reading, Bit 1: 2=stopped for writing
+@item    UBYTE 
+@tab  TODL_TEN         
+@tab        
+@tab  Time of Day - latched tenth of second
+@item    UBYTE 
+@tab  TODL_SEC         
+@tab        
+@tab  Time of Day - latched seconds
+@item    UBYTE 
+@tab  TODL_MIN         
+@tab        
+@tab  Time of Day - latched minutes
+@item    UBYTE 
+@tab  TODL_HR          
+@tab        
+@tab  Time of Day - latched hours
+@item    DWORD 
+@tab  TOD_TICKS        
+@tab        
+@tab  clk ticks till next tenth of second
+@item    UBYTE 
+@tab  IRQ              
+@tab        
+@tab  0=IRQ line inactive, 1=IRQ line active
+@item    WORD  
+@tab  TA state         
+@tab  1.1+  
+@tab  Timer A state bits (see ciatimer.h)
+@item    WORD  
+@tab  TB state         
+@tab  1.1+  
+@tab  Timer B state bits (see ciatimer.h)
+@item    BYTE  
+@tab  SHIFTER          
+@tab  1.2+  
+@tab  actual shift register (original data)
+@item    BYTE  
+@tab  SDR_VALID        
+@tab  1.2+  
+@tab  data in SDR valid to be shifted
+@item    BYTE  
+@tab  irq_enabled      
+@tab  1.2+  
+@tab  IRQ enabled
+@item    BYTE  
+@tab  todtickcounter   
+@tab  1.2+  
+@tab  TOD tick counter
+@item    BYTE  
+@tab  SHIFTER_HI       
+@tab  2.3+  
+@tab  high byte of SHIFTER
+@item    BYTE  
+@tab  SDR_ALARM        
+@tab  2.3+  
+@tab  if an sdr_alarm is pending and when
+@item    BYTE  
+@tab  SP_CNT_IN        
+@tab  2.3+  
+@tab  input state of SP and CNT
+@item    DWORD 
+@tab  SDR_DELAY        
+@tab  2.4+  
+@tab  event/history bits for the serial data register
+@item    BYTE  
+@tab  SP_CNT_OUT       
+@tab  2.4+  
+@tab  output state of SP and CNT
+@item    DWORD 
+@tab  IFR_DELAY        
+@tab  2.5+  
+@tab  event/history bits for the interrupt flag reg.
+@item    BYTE  
+@tab  ACK_IRQFLAGS     
+@tab  2.5+  
+@tab  flags in IFR to acknowledge, i.e. clear.
+@item    BYTE  
+@tab  NEW_IRQFLAGS     
+@tab  2.5+  
+@tab  new flags in IFR that were set recently.
+@end multitable
+
+@i{ src/core/ciacore.c }
+@sp 1

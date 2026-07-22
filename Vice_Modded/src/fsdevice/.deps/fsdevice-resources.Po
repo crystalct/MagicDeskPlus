@@ -1,0 +1,249 @@
+fsdevice-resources.o: fsdevice-resources.c ../../src/vice.h \
+ ../../src/config.h C:/msys64/ucrt64/include/stdio.h \
+ C:/msys64/ucrt64/include/corecrt_stdio_config.h \
+ C:/msys64/ucrt64/include/corecrt.h C:/msys64/ucrt64/include/_mingw.h \
+ C:/msys64/ucrt64/include/_mingw_mac.h \
+ C:/msys64/ucrt64/include/_mingw_secapi.h \
+ C:/msys64/ucrt64/include/vadefs.h \
+ C:/msys64/ucrt64/include/_mingw_off_t.h \
+ C:/msys64/ucrt64/include/swprintf.inl \
+ C:/msys64/ucrt64/include/sec_api/stdio_s.h ../../src/arch/gtk3/archdep.h \
+ ../../src/sound.h ../../src/vice.h ../../src/types.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdbool.h \
+ C:/msys64/ucrt64/include/inttypes.h C:/msys64/ucrt64/include/crtdefs.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdint.h \
+ C:/msys64/ucrt64/include/stdint.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stddef.h \
+ C:/msys64/ucrt64/include/stddef.h C:/msys64/ucrt64/include/sys/types.h \
+ ../../src/arch/shared/archdep_win32.h ../../src/arch/shared/archapi.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdarg.h \
+ C:/msys64/ucrt64/include/stdarg.h \
+ C:/msys64/ucrt64/include/_mingw_stdarg.h \
+ ../../src/arch/shared/archdep_defs.h C:/msys64/ucrt64/include/stdlib.h \
+ C:/msys64/ucrt64/include/corecrt_wstdlib.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/limits.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/syslimits.h \
+ C:/msys64/ucrt64/include/limits.h \
+ C:/msys64/ucrt64/include/sec_api/stdlib_s.h \
+ C:/msys64/ucrt64/include/malloc.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/mm_malloc.h \
+ C:/msys64/ucrt64/include/errno.h ../../src/arch/shared/archdep_access.h \
+ C:/msys64/ucrt64/include/io.h C:/msys64/ucrt64/include/string.h \
+ C:/msys64/ucrt64/include/corecrt_memory.h \
+ C:/msys64/ucrt64/include/sec_api/string_s.h \
+ ../../src/arch/shared/archdep_boot_path.h \
+ ../../src/arch/shared/archdep_cbmfont.h \
+ ../../src/arch/shared/archdep_chdir.h \
+ ../../src/arch/shared/archdep_close.h \
+ ../../src/arch/shared/archdep_create_user_cache_dir.h \
+ ../../src/arch/shared/archdep_create_user_config_dir.h \
+ ../../src/arch/shared/archdep_create_user_state_dir.h \
+ ../../src/arch/shared/archdep_current_dir.h \
+ ../../src/arch/shared/archdep_default_autostart_disk_image_file_name.h \
+ ../../src/arch/shared/archdep_default_fliplist_file_name.h \
+ ../../src/arch/shared/archdep_default_joymap_file_name.h \
+ ../../src/arch/shared/archdep_default_logfile.h \
+ ../../src/arch/shared/archdep_default_logger.h \
+ ../../src/arch/shared/archdep_default_portable_resource_file_name.h \
+ ../../src/arch/shared/archdep_default_resource_file_name.h \
+ ../../src/arch/shared/archdep_default_rtc_file_name.h \
+ ../../src/arch/shared/archdep_default_sysfile_pathlist.h \
+ ../../src/arch/shared/archdep_dir.h \
+ ../../src/arch/shared/archdep_ethernet_available.h \
+ ../../src/arch/shared/archdep_exit.h \
+ ../../src/arch/shared/archdep_expand_path.h \
+ ../../src/arch/shared/archdep_extra_title_text.h \
+ ../../src/arch/shared/archdep_fdopen.h \
+ ../../src/arch/shared/archdep_file_exists.h \
+ ../../src/arch/shared/archdep_file_is_blockdev.h \
+ ../../src/arch/shared/archdep_file_is_chardev.h \
+ ../../src/arch/shared/archdep_file_size.h \
+ ../../src/arch/shared/archdep_filename_parameter.h \
+ ../../src/arch/shared/archdep_fix_permissions.h \
+ ../../src/arch/shared/archdep_fix_streams.h \
+ ../../src/arch/shared/archdep_fseeko.h ../../src/types.h \
+ ../../src/arch/shared/archdep_ftello.h \
+ ../../src/arch/shared/archdep_get_current_drive.h \
+ ../../src/arch/shared/archdep_get_runtime_info.h \
+ ../../src/arch/shared/archdep_get_vice_datadir.h \
+ ../../src/arch/shared/archdep_get_vice_docsdir.h \
+ ../../src/arch/shared/archdep_get_vice_drivesdir.h \
+ ../../src/arch/shared/archdep_get_vice_hotkeysdir.h \
+ ../../src/arch/shared/archdep_get_vice_machinedir.h \
+ ../../src/arch/shared/archdep_getcwd.h \
+ ../../src/arch/shared/archdep_glob.h \
+ ../../src/arch/shared/archdep_home_path.h \
+ ../../src/arch/shared/archdep_icon_path.h \
+ ../../src/arch/shared/archdep_is_haiku.h \
+ ../../src/arch/shared/archdep_is_macos_bindist.h \
+ ../../src/arch/shared/archdep_is_windows_nt.h \
+ ../../src/arch/shared/archdep_kbd_get_host_mapping.h \
+ ../../src/arch/shared/archdep_list_drives.h \
+ ../../src/arch/shared/archdep_make_backup_filename.h \
+ ../../src/arch/shared/archdep_mkdir.h \
+ ../../src/arch/shared/archdep_mkstemp_fd.h \
+ ../../src/arch/shared/archdep_network.h \
+ ../../src/arch/shared/archdep_open_default_log_file.h \
+ ../../src/arch/shared/archdep_path_is_relative.h \
+ ../../src/arch/shared/archdep_program_name.h \
+ ../../src/arch/shared/archdep_program_path.h \
+ ../../src/arch/shared/archdep_quote_parameter.h \
+ ../../src/arch/shared/archdep_quote_unzip.h \
+ ../../src/arch/shared/archdep_rawnet_capability.h \
+ ../../src/arch/shared/archdep_real_path.h \
+ ../../src/arch/shared/archdep_remove.h \
+ ../../src/arch/shared/archdep_rename.h \
+ ../../src/arch/shared/archdep_require_vkbd.h \
+ ../../src/arch/shared/archdep_rmdir.h \
+ ../../src/arch/shared/archdep_rtc_get_centisecond.h \
+ ../../src/arch/shared/archdep_sanitize_filename.h \
+ ../../src/arch/shared/archdep_set_current_drive.h \
+ ../../src/arch/shared/archdep_set_openmp_wait_policy.h \
+ ../../src/arch/shared/archdep_signals.h \
+ ../../src/arch/shared/archdep_socketpeek.h \
+ ../../src/arch/shared/archdep_sound.h \
+ ../../src/arch/shared/archdep_spawn.h \
+ ../../src/arch/shared/archdep_startup_log_error.h \
+ ../../src/arch/shared/archdep_stat.h \
+ ../../src/arch/shared/archdep_tick.h \
+ ../../src/arch/shared/archdep_tmpnam.h \
+ ../../src/arch/shared/archdep_user_cache_path.h \
+ ../../src/arch/shared/archdep_user_config_path.h \
+ ../../src/arch/shared/archdep_user_state_path.h \
+ ../../src/arch/shared/archdep_usleep.h \
+ ../../src/arch/shared/archdep_xdg.h fsdevice-resources.h \
+ ../../src/fsdevice.h ../../src/lib.h ../../src/debug.h ../../src/log.h \
+ ../../src/resources.h ../../src/util.h
+../../src/vice.h:
+../../src/config.h:
+C:/msys64/ucrt64/include/stdio.h:
+C:/msys64/ucrt64/include/corecrt_stdio_config.h:
+C:/msys64/ucrt64/include/corecrt.h:
+C:/msys64/ucrt64/include/_mingw.h:
+C:/msys64/ucrt64/include/_mingw_mac.h:
+C:/msys64/ucrt64/include/_mingw_secapi.h:
+C:/msys64/ucrt64/include/vadefs.h:
+C:/msys64/ucrt64/include/_mingw_off_t.h:
+C:/msys64/ucrt64/include/swprintf.inl:
+C:/msys64/ucrt64/include/sec_api/stdio_s.h:
+../../src/arch/gtk3/archdep.h:
+../../src/sound.h:
+../../src/vice.h:
+../../src/types.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdbool.h:
+C:/msys64/ucrt64/include/inttypes.h:
+C:/msys64/ucrt64/include/crtdefs.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdint.h:
+C:/msys64/ucrt64/include/stdint.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stddef.h:
+C:/msys64/ucrt64/include/stddef.h:
+C:/msys64/ucrt64/include/sys/types.h:
+../../src/arch/shared/archdep_win32.h:
+../../src/arch/shared/archapi.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdarg.h:
+C:/msys64/ucrt64/include/stdarg.h:
+C:/msys64/ucrt64/include/_mingw_stdarg.h:
+../../src/arch/shared/archdep_defs.h:
+C:/msys64/ucrt64/include/stdlib.h:
+C:/msys64/ucrt64/include/corecrt_wstdlib.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/limits.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/syslimits.h:
+C:/msys64/ucrt64/include/limits.h:
+C:/msys64/ucrt64/include/sec_api/stdlib_s.h:
+C:/msys64/ucrt64/include/malloc.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/mm_malloc.h:
+C:/msys64/ucrt64/include/errno.h:
+../../src/arch/shared/archdep_access.h:
+C:/msys64/ucrt64/include/io.h:
+C:/msys64/ucrt64/include/string.h:
+C:/msys64/ucrt64/include/corecrt_memory.h:
+C:/msys64/ucrt64/include/sec_api/string_s.h:
+../../src/arch/shared/archdep_boot_path.h:
+../../src/arch/shared/archdep_cbmfont.h:
+../../src/arch/shared/archdep_chdir.h:
+../../src/arch/shared/archdep_close.h:
+../../src/arch/shared/archdep_create_user_cache_dir.h:
+../../src/arch/shared/archdep_create_user_config_dir.h:
+../../src/arch/shared/archdep_create_user_state_dir.h:
+../../src/arch/shared/archdep_current_dir.h:
+../../src/arch/shared/archdep_default_autostart_disk_image_file_name.h:
+../../src/arch/shared/archdep_default_fliplist_file_name.h:
+../../src/arch/shared/archdep_default_joymap_file_name.h:
+../../src/arch/shared/archdep_default_logfile.h:
+../../src/arch/shared/archdep_default_logger.h:
+../../src/arch/shared/archdep_default_portable_resource_file_name.h:
+../../src/arch/shared/archdep_default_resource_file_name.h:
+../../src/arch/shared/archdep_default_rtc_file_name.h:
+../../src/arch/shared/archdep_default_sysfile_pathlist.h:
+../../src/arch/shared/archdep_dir.h:
+../../src/arch/shared/archdep_ethernet_available.h:
+../../src/arch/shared/archdep_exit.h:
+../../src/arch/shared/archdep_expand_path.h:
+../../src/arch/shared/archdep_extra_title_text.h:
+../../src/arch/shared/archdep_fdopen.h:
+../../src/arch/shared/archdep_file_exists.h:
+../../src/arch/shared/archdep_file_is_blockdev.h:
+../../src/arch/shared/archdep_file_is_chardev.h:
+../../src/arch/shared/archdep_file_size.h:
+../../src/arch/shared/archdep_filename_parameter.h:
+../../src/arch/shared/archdep_fix_permissions.h:
+../../src/arch/shared/archdep_fix_streams.h:
+../../src/arch/shared/archdep_fseeko.h:
+../../src/types.h:
+../../src/arch/shared/archdep_ftello.h:
+../../src/arch/shared/archdep_get_current_drive.h:
+../../src/arch/shared/archdep_get_runtime_info.h:
+../../src/arch/shared/archdep_get_vice_datadir.h:
+../../src/arch/shared/archdep_get_vice_docsdir.h:
+../../src/arch/shared/archdep_get_vice_drivesdir.h:
+../../src/arch/shared/archdep_get_vice_hotkeysdir.h:
+../../src/arch/shared/archdep_get_vice_machinedir.h:
+../../src/arch/shared/archdep_getcwd.h:
+../../src/arch/shared/archdep_glob.h:
+../../src/arch/shared/archdep_home_path.h:
+../../src/arch/shared/archdep_icon_path.h:
+../../src/arch/shared/archdep_is_haiku.h:
+../../src/arch/shared/archdep_is_macos_bindist.h:
+../../src/arch/shared/archdep_is_windows_nt.h:
+../../src/arch/shared/archdep_kbd_get_host_mapping.h:
+../../src/arch/shared/archdep_list_drives.h:
+../../src/arch/shared/archdep_make_backup_filename.h:
+../../src/arch/shared/archdep_mkdir.h:
+../../src/arch/shared/archdep_mkstemp_fd.h:
+../../src/arch/shared/archdep_network.h:
+../../src/arch/shared/archdep_open_default_log_file.h:
+../../src/arch/shared/archdep_path_is_relative.h:
+../../src/arch/shared/archdep_program_name.h:
+../../src/arch/shared/archdep_program_path.h:
+../../src/arch/shared/archdep_quote_parameter.h:
+../../src/arch/shared/archdep_quote_unzip.h:
+../../src/arch/shared/archdep_rawnet_capability.h:
+../../src/arch/shared/archdep_real_path.h:
+../../src/arch/shared/archdep_remove.h:
+../../src/arch/shared/archdep_rename.h:
+../../src/arch/shared/archdep_require_vkbd.h:
+../../src/arch/shared/archdep_rmdir.h:
+../../src/arch/shared/archdep_rtc_get_centisecond.h:
+../../src/arch/shared/archdep_sanitize_filename.h:
+../../src/arch/shared/archdep_set_current_drive.h:
+../../src/arch/shared/archdep_set_openmp_wait_policy.h:
+../../src/arch/shared/archdep_signals.h:
+../../src/arch/shared/archdep_socketpeek.h:
+../../src/arch/shared/archdep_sound.h:
+../../src/arch/shared/archdep_spawn.h:
+../../src/arch/shared/archdep_startup_log_error.h:
+../../src/arch/shared/archdep_stat.h:
+../../src/arch/shared/archdep_tick.h:
+../../src/arch/shared/archdep_tmpnam.h:
+../../src/arch/shared/archdep_user_cache_path.h:
+../../src/arch/shared/archdep_user_config_path.h:
+../../src/arch/shared/archdep_user_state_path.h:
+../../src/arch/shared/archdep_usleep.h:
+../../src/arch/shared/archdep_xdg.h:
+fsdevice-resources.h:
+../../src/fsdevice.h:
+../../src/lib.h:
+../../src/debug.h:
+../../src/log.h:
+../../src/resources.h:
+../../src/util.h:

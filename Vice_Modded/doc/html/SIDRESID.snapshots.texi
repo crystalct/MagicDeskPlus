@@ -1,0 +1,75 @@
+@c generated, do not edit
+
+@b{The SIDRESID module}
+
+
+Version numbers: Major 1, Minor 4.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY 
+@tab  regs                       
+@tab  32 BYTES of SID registers
+@item    BYTE  
+@tab  bus value                  
+@tab  bus value
+@item    DWORD 
+@tab  bus value ttl              
+@tab  bus value ttl
+@item    ARRAY 
+@tab  accumulator                
+@tab  3 DWORDS of accumulator data
+@item    ARRAY 
+@tab  shift register             
+@tab  3 DWORDS of shift register data
+@item    ARRAY 
+@tab  rate counter               
+@tab  3 WORDS of rate counter data
+@item    ARRAY 
+@tab  exponential counter        
+@tab  3 WORDS of exponential counter data
+@item    ARRAY 
+@tab  envelope counter           
+@tab  3 BYTES of envelope counter data
+@item    ARRAY 
+@tab  envelope state             
+@tab  3 BYTES of envelope state data
+@item    ARRAY 
+@tab  hold zero                  
+@tab  3 BYTES of hold zero flag data
+@item    ARRAY 
+@tab  rate counter period        
+@tab  3 WORDS of rate counter period data
+@item    ARRAY 
+@tab  exponential counter period 
+@tab  3 WORDS of exponential counter period data
+@item    ARRAY 
+@tab  envelope pipeline          
+@tab  3 BYTES of envelope pipeline data
+@item    ARRAY 
+@tab  shift pipeline             
+@tab  3 BYTES of shift pipeline data
+@item    ARRAY 
+@tab  shift register reset       
+@tab  3 DWORDS of shift register reset data
+@item    ARRAY 
+@tab  floating output ttl        
+@tab  3 DWORDS of floating output ttl data
+@item    ARRAY 
+@tab  pulse output               
+@tab  3 WORDS of pulse output data
+@item    BYTE  
+@tab  write pipeline             
+@tab  write pipeline
+@item    BYTE  
+@tab  write address              
+@tab  write address
+@item    BYTE  
+@tab  voice mask                 
+@tab  voice mask
+@end multitable
+
+@i{ src/sid/sid-snapshot.c }
+@sp 1

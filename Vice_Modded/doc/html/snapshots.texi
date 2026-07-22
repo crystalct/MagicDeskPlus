@@ -1,0 +1,7600 @@
+
+@b{The COMAL80C128 module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  comal80_register     
+@tab  bank register value
+@item    ARRAY 
+@tab  ext_function_rom     
+@tab  (0x8000 * 5) + 0x4000 bytes of ROM data
+@end multitable
+
+@i{ src/c128/cart/comal80.c }
+@sp 1
+
+@b{The CART128GENERIC module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY 
+@tab  ext_function_rom     
+@tab  0x8000 bytes of ROM data
+@end multitable
+
+@i{ src/c128/cart/generic.c }
+@sp 1
+
+@b{The CARTGMOD2C128 module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  c128gmod2_bank   
+@tab 
+@item    ARRAY 
+@tab  flash_data       
+@tab  GMOD2_FLASH_SIZE
+@end multitable
+
+@i{ src/c128/cart/gmod2c128.c }
+@sp 1
+
+@b{The MAGICDESK128 module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  md128reg             
+@tab 
+@item    BYTE  
+@tab  rombank              
+@tab 
+@item    BYTE  
+@tab  bankmask             
+@tab 
+@item    ARRAY 
+@tab  ext_function_rom     
+@tab  0x40*0x4000 bytes of ROM data
+@end multitable
+
+@i{ src/c128/cart/magicdesk128.c }
+@sp 1
+
+@b{The PARTNER128 module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  regvalue             
+@tab 
+@item    BYTE  
+@tab  rambank              
+@tab 
+@item    BYTE  
+@tab  isdefreezing         
+@tab 
+@item    ARRAY 
+@tab  nmivector            
+@tab  2 bytes
+@item    ARRAY 
+@tab  ext_function_rom     
+@tab  PARTNER_ROM_SIZE
+@item    ARRAY 
+@tab  rambanks             
+@tab  PARTNER_RAM_SIZE
+@end multitable
+
+@i{ src/c128/cart/partner128.c }
+@sp 1
+
+@b{The WARPSPEED128 module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY 
+@tab  ext_function_rom     
+@tab  0x4000 bytes of ROM data
+@end multitable
+
+@i{ src/c128/cart/warpspeed128.c }
+@sp 1
+
+@b{The C64MEMHACKS module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE 
+@tab  hacks 
+@tab  which memory hack is active
+@end multitable
+
+@i{ src/c64/c64-memory-hacks.c }
+@sp 1
+
+@b{The C64GLUE module}
+
+
+Version numbers: Major 1, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE 
+@tab  type         
+@tab  glue logic type
+@item    BYTE 
+@tab  old vbank    
+@tab  old video bank
+@item    BYTE 
+@tab  alarm active 
+@tab  alarm is active
+@end multitable
+
+@i{ src/c64/c64gluelogic.c }
+@sp 1
+
+@b{The C64_256K module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    WORD  
+@tab  base     
+@tab  base address of the control registers
+@item    BYTE  
+@tab  DDA      
+@tab  register A direction
+@item    BYTE  
+@tab  PRA      
+@tab  register A data
+@item    BYTE  
+@tab  CRA      
+@tab  register A control
+@item    BYTE  
+@tab  DDB      
+@tab  register B direction
+@item    BYTE  
+@tab  PRB      
+@tab  register B data
+@item    BYTE  
+@tab  CRB      
+@tab  register B control
+@item    BYTE  
+@tab  vbank    
+@tab  video bank
+@item    BYTE  
+@tab  segment0 
+@tab  segment 0 bank
+@item    BYTE  
+@tab  segment1 
+@tab  segment 1 bank
+@item    BYTE  
+@tab  segment2 
+@tab  segment 2 bank
+@item    BYTE  
+@tab  segment3 
+@tab  segment 3 bank
+@item    ARRAY 
+@tab  RAM      
+@tab  262144 BYTES of RAM data
+@end multitable
+
+@i{ src/c64/c64_256k.c }
+@sp 1
+
+@b{The CARTAR module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  active 
+@tab  cartridge is active
+@item    ARRAY 
+@tab  ROML   
+@tab  32768 BYTES of ROML data
+@item    ARRAY 
+@tab  ROMH   
+@tab  32768 BYTES of ROMH data
+@item    ARRAY 
+@tab  RAM    
+@tab  8192 BYES of RAM data
+@end multitable
+
+@i{ src/c64/cart/actionreplay.c }
+@sp 1
+
+@b{The CARTAR2 module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  enabled     
+@tab  cartidge enabled flag
+@item    DWORD 
+@tab  cap enable  
+@tab  capacitor enable counter
+@item    DWORD 
+@tab  cap disable 
+@tab  capacitor disable counter
+@item    ARRAY 
+@tab  ROML        
+@tab  16768 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/actionreplay2.c }
+@sp 1
+
+@b{The CARTAR3 module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  active   
+@tab  cartridge active flag
+@item    BYTE  
+@tab  register 
+@tab  cartridge register
+@item    ARRAY 
+@tab  ROML     
+@tab  16768 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/actionreplay3.c }
+@sp 1
+
+@b{The CARTAR4 module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  active 
+@tab  cartridge active flag
+@item    ARRAY 
+@tab  ROML   
+@tab  32768 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/actionreplay4.c }
+@sp 1
+
+@b{The CARTAP module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  active      
+@tab  cartridge active flag
+@item    BYTE  
+@tab  ram at a000 
+@tab  RAM at $A000 flag
+@item    ARRAY 
+@tab  ROML        
+@tab  32768 BYTES of ROML data
+@item    ARRAY 
+@tab  RAM         
+@tab  8192 BYTES of RAM data
+@end multitable
+
+@i{ src/c64/cart/atomicpower.c }
+@sp 1
+
+@b{The CARTBB3 module}
+
+
+Version numbers: Major 1, Minor 0.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  bis_rom_enabled    
+@tab    1.0   
+@tab  1 if ROM is enabled (informal)
+@item    BYTE  
+@tab  bis_rom_kb         
+@tab    1.0   
+@tab  2/4/8 kb ROM
+@item    ARRAY 
+@tab  ROML               
+@tab    1.0   
+@tab  8192 of ROML data
+@end multitable
+
+@i{ src/c64/cart/bisplus.c }
+@sp 1
+
+@b{The CARTBB3 module}
+
+
+Version numbers: Major 1, Minor 0.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  bb3_rom_enabled    
+@tab    1.0   
+@tab  1 if ROM is enabled (informal)
+@item    ARRAY 
+@tab  ROML               
+@tab    1.0   
+@tab  8192 of ROML data
+@end multitable
+
+@i{ src/c64/cart/blackbox3.c }
+@sp 1
+
+@b{The CARTBB4 module}
+
+
+Version numbers: Major 1, Minor 0.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  bb4_rom_enabled    
+@tab    1.0   
+@tab  1 if ROM is enabled (informal)
+@item    ARRAY 
+@tab  ROML               
+@tab    1.0   
+@tab  8192 of ROML data
+@item    ARRAY 
+@tab  ROMH               
+@tab    1.0   
+@tab  8192 of ROMH data
+@end multitable
+
+@i{ src/c64/cart/blackbox4.c }
+@sp 1
+
+@b{The CARTBB8 module}
+
+
+Version numbers: Major 1, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  ROML banks  
+@tab    1.1   
+@tab  amount of ROML banks
+@item    BYTE  
+@tab  register    
+@tab    1.1   
+@tab  register
+@item    ARRAY 
+@tab  ROML        
+@tab    1.1   
+@tab  32768 or 65536 BYTES of ROML data
+@item    ARRAY 
+@tab  ROMH        
+@tab    1.1   
+@tab  32768 or 65536 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/blackbox8.c }
+@sp 1
+
+@b{The CARTBLACKBOX9 module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  currmode   
+@tab  cartridge mode
+@item    BYTE  
+@tab  currbank   
+@tab  selected bank
+@item    ARRAY 
+@tab  ROML       
+@tab  8192 bytes of ROM data
+@item    ARRAY 
+@tab  ROMH       
+@tab  8192 bytes of ROM data
+@end multitable
+
+@i{ src/c64/cart/blackbox9.c }
+@sp 1
+
+@b{The CARTBMPDATATURBO module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  ROM 8000 
+@tab    0.1   
+@tab  ROM at $8000 flag
+@item    ARRAY 
+@tab  ROML     
+@tab    0.0+  
+@tab  8192 BYTES of ROML data
+@item    ARRAY 
+@tab  ROMH     
+@tab    0.0+  
+@tab  8192 BYTES of ROMH data
+@end multitable
+
+@i{ src/c64/cart/bmpdataturbo.c }
+@sp 1
+
+@b{The CARTGENERICC64 module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY 
+@tab  ROML 
+@tab  8192 BYTES of ROML data
+@item    ARRAY 
+@tab  ROMH 
+@tab  8192 BYTES of ROMH data
+@end multitable
+
+@i{ src/c64/cart/c64-generic.c }
+@sp 1
+
+@b{The CARTMIDI module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  mode 
+@tab  midi mode
+@end multitable
+
+@i{ src/c64/cart/c64-midi.c }
+@sp 1
+
+@b{The C64CART module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  num carts                        
+@tab  number of active cartridges
+@item    DWORD 
+@tab  mem_cartridge_type               
+@tab 
+@item    BYTE  
+@tab  game                             
+@tab 
+@item    BYTE  
+@tab  exrom                            
+@tab 
+@item    DWORD 
+@tab  romh_bank                        
+@tab 
+@item    DWORD 
+@tab  roml_bank                        
+@tab 
+@item    BYTE  
+@tab  export_ram                       
+@tab 
+@item    BYTE  
+@tab  ultimax_phi1                     
+@tab 
+@item    BYTE  
+@tab  ultimax_phi2                     
+@tab 
+@item    CLOCK 
+@tab  cart_freeze_alarm_time           
+@tab 
+@item    CLOCK 
+@tab  cart_nmi_alarm_time              
+@tab 
+@item    BYTE  
+@tab  export_slot1.game                
+@tab 
+@item    BYTE  
+@tab  export_slot1.exrom               
+@tab 
+@item    BYTE  
+@tab  export_slot1.ultimax_phi1        
+@tab 
+@item    BYTE  
+@tab  export_slot1.ultimax_phi2        
+@tab 
+@item    BYTE  
+@tab  export_slotmain.game             
+@tab 
+@item    BYTE  
+@tab  export_slotmain.exrom            
+@tab 
+@item    BYTE  
+@tab  export_slotmain.ultimax_phi1     
+@tab 
+@item    BYTE  
+@tab  export_slotmain.ultimax_phi2     
+@tab 
+@item    BYTE  
+@tab  export_passthrough.game          
+@tab 
+@item    BYTE  
+@tab  export_passthrough.exrom         
+@tab 
+@item    BYTE  
+@tab  export_passthrough.ultimax_phi1  
+@tab 
+@item    BYTE  
+@tab  export_passthrough.ultimax_phi2  
+@tab 
+@item    DWORD 
+@tab  reserved                         
+@tab 
+@item    DWORD 
+@tab  reserved                         
+@tab 
+@item    DWORD 
+@tab  reserved                         
+@tab 
+@item    DWORD 
+@tab  reserved                         
+@tab 
+@item    ARRAY 
+@tab  cart ids                         
+@tab  <num cart> IDs of active cartridges
+@end multitable
+
+@i{ src/c64/cart/c64carthooks.c }
+@sp 1
+
+@b{The CARTCAPTURE module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  enabled         
+@tab  cartridge enabled flag
+@item    BYTE  
+@tab  freeze pressed  
+@tab  freeze button pressed flag
+@item    BYTE  
+@tab  register enable 
+@tab  register enable flag
+@item    BYTE  
+@tab  ROMH enable     
+@tab  ROMH enable flag
+@item    ARRAY 
+@tab  ROMH            
+@tab  8192 BYTES of ROMH data
+@item    ARRAY 
+@tab  RAM             
+@tab  8192 BYTES of RAM data
+@end multitable
+
+@i{ src/c64/cart/capture.c }
+@sp 1
+
+@b{The CARTCOMAL module}
+
+
+Version numbers: Major 0, Minor 2.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  register 
+@tab  control register
+@item    BYTE  
+@tab  extra rom
+@tab  image contains extra eprom
+@item    BYTE  
+@tab  revision 
+@tab  hardware variant
+@item    ARRAY 
+@tab  ROML     
+@tab  32768 or 65536 BYTES of ROML data
+@item    ARRAY 
+@tab  ROMH     
+@tab  32768 or 65536 BYTES of ROMH data
+@end multitable
+
+@i{ src/c64/cart/comal80.c }
+@sp 1
+
+@b{The CPMCART module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    DWORD 
+@tab  CLK            
+@tab  main CPU clock
+@item    BYTE  
+@tab  A              
+@tab  A register
+@item    BYTE  
+@tab  B              
+@tab  B register
+@item    BYTE  
+@tab  C              
+@tab  C register
+@item    BYTE  
+@tab  D              
+@tab  D register
+@item    BYTE  
+@tab  E              
+@tab  E register
+@item    BYTE  
+@tab  F              
+@tab  F register
+@item    BYTE  
+@tab  H              
+@tab  H register
+@item    BYTE  
+@tab  L              
+@tab  L register
+@item    BYTE  
+@tab  IXH            
+@tab  IXH register
+@item    BYTE  
+@tab  IXL            
+@tab  IXL register
+@item    BYTE  
+@tab  IYH            
+@tab  IYH register
+@item    BYTE  
+@tab  IYL            
+@tab  IYL register
+@item    WORD  
+@tab  SP             
+@tab  stack pointer register
+@item    DWORD 
+@tab  PC             
+@tab  program counter register
+@item    BYTE  
+@tab  I              
+@tab  I register
+@item    BYTE  
+@tab  R              
+@tab  R register
+@item    BYTE  
+@tab  IFF1           
+@tab  IFF1 register
+@item    BYTE  
+@tab  IFF2           
+@tab  IFF2 register
+@item    BYTE  
+@tab  im mode        
+@tab  im mode flag
+@item    BYTE  
+@tab  A2             
+@tab  A2 register
+@item    BYTE  
+@tab  B2             
+@tab  B2 register
+@item    BYTE  
+@tab  C2             
+@tab  C2 register
+@item    BYTE  
+@tab  D2             
+@tab  D2 register
+@item    BYTE  
+@tab  E2             
+@tab  E2 register
+@item    BYTE  
+@tab  F2             
+@tab  F2 register
+@item    BYTE  
+@tab  H2             
+@tab  H2 register
+@item    BYTE  
+@tab  L2             
+@tab  L2 register
+@item    DWORD 
+@tab  opcode info    
+@tab  last opcode info
+@item    DWORD 
+@tab  opcode address 
+@tab  last opcode address
+@end multitable
+
+@i{ src/c64/cart/cpmcart.c }
+@sp 1
+
+@b{The CARTDELAEP256 module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  regval 
+@tab    0.1   
+@tab  register
+@item    BYTE  
+@tab  bank   
+@tab    0.0+  
+@tab  current bank
+@item    ARRAY 
+@tab  ROML   
+@tab    0.0+  
+@tab  262144 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/delaep256.c }
+@sp 1
+
+@b{The CARTDELAEP64 module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  regval 
+@tab    0.1   
+@tab  register
+@item    BYTE  
+@tab  bank   
+@tab    0.0+  
+@tab  current bank
+@item    ARRAY 
+@tab  ROML   
+@tab    0.0+  
+@tab  73728 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/delaep64.c }
+@sp 1
+
+@b{The CARTDELAEP7X8 module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  regval 
+@tab    0.1   
+@tab  register
+@item    BYTE  
+@tab  bank   
+@tab    0.0+  
+@tab  current bank
+@item    ARRAY 
+@tab  ROML   
+@tab    0.0+  
+@tab  65536 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/delaep7x8.c }
+@sp 1
+
+@b{The CARTDSM module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  active 
+@tab    0.1   
+@tab  cartridge active flag
+@item    ARRAY 
+@tab  ROML   
+@tab    0.0+  
+@tab  8192 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/diashowmaker.c }
+@sp 1
+
+@b{The CARTDIGIMAX module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    DWORD 
+@tab  base       
+@tab  base address of the control registers
+@item    ARRAY 
+@tab  sound data 
+@tab  4 BYTES of sound data
+@item    BYTE  
+@tab  voice 0    
+@tab  voice 0 data
+@item    BYTE  
+@tab  voice 1    
+@tab  voice 1 data
+@item    BYTE  
+@tab  voice 2    
+@tab  voice 2 data
+@item    BYTE  
+@tab  voice 3    
+@tab  voice 3 data
+@end multitable
+
+@i{ src/c64/cart/digimax.c }
+@sp 1
+
+@b{The CARTDINAMIC module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  bank 
+@tab  current bank
+@item    ARRAY 
+@tab  ROML 
+@tab  8192 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/dinamic.c }
+@sp 1
+
+@b{The CARTDQBB module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  enabled    
+@tab  cartridge enabled flag
+@item    BYTE  
+@tab  read write 
+@tab  read/write flag
+@item    BYTE  
+@tab  a000 map   
+@tab  $A000 mapped flag (GAME line)
+@item    BYTE  
+@tab  off        
+@tab  dqbb off flag
+@item    BYTE  
+@tab  register   
+@tab  register
+@item    BYTE  
+@tab  exrom      
+@tab  state of EXROM line
+@item    BYTE  
+@tab  size       
+@tab  RAM size in kb
+@item    BYTE  
+@tab  bank       
+@tab  selected ram bank
+@item    ARRAY 
+@tab  RAM        
+@tab  <size> BYTES of RAM data
+@end multitable
+
+@i{ src/c64/cart/dqbb.c }
+@sp 1
+
+@b{The CARTDREAN module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  regval     
+@tab  bank register value
+@item    BYTE  
+@tab  bankmask   
+@tab  bank mask
+@item    ARRAY 
+@tab  roml_banks 
+@tab  4 * 8192 bytes of ROML data
+@end multitable
+
+@i{ src/c64/cart/drean.c }
+@sp 1
+
+@b{The CARTDS12C887RTC module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    DWORD 
+@tab  base     
+@tab  base address of the RTC
+@end multitable
+
+@i{ src/c64/cart/ds12c887rtc.c }
+@sp 1
+
+@b{The CARTEASYCALC module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY 
+@tab  ROML 
+@tab  8192 BYTES of ROML data
+@item    ARRAY 
+@tab  ROMH 
+@tab  16384 BYTES of ROMH data
+@end multitable
+
+@i{ src/c64/cart/easycalc.c }
+@sp 1
+
+@b{The CARTEF module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  jumper     
+@tab  jumper
+@item    BYTE  
+@tab  register 0 
+@tab  register 0
+@item    BYTE  
+@tab  register 2 
+@tab  register 2
+@item    ARRAY 
+@tab  RAM        
+@tab  256 BYTES of RAM data
+@item    ARRAY 
+@tab  ROML       
+@tab  524288 BYTES of ROML data
+@item    ARRAY 
+@tab  ROMH       
+@tab  524288 BYTES of ROMH data
+@end multitable
+
+@i{ src/c64/cart/easyflash.c }
+@sp 1
+
+@b{The CARTEPYX module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  active 
+@tab    0.1   
+@tab  cartridge active flag
+@item    DWORD 
+@tab  alarm  
+@tab    0.0+  
+@tab  alarm time
+@item    ARRAY 
+@tab  ROML   
+@tab    0.0+  
+@tab  8192 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/epyxfastload.c }
+@sp 1
+
+@b{The CARTEXOS module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY 
+@tab  ROMH 
+@tab  8192 BYTES of ROMH data
+@end multitable
+
+@i{ src/c64/cart/exos.c }
+@sp 1
+
+@b{The CARTEXPERT module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  mode            
+@tab  cartridge mode
+@item    BYTE  
+@tab  register enable 
+@tab  register enable flag
+@item    BYTE  
+@tab  RAM writable    
+@tab  RAM writable flag
+@item    BYTE  
+@tab  RAMH enable     
+@tab  RAMH enable flag
+@item    ARRAY 
+@tab  RAM             
+@tab  8192 BYTES of RAM data
+@end multitable
+
+@i{ src/c64/cart/expert.c }
+@sp 1
+
+@b{The CARTFINALV1 module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  active 
+@tab    0.1   
+@tab  cartridge active flag
+@item    ARRAY 
+@tab  ROML   
+@tab    0.0+  
+@tab  8192 BYTES of ROML data
+@item    ARRAY 
+@tab  ROMH   
+@tab    0.0+  
+@tab  8192 BYTES of ROMH data
+@end multitable
+
+@i{ src/c64/cart/final.c }
+@sp 1
+
+@b{The CARTFC3 module}
+
+
+Version numbers: Major 1, Minor 2.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  ROML banks  
+@tab    1.2   
+@tab  amount of ROML banks
+@item    BYTE  
+@tab  register    
+@tab    1.2   
+@tab  register
+@item    BYTE  
+@tab  reg enabled 
+@tab    0.0+  
+@tab  register enabled flag
+@item    ARRAY 
+@tab  ROML        
+@tab    1.1+  
+@tab  32768 or 131072 BYTES of ROML data
+@item    ARRAY 
+@tab  ROMH        
+@tab    1.1+  
+@tab  32768 or 131072 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/final3.c }
+@sp 1
+
+@b{The CARTFCP module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  enable    
+@tab  cartridge enabled flag
+@item    BYTE  
+@tab  bit7      
+@tab  bit 7 of the register
+@item    BYTE  
+@tab  ROML bank 
+@tab  ROML bank
+@item    BYTE  
+@tab  ROMH bank 
+@tab  ROMH bank
+@item    ARRAY 
+@tab  ROML      
+@tab  16384 BYTES of ROML data
+@item    ARRAY 
+@tab  ROMH      
+@tab  8192 BYTES of ROMH data
+@end multitable
+
+@i{ src/c64/cart/finalplus.c }
+@sp 1
+
+@b{The CARTF64 module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  enabled   
+@tab  cartridge enabled flag
+@item    ARRAY 
+@tab  ROMH      
+@tab  32768 BYTES of ROMH data
+@item    BYTE  
+@tab  CTRL A    
+@tab  control register A
+@item    BYTE  
+@tab  CTRL B    
+@tab  control register B
+@item    BYTE  
+@tab  DATA A    
+@tab  data register A
+@item    BYTE  
+@tab  DATA B    
+@tab  data register B
+@item    BYTE  
+@tab  DIR A     
+@tab  direction register A
+@item    BYTE  
+@tab  DIR B     
+@tab  direction register B
+@item    BYTE  
+@tab  CA2       
+@tab  CA2 line flag
+@item    BYTE  
+@tab  CA2 state 
+@tab  CA2 line state
+@item    BYTE  
+@tab  CB2       
+@tab  CB2 line flag
+@item    BYTE  
+@tab  CB2 state 
+@tab  CB2 line state
+@end multitable
+
+@i{ src/c64/cart/formel64.c }
+@sp 1
+
+@b{The CARTFREEZEF module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  ROM 8000 
+@tab    0.1   
+@tab  ROM $8000 active flag
+@item    BYTE  
+@tab  ROM E000 
+@tab    0.1   
+@tab  ROM $E000 active flag
+@item    ARRAY 
+@tab  ROML     
+@tab    0.0+  
+@tab  8192 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/freezeframe.c }
+@sp 1
+
+@b{The CARTFFMK2 module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  ROML toggle  
+@tab    0.0+  
+@tab  ROML toggle flag
+@item    BYTE  
+@tab  freeze mode  
+@tab    0.0+  
+@tab  flag: are we in freeze mode
+@item    ARRAY 
+@tab  ROML         
+@tab    0.0+  
+@tab  8192 BYTES of ROML data
+@item    ARRAY 
+@tab  ROMH         
+@tab    0.0+  
+@tab  8192 BYTES of ROMH data
+@end multitable
+
+@i{ src/c64/cart/freezeframe2.c }
+@sp 1
+
+@b{The CARTFREEZEM module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  ROM A14      
+@tab    0.0+  
+@tab  A14 line state
+@item    BYTE  
+@tab  ROML toggle  
+@tab    0.0+  
+@tab  ROML toggle flag
+@item    BYTE  
+@tab  allow toggle 
+@tab    0.1   
+@tab  allow toggle flag
+@item    ARRAY 
+@tab  ROML         
+@tab    0.0+  
+@tab  16384 BYTES of ROML data
+@item    ARRAY 
+@tab  ROMH         
+@tab    0.0+  
+@tab  16384 BYTES of ROMH data
+@end multitable
+
+@i{ src/c64/cart/freezemachine.c }
+@sp 1
+
+@b{The CARTFUNPLAY module}
+
+
+Version numbers: Major 1, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  regval 
+@tab    1.1   
+@tab  register
+@item    BYTE  
+@tab  bank   
+@tab    0.0+  
+@tab  current bank
+@item    ARRAY 
+@tab  ROML   
+@tab    1.0+  
+@tab  131072 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/funplay.c }
+@sp 1
+
+@b{The CARTGK module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  disable 
+@tab  cartridge disable flag
+@item    ARRAY 
+@tab  ROMH    
+@tab  8192 BYTES of ROMH data
+@end multitable
+
+@i{ src/c64/cart/gamekiller.c }
+@sp 1
+
+@b{The GEORAM module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  io swap 
+@tab    0.1   
+@tab  VIC20 I/O swap flag
+@item    DWORD 
+@tab  size    
+@tab    0.0+  
+@tab  size in KiB
+@item    ARRAY 
+@tab  regs    
+@tab    0.0+  
+@tab  2 BYTES of register data
+@item    ARRAY 
+@tab  RAM     
+@tab    0.0+  
+@tab  65536, 131072, 262144, 524288, 1048576, 2097152 or 4194304 BYTES of RAM data
+@end multitable
+
+@i{ src/c64/cart/georam.c }
+@sp 1
+
+@b{The CARTGMOD2 module}
+
+
+Version numbers: Major 0, Minor 2.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  gmod2_cmode      
+@tab 
+@item    BYTE  
+@tab  gmod2_bank       
+@tab 
+@item    ARRAY 
+@tab  flash_data       
+@tab  GMOD2_FLASH_SIZE
+@end multitable
+
+@i{ src/c64/cart/gmod2.c }
+@sp 1
+
+@b{The CARTGMOD3 module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  gmod3_cmode  
+@tab 
+@item    BYTE  
+@tab  gmod3_bank   
+@tab 
+@item    ARRAY 
+@tab  gmod3_rom    
+@tab  GMOD3_16MB_FLASH_SIZE
+@end multitable
+
+@i{ src/c64/cart/gmod3.c }
+@sp 1
+
+@b{The CARTGS module}
+
+
+Version numbers: Major 1, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  regval     
+@tab  bank register value
+@item    BYTE  
+@tab  currbank   
+@tab  current bank
+@item    ARRAY 
+@tab  roml_banks 
+@tab  64 * 8192 bytes of ROM data
+@end multitable
+
+@i{ src/c64/cart/gs.c }
+@sp 1
+
+@b{The CARTHYPERBASIC module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  regval    
+@tab    0.0   
+@tab  register
+@item    ARRAY 
+@tab  ROML      
+@tab    0.0   
+@tab  65536 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/hyperbasic.c }
+@sp 1
+
+@b{The CARTIDE module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    WORD  
+@tab  version   
+@tab  IDE64 version
+@item    ARRAY 
+@tab  ROML      
+@tab  65536 (3.x) / 131072 (4.1) / 524288 (4.2) BYTES of ROML data
+@item    ARRAY 
+@tab  RAM       
+@tab  32768 BYTES of RAM data
+@item    DWORD 
+@tab  bank      
+@tab  current bank
+@item    DWORD 
+@tab  config    
+@tab  current config
+@item    DWORD 
+@tab  kill port 
+@tab  kill port flag
+@item    DWORD 
+@tab  idrive    
+@tab  idrive
+@item    WORD  
+@tab  in d030   
+@tab  input state of $d030 register
+@item    WORD  
+@tab  out d030  
+@tab  output state of $d030 register
+@end multitable
+
+@i{ src/c64/cart/ide64.c }
+@sp 1
+
+@b{The CARTIEEEFLASH64 module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY 
+@tab  ROMH 
+@tab  8192 BYTES of ROMH data
+@end multitable
+
+@i{ src/c64/cart/ieeeflash64.c }
+@sp 1
+
+@b{The CARTISEPIC module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  enabled 
+@tab  cartridge enabled flag
+@item    BYTE  
+@tab  switch  
+@tab  switch flag
+@item    BYTE  
+@tab  page    
+@tab  current page
+@item    ARRAY 
+@tab  RAM     
+@tab  2048 BYTES of RAM data
+@end multitable
+
+@i{ src/c64/cart/isepic.c }
+@sp 1
+
+@b{The CARTKCS module}
+
+
+Version numbers: Major 0, Minor 3.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  config 
+@tab    0.2   
+@tab  current configuration
+@item    ARRAY 
+@tab  ROML   
+@tab    0.0+  
+@tab  8192 BYTES of ROML data
+@item    ARRAY 
+@tab  ROMH   
+@tab    0.0+  
+@tab  8192 BYTES of ROMH data
+@item    ARRAY 
+@tab  RAM    
+@tab    0.0+  
+@tab  128 BYTES of RAM data
+@end multitable
+
+@i{ src/c64/cart/kcs.c }
+@sp 1
+
+@b{The CARTKINGSOFT module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  mode 
+@tab  mode
+@item    ARRAY 
+@tab  ROML 
+@tab  8192 BYTES of ROML data
+@item    ARRAY 
+@tab  ROMH 
+@tab  16384 BYTES of ROMH data
+@end multitable
+
+@i{ src/c64/cart/kingsoft.c }
+@sp 1
+
+@b{The CARTLTK module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE   
+@tab  rom           
+@tab  ltk_rom
+@item    BYTE   
+@tab  raml          
+@tab  ltk_raml
+@item    BYTE   
+@tab  ramh          
+@tab  ltk_ramh
+@item    BYTE   
+@tab  ramwrite      
+@tab  ltk_ramwrite
+@item    BYTE   
+@tab  freeze        
+@tab  ltk_freeze
+@item    BYTE   
+@tab  on            
+@tab  ltk_on
+@item    BYTE   
+@tab  in2           
+@tab  ltk_in2
+@item    BYTE   
+@tab  io            
+@tab  ltk_io
+@item    BYTE   
+@tab  port          
+@tab  ltk_port
+@item    DWORD  
+@tab  alarm_time    
+@tab  ltk_alarm_time
+@item    ARRAY  
+@tab  ROML          
+@tab  8192 BYTES of ROML data (boot rom, $8000-$9FFF)
+@item    ARRAY  
+@tab  export_ram0   
+@tab  16384 BYTES of export RAM data (RAML & RAMH)
+@item    MC6821 
+@tab  SNAPSHOT6821  
+@tab  ltk_6821
+@item    SCSI   
+@tab  SNAPSHOTSCSI  
+@tab  ltk_scsi
+@end multitable
+
+@i{ src/c64/cart/ltkernal.c }
+@sp 1
+
+@b{The CARTMACH5 module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  active 
+@tab    0.1   
+@tab  cartridge active flag
+@item    ARRAY 
+@tab  ROML   
+@tab    0.0+  
+@tab  8192 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/mach5.c }
+@sp 1
+
+@b{The CARTMAGICD module}
+
+
+Version numbers: Major 0, Minor 3.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  regval     
+@tab  bank register value
+@item    BYTE  
+@tab  bankmask   
+@tab  bank mask
+@item    ARRAY 
+@tab  roml_banks 
+@tab  128 * 8192 bytes of ROM data
+@item    BYTE  
+@tab  sram_enabled   
+@tab  SRAM enabled flag
+@item    BYTE  
+@tab  eeprom_enabled 
+@tab  EEPROM enabled flag
+@item    BYTE  
+@tab  page_reg   
+@tab  page register value
+@item    BYTE  
+@tab  ctrl_reg   
+@tab  control register value
+@item    ARRAY 
+@tab  sram_ram   
+@tab  SRAM data (131072 bytes, only if sram_enabled != 0)
+@end multitable
+
+@i{ src/c64/cart/magicdesk.c }
+@sp 1
+
+@b{The CARTMD16 module}
+
+
+Version numbers: Major 0, Minor 2.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  regval     
+@tab  bank register value
+@item    BYTE  
+@tab  bankmask   
+@tab  bank mask
+@item    ARRAY 
+@tab  roml_banks 
+@tab  128 * 8192 bytes of ROML data
+@item    ARRAY 
+@tab  romh_banks 
+@tab  128 * 8192 bytes of ROMH data
+@end multitable
+
+@i{ src/c64/cart/magicdesk16.c }
+@sp 1
+
+@b{The CARTMF module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  RAM page      
+@tab  current RAM page
+@item    BYTE  
+@tab  I/O-1 enable  
+@tab  I/O-1 enable flag
+@item    BYTE  
+@tab  kernal enable 
+@tab  kernal enable flag
+@item    BYTE  
+@tab  freeze enable 
+@tab  freeze enable flag
+@item    BYTE  
+@tab  export game   
+@tab  game line state
+@item    BYTE  
+@tab  hw version    
+@tab  hardware version
+@item    ARRAY 
+@tab  ROML          
+@tab  131072 BYTES of ROML data
+@item    ARRAY 
+@tab  RAM           
+@tab  8192 BYTES of RAM data
+@item    BYTE  
+@tab  CTRL A        
+@tab  A control register
+@item    BYTE  
+@tab  CTRL B        
+@tab  B control register
+@item    BYTE  
+@tab  DATA A        
+@tab  A data register
+@item    BYTE  
+@tab  DATA B        
+@tab  B data register
+@item    BYTE  
+@tab  DIR A         
+@tab  A direction register
+@item    BYTE  
+@tab  DIR B         
+@tab  B direction register
+@item    BYTE  
+@tab  CA2           
+@tab  CA2 line flag
+@item    BYTE  
+@tab  CA2 state     
+@tab  CA2 line state
+@item    BYTE  
+@tab  CB2           
+@tab  CB2 line flag
+@item    BYTE  
+@tab  CB2 state     
+@tab  CB2 line state
+@end multitable
+
+@i{ src/c64/cart/magicformel.c }
+@sp 1
+
+@b{The CARTMAXBASIC module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY 
+@tab  ROML 
+@tab  8192 BYTES of ROML data
+@item    ARRAY 
+@tab  ROMH 
+@tab  8192 BYTES of ROMH data
+@item    ARRAY 
+@tab  RAM  
+@tab  2048 BYTES of RAM data
+@end multitable
+
+@i{ src/c64/cart/maxbasic.c }
+@sp 1
+
+@b{The CARTMEGABYTER module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  register 0 
+@tab  register 0
+@item    BYTE  
+@tab  register 2 
+@tab  register 2
+@item    ARRAY 
+@tab  ROML       
+@tab  1048576 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/megabyter.c }
+@sp 1
+
+@b{The CARTMIKROASS module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY 
+@tab  ROML 
+@tab  8192 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/mikroass.c }
+@sp 1
+
+@b{The CARTMMC64 module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  clockport enable  
+@tab  clockport enable flag
+@item    WORD  
+@tab  clockport address 
+@tab  clockport address
+@item    BYTE  
+@tab  bios write        
+@tab  bios writable flag
+@item    BYTE  
+@tab  bit 7 unlocked    
+@tab  bit 7 unlocked flag
+@item    ARRAY 
+@tab  unlocking         
+@tab  2 BYTES of unlocking data
+@item    BYTE  
+@tab  bios changed      
+@tab  bios changed flag
+@item    BYTE  
+@tab  flash jumper      
+@tab  flash jumper state
+@item    BYTE  
+@tab  write protect     
+@tab  write protect flag
+@item    BYTE  
+@tab  active            
+@tab  cartridge active flag
+@item    BYTE  
+@tab  SPI mode          
+@tab  SPI mode
+@item    BYTE  
+@tab  extrom            
+@tab  extrom flag
+@item    BYTE  
+@tab  flash mode        
+@tab  flash mode
+@item    BYTE  
+@tab  cport             
+@tab  cport
+@item    BYTE  
+@tab  speed             
+@tab  speed
+@item    BYTE  
+@tab  cardsel           
+@tab  cardsel
+@item    BYTE  
+@tab  biossel           
+@tab  biossel
+@item    BYTE  
+@tab  extexrom          
+@tab  EXROM line state
+@item    BYTE  
+@tab  extgame           
+@tab  GAME line state
+@item    BYTE  
+@tab  revision          
+@tab  MMC64 revision
+@item    BYTE  
+@tab  SD type           
+@tab  SD type
+@item    BYTE  
+@tab  image readonly    
+@tab  image read-only flag
+@item    ARRAY 
+@tab  BIOS              
+@tab  8194 BYTES of BIOS data
+@item    BYTE  
+@tab  BIOS offset       
+@tab  BIOS offset
+@item    BYTE  
+@tab  BIOS type         
+@tab  BIOS type
+@end multitable
+
+@i{ src/c64/cart/mmc64.c }
+@sp 1
+
+@b{The CARTMULTIMAX module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  currbank     
+@tab  current ROM bank
+@item    BYTE  
+@tab  reg_enabled  
+@tab  flag, is the register enabled?
+@item    ARRAY 
+@tab  ROML         
+@tab  512K of ROML data
+@item    ARRAY 
+@tab  ROMH         
+@tab  512K of ROMH data
+@item    ARRAY 
+@tab  RAM          
+@tab  2048 BYTES of RAM data
+@end multitable
+
+@i{ src/c64/cart/multimax.c }
+@sp 1
+
+@b{The CARTOCEAN module}
+
+
+Version numbers: Major 1, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  bank      
+@tab  current bank
+@item    BYTE  
+@tab  IO1 mask  
+@tab  I/O-1 mask
+@item    BYTE  
+@tab  register  
+@tab  register
+@item    DWORD 
+@tab  ROML size 
+@tab  ROML size
+@item    ARRAY 
+@tab  ROML      
+@tab  524288 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/ocean.c }
+@sp 1
+
+@b{The CARTPAGEFOX module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  enabled 
+@tab    0.1   
+@tab  cartridge enabled flag
+@item    BYTE  
+@tab  bank    
+@tab    0.0+  
+@tab  current bank
+@item    ARRAY 
+@tab  RAM     
+@tab    0.0+  
+@tab  32768 BYTES of RAM data
+@item    ARRAY 
+@tab  ROML    
+@tab    0.0+  
+@tab  32768 BYTES of ROML data
+@item    ARRAY 
+@tab  ROMH    
+@tab    0.0+  
+@tab  32768 BYTES of ROMH data
+@end multitable
+
+@i{ src/c64/cart/pagefox.c }
+@sp 1
+
+@b{The CARTPARTNER64 module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  active 
+@tab  cartridge is active
+@item    ARRAY 
+@tab  ROML   
+@tab  8192 BYTES of ROML data
+@item    ARRAY 
+@tab  ROMH   
+@tab  8192 BYTES of ROMH data
+@item    ARRAY 
+@tab  RAM    
+@tab  8192 BYES of RAM data
+@end multitable
+
+@i{ src/c64/cart/partner64.c }
+@sp 1
+
+@b{The CARTPROFIDOS module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY 
+@tab  ROMH 
+@tab  $4000 BYTES of ROMH data
+@end multitable
+
+@i{ src/c64/cart/profidos.c }
+@sp 1
+
+@b{The CARTP64 module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  bank     
+@tab    0.1   
+@tab  current bank
+@item    BYTE  
+@tab  register 
+@tab    0.1   
+@tab  register
+@item    ARRAY 
+@tab  ROML     
+@tab    0.0+  
+@tab  262144 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/prophet64.c }
+@sp 1
+
+@b{The CARTRAMCART module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  enabled   
+@tab  cartridge enabled flag
+@item    BYTE  
+@tab  readonly  
+@tab  read-only flag
+@item    DWORD 
+@tab  BSIZE     
+@tab  RAM size in BYTES
+@item    BYTE  
+@tab  KBSIZE    
+@tab  RAM size in KB
+@item    ARRAY 
+@tab  registers 
+@tab  2 BYTES of register data
+@item    ARRAY 
+@tab  RAM       
+@tab  65536 or 131072 BYTES of RAM data
+@end multitable
+
+@i{ src/c64/cart/ramcart.c }
+@sp 1
+
+@b{The CARTRAMLINK module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    INT32  
+@tab  cardsizemb     
+@tab  rl_cardsizemb
+@item    UINT32 
+@tab  rombase        
+@tab  rl_rombase
+@item    UINT32 
+@tab  kernbase       
+@tab  rl_kernbase
+@item    UINT32 
+@tab  rambase        
+@tab  rl_rambase
+@item    UINT32 
+@tab  cardaddr       
+@tab  rl_cardaddr
+@item    UINT32 
+@tab  io1mode        
+@tab  rl_io1mode
+@item    UINT32 
+@tab  reu_trap       
+@tab  rl_reu_trap
+@item    BYTE   
+@tab  on             
+@tab  rl_on
+@item    BYTE   
+@tab  dos            
+@tab  rl_dos
+@item    ARRAY  
+@tab  i8255a_i       
+@tab  3 internal inputs for I8255A
+@item    ARRAY  
+@tab  i8255a_o       
+@tab  3 internal outputs for I8255A
+@item    ARRAY  
+@tab  rom            
+@tab  rl_rom 64 KiB for firmware
+@item    ARRAY  
+@tab  ram            
+@tab  rl_ram 8 KiB for SRAM
+@item    I8255A 
+@tab  SNAPSHOTI8255A 
+@tab  rl_8255
+@item    ARRAY  
+@tab  rl_card        
+@tab  Contents of RAMCARD (cardsibemb) in MiB
+@end multitable
+
+@i{ src/c64/cart/ramlink.c }
+@sp 1
+
+@b{The CARTRR module}
+
+
+Version numbers: Major 0, Minor 3.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  revision          
+@tab    0.1+  
+@tab  RR revision
+@item    BYTE  
+@tab  active            
+@tab    0.0+  
+@tab  cartridge active flag
+@item    BYTE  
+@tab  frozen            
+@tab    0.2+  
+@tab  frozen flag
+@item    BYTE  
+@tab  cmode             
+@tab    0.3   
+@tab  cmode
+@item    BYTE  
+@tab  clockport enabled 
+@tab    0.0+  
+@tab  clockport enabled flag
+@item    BYTE  
+@tab  bank              
+@tab    0.0+  
+@tab  current bank
+@item    BYTE  
+@tab  write once        
+@tab    0.0+  
+@tab  write once flag
+@item    BYTE  
+@tab  allow bank        
+@tab    0.0+  
+@tab  allow bank flag
+@item    BYTE  
+@tab  no freeze         
+@tab    0.0+  
+@tab  no freeze flag
+@item    BYTE  
+@tab  REU mapping       
+@tab    0.0+  
+@tab  REU mapping flag
+@item    BYTE  
+@tab  RAM at a000       
+@tab    0.1+  
+@tab  RAM at $A000 flag
+@item    BYTE  
+@tab  flash jumper      
+@tab    0.0+  
+@tab  flash jumper state
+@item    BYTE  
+@tab  bank jumper       
+@tab    0.0+  
+@tab  bank jumper state
+@item    BYTE  
+@tab  ROM offset        
+@tab    0.0+  
+@tab  ROM offset
+@item    ARRAY 
+@tab  ROML              
+@tab    0.0+  
+@tab  131072 BYTES of ROML data
+@item    ARRAY 
+@tab  RAM               
+@tab    0.0+  
+@tab  32768 BYTES of RAM data
+@end multitable
+
+@i{ src/c64/cart/retroreplay.c }
+@sp 1
+
+@b{The REU1764 module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    DWORD 
+@tab  size      
+@tab  size of REU in KB
+@item    ARRAY 
+@tab  registers 
+@tab  16 BYTES of register data
+@item    ARRAY 
+@tab  RAM       
+@tab  131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608 or 16777216 BYTES of RAM data
+@end multitable
+
+@i{ src/c64/cart/reu.c }
+@sp 1
+
+@b{The CARTREXEP256 module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  regval       
+@tab    0.1   
+@tab  register
+@item    ARRAY 
+@tab  EPROM sizes  
+@tab    0.0+  
+@tab  8 WORDS of EPROM sizes in BYTES
+@item    ARRAY 
+@tab  ROML offsets 
+@tab    0.0+  
+@tab  8 BYTES of EPROM ofsets
+@item    ARRAY 
+@tab  ROML         
+@tab    0.0+  
+@tab  270336 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/rexep256.c }
+@sp 1
+
+@b{The CARTRRF module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  cart_enabled     
+@tab  cartridge active flag
+@item    BYTE  
+@tab  ram_enabled      
+@tab  RAM enabled at $8000
+@item    BYTE  
+@tab  ram_writeable    
+@tab  RAM is writeable
+@item    BYTE  
+@tab  ram_bank         
+@tab  currently selected RAM bank
+@item    ARRAY 
+@tab  ROML             
+@tab  8192 BYTES of ROML data
+@item    ARRAY 
+@tab  RAM              
+@tab  256k BYTES of RAM data
+@end multitable
+
+@i{ src/c64/cart/rexramfloppy.c }
+@sp 1
+
+@b{The CARTREXUTIL module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  active 
+@tab    0.1   
+@tab  cartridge active flag
+@item    ARRAY 
+@tab  ROML   
+@tab    0.0+  
+@tab  524288 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/rexutility.c }
+@sp 1
+
+@b{The CARTRGCD module}
+
+
+Version numbers: Major 0, Minor 4.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  regval   
+@tab    0.1+  
+@tab  register
+@item    BYTE  
+@tab  disabled 
+@tab    0.2   
+@tab  cartridge disabled flag
+@item    BYTE  
+@tab  revision 
+@tab    0.3   
+@tab  hw revision
+@item    BYTE  
+@tab  mask     
+@tab    0.4   
+@tab  bank mask
+@item    ARRAY 
+@tab  ROML     
+@tab    0.1+  
+@tab  65536 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/rgcd.c }
+@sp 1
+
+@b{The CARTROSS module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  is32k 
+@tab    0.1   
+@tab  cart is 32KB flag
+@item    BYTE  
+@tab  bank  
+@tab    0.0+  
+@tab  current bank
+@item    ARRAY 
+@tab  ROML  
+@tab    0.0+  
+@tab  16384 BYTES of ROML data
+@item    ARRAY 
+@tab  ROMH  
+@tab    0.0+  
+@tab  16384 BYTES of ROMH data
+@end multitable
+
+@i{ src/c64/cart/ross.c }
+@sp 1
+
+@b{The CARTSDBOX module}
+
+
+Version numbers: Major 1, Minor 0.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  regval       
+@tab    1.0   
+@tab  register
+@item    BYTE  
+@tab  currbank     
+@tab    1.0   
+@tab  current bank
+@item    BYTE  
+@tab  reg_enable   
+@tab    1.0   
+@tab  flag: is the register enabled
+@item    BYTE  
+@tab  regs         
+@tab    1.0   
+@tab  4 bytes of "RAM"
+@item    ARRAY 
+@tab  ROML         
+@tab    1.0   
+@tab  8*8k BYTES of ROML data
+@item    ARRAY 
+@tab  ROMH         
+@tab    1.0   
+@tab  8*8k BYTES of ROMH data
+@end multitable
+
+@i{ src/c64/cart/sdbox.c }
+@sp 1
+
+@b{The CARTSFXSE module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  IO swap               
+@tab    0.1   
+@tab  VIC20 I/O swap flag
+@item    DWORD 
+@tab  chip type             
+@tab    0.0+  
+@tab  chip type
+@item    BYTE  
+@tab  sound command         
+@tab    0.0+  
+@tab  sound command
+@item    DWORD 
+@tab  ch 0 slot 0 ar        
+@tab    0.0+  
+@tab  channel 0, slot 0, ar
+@item    DWORD 
+@tab  ch 0 slot 0 dr        
+@tab    0.0+  
+@tab  channel 0, slot 0, dr
+@item    DWORD 
+@tab  ch 0 slot 0 rr        
+@tab    0.0+  
+@tab  channel 0, slot 0, rr
+@item    BYTE  
+@tab  ch 0 slot 0 KSR       
+@tab    0.0+  
+@tab  channel 0, slot 0, KSR
+@item    BYTE  
+@tab  ch 0 slot 0 ksl       
+@tab    0.0+  
+@tab  channel 0, slot 0, ksl
+@item    BYTE  
+@tab  ch 0 slot 0 ksr       
+@tab    0.0+  
+@tab  channel 0, slot 0, ksr
+@item    BYTE  
+@tab  ch 0 slot 0 mul       
+@tab    0.0+  
+@tab  channel 0, slot 0, mul
+@item    DWORD 
+@tab  ch 0 slot 0 Cnt       
+@tab    0.0+  
+@tab  channel 0, slot 0, Cnt
+@item    DWORD 
+@tab  ch 0 slot 0 Incr      
+@tab    0.0+  
+@tab  channel 0, slot 0, Incr
+@item    BYTE  
+@tab  ch 0 slot 0 FB        
+@tab    0.0+  
+@tab  channel 0, slot 0, FB
+@item    DWORD 
+@tab  ch 0 slot 0 connect1  
+@tab    0.0+  
+@tab  channel 0, slot 0, connect1
+@item    DWORD 
+@tab  ch 0 slot 0 op1 out 0 
+@tab    0.0+  
+@tab  channel 0, slot 0, op1 out 0
+@item    DWORD 
+@tab  ch 0 slot 0 op1 out 1 
+@tab    0.0+  
+@tab  channel 0, slot 0, op1 out 1
+@item    BYTE  
+@tab  ch 0 slot 0 CON       
+@tab    0.0+  
+@tab  channel 0, slot 0, CON
+@item    BYTE  
+@tab  ch 0 slot 0 eg type   
+@tab    0.0+  
+@tab  channel 0, slot 0, eg type
+@item    BYTE  
+@tab  ch 0 slot 0 state     
+@tab    0.0+  
+@tab  channel 0, slot 0, state
+@item    DWORD 
+@tab  ch 0 slot 0 TL        
+@tab    0.0+  
+@tab  channel 0, slot 0, TL
+@item    DWORD 
+@tab  ch 0 slot 0 TLL       
+@tab    0.0+  
+@tab  channel 0, slot 0, TLL
+@item    DWORD 
+@tab  ch 0 slot 0 volume    
+@tab    0.0+  
+@tab  channel 0, slot 0, volume
+@item    DWORD 
+@tab  ch 0 slot 0 sl        
+@tab    0.0+  
+@tab  channel 0, slot 0, sl
+@item    BYTE  
+@tab  ch 0 slot 0 eg sh ar  
+@tab    0.0+  
+@tab  channel 0, slot 0, eg sh ar
+@item    BYTE  
+@tab  ch 0 slot 0 eg sel ar 
+@tab    0.0+  
+@tab  channel 0, slot 0, eg sel ar
+@item    BYTE  
+@tab  ch 0 slot 0 eg sh dr  
+@tab    0.0+  
+@tab  channel 0, slot 0, eg sh dr
+@item    BYTE  
+@tab  ch 0 slot 0 eg sel dr 
+@tab    0.0+  
+@tab  channel 0, slot 0, eg sel dr
+@item    BYTE  
+@tab  ch 0 slot 0 eg sh rr  
+@tab    0.0+  
+@tab  channel 0, slot 0, eg sh rr
+@item    BYTE  
+@tab  ch 0 slot 0 eg sel rr 
+@tab    0.0+  
+@tab  channel 0, slot 0, eg sel rr
+@item    DWORD 
+@tab  ch 0 slot 0 key       
+@tab    0.0+  
+@tab  channel 0, slot 0, key
+@item    DWORD 
+@tab  ch 0 slot 0 AMmask    
+@tab    0.0+  
+@tab  channel 0, slot 0, AMmask
+@item    BYTE  
+@tab  ch 0 slot 0 vib       
+@tab    0.0+  
+@tab  channel 0, slot 0, vib
+@item    WORD  
+@tab  ch 0 slot 0 wavetable 
+@tab    0.0+  
+@tab  channel 0, slot 0, wavetable
+@item    DWORD 
+@tab  ch 0 slot 1 ar        
+@tab    0.0+  
+@tab  channel 0, slot 1, ar
+@item    DWORD 
+@tab  ch 0 slot 1 dr        
+@tab    0.0+  
+@tab  channel 0, slot 1, dr
+@item    DWORD 
+@tab  ch 0 slot 1 rr        
+@tab    0.0+  
+@tab  channel 0, slot 1, rr
+@item    BYTE  
+@tab  ch 0 slot 1 KSR       
+@tab    0.0+  
+@tab  channel 0, slot 1, KSR
+@item    BYTE  
+@tab  ch 0 slot 1 ksl       
+@tab    0.0+  
+@tab  channel 0, slot 1, ksl
+@item    BYTE  
+@tab  ch 0 slot 1 ksr       
+@tab    0.0+  
+@tab  channel 0, slot 1, ksr
+@item    BYTE  
+@tab  ch 0 slot 1 mul       
+@tab    0.0+  
+@tab  channel 0, slot 1, mul
+@item    DWORD 
+@tab  ch 0 slot 1 Cnt       
+@tab    0.0+  
+@tab  channel 0, slot 1, Cnt
+@item    DWORD 
+@tab  ch 0 slot 1 Incr      
+@tab    0.0+  
+@tab  channel 0, slot 1, Incr
+@item    BYTE  
+@tab  ch 0 slot 1 FB        
+@tab    0.0+  
+@tab  channel 0, slot 1, FB
+@item    DWORD 
+@tab  ch 0 slot 1 connect1  
+@tab    0.0+  
+@tab  channel 0, slot 1, connect1
+@item    DWORD 
+@tab  ch 0 slot 1 op1 out 0 
+@tab    0.0+  
+@tab  channel 0, slot 1, op1 out 0
+@item    DWORD 
+@tab  ch 0 slot 1 op1 out 1 
+@tab    0.0+  
+@tab  channel 0, slot 1, op1 out 1
+@item    BYTE  
+@tab  ch 0 slot 1 CON       
+@tab    0.0+  
+@tab  channel 0, slot 1, CON
+@end multitable
+
+@i{ src/c64/cart/sfx_soundexpander.c }
+@sp 1
+
+@b{The CARTSFXSS module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  IO swap    
+@tab    0.1   
+@tab  VIC20 I/O swap flag
+@item    BYTE  
+@tab  sound data 
+@tab    0.0+  
+@tab  sound data
+@end multitable
+
+@i{ src/c64/cart/sfx_soundsampler.c }
+@sp 1
+
+@b{The SHORTBUS module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  amount         
+@tab  amount of active shortbus devices
+@item    BYTE  
+@tab  digimax active 
+@tab  digimax active flag
+@item    BYTE  
+@tab  duart active   
+@tab  duart active flag
+@item    BYTE  
+@tab  etfe active    
+@tab  etfe active flag
+@item    BYTE  
+@tab  eth64 active   
+@tab  eth64 active flag
+@end multitable
+
+@i{ src/c64/cart/shortbus.c }
+@sp 1
+
+@b{The SHORTBUSDIGIMAX module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    DWORD 
+@tab  base       
+@tab  base address
+@item    ARRAY 
+@tab  sound data 
+@tab  4 BYTES of sound data
+@item    BYTE  
+@tab  voice 0    
+@tab  voice 0 state
+@item    BYTE  
+@tab  voice 1    
+@tab  voice 1 state
+@item    BYTE  
+@tab  voice 2    
+@tab  voice 2 state
+@item    BYTE  
+@tab  voice 3    
+@tab  voice 3 state
+@end multitable
+
+@i{ src/c64/cart/shortbus_digimax.c }
+@sp 1
+
+@b{The CARTSILVERROCK128 module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  regval 
+@tab    0.1   
+@tab  register
+@item    BYTE  
+@tab  bank   
+@tab    0.0+  
+@tab  current bank
+@item    ARRAY 
+@tab  ROML   
+@tab    0.0+  
+@tab  262144 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/silverrock128.c }
+@sp 1
+
+@b{The CARTSIMON module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  a000 enable 
+@tab    0.1   
+@tab  ROM at $A000 flag
+@item    ARRAY 
+@tab  ROML        
+@tab    0.0+  
+@tab  8192 BYTES of ROML data
+@item    ARRAY 
+@tab  ROMH        
+@tab    0.0+  
+@tab  8192 BYTES of ROMH data
+@end multitable
+
+@i{ src/c64/cart/simonsbasic.c }
+@sp 1
+
+@b{The CARTSNAP64 module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  ROM config 
+@tab  ROM configuration
+@item    ARRAY 
+@tab  ROML       
+@tab  4096 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/snapshot64.c }
+@sp 1
+
+@b{The CARTSTARDOS module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    DWORD 
+@tab  stardos_alarm_time   
+@tab  alarm time for cap discharge
+@item    DWORD 
+@tab  cap_voltage          
+@tab  cap voltage
+@item    BYTE  
+@tab  roml_enable          
+@tab  is roml enabled?
+@item    ARRAY 
+@tab  roml_banks           
+@tab  8192 bytes of ROML data
+@item    ARRAY 
+@tab  romh_banks           
+@tab  8192 bytes of ROMH data
+@end multitable
+
+@i{ src/c64/cart/stardos.c }
+@sp 1
+
+@b{The CARTSTB module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  bank   
+@tab    0.1   
+@tab  current bank
+@item    BYTE  
+@tab  active 
+@tab    0.1   
+@tab  cartridge active flag
+@item    ARRAY 
+@tab  ROML   
+@tab    0.0+  
+@tab  16384 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/stb.c }
+@sp 1
+
+@b{The CARTSE5 module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  bank 
+@tab    0.1   
+@tab  current bank
+@item    ARRAY 
+@tab  ROML 
+@tab    0.0+  
+@tab  16384 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/superexplode5.c }
+@sp 1
+
+@b{The CARTSUPERGAMES module}
+
+
+Version numbers: Major 0, Minor 2.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  mode        
+@tab    0.2   
+@tab  current mode
+@item    BYTE  
+@tab  regval      
+@tab    0.2   
+@tab  register
+@item    BYTE  
+@tab  bank        
+@tab    0.0+  
+@tab  current bank
+@item    BYTE  
+@tab  reg latched 
+@tab    0.1   
+@tab  register latched flag
+@item    ARRAY 
+@tab  ROML        
+@tab    0.0+  
+@tab  32768 BYTES of ROML data
+@item    ARRAY 
+@tab  ROMH        
+@tab    0.0+  
+@tab  32768 BYTES of ROMH data
+@end multitable
+
+@i{ src/c64/cart/supergames.c }
+@sp 1
+
+@b{The CARTSS5 module}
+
+
+Version numbers: Major 0, Minor 3.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  ROM bank    
+@tab    0.2   
+@tab  current ROM bank
+@item    BYTE  
+@tab  register    
+@tab    0.2   
+@tab  register
+@item    BYTE  
+@tab  ROM config  
+@tab    0.0+  
+@tab  ROM configuration
+@item    BYTE  
+@tab  RAM bank    
+@tab    0.0+  
+@tab  current RAM bank
+@item    BYTE  
+@tab  32K enabled 
+@tab    0.1+  
+@tab  32KB enabled flag
+@item    BYTE  
+@tab  ROM disable 
+@tab    0.1+  
+@tab  ROM disable flag
+@item    BYTE  
+@tab  ROM banks   
+@tab    0.3   
+@tab  number of ROM banks (4 or 8)
+@item    ARRAY 
+@tab  ROML        
+@tab    0.0+  
+@tab  0x8000 or 0x10000 BYTES of ROML data
+@item    ARRAY 
+@tab  ROMH        
+@tab    0.0+  
+@tab  0x8000 or 0x10000 BYTES of ROMH data
+@item    ARRAY 
+@tab  RAM         
+@tab    0.0+  
+@tab  32768 BYTES of RAM data
+@end multitable
+
+@i{ src/c64/cart/supersnapshot.c }
+@sp 1
+
+@b{The CARTSS4 module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  RAM config 
+@tab  RAM configuration
+@item    BYTE  
+@tab  ROM config 
+@tab  ROM configuration
+@item    ARRAY 
+@tab  ROML       
+@tab  16384 BYTES of ROML data
+@item    ARRAY 
+@tab  ROMH       
+@tab  16384 BYTES of ROMH data
+@item    ARRAY 
+@tab  RAM        
+@tab  8192 BYTES of RAM data
+@end multitable
+
+@i{ src/c64/cart/supersnapshot4.c }
+@sp 1
+
+@b{The CARTTURTLEGFX module}
+
+
+Version numbers: Major 0, Minor 2.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  bank   
+@tab    0.1   
+@tab  current bank
+@item    BYTE  
+@tab  active 
+@tab    0.1   
+@tab  cartridge active flag
+@item    ARRAY 
+@tab  ROML   
+@tab    0.0+  
+@tab  16384 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/turtlegraphics.c }
+@sp 1
+
+@b{The CARTUC1 module}
+
+
+Version numbers: Major 0, Minor 2.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  regval           
+@tab 
+@item    BYTE  
+@tab  bankmask         
+@tab 
+@item    ARRAY 
+@tab  roml_banks       
+@tab  0x2000 * MAXBANKS
+@item    ARRAY 
+@tab  romh_banks       
+@tab  0x2000 * MAXBANKS
+@item    ARRAY 
+@tab  cart_ram         
+@tab  CART_RAM_SIZE
+@end multitable
+
+@i{ src/c64/cart/uc1.c }
+@sp 1
+
+@b{The CARTUC2 module}
+
+
+Version numbers: Major 0, Minor 2.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  regA         
+@tab  bank register value
+@item    BYTE  
+@tab  regB         
+@tab  mode
+@item    BYTE  
+@tab  bankmask     
+@tab  bank mask
+@item    ARRAY 
+@tab  roml_banks   
+@tab  32 * 8192 bytes of ROML data
+@item    ARRAY 
+@tab  romh_banks   
+@tab  32 * 8192 bytes of ROMH data
+@item    ARRAY 
+@tab  cart_ram     
+@tab  512kiB of RAM data
+@end multitable
+
+@i{ src/c64/cart/uc2.c }
+@sp 1
+
+@b{The CARTWARP module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  ROM 8000 
+@tab    0.1   
+@tab  ROM at $8000 flag
+@item    ARRAY 
+@tab  ROML     
+@tab    0.0+  
+@tab  8192 BYTES of ROML data
+@item    ARRAY 
+@tab  ROMH     
+@tab    0.0+  
+@tab  8192 BYTES of ROMH data
+@end multitable
+
+@i{ src/c64/cart/warpspeed.c }
+@sp 1
+
+@b{The CARTWEST module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  ROM a000 
+@tab    0.1   
+@tab  ROM at $A000 flag
+@item    ARRAY 
+@tab  ROML     
+@tab    0.0+  
+@tab  8192 BYTES of ROML data
+@item    ARRAY 
+@tab  ROMH     
+@tab    0.0+  
+@tab  8192 BYTES of ROMH data
+@end multitable
+
+@i{ src/c64/cart/westermann.c }
+@sp 1
+
+@b{The CARTZAXXON module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY 
+@tab  ROML 
+@tab  8192 BYTES of ROML data
+@item    ARRAY 
+@tab  ROMH 
+@tab  16384 BYTES of ROMH data
+@end multitable
+
+@i{ src/c64/cart/zaxxon.c }
+@sp 1
+
+@b{The CARTZIPP module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  active 
+@tab    0.1   
+@tab  cartridge active flag
+@item    DWORD 
+@tab  alarm  
+@tab    0.0+  
+@tab  alarm time
+@item    ARRAY 
+@tab  ROML   
+@tab    0.0+  
+@tab  8192 BYTES of ROML data
+@end multitable
+
+@i{ src/c64/cart/zippcode48.c }
+@sp 1
+
+@b{The PLUS256K module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  register      
+@tab  register
+@item    BYTE  
+@tab  video bank    
+@tab  current video bank
+@item    BYTE  
+@tab  low bank      
+@tab  current low bank
+@item    BYTE  
+@tab  high bank     
+@tab  current high bank
+@item    BYTE  
+@tab  write protect 
+@tab  write protect flag
+@item    ARRAY 
+@tab  RAM           
+@tab  262144 BYTES of RAM data
+@end multitable
+
+@i{ src/c64/plus256k.c }
+@sp 1
+
+@b{The PLUS60K module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    WORD  
+@tab  base     
+@tab  base address of register
+@item    BYTE  
+@tab  register 
+@tab  register
+@item    ARRAY 
+@tab  RAM      
+@tab  61440 BYTES of RAM data
+@end multitable
+
+@i{ src/c64/plus60k.c }
+@sp 1
+
+@b{The C64VSIDROM module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY 
+@tab  KERNAL  
+@tab  8192 BYTES of KERNAL ROM data
+@item    ARRAY 
+@tab  BASIC   
+@tab  8192 BYTES of BASIC ROM data
+@item    ARRAY 
+@tab  CHARGEN 
+@tab  4096 BYTES of CHARGEN ROM data
+@end multitable
+
+@i{ src/c64/vsidmemsnapshot.c }
+@sp 1
+
+@b{The C64VSIDMEM module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  pport data          
+@tab    0.0+  
+@tab  CPU port data register
+@item    BYTE  
+@tab  pport dir           
+@tab    0.0+  
+@tab  CPU port direction register
+@item    BYTE  
+@tab  EXROM               
+@tab    0.0+  
+@tab  EXROM line state
+@item    BYTE  
+@tab  GAME                
+@tab    0.0+  
+@tab  GAME line state
+@item    ARRAY 
+@tab  RAM                 
+@tab    0.0+  
+@tab  65536 BYTES of RAM data
+@item    BYTE  
+@tab  pport data out      
+@tab    0.0+  
+@tab  CPU port data out lines state
+@item    BYTE  
+@tab  pport data read     
+@tab    0.0+  
+@tab  CPU port data in lines state
+@item    BYTE  
+@tab  pport dir read      
+@tab    0.0+  
+@tab  CPU port direction in lines state
+@end multitable
+
+@i{ src/c64/vsidmemsnapshot.c }
+@sp 1
+
+@b{The C64DTVBLITTER module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY 
+@tab  regs              
+@tab  32 BYTES of register data
+@item    DWORD 
+@tab  source A off      
+@tab  source A offset
+@item    DWORD 
+@tab  source B off      
+@tab  source B offset
+@item    DWORD 
+@tab  dest off          
+@tab  destination offset
+@item    DWORD 
+@tab  busy              
+@tab  busy flag
+@item    DWORD 
+@tab  IRQ               
+@tab  IRQ state
+@item    DWORD 
+@tab  on IRQ            
+@tab  on IRQ flag
+@item    DWORD 
+@tab  active            
+@tab  blitter active flag
+@item    ARRAY 
+@tab  source A data     
+@tab  4 BYTES of source A data
+@item    DWORD 
+@tab  source A data off 
+@tab  source A data offset
+@item    DWORD 
+@tab  source A fetched  
+@tab  source A fetched counter
+@item    ARRAY 
+@tab  source B data     
+@tab  4 BYTES of source B data
+@item    DWORD 
+@tab  source B data off 
+@tab  source B data offset
+@item    BYTE  
+@tab  source A          
+@tab  source A
+@item    BYTE  
+@tab  source B          
+@tab  source B
+@item    DWORD 
+@tab  count             
+@tab  blitter count
+@item    DWORD 
+@tab  state             
+@tab  blitter state
+@item    DWORD 
+@tab  source A line off 
+@tab  source A line offset
+@item    DWORD 
+@tab  source B line off 
+@tab  source B line offset
+@item    DWORD 
+@tab  dest line off     
+@tab  destination line offset
+@item    BYTE  
+@tab  last A            
+@tab  last A
+@end multitable
+
+@i{ src/c64dtv/c64dtvblitter.c }
+@sp 1
+
+@b{The C64DTVDMA module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY 
+@tab  regs            
+@tab  32 BYTES of register data
+@item    DWORD 
+@tab  source off      
+@tab  source offset
+@item    DWORD 
+@tab  dest off        
+@tab  destination offset
+@item    DWORD 
+@tab  busy            
+@tab  DMA busy flag
+@item    DWORD 
+@tab  IRQ             
+@tab  DMA IRQ state
+@item    DWORD 
+@tab  on IRQ          
+@tab  on IRQ
+@item    DWORD 
+@tab  active          
+@tab  DMA active flag
+@item    BYTE  
+@tab  data            
+@tab  DMA data
+@item    BYTE  
+@tab  data swap       
+@tab  DMA data swap flag
+@item    DWORD 
+@tab  count           
+@tab  DMA counter
+@item    DWORD 
+@tab  state           
+@tab  DMA state
+@item    DWORD 
+@tab  source line off 
+@tab  source line offset
+@item    DWORD 
+@tab  dest line off   
+@tab  destination line offset
+@item    BYTE  
+@tab  source mem type 
+@tab  source memory type
+@item    BYTE  
+@tab  dest mem type   
+@tab  destination memory type
+@end multitable
+
+@i{ src/c64dtv/c64dtvdma.c }
+@sp 1
+
+@b{The HUMMERADC module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  hummeradc_value      
+@tab 
+@item    BYTE  
+@tab  hummeradc_channel    
+@tab 
+@item    BYTE  
+@tab  hummeradc_control    
+@tab 
+@item    BYTE  
+@tab  hummeradc_chanattr   
+@tab 
+@item    BYTE  
+@tab  hummeradc_chanwakeup 
+@tab 
+@item    BYTE  
+@tab  hummeradc_prev       
+@tab 
+@end multitable
+
+@i{ src/c64dtv/hummeradc.c }
+@sp 1
+
+@b{The CARTGENERICCBM2 module}
+
+
+Version numbers: Major 0, Minor 2.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    ARRAY 
+@tab  ROM C1            
+@tab    0.1+  
+@tab  4kiB of ROM data
+@item    ARRAY 
+@tab  ROM C2            
+@tab    0.1+  
+@tab  8kiB of ROM data
+@item    ARRAY 
+@tab  ROM C4            
+@tab    0.1+  
+@tab  8kiB of ROM data
+@item    ARRAY 
+@tab  ROM C6            
+@tab    0.1+  
+@tab  8kiB of ROM data
+@end multitable
+
+@i{ src/cbm2/cart/cbm2-generic.c }
+@sp 1
+
+@b{The CBM2CART module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  number_of_carts      
+@tab  number of attached carts
+@item    BYTE  
+@tab  mem_cartridge_type   
+@tab  main type
+@item    ARRAY 
+@tab  cart_ids             
+@tab  number_of_carts * DWORD cartridge IDs
+@end multitable
+
+@i{ src/cbm2/cart/cbm2cart.c }
+@sp 1
+
+@b{The FLASH040 module}
+
+
+Version numbers: Major 2, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE   
+@tab  state                   
+@tab 
+@item    BYTE   
+@tab  base_state              
+@tab 
+@item    BYTE   
+@tab  program_byte            
+@tab 
+@item    ARRAY  
+@tab  erase_mask              
+@tab  FLASH040_ERASE_MASK_SIZE
+@item    BYTE   
+@tab  last_read               
+@tab 
+@end multitable
+
+@i{ src/core/flash040core.c }
+@sp 1
+
+@b{The FLASH800 module}
+
+
+Version numbers: Major 2, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE   
+@tab  state                   
+@tab 
+@item    BYTE   
+@tab  base_state              
+@tab 
+@item    BYTE   
+@tab  program_byte            
+@tab 
+@item    ARRAY  
+@tab  erase_mask              
+@tab  FLASH800_ERASE_MASK_SIZE
+@item    BYTE   
+@tab  last_read               
+@tab 
+@end multitable
+
+@i{ src/core/flash800core.c }
+@sp 1
+
+@b{The M93C86 module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  eeprom_cs            
+@tab 
+@item    BYTE  
+@tab  eeprom_clock         
+@tab 
+@item    BYTE  
+@tab  eeprom_data_in       
+@tab 
+@item    BYTE  
+@tab  eeprom_data_out      
+@tab 
+@item    BYTE  
+@tab  input_shiftreg       
+@tab 
+@item    BYTE  
+@tab  input_count          
+@tab 
+@item    BYTE  
+@tab  output_shiftreg      
+@tab 
+@item    BYTE  
+@tab  output_count         
+@tab 
+@item    BYTE  
+@tab  command              
+@tab 
+@item    BYTE  
+@tab  addr                 
+@tab 
+@item    BYTE  
+@tab  data0                
+@tab 
+@item    BYTE  
+@tab  data1                
+@tab 
+@item    BYTE  
+@tab  write_enable_status  
+@tab 
+@item    BYTE  
+@tab  ready_busy_status    
+@tab 
+@item    ARRAY 
+@tab  m93c86_data          
+@tab  2048 bytes of ROM data
+@end multitable
+
+@i{ src/core/m93c86.c }
+@sp 1
+
+@b{The RTC_BQ4830Y module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE   
+@tab  clock halt          
+@tab  clock halt flag
+@item    DWORD  
+@tab  clock halt latch hi 
+@tab  high DWORD of clock halt offset
+@item    DWORD  
+@tab  clock halt latch lo 
+@tab  low DWORD of clock halt offset
+@item    BYTE   
+@tab  read latch          
+@tab  read latch flag
+@item    BYTE   
+@tab  write latch         
+@tab  write latch flag
+@item    DWORD  
+@tab  latch hi            
+@tab  high DWORD of the read/write offset
+@item    DWORD  
+@tab  latch lo            
+@tab  low DWORD of the read/write offset
+@item    DWORD  
+@tab  offset hi           
+@tab  high DWORD of the RTC offset
+@item    DWORD  
+@tab  offset lo           
+@tab  low DWORD of the RTC offset
+@item    DWORD  
+@tab  old offset hi       
+@tab  high DWORD of the old RTC offset
+@item    DWORD  
+@tab  old offset lo       
+@tab  low DWORD of the old RTC offset
+@item    ARRAY  
+@tab  clock regs          
+@tab  8 BYTES of register data
+@item    ARRAY  
+@tab  old clock regs      
+@tab  8 BYTES of old register data
+@item    ARRAY  
+@tab  clock regs changed  
+@tab  8 BYTES of changed register data
+@item    ARRAY  
+@tab  RAM                 
+@tab  32768 BYTES of RAM data
+@item    ARRAY  
+@tab  old RAM             
+@tab  32768 BYTES of old RAM data
+@item    STRING 
+@tab  device              
+@tab  device name STRING
+@end multitable
+
+@i{ src/core/rtc/bq4830y.c }
+@sp 1
+
+@b{The RTC_DS1202_1302 module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE   
+@tab  rtc type            
+@tab  RTC type
+@item    BYTE   
+@tab  clock halt          
+@tab  clock halt flag
+@item    DWORD  
+@tab  clock halt latch hi 
+@tab  high DWORD of clock halt offset
+@item    DWORD  
+@tab  clock halt latch lo 
+@tab  low DWORD of clock halt offset
+@item    BYTE   
+@tab  am pm               
+@tab  AM/PM flag
+@item    BYTE   
+@tab  write protect       
+@tab  write protect flag
+@item    DWORD  
+@tab  latch hi            
+@tab  high DWORD of latch offset
+@item    DWORD  
+@tab  latch lo            
+@tab  low DWORD of latch offset
+@item    DWORD  
+@tab  offset hi           
+@tab  high DWORD of RTC offset
+@item    DWORD  
+@tab  offset lo           
+@tab  low DWORD of RTC offset
+@item    DWORD  
+@tab  old offset hi       
+@tab  high DWORD of old RTC offset
+@item    DWORD  
+@tab  old offset lo       
+@tab  low DWORD of old RTC offset
+@item    ARRAY  
+@tab  clock regs          
+@tab  8 BYTES of register data
+@item    ARRAY  
+@tab  old clock regs      
+@tab  8 BYTES of old register data
+@item    BYTE   
+@tab  trickle charge      
+@tab  trickle charge
+@item    ARRAY  
+@tab  RAM                 
+@tab  32 BYTES of RAM data
+@item    ARRAY  
+@tab  old RAM             
+@tab  32 BYTES of old RAM data
+@item    BYTE   
+@tab  state               
+@tab  current RTC read/write state
+@item    BYTE   
+@tab  reg                 
+@tab  current register
+@item    BYTE   
+@tab  bit                 
+@tab  current bit
+@item    BYTE   
+@tab  output bit          
+@tab  current output bit
+@item    BYTE   
+@tab  io byte             
+@tab  current I/O BYTE
+@item    BYTE   
+@tab  sclk                
+@tab  SCLK line state
+@item    BYTE   
+@tab  clock register      
+@tab  clock register flag
+@item    STRING 
+@tab  device              
+@tab  device name STRING
+@end multitable
+
+@i{ src/core/rtc/ds1202_1302.c }
+@sp 1
+
+@b{The RTC_DS1216E module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE   
+@tab  reset              
+@tab  reset flag
+@item    BYTE   
+@tab  inactive           
+@tab  inactive flag
+@item    BYTE   
+@tab  12hours            
+@tab  12 hours flag
+@item    BYTE   
+@tab  pattern pos        
+@tab  pattern position
+@item    BYTE   
+@tab  pattern ignore     
+@tab  pattern ignore flag
+@item    BYTE   
+@tab  output             
+@tab  current output bit
+@item    BYTE   
+@tab  output pos         
+@tab  current output position
+@item    BYTE   
+@tab  day offset         
+@tab  day of week offset
+@item    BYTE   
+@tab  day latch          
+@tab  day of week latch
+@item    DWORD  
+@tab  latch hi           
+@tab  high DWORD of the latch offset
+@item    DWORD  
+@tab  latch lo           
+@tab  low DWORD of the latch offset
+@item    DWORD  
+@tab  offset hi          
+@tab  high DWORD of the RTC offset
+@item    DWORD  
+@tab  offset lo          
+@tab  low DWORD of the RTC offset
+@item    DWORD  
+@tab  old offset hi      
+@tab  high DWORD of the old RTC offset
+@item    DWORD  
+@tab  old offset lo      
+@tab  low DWORD of the old RTC offset
+@item    ARRAY  
+@tab  clock regs         
+@tab  8 BYTES of register data
+@item    ARRAY  
+@tab  old clock regs     
+@tab  8 BYTES of old register data
+@item    ARRAY  
+@tab  clock regs changed 
+@tab  8 BYTES of changed register data
+@item    STRING 
+@tab  device             
+@tab  device name STRING
+@end multitable
+
+@i{ src/core/rtc/ds1216e.c }
+@sp 1
+
+@b{The RTC_DS12C887 module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE   
+@tab  clock halt          
+@tab  clock halt flag
+@item    DWORD  
+@tab  clock halt latch hi 
+@tab  high DWORD of the clock halt offset
+@item    DWORD  
+@tab  clock halt latch lo 
+@tab  low DWORD of the clock halt offset
+@item    BYTE   
+@tab  am pm               
+@tab  AM/PM flag
+@item    BYTE   
+@tab  set                 
+@tab  RTC set in progress flag
+@item    DWORD  
+@tab  set latch hi        
+@tab  high DWORD of the set offset
+@item    DWORD  
+@tab  set latch lo        
+@tab  low DWORD of the set offset
+@item    DWORD  
+@tab  offset hi           
+@tab  high DWORD of the RTC offset
+@item    DWORD  
+@tab  offset lo           
+@tab  low DWORD of the RTC offset
+@item    DWORD  
+@tab  old offset hi       
+@tab  high DWORD of the old RTC offset
+@item    DWORD  
+@tab  old offset lo       
+@tab  low DWORD of the old RTC offset
+@item    BYTE   
+@tab  bcd                 
+@tab  BCD mode flag
+@item    BYTE   
+@tab  alarm flag          
+@tab  alarm flag
+@item    BYTE   
+@tab  end of update flag  
+@tab  end of update flag
+@item    ARRAY  
+@tab  clock regs          
+@tab  11 BYTES of register data
+@item    ARRAY  
+@tab  old clock regs      
+@tab  11 BYTES of old register data
+@item    ARRAY  
+@tab  clock regs changed  
+@tab  11 BYTES of changed register data
+@item    ARRAY  
+@tab  ctrl regs           
+@tab  2 BYTES of control register data
+@item    ARRAY  
+@tab  RAM                 
+@tab  128 BYTES of RAM data
+@item    ARRAY  
+@tab  old RAM             
+@tab  128 BYTES of old RAM data
+@item    BYTE   
+@tab  reg                 
+@tab  current register
+@item    BYTE   
+@tab  prev second         
+@tab  previous second
+@item    STRING 
+@tab  device              
+@tab  device name STRING
+@end multitable
+
+@i{ src/core/rtc/ds12c887.c }
+@sp 1
+
+@b{The RTC_DS1307 module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE   
+@tab  clock halt          
+@tab  clock halt flag
+@item    DWORD  
+@tab  clock halt latch hi 
+@tab  high DWORD of clock halt offset
+@item    DWORD  
+@tab  clock halt latch lo 
+@tab  low DWORD of clock halt offset
+@item    BYTE   
+@tab  am pm               
+@tab  AM/PM flag
+@item    DWORD  
+@tab  latch hi            
+@tab  high DWORD of latch offset
+@item    DWORD  
+@tab  latch lo            
+@tab  low DWORD of latch offset
+@item    DWORD  
+@tab  offset hi           
+@tab  high DWORD of RTC offset
+@item    DWORD  
+@tab  offset lo           
+@tab  low DWORD of RTC offset
+@item    DWORD  
+@tab  old offset hi       
+@tab  high DWORD of old RTC offset
+@item    DWORD  
+@tab  old offset lo       
+@tab  low DWORD of old RTC offset
+@item    ARRAY  
+@tab  clock regs          
+@tab  8 BYTES of register data
+@item    ARRAY  
+@tab  old clock regs      
+@tab  8 BYTES of old register data
+@item    ARRAY  
+@tab  clock regs for read 
+@tab  8 BYTES of register read data
+@item    ARRAY  
+@tab  RAM                 
+@tab  56 BYTES of RAM data
+@item    ARRAY  
+@tab  old RAM             
+@tab  56 BYTES of old RAM data
+@item    BYTE   
+@tab  state               
+@tab  current state
+@item    BYTE   
+@tab  reg                 
+@tab  current register
+@item    BYTE   
+@tab  reg ptr             
+@tab  register pointer
+@item    BYTE   
+@tab  bit                 
+@tab  current bit
+@item    BYTE   
+@tab  io byte             
+@tab  current I/O BYTE
+@item    BYTE   
+@tab  sclk                
+@tab  SCLK line state
+@item    BYTE   
+@tab  data                
+@tab  DATA line state
+@item    BYTE   
+@tab  clock register      
+@tab  clock register flag
+@item    STRING 
+@tab  device              
+@tab  device name STRING
+@end multitable
+
+@i{ src/core/rtc/ds1307.c }
+@sp 1
+
+@b{The RTC_DS1602 module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    DWORD  
+@tab  latch hi      
+@tab  high DWORD of latch offset
+@item    DWORD  
+@tab  latch lo      
+@tab  low DWORD of latch offset
+@item    DWORD  
+@tab  offset 0 hi   
+@tab  high DWORD of RTC offset 0
+@item    DWORD  
+@tab  offset 0 lo   
+@tab  low DWORD of RTC offset 0
+@item    DWORD  
+@tab  offset hi     
+@tab  high DWORD of RTC offset
+@item    DWORD  
+@tab  offset lo     
+@tab  low DWORD of RTC offset
+@item    DWORD  
+@tab  old offset hi 
+@tab  high DWORD of old RTC offset
+@item    DWORD  
+@tab  old offset lo 
+@tab  low DWORD of old RTC offset
+@item    DWORD  
+@tab  reg           
+@tab  current register
+@item    BYTE   
+@tab  state         
+@tab  current state
+@item    BYTE   
+@tab  bit           
+@tab  current bit
+@item    BYTE   
+@tab  io byte       
+@tab  current I/O BYTE
+@item    BYTE   
+@tab  rst           
+@tab  RST line state
+@item    BYTE   
+@tab  clk           
+@tab  CLK line state
+@item    BYTE   
+@tab  data line in  
+@tab  DATA in line state
+@item    BYTE   
+@tab  data line out 
+@tab  DATA out line state
+@item    STRING 
+@tab  device        
+@tab  device name STRING
+@end multitable
+
+@i{ src/core/rtc/ds1602.c }
+@sp 1
+
+@b{The RTC_PCF8583 module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE   
+@tab  clock halt          
+@tab  clock halt flag
+@item    DWORD  
+@tab  clock halt latch hi 
+@tab  high DWORD of clock halt offset
+@item    DWORD  
+@tab  clock halt latch lo 
+@tab  low DWORD of clock halt offset
+@item    BYTE   
+@tab  am pm               
+@tab  AM/PM flag
+@item    DWORD  
+@tab  read bit shift      
+@tab  special case bit pattern shift
+@item    DWORD  
+@tab  latch hi            
+@tab  high DWORD of latch offset
+@item    DWORD  
+@tab  latch lo            
+@tab  low DWORD of latch offset
+@item    DWORD  
+@tab  offset hi           
+@tab  high DWORD of RTC offset
+@item    DWORD  
+@tab  offset lo           
+@tab  low DWORD of RTC offset
+@item    DWORD  
+@tab  old offset hi       
+@tab  high DWORD of old RTC offset
+@item    DWORD  
+@tab  old offset lo       
+@tab  low DWORD of old RTC offset
+@item    ARRAY  
+@tab  clock regs          
+@tab  16 BYTES of register data
+@item    ARRAY  
+@tab  old clock regs      
+@tab  16 BYTES of old register data
+@item    ARRAY  
+@tab  clock regs for read 
+@tab  16 BYTES of clock read register data
+@item    ARRAY  
+@tab  RAM                 
+@tab  240 BYTES of RAM data
+@item    ARRAY  
+@tab  old RAM             
+@tab  240 BYTES of old RAM data
+@item    BYTE   
+@tab  state               
+@tab  current state
+@item    BYTE   
+@tab  reg                 
+@tab  current register
+@item    BYTE   
+@tab  reg ptr             
+@tab  current register pointer
+@item    BYTE   
+@tab  bit                 
+@tab  current bit
+@item    BYTE   
+@tab  io byte             
+@tab  current I/O BYTE
+@item    BYTE   
+@tab  sclk                
+@tab  SCLK line state
+@item    BYTE   
+@tab  data                
+@tab  DATA line state
+@item    BYTE   
+@tab  clock register      
+@tab  current clock register
+@item    STRING 
+@tab  device              
+@tab  device name STRING
+@end multitable
+
+@i{ src/core/rtc/pcf8583.c }
+@sp 1
+
+@b{The RTC_58321A module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE   
+@tab  stop          
+@tab  stop flag
+@item    BYTE   
+@tab  24 hours      
+@tab  24 hours flag
+@item    BYTE   
+@tab  address       
+@tab  current address
+@item    DWORD  
+@tab  latch hi      
+@tab  high DWORD of latch offset
+@item    DWORD  
+@tab  latch lo      
+@tab  low DWORD of latch offset
+@item    DWORD  
+@tab  offset hi     
+@tab  high DWORD of RTC offset
+@item    DWORD  
+@tab  offset lo     
+@tab  low DWORD of RTC offset
+@item    DWORD  
+@tab  old offset hi 
+@tab  high DWORD of old RTC offset
+@item    DWORD  
+@tab  old offset lo 
+@tab  low DWORD of old RTC offset
+@item    STRING 
+@tab  device        
+@tab  device name STRING
+@end multitable
+
+@i{ src/core/rtc/rtc-58321a.c }
+@sp 1
+
+@b{The RTC_72421 module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE   
+@tab  stop          
+@tab  stop flag
+@item    BYTE   
+@tab  24 hours      
+@tab  24 hours flag
+@item    BYTE   
+@tab  day offset    
+@tab  offset for day of week
+@item    BYTE   
+@tab  day latch     
+@tab  latch for day of week
+@item    BYTE   
+@tab  day           
+@tab  day of week (needed for above 2)
+@item    DWORD  
+@tab  latch hi      
+@tab  high DWORD of latch offset
+@item    DWORD  
+@tab  latch lo      
+@tab  low DWORD of latch offset
+@item    DWORD  
+@tab  offset hi     
+@tab  high DWORD of RTC offset
+@item    DWORD  
+@tab  offset lo     
+@tab  low DWORD of RTC offset
+@item    DWORD  
+@tab  old offset hi 
+@tab  high DWORD of old RTC offset
+@item    DWORD  
+@tab  old offset lo 
+@tab  low DWORD of old RTC offset
+@item    STRING 
+@tab  device        
+@tab  device name string
+@end multitable
+
+@i{ src/core/rtc/rtc-72421.c }
+@sp 1
+
+@b{The SCSI module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE   
+@tab  state              
+@tab  state
+@item    BYTE   
+@tab  target             
+@tab  target
+@item    BYTE   
+@tab  databus            
+@tab  databus
+@item    BYTE   
+@tab  ack                
+@tab  ack
+@item    BYTE   
+@tab  req                
+@tab  req
+@item    BYTE   
+@tab  bsyi               
+@tab  bsyi
+@item    BYTE   
+@tab  bsyo               
+@tab  bsyo
+@item    BYTE   
+@tab  sel                
+@tab  sel
+@item    BYTE   
+@tab  rst                
+@tab  rst
+@item    BYTE   
+@tab  atn                
+@tab  atn
+@item    BYTE   
+@tab  cd                 
+@tab  cd
+@item    bYTE   
+@tab  io                 
+@tab  io
+@item    BYTE   
+@tab  msg                
+@tab  msg
+@item    BYTE   
+@tab  link               
+@tab  link
+@item    BYTE   
+@tab  status             
+@tab  status
+@item    BYTE   
+@tab  lun                
+@tab  lun
+@item    BYTE   
+@tab  command            
+@tab  command
+@item    BYTE   
+@tab  sensekey           
+@tab  sensekey
+@item    BYTE   
+@tab  asc                
+@tab  asc
+@item    BYTE   
+@tab  msg_after_status   
+@tab  msg_after_status
+@item    DWORD  
+@tab  seq                
+@tab  seq
+@item    DWORD  
+@tab  cmd_size           
+@tab  cmd_size
+@item    DWORD  
+@tab  address            
+@tab  address
+@item    DWORD  
+@tab  blocks             
+@tab  blocks
+@item    DWORD  
+@tab  data_max           
+@tab  data_max
+@item    DWORD  
+@tab  max_imagesize      
+@tab  max_imagesize
+@item    ARRAY  
+@tab  cmd_buf            
+@tab  256 bytes of cmd_buf
+@item    ARRAY  
+@tab  data_buf           
+@tab  512 bytes of data_buf
+@end multitable
+
+@i{ src/core/scsi.c }
+@sp 1
+
+@b{The EN25QH128A module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE   
+@tab  eeprom_cs               
+@tab 
+@item    BYTE   
+@tab  eeprom_clock            
+@tab 
+@item    BYTE   
+@tab  eeprom_data_in          
+@tab 
+@item    BYTE   
+@tab  eeprom_data_out         
+@tab 
+@item    BYTE   
+@tab  input_shiftreg          
+@tab 
+@item    BYTE   
+@tab  input_count             
+@tab 
+@item    BYTE   
+@tab  output_shiftreg         
+@tab 
+@item    BYTE   
+@tab  output_count            
+@tab 
+@item    BYTE   
+@tab  command                 
+@tab 
+@item    BYTE   
+@tab  addr                    
+@tab 
+@item    BYTE   
+@tab  write_enable_status     
+@tab 
+@item    BYTE   
+@tab  ready_busy_status       
+@tab 
+@item    ARRAY  
+@tab  spi_flash_data          
+@tab  MAX_ROM_SIZE
+@end multitable
+
+@i{ src/core/spi-flash.c }
+@sp 1
+
+@b{The DATASETTE module}
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  datasette_motor                  
+@tab 
+@item    BYTE  
+@tab  notape_mode                      
+@tab 
+@item    CLOCK 
+@tab  last_write_clk                   
+@tab 
+@item    CLOCK 
+@tab  motor_stop_clk                   
+@tab 
+@item    BYTE  
+@tab  datasette_alarm_pending          
+@tab 
+@item    CLOCK 
+@tab  alarm_clk                        
+@tab 
+@item    CLOCK 
+@tab  datasette_long_gap_pending       
+@tab 
+@item    CLOCK 
+@tab  datasette_long_gap_elapsed       
+@tab 
+@item    BYTE  
+@tab  datasette_last_direction         
+@tab 
+@item    DWORD 
+@tab  datasette_counter_offset         
+@tab 
+@item    BYTE  
+@tab  reset_datasette_with_maincpu     
+@tab 
+@item    DWORD 
+@tab  datasette_zero_gap_delay         
+@tab 
+@item    DWORD 
+@tab  datasette_speed_tuning           
+@tab 
+@item    DWORD 
+@tab  datasette_tape_wobble_frequency  
+@tab 
+@item    DWORD 
+@tab  datasette_tape_wobble_amplitude  
+@tab 
+@item    DWORD 
+@tab  datasette_tape_azimuth_error     
+@tab 
+@item    BYTE  
+@tab  fullwave                         
+@tab 
+@item    CLOCK 
+@tab  fullwave_gap                     
+@tab 
+@end multitable
+
+@i{ src/datasette/datasette.c }
+@sp 1
+
+@b{The DRIVE module}
+
+
+Version numbers: Major 2, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE       
+@tab  has_tde[unit]               
+@tab 
+@item    BYTE       
+@tab  has_drives[unit]            
+@tab 
+@item    DWORD      
+@tab  sync_factor                 
+@tab 
+@item    CLOCK      
+@tab  attach_clk                  
+@tab 
+@item    BYTE       
+@tab  byte_ready_level            
+@tab 
+@item    BYTE       
+@tab  unit->clock_frequency       
+@tab 
+@item    WORD       
+@tab  current_half_track + (side * DRIVE_HALFTRACKS_1571)) 
+@tab 
+@item    CLOCK      
+@tab  detach_clk                  
+@tab 
+@item    BYTE       
+@tab  extend_image_policy         
+@tab 
+@item    DWORD      
+@tab  GCR_head_offset             
+@tab 
+@item    BYTE       
+@tab  GCR_read                    
+@tab 
+@item    BYTE       
+@tab  GCR_write_value             
+@tab 
+@item    BYTE       
+@tab  unit->idling_method         
+@tab 
+@item    BYTE       
+@tab  unit->parallel_cable        
+@tab 
+@item    BYTE       
+@tab  read_only                   
+@tab 
+@item    DWORD      
+@tab  rotation_table_ptr[unr]     
+@tab 
+@item    DWORD      
+@tab  unit->type                  
+@tab 
+@item    DWORD      
+@tab  snap_accum                  
+@tab 
+@item    CLOCK      
+@tab  snap_rotation_last_clk      
+@tab 
+@item    DWORD      
+@tab  snap_bit_counter            
+@tab 
+@item    DWORD      
+@tab  snap_zero_count             
+@tab 
+@item    WORD       
+@tab  snap_last_read_data         
+@tab 
+@item    BYTE       
+@tab  snap_last_write_data        
+@tab 
+@item    DWORD      
+@tab  snap_seed                   
+@tab 
+@item    DWORD      
+@tab  snap_speed_zone             
+@tab 
+@item    DWORD      
+@tab  snap_ue7_dcba               
+@tab 
+@item    DWORD      
+@tab  snap_ue7_counter            
+@tab 
+@item    DWORD      
+@tab  snap_uf4_counter            
+@tab 
+@item    DWORD      
+@tab  snap_fr_randcount           
+@tab 
+@item    DWORD      
+@tab  snap_filter_counter         
+@tab 
+@item    DWORD      
+@tab  snap_filter_state           
+@tab 
+@item    DWORD      
+@tab  snap_filter_last_state      
+@tab 
+@item    DWORD      
+@tab  snap_write_flux             
+@tab 
+@item    DWORD      
+@tab  snap_PulseHeadPosition      
+@tab 
+@item    DWORD      
+@tab  snap_xorShift32             
+@tab 
+@item    DWORD      
+@tab  snap_so_delay               
+@tab 
+@item    DWORD      
+@tab  snap_cycle_index            
+@tab 
+@item    CLOCK      
+@tab  snap_ref_advance            
+@tab 
+@item    DWORD      
+@tab  snap_req_ref_cycles         
+@tab 
+@item    CLOCK      
+@tab  attach_detach_clk           
+@tab 
+@item    BYTE       
+@tab  byte_ready_edge             
+@tab 
+@item    BYTE       
+@tab  byte_ready_active           
+@tab 
+@end multitable
+
+@i{ src/drive/drive-snapshot.c }
+@sp 1
+
+@b{The DRIVECPU module}
+
+
+Version numbers: Major 1, Minor 3.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    CLOCK 
+@tab  clock                
+@tab 
+@item    UBYTE 
+@tab  a                    
+@tab 
+@item    UBYTE 
+@tab  x                    
+@tab 
+@item    UBYTE 
+@tab  y                    
+@tab 
+@item    UBYTE 
+@tab  sp                   
+@tab 
+@item    WORD  
+@tab  pc                   
+@tab 
+@item    UBYTE 
+@tab  status               
+@tab 
+@item    DWORD 
+@tab  last_opcode_info     
+@tab 
+@item    CLOCK 
+@tab  last_clk             
+@tab 
+@item    CLOCK 
+@tab  cycle_accum          
+@tab 
+@item    CLOCK 
+@tab  last_exc_cycles      
+@tab 
+@item    CLOCK 
+@tab  stop_clk             
+@tab 
+@item    UBYTE 
+@tab  cpu_last_data        
+@tab 
+@item    ARRAY 
+@tab  drive RAM            
+@tab  size depends on drive
+@end multitable
+
+@i{ src/drive/drivecpu.c }
+@sp 1
+
+@b{The DRIVECPU65C02 module}
+
+
+Version numbers: Major 1, Minor 3.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    CLOCK 
+@tab  clock                
+@tab 
+@item    UBYTE 
+@tab  a                    
+@tab 
+@item    UBYTE 
+@tab  x                    
+@tab 
+@item    UBYTE 
+@tab  y                    
+@tab 
+@item    UBYTE 
+@tab  sp                   
+@tab 
+@item    WORD  
+@tab  pc                   
+@tab 
+@item    UBYTE 
+@tab  status               
+@tab 
+@item    DWORD 
+@tab  last_opcode_info     
+@tab 
+@item    CLOCK 
+@tab  last_clk             
+@tab 
+@item    CLOCK 
+@tab  cycle_accum          
+@tab 
+@item    CLOCK 
+@tab  last_exc_cycles      
+@tab 
+@item    CLOCK 
+@tab  stop_clk             
+@tab 
+@item    UBYTE 
+@tab  cpu_last_data        
+@tab 
+@item    ARRAY 
+@tab  drive RAM            
+@tab  size depends on drive
+@end multitable
+
+@i{ src/drive/drivecpu65c02.c }
+@sp 1
+
+@b{The DRIVEROM module}
+
+
+Version numbers: Major 1, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY      
+@tab  drive ROM                   
+@tab  size depends on drive
+@end multitable
+
+@i{ src/drive/driverom.c }
+@sp 1
+
+@b{The CMDHD module}
+
+
+Version numbers: Major 1, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE     
+@tab  LEDs                  
+@tab 
+@item    ARRAY    
+@tab  i8255a_i              
+@tab  3
+@item    ARRAY    
+@tab  i8255a_o              
+@tab  3
+@item    BYTE     
+@tab  scsi_dir              
+@tab 
+@item    BYTE     
+@tab  preadyff              
+@tab 
+@end multitable
+
+@i{ src/drive/iec/cmdhd.c }
+@sp 1
+
+@b{The FDD module}
+
+
+Version numbers: Major 1, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE   
+@tab  number                  
+@tab 
+@item    BYTE   
+@tab  disk_change             
+@tab 
+@item    BYTE   
+@tab  write_protect           
+@tab 
+@item    BYTE   
+@tab  track                   
+@tab 
+@item    BYTE   
+@tab  tracks                  
+@tab 
+@item    BYTE   
+@tab  head                    
+@tab 
+@item    BYTE   
+@tab  sectors                 
+@tab 
+@item    BYTE   
+@tab  motor                   
+@tab 
+@item    BYTE   
+@tab  rate                    
+@tab 
+@item    BYTE   
+@tab  sector_size             
+@tab 
+@item    BYTE   
+@tab  iso                     
+@tab 
+@item    BYTE   
+@tab  gap2                    
+@tab 
+@item    BYTE   
+@tab  gap3                    
+@tab 
+@item    BYTE   
+@tab  head_invert             
+@tab 
+@item    BYTE   
+@tab  disk_rate               
+@tab 
+@item    DWORD  
+@tab  image_sectors           
+@tab 
+@item    DWORD  
+@tab  index_count             
+@tab 
+@item    DWORD  
+@tab  raw.head                
+@tab 
+@item    BYTE   
+@tab  raw.track_head          
+@tab 
+@item    BYTE   
+@tab  raw.dirty               
+@tab 
+@item    ARRAY  
+@tab  raw.data                
+@tab  raw.size
+@item    ARRAY  
+@tab  raw.sync                
+@tab  (raw.size + 7) >> 3
+@end multitable
+
+@i{ src/drive/iec/fdd.c }
+@sp 1
+
+@b{The WD1770 module}
+
+
+Version numbers: Major 1, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE   
+@tab  data                    
+@tab 
+@item    BYTE   
+@tab  track                   
+@tab 
+@item    BYTE   
+@tab  sector                  
+@tab 
+@item    BYTE   
+@tab  status                  
+@tab 
+@item    BYTE   
+@tab  cmd                     
+@tab 
+@item    WORD   
+@tab  crc                     
+@tab 
+@item    BYTE   
+@tab  command                 
+@tab 
+@item    DWORD  
+@tab  type                    
+@tab 
+@item    DWORD  
+@tab  step                    
+@tab 
+@item    DWORD  
+@tab  byte_count              
+@tab 
+@item    DWORD  
+@tab  tmp                     
+@tab 
+@item    DWORD  
+@tab  direction               
+@tab 
+@item    CLOCK  
+@tab  clk                     
+@tab 
+@item    BYTE   
+@tab  irq                     
+@tab 
+@item    BYTE   
+@tab  dden                    
+@tab 
+@item    BYTE   
+@tab  sync                    
+@tab 
+@item    BYTE   
+@tab  is1772                  
+@tab 
+@end multitable
+
+@i{ src/drive/iec/wd1770.c }
+@sp 1
+
+@b{The FDC module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  STATE    
+@tab  FDC state
+@item    DWORD 
+@tab  CLK      
+@tab  clk ticks till next fdc invocation
+@item    BYTE  
+@tab  NDRV     
+@tab  number of drives (1 or 2)
+@item    BYTE  
+@tab  LTRACK0  
+@tab  last track
+@item    BYTE  
+@tab  LSECTOR0 
+@tab  last sector
+@item    BYTE  
+@tab  LTRACK1  
+@tab  last track (if ndrv == 2)
+@item    BYTE  
+@tab  LSECTOR1 
+@tab  last sector (if ndrv == 2)
+@end multitable
+
+@i{ src/drive/ieee/fdc.c }
+@sp 1
+
+@b{The EVENT module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    DWORD   
+@tab  type                   
+@tab 
+@item    CLOCK   
+@tab  clock                  
+@tab 
+@item    DWORD   
+@tab  size                   
+@tab 
+@item    ARRAY   
+@tab  data                   
+@tab 
+@end multitable
+
+@i{ src/event.c }
+@sp 1
+
+@b{The BBRTC module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  RST  
+@tab  reset line state
+@item    BYTE  
+@tab  CLK  
+@tab  clock line state
+@item    BYTE  
+@tab  DATA 
+@tab  data line state
+@end multitable
+
+@i{ src/joyport/bbrtc.c }
+@sp 1
+
+@b{The CX21 module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  PORT 
+@tab  PORT register state
+@end multitable
+
+@i{ src/joyport/cx21.c }
+@sp 1
+
+@b{The INCEPTION module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  COUNTER 
+@tab  counter value
+@item    BYTE  
+@tab  CLOCK   
+@tab  clock line state
+@end multitable
+
+@i{ src/joyport/inception.c }
+@sp 1
+
+@b{The JOYPORT module}
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  device id           
+@tab  device id connected to this joystick port
+@end multitable
+
+@i{ src/joyport/joyport.c }
+@sp 1
+
+@b{The JPIOSIM module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  DATA OUT 
+@tab  data out value
+@item    BYTE  
+@tab  DATA IN  
+@tab  data in value
+@item    BYTE  
+@tab  POTX     
+@tab  pot-x state
+@item    BYTE  
+@tab  POTY     
+@tab  pot-y state
+@end multitable
+
+@i{ src/joyport/joyport_io_sim.c }
+@sp 1
+
+@b{The JOYSTICK module}
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    WORD  
+@tab  joystick value      
+@tab  current/last value read from the joystick port
+@end multitable
+
+@i{ src/joyport/joystick.c }
+@sp 1
+
+@b{The LIGHTPEN module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  value    
+@tab  lightpen return value
+@item    BYTE  
+@tab  type     
+@tab  lightpen type
+@item    DWORD 
+@tab  buttons  
+@tab  buttons state
+@item    DWORD 
+@tab  button y 
+@tab  button Y state
+@item    DWORD 
+@tab  button x 
+@tab  button X state
+@end multitable
+
+@i{ src/joyport/lightpen.c }
+@sp 1
+
+@b{The MOUSE_1351 module}
+
+
+Version numbers: Major 1, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE   
+@tab  digital value          
+@tab  digital pins return value
+@end multitable
+
+@i{ src/joyport/mouse_1351.c }
+@sp 1
+
+@b{The MOUSE_MICROMYS module}
+
+
+Version numbers: Major 1, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE   
+@tab  digital value          
+@tab  digital pins return value
+@item    DWORD  
+@tab  up down counter        
+@tab  up down counter
+@item    DWORD  
+@tab  up down pulse end      
+@tab  up down pulse end
+@end multitable
+
+@i{ src/joyport/mouse_1351.c }
+@sp 1
+
+@b{The MOUSE_SMART module}
+
+
+Version numbers: Major 1, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE   
+@tab  digital value          
+@tab  digital pins return value
+@end multitable
+
+@i{ src/joyport/mouse_1351.c }
+@sp 1
+
+@b{The MOUSE_DIGITAL module}
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  digital value        
+@tab  digital pins return value
+@item    DWORD 
+@tab  buttons              
+@tab  buttons state
+@item    BYTE  
+@tab  new x                
+@tab  X
+@item    BYTE  
+@tab  new y                
+@tab  Y
+@item    BYTE  
+@tab  last x               
+@tab  last X
+@item    BYTE  
+@tab  last y               
+@tab  last Y
+@item    DWORD 
+@tab  digital state        
+@tab  state
+@item    DWORD 
+@tab  clock_vert_move      
+@tab  last trigger clock (Vertical)
+@item    DWORD 
+@tab  clock_hori_move      
+@tab  last trigger clock (Horizontal)
+@end multitable
+
+@i{ src/joyport/mouse_digital.c }
+@sp 1
+
+@b{The MOUSE_NEOS module}
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  digital value        
+@tab  digital pins return value
+@item    DWORD 
+@tab  buttons              
+@tab  buttons state
+@item    BYTE  
+@tab  neos x               
+@tab  neos X
+@item    BYTE  
+@tab  neos y               
+@tab  neos Y
+@item    BYTE  
+@tab  neos last x          
+@tab  neos last X
+@item    BYTE  
+@tab  neos last y          
+@tab  neos last Y
+@item    DWORD 
+@tab  neos state           
+@tab  state
+@item    DWORD 
+@tab  neos prev            
+@tab  previous state
+@item    DWORD 
+@tab  last trigger         
+@tab  last trigger clock
+@item    DWORD 
+@tab  neos time out cycles 
+@tab  time out cycles
+@end multitable
+
+@i{ src/joyport/mouse_neos.c }
+@sp 1
+
+@b{The PADDLES module}
+
+
+Version numbers: Major 1, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  digital value          
+@tab  digital pins return value
+@item    BYTE  
+@tab  paddle 1 x-value       
+@tab  paddle 1 x-value
+@item    BYTE  
+@tab  paddle 1 y-value       
+@tab  paddle 1 y-value
+@item    BYTE  
+@tab  old paddle 1 x-value   
+@tab  old paddle 1 x-value
+@item    BYTE  
+@tab  old paddle 1 y-value   
+@tab  old paddle 1 y-value
+@end multitable
+
+@i{ src/joyport/mouse_paddle.c }
+@sp 1
+
+@b{The KOALAPAD module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  digital value          
+@tab  digital pins return value
+@item    BYTE  
+@tab  paddle 1 x-value       
+@tab  paddle 1 x-value
+@item    BYTE  
+@tab  paddle 1 y-value       
+@tab  paddle 1 y-value
+@item    BYTE  
+@tab  old paddle 1 x-value   
+@tab  old paddle 1 x-value
+@item    BYTE  
+@tab  old paddle 1 y-value   
+@tab  old paddle 1 y-value
+@end multitable
+
+@i{ src/joyport/mouse_paddle.c }
+@sp 1
+
+@b{The MOUSE_AMIGA module}
+
+
+Version numbers: Major 1, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE   
+@tab  digital value          
+@tab  digital pins return value
+@item    BYTE   
+@tab  quadrature X           
+@tab  quadrature X
+@item    BYTE   
+@tab  quadrature Y           
+@tab  quadrature Y
+@item    BYTE   
+@tab  polled joyval          
+@tab  polled joyval
+@item    DWORD  
+@tab  buttons                
+@tab  buttons state
+@end multitable
+
+@i{ src/joyport/mouse_quadrature.c }
+@sp 1
+
+@b{The MOUSE_CX22 module}
+
+
+Version numbers: Major 1, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE   
+@tab  digital value          
+@tab  digital pins return value
+@item    BYTE   
+@tab  quadrature X           
+@tab  quadrature X
+@item    BYTE   
+@tab  quadrature Y           
+@tab  quadrature Y
+@item    BYTE   
+@tab  polled joyval          
+@tab  polled joyval
+@end multitable
+
+@i{ src/joyport/mouse_quadrature.c }
+@sp 1
+
+@b{The MOUSE_ST module}
+
+
+Version numbers: Major 1, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE   
+@tab  digital value          
+@tab  digital pins return value
+@item    BYTE   
+@tab  quadrature X           
+@tab  quadrature X
+@item    BYTE   
+@tab  quadrature Y           
+@tab  quadrature Y
+@item    BYTE   
+@tab  polled joyval          
+@tab  polled joyval
+@item    DWORD  
+@tab  buttons                
+@tab  buttons state
+@end multitable
+
+@i{ src/joyport/mouse_quadrature.c }
+@sp 1
+
+@b{The MULTIJOY module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  ADDRESS 
+@tab  which joystick is active
+@end multitable
+
+@i{ src/joyport/multijoy.c }
+@sp 1
+
+@b{The NINJASNESPAD module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  COUNTER 
+@tab  counter value
+@item    BYTE  
+@tab  LATCH   
+@tab  latch line state
+@item    BYTE  
+@tab  CLOCK   
+@tab  clock line state
+@end multitable
+
+@i{ src/joyport/ninja_snespad.c }
+@sp 1
+
+@b{The PAPERCLIP2 module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    DWORD 
+@tab  counter 
+@tab  counter
+@item    BYTE  
+@tab  command 
+@tab  command
+@item    BYTE  
+@tab  state   
+@tab  state
+@end multitable
+
+@i{ src/joyport/paperclip2.c }
+@sp 1
+
+@b{The PAPERCLIP64 module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    DWORD 
+@tab  counter 
+@tab  counter
+@item    BYTE  
+@tab  command 
+@tab  command
+@item    BYTE  
+@tab  state   
+@tab  state
+@end multitable
+
+@i{ src/joyport/paperclip64.c }
+@sp 1
+
+@b{The PAPERCLIP64E module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    DWORD 
+@tab  counter 
+@tab  counter
+@item    BYTE  
+@tab  command 
+@tab  command
+@item    BYTE  
+@tab  state   
+@tab  state
+@end multitable
+
+@i{ src/joyport/paperclip64e.c }
+@sp 1
+
+@b{The PAPERCLIP64SC module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    DWORD 
+@tab  counter 
+@tab  counter
+@item    BYTE  
+@tab  command 
+@tab  command
+@item    BYTE  
+@tab  state   
+@tab  state
+@end multitable
+
+@i{ src/joyport/paperclip64sc.c }
+@sp 1
+
+@b{The POWERPAD module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  COUNTER 
+@tab  counter value
+@item    BYTE  
+@tab  CLEAR   
+@tab  clear line state
+@item    BYTE  
+@tab  CLOCK   
+@tab  clock line state
+@end multitable
+
+@i{ src/joyport/powerpad.c }
+@sp 1
+
+@b{The PROTOPAD module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  COUNTER     
+@tab  counter value
+@item    BYTE  
+@tab  CLOCK       
+@tab  clock line state
+@item    BYTE  
+@tab  MODE        
+@tab  mode line state
+@item    BYTE  
+@tab  DPADMODE    
+@tab  dpad up mode state
+@item    BYTE  
+@tab  PERMRAPID   
+@tab  permanent rapid mode state
+@item    BYTE  
+@tab  RAPIDSPEED  
+@tab  rapid speed selection
+@end multitable
+
+@i{ src/joyport/protopad.c }
+@sp 1
+
+@b{The SPACEBALLS module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  GROUNDS 
+@tab  userport PBx state
+@end multitable
+
+@i{ src/joyport/spaceballs.c }
+@sp 1
+
+@b{The TRAPTHEMSNESPAD module}
+
+
+Version numbers: Major 0, Minor 2.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  COUNTER 
+@tab  counter value
+@item    BYTE  
+@tab  LATCH   
+@tab  latch line state
+@item    BYTE  
+@tab  CLOCK   
+@tab  clock line state
+@end multitable
+
+@i{ src/joyport/trapthem_snespad.c }
+@sp 1
+
+@b{The VIZAWRITE64 module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  COUNTER 
+@tab  counter value
+@end multitable
+
+@i{ src/joyport/vizawrite64_dongle.c }
+@sp 1
+
+@b{The WAASOFT module}
+
+
+Version numbers: Major 1, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  COUNTER 
+@tab  counter value
+@item    BYTE  
+@tab  RESET   
+@tab  reset line state
+@item    BYTE  
+@tab  CLOCK   
+@tab  clock line state
+@end multitable
+
+@i{ src/joyport/waasoft_dongle.c }
+@sp 1
+
+@b{The KEYBOARD module}
+
+
+Version numbers: Major 1, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    WORD ARRAY  
+@tab  keyarr         
+@tab 
+@item    WORD ARRAY  
+@tab  rev_keyarr     
+@tab 
+@end multitable
+
+@i{ src/keyboard.c }
+@sp 1
+
+@b{The MAINCPU module}
+
+
+Version numbers: Major 1, Minor 3.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    CLOCK 
+@tab  main clock           
+@tab 
+@item    UBYTE 
+@tab  a                    
+@tab 
+@item    UBYTE 
+@tab  x                    
+@tab 
+@item    UBYTE 
+@tab  y                    
+@tab 
+@item    UBYTE 
+@tab  sp                   
+@tab 
+@item    WORD  
+@tab  pc                   
+@tab 
+@item    UBYTE 
+@tab  status               
+@tab 
+@item    BYTE  
+@tab  r3                   
+@tab 
+@item    BYTE  
+@tab  r4                   
+@tab 
+@item    BYTE  
+@tab  r5                   
+@tab 
+@item    BYTE  
+@tab  r6                   
+@tab 
+@item    BYTE  
+@tab  r7                   
+@tab 
+@item    BYTE  
+@tab  r8                   
+@tab 
+@item    BYTE  
+@tab  r9                   
+@tab 
+@item    BYTE  
+@tab  r10                  
+@tab 
+@item    BYTE  
+@tab  r11                  
+@tab 
+@item    BYTE  
+@tab  r12                  
+@tab 
+@item    BYTE  
+@tab  r13                  
+@tab 
+@item    BYTE  
+@tab  r14                  
+@tab 
+@item    BYTE  
+@tab  r15                  
+@tab 
+@item    BYTE  
+@tab  ACM                  
+@tab 
+@item    BYTE  
+@tab  YXM                  
+@tab 
+@item    4*BYTE
+@tab  burst_cache          
+@tab 
+@item    WORD  
+@tab  burst_addr           
+@tab 
+@item    DWORD 
+@tab  dtvclockneg          
+@tab 
+@item    DWORD 
+@tab  last_opcode_info     
+@tab 
+@item    DWORD 
+@tab  ane_log_level        
+@tab 
+@item    DWORD 
+@tab  lxa_log_level        
+@tab 
+@end multitable
+
+@i{ src/maincpu.c }
+@sp 1
+
+@b{The MIDI module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  ctrl         
+@tab  control
+@item    BYTE  
+@tab  status       
+@tab  status
+@item    BYTE  
+@tab  rxdata       
+@tab  RX data
+@item    BYTE  
+@tab  rxdata       
+@tab  TX data
+@item    BYTE  
+@tab  last read    
+@tab  last read value
+@item    DWORD 
+@tab  ticks        
+@tab  midi ticks
+@item    BYTE  
+@tab  intx         
+@tab  intx
+@item    BYTE  
+@tab  rx irq       
+@tab  RX IRQ
+@item    BYTE  
+@tab  rx irq       
+@tab  TX IRQ
+@item    BYTE  
+@tab  alarm active 
+@tab  alarm active flag
+@item    BYTE  
+@tab  IRQ          
+@tab  IRQ
+@item    DWORD 
+@tab  IRQ res      
+@tab  IRQ res
+@item    BYTE  
+@tab  mode         
+@tab  midi mode
+@item    DWORD 
+@tab  int num      
+@tab  interrupt number
+@item    DWORD 
+@tab  alarm clk    
+@tab  alarm clock
+@end multitable
+
+@i{ src/midi.c }
+@sp 1
+
+@b{The HREMEM module}
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    WORD  
+@tab  reg_E888             
+@tab 
+@end multitable
+
+@i{ src/pet/pethre.c }
+@sp 1
+
+@b{The CARTJACINT1MB module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  bankreg           
+@tab    0.1+  
+@tab  state of banking register
+@item    ARRAY 
+@tab  ROM               
+@tab    0.1+  
+@tab  1MiB of ROM data
+@end multitable
+
+@i{ src/plus4/cart/jacint1mb.c }
+@sp 1
+
+@b{The CARTMAGIC module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  bankreg           
+@tab    0.1+  
+@tab  state of banking register
+@item    DWORD 
+@tab  filesize          
+@tab    0.1+  
+@tab  size of the ROM
+@item    ARRAY 
+@tab  ROM               
+@tab    0.1+  
+@tab  512KiB/1MiB/2MiB of ROM data
+@end multitable
+
+@i{ src/plus4/cart/magiccart.c }
+@sp 1
+
+@b{The CARTMULTI module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  bankreg           
+@tab    0.1+  
+@tab  state of banking register
+@item    DWORD 
+@tab  filesize          
+@tab    0.1+  
+@tab  size of the ROM (combined)
+@item    ARRAY 
+@tab  ROM C1LO          
+@tab    0.1+  
+@tab  1MiB/2MiB of ROM data
+@item    ARRAY 
+@tab  ROM C1HI          
+@tab    0.1+  
+@tab  1MiB/2MiB of ROM data
+@end multitable
+
+@i{ src/plus4/cart/multicart.c }
+@sp 1
+
+@b{The CARTGENERICPLUS4 module}
+
+
+Version numbers: Major 0, Minor 2.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    ARRAY 
+@tab  ROM C1LO          
+@tab    0.1+  
+@tab  16kiB of ROM data
+@item    ARRAY 
+@tab  ROM C1HI          
+@tab    0.1+  
+@tab  16kiB of ROM data
+@end multitable
+
+@i{ src/plus4/cart/plus4-generic.c }
+@sp 1
+
+@b{The PLUS4CART module}
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  number_of_carts      
+@tab  number of attached carts
+@item    BYTE  
+@tab  mem_cartridge_type   
+@tab  main type
+@item    ARRAY 
+@tab  cart_ids             
+@tab  number_of_carts * DWORD cartridge IDs
+@end multitable
+
+@i{ src/plus4/cart/plus4cart.c }
+@sp 1
+
+@b{The CARTSPEEDY module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  freeze_active     
+@tab    0.1+  
+@tab  was freeze pressed?
+@item    BYTE  
+@tab  freeze_active_q   
+@tab    0.1+  
+@tab  was freeze activated?
+@item    ARRAY 
+@tab  ROM               
+@tab    0.1+  
+@tab  8KiB of ROM data
+@end multitable
+
+@i{ src/plus4/cart/speedy.c }
+@sp 1
+
+@b{The UPPRINTER module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  value  
+@tab  return value
+@item    BYTE  
+@tab  strobe 
+@tab  strobe flag
+@end multitable
+
+@i{ src/printerdrv/interface-userport.c }
+@sp 1
+
+@b{The SCPU64GLUE module}
+
+
+Version numbers: Major 1, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  glue_logic_type     
+@tab 
+@item    BYTE  
+@tab  old_vbank           
+@tab 
+@item    BYTE  
+@tab  glue_alarm_active   
+@tab 
+@end multitable
+
+@i{ src/scpu64/scpu64gluelogic.c }
+@sp 1
+
+@b{The FSDRIVE module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@i{ src/serial/fsdrive-snapshot.c }
+@sp 1
+
+@b{The FSDRIVE module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@i{ src/serial/fsdrive.c }
+@sp 1
+
+@b{The SID2 module}
+
+
+Version numbers: Major 1, Minor 5.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    WORD  
+@tab  address  
+@tab    1.2+  
+@tab  SID address
+@item    ARRAY 
+@tab  sid data 
+@tab    1.2+  
+@tab  32 BYTES of SID registers
+@end multitable
+
+@i{ src/sid/sid-snapshot.c }
+@sp 1
+
+@b{The SID3 module}
+
+
+Version numbers: Major 1, Minor 5.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    WORD  
+@tab  address  
+@tab    1.2+  
+@tab  SID address
+@item    ARRAY 
+@tab  sid data 
+@tab    1.2+  
+@tab  32 BYTES of SID registers
+@end multitable
+
+@i{ src/sid/sid-snapshot.c }
+@sp 1
+
+@b{The SID4 module}
+
+
+Version numbers: Major 1, Minor 5.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    WORD  
+@tab  address  
+@tab    1.4+  
+@tab  SID address
+@item    ARRAY 
+@tab  sid data 
+@tab    1.4+  
+@tab  32 BYTES of SID registers
+@end multitable
+
+@i{ src/sid/sid-snapshot.c }
+@sp 1
+
+@b{The SID5 module}
+
+
+Version numbers: Major 1, Minor 5.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    WORD  
+@tab  address  
+@tab    1.5+  
+@tab  SID address
+@item    ARRAY 
+@tab  sid data 
+@tab    1.5+  
+@tab  32 BYTES of SID registers
+@end multitable
+
+@i{ src/sid/sid-snapshot.c }
+@sp 1
+
+@b{The SID6 module}
+
+
+Version numbers: Major 1, Minor 5.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    WORD  
+@tab  address  
+@tab    1.5+  
+@tab  SID address
+@item    ARRAY 
+@tab  sid data 
+@tab    1.5+  
+@tab  32 BYTES of SID registers
+@end multitable
+
+@i{ src/sid/sid-snapshot.c }
+@sp 1
+
+@b{The SID7 module}
+
+
+Version numbers: Major 1, Minor 5.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    WORD  
+@tab  address  
+@tab    1.5+  
+@tab  SID address
+@item    ARRAY 
+@tab  sid data 
+@tab    1.5+  
+@tab  32 BYTES of SID registers
+@end multitable
+
+@i{ src/sid/sid-snapshot.c }
+@sp 1
+
+@b{The SID8 module}
+
+
+Version numbers: Major 1, Minor 5.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    WORD  
+@tab  address  
+@tab    1.5+  
+@tab  SID address
+@item    ARRAY 
+@tab  sid data 
+@tab    1.5+  
+@tab  32 BYTES of SID registers
+@end multitable
+
+@i{ src/sid/sid-snapshot.c }
+@sp 1
+
+@b{The SIDFASTSID module}
+
+
+Version numbers: Major 1, Minor 4.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    DWORD  
+@tab  factor          
+@tab  speed factor
+@item    ARRAY  
+@tab  d               
+@tab  32 BYTES of register data
+@item    BYTE   
+@tab  has3            
+@tab  voice 3 enable flag
+@item    BYTE   
+@tab  vol             
+@tab  4-bit volume value
+@item    ARRAY  
+@tab  adrs            
+@tab  16 DWORDS of ADSR counter step values for each adsr values
+@item    ARRAY  
+@tab  sz              
+@tab  16 DWORDS of sustain values compared to 31-bit ADSR counter
+@item    DWORD  
+@tab  speed1          
+@tab  internal constant used for sample rate dependent calculations
+@item    BYTE   
+@tab  update          
+@tab  structure needs updating flag
+@item    BYTE   
+@tab  newsid          
+@tab  new SID flag
+@item    BYTE   
+@tab  laststore       
+@tab  last store
+@item    BYTE   
+@tab  laststorebit    
+@tab  last store bit
+@item    DWORD  
+@tab  laststoreclk    
+@tab  CLOCK of the last store
+@item    DWORD  
+@tab  emulatefilter   
+@tab  emulate filters flag
+@item    DOUBLE 
+@tab  filterDy        
+@tab  filter Dy
+@item    DOUBLE 
+@tab  filterResDy     
+@tab  filter Res Dy
+@item    BYTE   
+@tab  filterType      
+@tab  filter type
+@item    BYTE   
+@tab  filterCurType   
+@tab  current filter type
+@item    WORD   
+@tab  filterValue     
+@tab  filter value
+@item    ARRAY  
+@tab  voice nr        
+@tab  3 DWORDS of voice numbers
+@item    ARRAY  
+@tab  voice f         
+@tab  3 DWORDS of voice counter value data
+@item    ARRAY  
+@tab  voice fs        
+@tab  3 DWORDS of voice counter step data
+@item    ARRAY  
+@tab  voice noise     
+@tab  3 BYTES of voice noise flag data
+@item    ARRAY  
+@tab  voice adsr      
+@tab  3 DWORDS of voice 31-bit ADSR counter data
+@item    ARRAY  
+@tab  voice adsrs     
+@tab  3 DWORDS of voice ADSR counter step data
+@item    ARRAY  
+@tab  voice adsrz     
+@tab  3 DWORDS of voice ADSR sustain level compared to the 31-bit counter data
+@item    ARRAY  
+@tab  voice sync      
+@tab  3 BYTES of voice hard sync flag data
+@item    ARRAY  
+@tab  voice filter    
+@tab  3 BYTES of voice filter flag data
+@item    ARRAY  
+@tab  voice update    
+@tab  3 BYTES of voice structure needs updating flag data
+@item    ARRAY  
+@tab  voice gateflip  
+@tab  3 BYTES of voice do multiple gate flips flag data
+@item    ARRAY  
+@tab  voice adsrm     
+@tab  3 BYTES of voice ADSR mode data
+@item    ARRAY  
+@tab  voice attack    
+@tab  3 BYTES of voice 4-bit attack value data
+@item    ARRAY  
+@tab  voice decay     
+@tab  3 BYTES of voice 4-bit decay value data
+@item    ARRAY  
+@tab  voice sustain   
+@tab  3 BYTES of voice 4-bit sustain value data
+@item    ARRAY  
+@tab  voice release   
+@tab  3 BYTES of voice 4-bit release value data
+@item    ARRAY  
+@tab  voice rv        
+@tab  3 DWORDS of voice noise shift reguster data
+@item    ARRAY  
+@tab  voice wt        
+@tab  3 BYTES of voice wavetable index data
+@item    ARRAY  
+@tab  voice wt_offset 
+@tab  3 WORDS of voice wavetable offset data
+@item    ARRAY  
+@tab  voice wtpf      
+@tab  3 DWORDS of voice 32-bit offset data
+@item    ARRAY  
+@tab  voice wtl       
+@tab  3 DWORDS of voice wavetable length data
+@item    ARRAY  
+@tab  voice wtr[0]    
+@tab  3 WORDS of ring modulation flag data
+@item    ARRAY  
+@tab  voice wtr[1]    
+@tab  3 WORDS of ring modulation flag data
+@item    ARRAY  
+@tab  voice filtIO    
+@tab  3 BYTES of filtIO data
+@item    ARRAY  
+@tab  voice filtLow   
+@tab  3 DOUBLES of filtLow data
+@item    ARRAY  
+@tab  voice filtRef   
+@tab  3 DOUBLES of filtRef data
+@end multitable
+
+@i{ src/sid/sid-snapshot.c }
+@sp 1
+
+@b{The SIDCWMKIII module}
+
+
+Version numbers: Major 1, Minor 4.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  ntsc              
+@tab  NTSC flag
+@item    DWORD 
+@tab  cycles per second 
+@tab  cycles per second
+@item    ARRAY 
+@tab  registers         
+@tab  32 BYTES of register data
+@end multitable
+
+@i{ src/sid/sid-snapshot.c }
+@sp 1
+
+@b{The SIDHARDSID module}
+
+
+Version numbers: Major 1, Minor 4.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    ARRAY 
+@tab  registers          
+@tab    1.2+  
+@tab  32 BYTES of register data
+@item    DWORD 
+@tab  main clock         
+@tab    1.2+  
+@tab  main clock
+@item    DWORD 
+@tab  alarm clock        
+@tab    1.2+  
+@tab  alarm clock
+@item    DWORD 
+@tab  last access clock  
+@tab    1.2+  
+@tab  last access clock
+@item    DWORD 
+@tab  last access ms     
+@tab    1.2+  
+@tab  last access ms
+@item    DWORD 
+@tab  last access chipno 
+@tab    1.2+  
+@tab  last access chipno
+@item    DWORD 
+@tab  chip used          
+@tab    1.2+  
+@tab  chip used
+@item    ARRAY 
+@tab  device map         
+@tab    1.2+  
+@tab  2 DWORDS of device map data
+@item    ARRAY 
+@tab  extra device map   
+@tab    1.3   
+@tab  2 DWORDS of device map data
+@end multitable
+
+@i{ src/sid/sid-snapshot.c }
+@sp 1
+
+@b{The SIDPARSID module}
+
+
+Version numbers: Major 1, Minor 4.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY 
+@tab  registers 
+@tab  32 BYTES of register data
+@item    BYTE  
+@tab  ctr port  
+@tab  control port state
+@end multitable
+
+@i{ src/sid/sid-snapshot.c }
+@sp 1
+
+@b{The SIDUSBSID module}
+
+
+Version numbers: Major 1, Minor 4.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY 
+@tab  registers            
+@tab  (0x20 * 4) BYTES of register data
+@item    QWORD 
+@tab  main clk             
+@tab 
+@item    QWORD 
+@tab  alarm clk            
+@tab 
+@item    BYTE  
+@tab  lastaccess_chipno    
+@tab 
+@end multitable
+
+@i{ src/sid/sid-snapshot.c }
+@sp 1
+
+@b{The T64IMAGE module}
+
+
+Version numbers: Major 1, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    DWORD 
+@tab  t64_size                         
+@tab 
+@item    ARRAY 
+@tab  t64 file data                    
+@tab 
+@end multitable
+
+@i{ src/tape/tape-snapshot.c }
+@sp 1
+
+@b{The TAPIMAGE module}
+
+
+Version numbers: Major 1, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    DWORD 
+@tab  tap_size                         
+@tab 
+@item    ARRAY 
+@tab  tap file data                    
+@tab 
+@end multitable
+
+@i{ src/tape/tape-snapshot.c }
+@sp 1
+
+@b{The TAPE module}
+
+
+Version numbers: Major 1, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  read_only                        
+@tab 
+@item    BYTE  
+@tab  type                             
+@tab 
+@item    BYTE  
+@tab  t64->current_file_number         
+@tab 
+@item    DWORD 
+@tab  t64->current_file_seek_position  
+@tab 
+@item    DWORD 
+@tab  tap->size                        
+@tab 
+@item    BYTE  
+@tab  tap->version                     
+@tab 
+@item    BYTE  
+@tab  tap->system                      
+@tab 
+@item    DWORD 
+@tab  tap->current_file_seek_position  
+@tab 
+@item    DWORD 
+@tab  tap->offset                      
+@tab 
+@item    DWORD 
+@tab  tap->cycle_counter               
+@tab 
+@item    DWORD 
+@tab  tap->cycle_counter_total         
+@tab 
+@item    DWORD 
+@tab  tap->counter                     
+@tab 
+@item    DWORD 
+@tab  tap->mode                        
+@tab 
+@item    DWORD 
+@tab  tap->read_only                   
+@tab 
+@item    DWORD 
+@tab  tap->has_changed                 
+@tab 
+@end multitable
+
+@i{ src/tape/tape-snapshot.c }
+@sp 1
+
+@b{The TP_CP_CLOCK_F83 module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  motor 
+@tab  motor state
+@end multitable
+
+@i{ src/tapeport/cp-clockf83.c }
+@sp 1
+
+@b{The TP_DTLBASIC module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    DWORD 
+@tab  counter 
+@tab  counter
+@item    DWORD 
+@tab  write   
+@tab  write line state
+@item    DWORD 
+@tab  sense   
+@tab  sense line state
+@item    DWORD 
+@tab  state   
+@tab  device state
+@end multitable
+
+@i{ src/tapeport/dtl-basic-dongle.c }
+@sp 1
+
+@b{The TAPEPORT module}
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  active             
+@tab  tapeport active flag
+@item    BYTE  
+@tab  id1                
+@tab  device id port 1
+@item    BYTE  
+@tab  id2                
+@tab  device id port 2
+@end multitable
+
+@i{ src/tapeport/tapeport.c }
+@sp 1
+
+@b{The USERPORT module}
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  active             
+@tab  userport active flag
+@item    BYTE  
+@tab  id                 
+@tab  device id
+@end multitable
+
+@i{ src/userport/userport.c }
+@sp 1
+
+@b{The UP8BSS module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  channel 
+@tab  channel flag
+@end multitable
+
+@i{ src/userport/userport_8bss.c }
+@sp 1
+
+@b{The UPDAC module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  sound data 
+@tab  sound data
+@item    BYTE  
+@tab  voice      
+@tab  voice
+@end multitable
+
+@i{ src/userport/userport_dac.c }
+@sp 1
+
+@b{The UPDIAGPIN module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  address 
+@tab  current state of the diag pin
+@end multitable
+
+@i{ src/userport/userport_diag_pin.c }
+@sp 1
+
+@b{The UPDIGIMAX module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  address 
+@tab  current register address
+@item    ARRAY 
+@tab  sound   
+@tab  4 BYTES of sound data
+@item    BYTE  
+@tab  voice 0 
+@tab  voice 0 data
+@item    BYTE  
+@tab  voice 1 
+@tab  voice 1 data
+@item    BYTE  
+@tab  voice 2 
+@tab  voice 2 data
+@item    BYTE  
+@tab  voice 3 
+@tab  voice 3 data
+@end multitable
+
+@i{ src/userport/userport_digimax.c }
+@sp 1
+
+@b{The UPJOYHIT module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  retval 
+@tab  current serial port brigde value
+@end multitable
+
+@i{ src/userport/userport_hks_joystick.c }
+@sp 1
+
+@b{The UPJOYKINGSOFT module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  retval 
+@tab  current serial port brigde value
+@end multitable
+
+@i{ src/userport/userport_hks_joystick.c }
+@sp 1
+
+@b{The UPJOYSTARBYTE module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  retval 
+@tab  current serial port bridge value
+@end multitable
+
+@i{ src/userport/userport_hks_joystick.c }
+@sp 1
+
+@b{The UPIOSIM module}
+
+
+Version numbers: Major 0, Minor 2.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  PBX IN  
+@tab  port b in state
+@item    BYTE  
+@tab  PBX OUT 
+@tab  port b out state
+@item    BYTE  
+@tab  PAX IN  
+@tab  port a in state
+@item    BYTE  
+@tab  PAX OUT 
+@tab  port a out state
+@end multitable
+
+@i{ src/userport/userport_io_sim.c }
+@sp 1
+
+@b{The UP_JOY_CGA module}
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  select 
+@tab  joyport select
+@end multitable
+
+@i{ src/userport/userport_joystick.c }
+@sp 1
+
+@b{The UPPETSCII module}
+
+
+Version numbers: Major 0, Minor 2.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  COUNTER 
+@tab  current count
+@item    BYTE  
+@tab  CLOCK   
+@tab  clock line state
+@item    BYTE  
+@tab  LATCH   
+@tab  latch line state
+@end multitable
+
+@i{ src/userport/userport_petscii_snespad.c }
+@sp 1
+
+@b{The UP_RTC_58321A module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  read    
+@tab  read line active
+@item    BYTE  
+@tab  rtcsave 
+@tab  save rtc offset when detaching
+@end multitable
+
+@i{ src/userport/userport_rtc_58321a.c }
+@sp 1
+
+@b{The UPRTCDS1307 module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab    SDA    
+@tab  SDA line state
+@item    BYTE  
+@tab    SCL    
+@tab  SCL line state
+@item    BYTE  
+@tab  rtc save 
+@tab  save rtc offset upon detacht
+@end multitable
+
+@i{ src/userport/userport_rtc_ds1307.c }
+@sp 1
+
+@b{The UPSUPERPAD64 module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  COUNTER 
+@tab  current count
+@item    BYTE  
+@tab  LATCH   
+@tab  latch line state
+@end multitable
+
+@i{ src/userport/userport_superpad64.c }
+@sp 1
+
+@b{The UPJOYSYNERGY module}
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  select 
+@tab  joyport select
+@end multitable
+
+@i{ src/userport/userport_synergy_joystick.c }
+@sp 1
+
+@b{The UPJOYV8 module}
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  select 
+@tab  joyport select
+@end multitable
+
+@i{ src/userport/userport_v8_joystick.c }
+@sp 1
+
+@b{The UPWIC64 module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  input_state    
+@tab 
+@item    BYTE  
+@tab  input_length   
+@tab 
+@end multitable
+
+@i{ src/userport/userport_wic64.c }
+@sp 1
+
+@b{The UP_JOY_WOJ module}
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  select 
+@tab  joyport select
+@end multitable
+
+@i{ src/userport/userport_woj_joystick.c }
+@sp 1
+
+@b{The VDC module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@i{ src/vdc/vdc-snapshot.c }
+@sp 1
+
+@b{The VDRIVEIMAGE module}
+
+
+Version numbers: Major 2, Minor 0.
+
+@i{ src/vdrive/vdrive-snapshot.c }
+@sp 1
+
+@b{The BEHRBONZ module}
+
+
+Version numbers: Major 0, Minor 2.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  bank_reg         
+@tab 
+@item    BYTE  
+@tab  reset_mode       
+@tab 
+@item    BYTE  
+@tab  write_once       
+@tab 
+@item    ARRAY 
+@tab  cart_rom         
+@tab  0x200000 bytes of ROM data
+@end multitable
+
+@i{ src/vic20/cart/behrbonz.c }
+@sp 1
+
+@b{The FINALEXPANSION module}
+
+
+Version numbers: Major 2, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  register_a       
+@tab 
+@item    BYTE  
+@tab  register_b       
+@tab 
+@item    BYTE  
+@tab  lock_bit         
+@tab 
+@item    ARRAY 
+@tab  cart_ram         
+@tab  CART_RAM_SIZE
+@item    ARRAY 
+@tab  flash_data       
+@tab  CART_ROM_SIZE
+@end multitable
+
+@i{ src/vic20/cart/finalexpansion.c }
+@sp 1
+
+@b{The IO2RAMCART module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY 
+@tab  RAM  
+@tab  1024 BYTES of RAM data
+@end multitable
+
+@i{ src/vic20/cart/ioramcart.c }
+@sp 1
+
+@b{The IO3RAMCART module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY 
+@tab  RAM  
+@tab  1024 BYTES of RAM data
+@end multitable
+
+@i{ src/vic20/cart/ioramcart.c }
+@sp 1
+
+@b{The MEGACART module}
+
+
+Version numbers: Major 2, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  bank_low_reg     
+@tab 
+@item    BYTE  
+@tab  bank_high_reg    
+@tab 
+@item    BYTE  
+@tab  oe_flop          
+@tab 
+@item    BYTE  
+@tab  nvram_en_flop    
+@tab 
+@item    ARRAY 
+@tab  cart_ram         
+@tab  0x8000 bytes of RAM data
+@item    ARRAY 
+@tab  cart_rom         
+@tab  0x200000 bytes of ROM data
+@item    ARRAY 
+@tab  cart_nvram       
+@tab  0x2000 bytes of NVRAM data
+@end multitable
+
+@i{ src/vic20/cart/megacart.c }
+@sp 1
+
+@b{The MIKROASSEMBLER module}
+
+
+Version numbers: Major 1, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY 
+@tab  cart_ram         
+@tab  0x400 * 3 bytes of RAM data
+@item    ARRAY 
+@tab  cart_rom         
+@tab  0x400 * 8 bytes of ROM data
+@end multitable
+
+@i{ src/vic20/cart/mikroassembler.c }
+@sp 1
+
+@b{The MINIMON module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  active            
+@tab  cartridge active flag
+@item    BYTE  
+@tab  io rom            
+@tab  cartridge rom in io
+@item    BYTE  
+@tab  bios write        
+@tab  bios writable flag
+@item    BYTE  
+@tab  image readonly    
+@tab  image read-only flag
+@item    BYTE  
+@tab  bios changed      
+@tab  bios changed flag
+@item    ARRAY 
+@tab  BIOS              
+@tab  2048 bytes of BIOS data ($9800-$9FFF)
+@end multitable
+
+@i{ src/vic20/cart/minimon.c }
+@sp 1
+
+@b{The RABBIT module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY 
+@tab  cart_rom 
+@tab  2 * 0x400 bytes of ROM data
+@end multitable
+
+@i{ src/vic20/cart/rabbit.c }
+@sp 1
+
+@b{The SUPEREXPANDER module}
+
+
+Version numbers: Major 1, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY 
+@tab  cart_ram             
+@tab  0x400 * 3 bytes of RAM data
+@item    ARRAY 
+@tab  cart_rom             
+@tab  0x400 * 4 bytes of ROM data
+@end multitable
+
+@i{ src/vic20/cart/superexpander.c }
+@sp 1
+
+@b{The ULTIMEM module}
+
+
+Version numbers: Major 2, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY 
+@tab  ultimem          
+@tab 
+@item    ARRAY 
+@tab  cart_ram         
+@tab 
+@item    ARRAY 
+@tab  cart_rom         
+@tab 
+@end multitable
+
+@i{ src/vic20/cart/ultimem.c }
+@sp 1
+
+@b{The VICFLASHPLUGIN module}
+
+
+Version numbers: Major 2, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  cart_bank_reg    
+@tab 
+@item    BYTE  
+@tab  cart_cfg_reg     
+@tab 
+@item    ARRAY 
+@tab  cart_ram         
+@tab  CART_RAM_SIZE
+@item    ARRAY 
+@tab  cart_rom         
+@tab  CART_ROM_SIZE
+@end multitable
+
+@i{ src/vic20/cart/vic-fp.c }
+@sp 1
+
+@b{The CARTGENERICVIC20 module}
+
+
+Version numbers: Major 2, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    DWORD 
+@tab  generic_ram_blocks   
+@tab  flags for ram blocks
+@item    DWORD 
+@tab  generic_rom_blocks   
+@tab  flags for rom blocks
+@item    ARRAY 
+@tab  cart_ram             
+@tab  0x9000 bytes of RAM data
+@item    ARRAY 
+@tab  cart_rom             
+@tab  0x9000 bytes of ROM data
+@end multitable
+
+@i{ src/vic20/cart/vic20-generic.c }
+@sp 1
+
+@b{The CARTMIDI module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  mode 
+@tab  midi mode
+@end multitable
+
+@i{ src/vic20/cart/vic20-midi.c }
+@sp 1
+
+@b{The SIDCART module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    WORD  
+@tab  address 
+@tab  sidcart address
+@item    BYTE  
+@tab  clock   
+@tab  sidcart clock
+@end multitable
+
+@i{ src/vic20/cart/vic20-sidcart.c }
+@sp 1
+
+@b{The VIC20CART module}
+
+
+Version numbers: Major 2, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    DWORD 
+@tab  vic20cart_type       
+@tab 
+@item    BYTE  
+@tab  number_of_carts      
+@tab  number of attached carts
+@item    ARRAY 
+@tab  cart_ids             
+@tab  number_of_carts * DWORD cartridge IDs
+@end multitable
+
+@i{ src/vic20/cart/vic20cart.c }
+@sp 1
+
+@b{The WRITENOW module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY 
+@tab  cart_rom   
+@tab  8 * 0x400 bytes of ROM data
+@end multitable
+
+@i{ src/vic20/cart/writenow.c }
+@sp 1

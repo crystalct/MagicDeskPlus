@@ -1,0 +1,76 @@
+@c generated, do not edit
+
+@b{The VIC20MEM module}
+
+
+Version numbers: Major 1, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    UBYTE 
+@tab  CONFIG          
+@tab        
+@tab  Bit 0: 1 = expansion block 0 RAM enabled
+@item          
+@tab                  
+@tab        
+@tab      1: 1 = expansion block 1 RAM enabled
+@item          
+@tab                  
+@tab        
+@tab      2: 1 = expansion block 2 RAM enabled
+@item          
+@tab                  
+@tab        
+@tab      3: 1 = expansion block 3 RAM enabled
+@item          
+@tab                  
+@tab        
+@tab      5: 1 = expansion block 5 RAM enabled
+@item    UBYTE 
+@tab  cpu_last_data   
+@tab  1.1+  
+@tab 
+@item    UBYTE 
+@tab  v_bus_last_data 
+@tab  1.1+  
+@tab 
+@item    UBYTE 
+@tab  v_bus_last_high 
+@tab  1.1+  
+@tab 
+@item    ARRAY 
+@tab  RAM0            
+@tab        
+@tab  1k RAM $0000-$03ff
+@item    ARRAY 
+@tab  RAM1            
+@tab        
+@tab  4k RAM $1000-$1fff
+@item    ARRAY 
+@tab  BLK0            
+@tab        
+@tab  3k RAM $0400-$0fff (if blk 0 RAM enabled)
+@item    ARRAY 
+@tab  BLK1            
+@tab        
+@tab  8k RAM $2000-$3fff (if blk 1 RAM enabled)
+@item    ARRAY 
+@tab  BLK2            
+@tab        
+@tab  8k RAM $4000-$5fff (if blk 2 RAM enabled)
+@item    ARRAY 
+@tab  BLK3            
+@tab        
+@tab  8k RAM $6000-$7fff (if blk 3 RAM enabled)
+@item    ARRAY 
+@tab  BLK5            
+@tab        
+@tab  8k RAM $A000-$Bfff (if blk 5 RAM enabled)
+@end multitable
+
+@i{ src/vic20/vic20memsnapshot.c }
+@sp 1

@@ -1,0 +1,179 @@
+make  all-recursive
+make[1]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src»
+Making all in resid
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/resid»
+make  all-am
+make[3]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/resid»
+make[3]: Nessuna operazione da eseguire per «all-am».
+make[3]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/resid»
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/resid»
+Making all in resid-dtv
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/resid-dtv»
+make[2]: Nessuna operazione da eseguire per «all».
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/resid-dtv»
+Making all in joyport
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/joyport»
+make[2]: Nessuna operazione da eseguire per «all».
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/joyport»
+Making all in drive
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/drive»
+Making all in iec
+make[3]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/drive/iec»
+Making all in c64exp
+make[4]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/drive/iec/c64exp»
+make[4]: Nessuna operazione da eseguire per «all».
+make[4]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/drive/iec/c64exp»
+Making all in plus4exp
+make[4]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/drive/iec/plus4exp»
+make[4]: Nessuna operazione da eseguire per «all».
+make[4]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/drive/iec/plus4exp»
+make[4]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/drive/iec»
+make[4]: Nessuna operazione da eseguire per «all-am».
+make[4]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/drive/iec»
+make[3]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/drive/iec»
+Making all in iec128dcr
+make[3]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/drive/iec128dcr»
+make[3]: Nessuna operazione da eseguire per «all».
+make[3]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/drive/iec128dcr»
+Making all in iecieee
+make[3]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/drive/iecieee»
+make[3]: Nessuna operazione da eseguire per «all».
+make[3]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/drive/iecieee»
+Making all in ieee
+make[3]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/drive/ieee»
+make[3]: Nessuna operazione da eseguire per «all».
+make[3]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/drive/ieee»
+Making all in tcbm
+make[3]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/drive/tcbm»
+make[3]: Nessuna operazione da eseguire per «all».
+make[3]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/drive/tcbm»
+make[3]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/drive»
+make[3]: Nessuna operazione da eseguire per «all-am».
+make[3]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/drive»
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/drive»
+Making all in vdrive
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/vdrive»
+make[2]: Nessuna operazione da eseguire per «all».
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/vdrive»
+Making all in fsdevice
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/fsdevice»
+make[2]: Nessuna operazione da eseguire per «all».
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/fsdevice»
+Making all in diskimage
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/diskimage»
+make[2]: Nessuna operazione da eseguire per «all».
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/diskimage»
+Making all in iecbus
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/iecbus»
+make[2]: Nessuna operazione da eseguire per «all».
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/iecbus»
+Making all in serial
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/serial»
+make[2]: Nessuna operazione da eseguire per «all».
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/serial»
+Making all in parallel
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/parallel»
+make[2]: Nessuna operazione da eseguire per «all».
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/parallel»
+Making all in tape
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/tape»
+make[2]: Nessuna operazione da eseguire per «all».
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/tape»
+Making all in imagecontents
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/imagecontents»
+make[2]: Nessuna operazione da eseguire per «all».
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/imagecontents»
+Making all in fileio
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/fileio»
+make[2]: Nessuna operazione da eseguire per «all».
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/fileio»
+Making all in video
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/video»
+make[2]: Nessuna operazione da eseguire per «all».
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/video»
+Making all in raster
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/raster»
+make[2]: Nessuna operazione da eseguire per «all».
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/raster»
+Making all in vicii
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/vicii»
+make[2]: Nessuna operazione da eseguire per «all».
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/vicii»
+Making all in viciisc
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/viciisc»
+make[2]: Nessuna operazione da eseguire per «all».
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/viciisc»
+Making all in vdc
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/vdc»
+make[2]: Nessuna operazione da eseguire per «all».
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/vdc»
+Making all in crtc
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/crtc»
+make[2]: Nessuna operazione da eseguire per «all».
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/crtc»
+Making all in gfxoutputdrv
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/gfxoutputdrv»
+make[2]: Nessuna operazione da eseguire per «all».
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/gfxoutputdrv»
+Making all in printerdrv
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/printerdrv»
+make[2]: Nessuna operazione da eseguire per «all».
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/printerdrv»
+Making all in rs232drv
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/rs232drv»
+make[2]: Nessuna operazione da eseguire per «all».
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/rs232drv»
+Making all in samplerdrv
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/samplerdrv»
+make[2]: Nessuna operazione da eseguire per «all».
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/samplerdrv»
+Making all in sid
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/sid»
+make[2]: Nessuna operazione da eseguire per «all».
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/sid»
+Making all in monitor
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/monitor»
+make  all-am
+make[3]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/monitor»
+make[3]: Nessuna operazione da eseguire per «all-am».
+make[3]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/monitor»
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/monitor»
+Making all in core
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/core»
+Making all in rtc
+make[3]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/core/rtc»
+make[3]: Nessuna operazione da eseguire per «all».
+make[3]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/core/rtc»
+make[3]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/core»
+make[3]: Nessuna operazione da eseguire per «all-am».
+make[3]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/core»
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/core»
+Making all in userport
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/userport»
+make[2]: Nessuna operazione da eseguire per «all».
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/userport»
+Making all in tapeport
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/tapeport»
+make[2]: Nessuna operazione da eseguire per «all».
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/tapeport»
+Making all in diag
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/diag»
+make[2]: Nessuna operazione da eseguire per «all».
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/diag»
+Making all in c64
+make[2]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/c64»
+make  all-recursive
+make[3]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/c64»
+Making all in cart
+make[4]: ingresso nella directory «/c/msys64/home/crystal/vice/vice/src/c64/cart»
+cc -DHAVE_CONFIG_H -I. -I../../../src  -I../../../src/arch/systemheaderoverride -IC:/msys64/ucrt64/include/libusb-1.0 -DNDEBUG -mwindows -I../../../src/arch/gtk3 -I../../../src/arch/shared -I../../../src/arch/mingw32-pcap/wpcap -I../../../src -I../../../src -I../../../src/core -I../../../src/drive -I../../../src/core/rtc -I../../../src/c64 -I../../../src/sid -I../../../src/lib/p64 -I../../../src/vicii -I../../../src/rtc -I../../../src/samplerdrv -I../../../src/rs232drv -I../../../src/arch/shared  -g -O3 -W -Wall -Wextra -Wformat -Wformat-signedness -Wformat-security -Wshadow -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -Wuninitialized -Wmissing-field-initializers -Wunreachable-code -Werror=implicit-function-declaration -Wfatal-errors -Wdiscarded-qualifiers -Wno-unknown-pragmas -Wunused-but-set-variable -Wno-sign-compare -Wno-ignored-qualifiers -Wno-unused-parameter -IC:/msys64/ucrt64/include/libusb-1.0 -Wall -Wno-unused-parameter -Wno-sign-compare -mwindows -fopenmp -IC:/msys64/ucrt64/include/glib-2.0 -IC:/msys64/ucrt64/lib/glib-2.0/include -DLIBDEFLATE_DLL -IC:/msys64/ucrt64/include/gtk-3.0 -IC:/msys64/ucrt64/include/pango-1.0 -IC:/msys64/ucrt64/include/harfbuzz -IC:/msys64/ucrt64/include/pango-1.0 -IC:/msys64/ucrt64/include/fribidi -IC:/msys64/ucrt64/include/atk-1.0 -IC:/msys64/ucrt64/include/cairo -IC:/msys64/ucrt64/include/freetype2 -IC:/msys64/ucrt64/include/harfbuzz -IC:/msys64/ucrt64/include/pixman-1 -IC:/msys64/ucrt64/include/gdk-pixbuf-2.0 -IC:/msys64/ucrt64/include/libpng16 -IC:/msys64/ucrt64/include/webp -IC:/msys64/ucrt64/include/glib-2.0 -IC:/msys64/ucrt64/lib/glib-2.0/include -pthread   -MT c64carthooks.o -MD -MP -MF .deps/c64carthooks.Tpo -c -o c64carthooks.o c64carthooks.c
+make[4]: cc: No such file or directory
+make[4]: *** [Makefile:941: c64carthooks.o] Error 127
+make[4]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/c64/cart»
+make[3]: *** [Makefile:1030: all-recursive] Error 1
+make[3]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/c64»
+make[2]: *** [Makefile:859: all] Error 2
+make[2]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src/c64»
+make[1]: *** [Makefile:1968: all-recursive] Error 1
+make[1]: uscita dalla directory «/c/msys64/home/crystal/vice/vice/src»
+make: *** [Makefile:1733: all] Error 2

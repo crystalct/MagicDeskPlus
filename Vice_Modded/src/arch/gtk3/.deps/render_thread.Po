@@ -1,0 +1,453 @@
+render_thread.o: render_thread.c ../../../src/vice.h \
+ ../../../src/config.h render_thread.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdbool.h \
+ C:/msys64/ucrt64/include/string.h C:/msys64/ucrt64/include/crtdefs.h \
+ C:/msys64/ucrt64/include/corecrt.h C:/msys64/ucrt64/include/_mingw.h \
+ C:/msys64/ucrt64/include/_mingw_mac.h \
+ C:/msys64/ucrt64/include/_mingw_secapi.h \
+ C:/msys64/ucrt64/include/vadefs.h \
+ C:/msys64/ucrt64/include/corecrt_memory.h \
+ C:/msys64/ucrt64/include/sec_api/string_s.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/galloca.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gtypes.h \
+ C:/msys64/ucrt64/lib/glib-2.0/include/glibconfig.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gmacros.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stddef.h \
+ C:/msys64/ucrt64/include/stddef.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/limits.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/syslimits.h \
+ C:/msys64/ucrt64/include/limits.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/float.h \
+ C:/msys64/ucrt64/include/float.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gversionmacros.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/glib-visibility.h \
+ C:/msys64/ucrt64/include/time.h C:/msys64/ucrt64/include/sys/timeb.h \
+ C:/msys64/ucrt64/include/sec_api/sys/timeb_s.h \
+ C:/msys64/ucrt64/include/_timeval.h \
+ C:/msys64/ucrt64/include/pthread_time.h \
+ C:/msys64/ucrt64/include/pthread_compat.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/garray.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gasyncqueue.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gthread.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gatomic.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/glib-typeof.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gerror.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdarg.h \
+ C:/msys64/ucrt64/include/stdarg.h \
+ C:/msys64/ucrt64/include/_mingw_stdarg.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gquark.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gutils.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gbacktrace.h \
+ C:/msys64/ucrt64/include/signal.h \
+ C:/msys64/ucrt64/include/pthread_signal.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gbase64.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gbitlock.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gbookmarkfile.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gdatetime.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gtimezone.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gbytes.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gcharset.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gchecksum.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gconvert.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gdataset.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gdate.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gdir.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/genviron.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gfileutils.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/ggettext.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/ghash.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/glist.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gmem.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gnode.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/ghmac.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gchecksum.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/ghook.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/ghostutils.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/giochannel.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gmain.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gpoll.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gslist.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdint.h \
+ C:/msys64/ucrt64/include/stdint.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gstring.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gunicode.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gstrfuncs.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gkeyfile.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gmappedfile.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gmarkup.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gmessages.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gvariant.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gvarianttype.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/goption.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gpathbuf.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gpattern.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gprimes.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gqsort.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gqueue.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/grand.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/grcbox.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/grefcount.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/grefstring.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gmem.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gmacros.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gregex.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gscanner.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gsequence.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gshell.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gslice.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gspawn.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gstringchunk.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gstrvbuilder.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gtestutils.h \
+ C:/msys64/ucrt64/include/errno.h C:/msys64/ucrt64/include/stdlib.h \
+ C:/msys64/ucrt64/include/corecrt_wstdlib.h \
+ C:/msys64/ucrt64/include/sec_api/stdlib_s.h \
+ C:/msys64/ucrt64/include/malloc.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/mm_malloc.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gthreadpool.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gtimer.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gtrashstack.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gtree.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/guri.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/guuid.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gversion.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/gwin32.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/deprecated/gallocator.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/deprecated/gcache.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/deprecated/gcompletion.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/deprecated/gmain.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/deprecated/grel.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/deprecated/gthread.h \
+ C:/msys64/ucrt64/include/glib-2.0/glib/glib-autocleanups.h \
+ C:/msys64/ucrt64/include/pthread.h C:/msys64/ucrt64/include/sys/types.h \
+ C:/msys64/ucrt64/include/_mingw_off_t.h \
+ C:/msys64/ucrt64/include/process.h \
+ C:/msys64/ucrt64/include/corecrt_startup.h \
+ C:/msys64/ucrt64/include/sched.h \
+ C:/msys64/ucrt64/include/pthread_unistd.h archdep.h ../../../src/sound.h \
+ ../../../src/vice.h C:/msys64/ucrt64/include/stdio.h \
+ C:/msys64/ucrt64/include/corecrt_stdio_config.h \
+ C:/msys64/ucrt64/include/swprintf.inl \
+ C:/msys64/ucrt64/include/sec_api/stdio_s.h ../../../src/types.h \
+ C:/msys64/ucrt64/include/inttypes.h \
+ ../../../src/arch/shared/archdep_win32.h \
+ ../../../src/arch/shared/archapi.h \
+ ../../../src/arch/shared/archdep_defs.h \
+ ../../../src/arch/shared/archdep_access.h C:/msys64/ucrt64/include/io.h \
+ ../../../src/arch/shared/archdep_boot_path.h \
+ ../../../src/arch/shared/archdep_cbmfont.h \
+ ../../../src/arch/shared/archdep_chdir.h \
+ ../../../src/arch/shared/archdep_close.h \
+ ../../../src/arch/shared/archdep_create_user_cache_dir.h \
+ ../../../src/arch/shared/archdep_create_user_config_dir.h \
+ ../../../src/arch/shared/archdep_create_user_state_dir.h \
+ ../../../src/arch/shared/archdep_current_dir.h \
+ ../../../src/arch/shared/archdep_default_autostart_disk_image_file_name.h \
+ ../../../src/arch/shared/archdep_default_fliplist_file_name.h \
+ ../../../src/arch/shared/archdep_default_joymap_file_name.h \
+ ../../../src/arch/shared/archdep_default_logfile.h \
+ ../../../src/arch/shared/archdep_default_logger.h \
+ ../../../src/arch/shared/archdep_default_portable_resource_file_name.h \
+ ../../../src/arch/shared/archdep_default_resource_file_name.h \
+ ../../../src/arch/shared/archdep_default_rtc_file_name.h \
+ ../../../src/arch/shared/archdep_default_sysfile_pathlist.h \
+ ../../../src/arch/shared/archdep_dir.h \
+ ../../../src/arch/shared/archdep_ethernet_available.h \
+ ../../../src/arch/shared/archdep_exit.h \
+ ../../../src/arch/shared/archdep_expand_path.h \
+ ../../../src/arch/shared/archdep_extra_title_text.h \
+ ../../../src/arch/shared/archdep_fdopen.h \
+ ../../../src/arch/shared/archdep_file_exists.h \
+ ../../../src/arch/shared/archdep_file_is_blockdev.h \
+ ../../../src/arch/shared/archdep_file_is_chardev.h \
+ ../../../src/arch/shared/archdep_file_size.h \
+ ../../../src/arch/shared/archdep_filename_parameter.h \
+ ../../../src/arch/shared/archdep_fix_permissions.h \
+ ../../../src/arch/shared/archdep_fix_streams.h \
+ ../../../src/arch/shared/archdep_fseeko.h ../../../src/types.h \
+ ../../../src/arch/shared/archdep_ftello.h \
+ ../../../src/arch/shared/archdep_get_current_drive.h \
+ ../../../src/arch/shared/archdep_get_runtime_info.h \
+ ../../../src/arch/shared/archdep_get_vice_datadir.h \
+ ../../../src/arch/shared/archdep_get_vice_docsdir.h \
+ ../../../src/arch/shared/archdep_get_vice_drivesdir.h \
+ ../../../src/arch/shared/archdep_get_vice_hotkeysdir.h \
+ ../../../src/arch/shared/archdep_get_vice_machinedir.h \
+ ../../../src/arch/shared/archdep_getcwd.h \
+ ../../../src/arch/shared/archdep_glob.h \
+ ../../../src/arch/shared/archdep_home_path.h \
+ ../../../src/arch/shared/archdep_icon_path.h \
+ ../../../src/arch/shared/archdep_is_haiku.h \
+ ../../../src/arch/shared/archdep_is_macos_bindist.h \
+ ../../../src/arch/shared/archdep_is_windows_nt.h \
+ ../../../src/arch/shared/archdep_kbd_get_host_mapping.h \
+ ../../../src/arch/shared/archdep_list_drives.h \
+ ../../../src/arch/shared/archdep_make_backup_filename.h \
+ ../../../src/arch/shared/archdep_mkdir.h \
+ ../../../src/arch/shared/archdep_mkstemp_fd.h \
+ ../../../src/arch/shared/archdep_network.h \
+ ../../../src/arch/shared/archdep_open_default_log_file.h \
+ ../../../src/arch/shared/archdep_path_is_relative.h \
+ ../../../src/arch/shared/archdep_program_name.h \
+ ../../../src/arch/shared/archdep_program_path.h \
+ ../../../src/arch/shared/archdep_quote_parameter.h \
+ ../../../src/arch/shared/archdep_quote_unzip.h \
+ ../../../src/arch/shared/archdep_rawnet_capability.h \
+ ../../../src/arch/shared/archdep_real_path.h \
+ ../../../src/arch/shared/archdep_remove.h \
+ ../../../src/arch/shared/archdep_rename.h \
+ ../../../src/arch/shared/archdep_require_vkbd.h \
+ ../../../src/arch/shared/archdep_rmdir.h \
+ ../../../src/arch/shared/archdep_rtc_get_centisecond.h \
+ ../../../src/arch/shared/archdep_sanitize_filename.h \
+ ../../../src/arch/shared/archdep_set_current_drive.h \
+ ../../../src/arch/shared/archdep_set_openmp_wait_policy.h \
+ ../../../src/arch/shared/archdep_signals.h \
+ ../../../src/arch/shared/archdep_socketpeek.h \
+ ../../../src/arch/shared/archdep_sound.h \
+ ../../../src/arch/shared/archdep_spawn.h \
+ ../../../src/arch/shared/archdep_startup_log_error.h \
+ ../../../src/arch/shared/archdep_stat.h \
+ ../../../src/arch/shared/archdep_tick.h \
+ ../../../src/arch/shared/archdep_tmpnam.h \
+ ../../../src/arch/shared/archdep_user_cache_path.h \
+ ../../../src/arch/shared/archdep_user_config_path.h \
+ ../../../src/arch/shared/archdep_user_state_path.h \
+ ../../../src/arch/shared/archdep_usleep.h \
+ ../../../src/arch/shared/archdep_xdg.h ../../../src/lib.h \
+ ../../../src/debug.h ../../../src/log.h ../../../src/log.h
+../../../src/vice.h:
+../../../src/config.h:
+render_thread.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdbool.h:
+C:/msys64/ucrt64/include/string.h:
+C:/msys64/ucrt64/include/crtdefs.h:
+C:/msys64/ucrt64/include/corecrt.h:
+C:/msys64/ucrt64/include/_mingw.h:
+C:/msys64/ucrt64/include/_mingw_mac.h:
+C:/msys64/ucrt64/include/_mingw_secapi.h:
+C:/msys64/ucrt64/include/vadefs.h:
+C:/msys64/ucrt64/include/corecrt_memory.h:
+C:/msys64/ucrt64/include/sec_api/string_s.h:
+C:/msys64/ucrt64/include/glib-2.0/glib.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/galloca.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gtypes.h:
+C:/msys64/ucrt64/lib/glib-2.0/include/glibconfig.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gmacros.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stddef.h:
+C:/msys64/ucrt64/include/stddef.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/limits.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/syslimits.h:
+C:/msys64/ucrt64/include/limits.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/float.h:
+C:/msys64/ucrt64/include/float.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gversionmacros.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/glib-visibility.h:
+C:/msys64/ucrt64/include/time.h:
+C:/msys64/ucrt64/include/sys/timeb.h:
+C:/msys64/ucrt64/include/sec_api/sys/timeb_s.h:
+C:/msys64/ucrt64/include/_timeval.h:
+C:/msys64/ucrt64/include/pthread_time.h:
+C:/msys64/ucrt64/include/pthread_compat.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/garray.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gasyncqueue.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gthread.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gatomic.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/glib-typeof.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gerror.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdarg.h:
+C:/msys64/ucrt64/include/stdarg.h:
+C:/msys64/ucrt64/include/_mingw_stdarg.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gquark.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gutils.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gbacktrace.h:
+C:/msys64/ucrt64/include/signal.h:
+C:/msys64/ucrt64/include/pthread_signal.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gbase64.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gbitlock.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gbookmarkfile.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gdatetime.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gtimezone.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gbytes.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gcharset.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gchecksum.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gconvert.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gdataset.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gdate.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gdir.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/genviron.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gfileutils.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/ggettext.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/ghash.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/glist.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gmem.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gnode.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/ghmac.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gchecksum.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/ghook.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/ghostutils.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/giochannel.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gmain.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gpoll.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gslist.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdint.h:
+C:/msys64/ucrt64/include/stdint.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gstring.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gunicode.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gstrfuncs.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gkeyfile.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gmappedfile.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gmarkup.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gmessages.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gvariant.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gvarianttype.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/goption.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gpathbuf.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gpattern.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gprimes.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gqsort.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gqueue.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/grand.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/grcbox.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/grefcount.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/grefstring.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gmem.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gmacros.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gregex.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gscanner.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gsequence.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gshell.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gslice.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gspawn.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gstringchunk.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gstrvbuilder.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gtestutils.h:
+C:/msys64/ucrt64/include/errno.h:
+C:/msys64/ucrt64/include/stdlib.h:
+C:/msys64/ucrt64/include/corecrt_wstdlib.h:
+C:/msys64/ucrt64/include/sec_api/stdlib_s.h:
+C:/msys64/ucrt64/include/malloc.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/mm_malloc.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gthreadpool.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gtimer.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gtrashstack.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gtree.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/guri.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/guuid.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gversion.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/gwin32.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/deprecated/gallocator.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/deprecated/gcache.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/deprecated/gcompletion.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/deprecated/gmain.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/deprecated/grel.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/deprecated/gthread.h:
+C:/msys64/ucrt64/include/glib-2.0/glib/glib-autocleanups.h:
+C:/msys64/ucrt64/include/pthread.h:
+C:/msys64/ucrt64/include/sys/types.h:
+C:/msys64/ucrt64/include/_mingw_off_t.h:
+C:/msys64/ucrt64/include/process.h:
+C:/msys64/ucrt64/include/corecrt_startup.h:
+C:/msys64/ucrt64/include/sched.h:
+C:/msys64/ucrt64/include/pthread_unistd.h:
+archdep.h:
+../../../src/sound.h:
+../../../src/vice.h:
+C:/msys64/ucrt64/include/stdio.h:
+C:/msys64/ucrt64/include/corecrt_stdio_config.h:
+C:/msys64/ucrt64/include/swprintf.inl:
+C:/msys64/ucrt64/include/sec_api/stdio_s.h:
+../../../src/types.h:
+C:/msys64/ucrt64/include/inttypes.h:
+../../../src/arch/shared/archdep_win32.h:
+../../../src/arch/shared/archapi.h:
+../../../src/arch/shared/archdep_defs.h:
+../../../src/arch/shared/archdep_access.h:
+C:/msys64/ucrt64/include/io.h:
+../../../src/arch/shared/archdep_boot_path.h:
+../../../src/arch/shared/archdep_cbmfont.h:
+../../../src/arch/shared/archdep_chdir.h:
+../../../src/arch/shared/archdep_close.h:
+../../../src/arch/shared/archdep_create_user_cache_dir.h:
+../../../src/arch/shared/archdep_create_user_config_dir.h:
+../../../src/arch/shared/archdep_create_user_state_dir.h:
+../../../src/arch/shared/archdep_current_dir.h:
+../../../src/arch/shared/archdep_default_autostart_disk_image_file_name.h:
+../../../src/arch/shared/archdep_default_fliplist_file_name.h:
+../../../src/arch/shared/archdep_default_joymap_file_name.h:
+../../../src/arch/shared/archdep_default_logfile.h:
+../../../src/arch/shared/archdep_default_logger.h:
+../../../src/arch/shared/archdep_default_portable_resource_file_name.h:
+../../../src/arch/shared/archdep_default_resource_file_name.h:
+../../../src/arch/shared/archdep_default_rtc_file_name.h:
+../../../src/arch/shared/archdep_default_sysfile_pathlist.h:
+../../../src/arch/shared/archdep_dir.h:
+../../../src/arch/shared/archdep_ethernet_available.h:
+../../../src/arch/shared/archdep_exit.h:
+../../../src/arch/shared/archdep_expand_path.h:
+../../../src/arch/shared/archdep_extra_title_text.h:
+../../../src/arch/shared/archdep_fdopen.h:
+../../../src/arch/shared/archdep_file_exists.h:
+../../../src/arch/shared/archdep_file_is_blockdev.h:
+../../../src/arch/shared/archdep_file_is_chardev.h:
+../../../src/arch/shared/archdep_file_size.h:
+../../../src/arch/shared/archdep_filename_parameter.h:
+../../../src/arch/shared/archdep_fix_permissions.h:
+../../../src/arch/shared/archdep_fix_streams.h:
+../../../src/arch/shared/archdep_fseeko.h:
+../../../src/types.h:
+../../../src/arch/shared/archdep_ftello.h:
+../../../src/arch/shared/archdep_get_current_drive.h:
+../../../src/arch/shared/archdep_get_runtime_info.h:
+../../../src/arch/shared/archdep_get_vice_datadir.h:
+../../../src/arch/shared/archdep_get_vice_docsdir.h:
+../../../src/arch/shared/archdep_get_vice_drivesdir.h:
+../../../src/arch/shared/archdep_get_vice_hotkeysdir.h:
+../../../src/arch/shared/archdep_get_vice_machinedir.h:
+../../../src/arch/shared/archdep_getcwd.h:
+../../../src/arch/shared/archdep_glob.h:
+../../../src/arch/shared/archdep_home_path.h:
+../../../src/arch/shared/archdep_icon_path.h:
+../../../src/arch/shared/archdep_is_haiku.h:
+../../../src/arch/shared/archdep_is_macos_bindist.h:
+../../../src/arch/shared/archdep_is_windows_nt.h:
+../../../src/arch/shared/archdep_kbd_get_host_mapping.h:
+../../../src/arch/shared/archdep_list_drives.h:
+../../../src/arch/shared/archdep_make_backup_filename.h:
+../../../src/arch/shared/archdep_mkdir.h:
+../../../src/arch/shared/archdep_mkstemp_fd.h:
+../../../src/arch/shared/archdep_network.h:
+../../../src/arch/shared/archdep_open_default_log_file.h:
+../../../src/arch/shared/archdep_path_is_relative.h:
+../../../src/arch/shared/archdep_program_name.h:
+../../../src/arch/shared/archdep_program_path.h:
+../../../src/arch/shared/archdep_quote_parameter.h:
+../../../src/arch/shared/archdep_quote_unzip.h:
+../../../src/arch/shared/archdep_rawnet_capability.h:
+../../../src/arch/shared/archdep_real_path.h:
+../../../src/arch/shared/archdep_remove.h:
+../../../src/arch/shared/archdep_rename.h:
+../../../src/arch/shared/archdep_require_vkbd.h:
+../../../src/arch/shared/archdep_rmdir.h:
+../../../src/arch/shared/archdep_rtc_get_centisecond.h:
+../../../src/arch/shared/archdep_sanitize_filename.h:
+../../../src/arch/shared/archdep_set_current_drive.h:
+../../../src/arch/shared/archdep_set_openmp_wait_policy.h:
+../../../src/arch/shared/archdep_signals.h:
+../../../src/arch/shared/archdep_socketpeek.h:
+../../../src/arch/shared/archdep_sound.h:
+../../../src/arch/shared/archdep_spawn.h:
+../../../src/arch/shared/archdep_startup_log_error.h:
+../../../src/arch/shared/archdep_stat.h:
+../../../src/arch/shared/archdep_tick.h:
+../../../src/arch/shared/archdep_tmpnam.h:
+../../../src/arch/shared/archdep_user_cache_path.h:
+../../../src/arch/shared/archdep_user_config_path.h:
+../../../src/arch/shared/archdep_user_state_path.h:
+../../../src/arch/shared/archdep_usleep.h:
+../../../src/arch/shared/archdep_xdg.h:
+../../../src/lib.h:
+../../../src/debug.h:
+../../../src/log.h:
+../../../src/log.h:

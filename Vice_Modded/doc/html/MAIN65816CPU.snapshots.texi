@@ -1,0 +1,54 @@
+@c generated, do not edit
+
+@b{The MAIN65816CPU module}
+
+
+Version numbers: Major 1, Minor 3.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    CLOCK 
+@tab  main clock           
+@tab 
+@item    UBYTE 
+@tab  a                    
+@tab 
+@item    UBYTE 
+@tab  b                    
+@tab 
+@item    WORD  
+@tab  x                    
+@tab 
+@item    WORD  
+@tab  y                    
+@tab 
+@item    WORD  
+@tab  sp                   
+@tab 
+@item    WORD  
+@tab  dpr                  
+@tab 
+@item    UBYTE 
+@tab  pbr                  
+@tab 
+@item    UBYTE 
+@tab  dbr                  
+@tab 
+@item    UBYTE 
+@tab  emul                 
+@tab 
+@item    WORD  
+@tab  pc                   
+@tab 
+@item    UBYTE 
+@tab  status               
+@tab 
+@item    DWORD 
+@tab  last_opcode_info     
+@tab 
+@end multitable
+
+@i{ src/main65816cpu.c }
+@sp 1

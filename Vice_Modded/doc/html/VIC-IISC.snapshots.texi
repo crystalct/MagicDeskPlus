@@ -1,0 +1,144 @@
+@c generated, do not edit
+
+@b{The VIC-IISC module}
+
+
+Version numbers: Major 1, Minor 4.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY    
+@tab  regs                          
+@tab  0x40 BYTES state from vicii_s, in the same order
+@item    DWORD    
+@tab  raster_cycle                  
+@tab 
+@item    DWORD    
+@tab  cycle_flags                   
+@tab 
+@item    DWORD    
+@tab  raster_line                   
+@tab 
+@item    BYTE     
+@tab  start_of_frame                
+@tab 
+@item    BYTE     
+@tab  irq_status                    
+@tab 
+@item    DWORD    
+@tab  raster_irq_line               
+@tab 
+@item    BYTE     
+@tab  raster_irq_triggered          
+@tab 
+@item    ARRAY    
+@tab  vbuf                          
+@tab  VICII_SCREEN_TEXTCOLS
+@item    ARRAY    
+@tab  cbuf                          
+@tab  VICII_SCREEN_TEXTCOLS
+@item    BYTE     
+@tab  gbuf                          
+@tab 
+@item    DWORD    
+@tab  dbuf_offset                   
+@tab 
+@item    ARRAY    
+@tab  dbuf                          
+@tab  VICII_DRAW_BUFFER_SIZE
+@item    DWORD    
+@tab  ysmooth                       
+@tab 
+@item    BYTE     
+@tab  allow_bad_lines               
+@tab 
+@item    BYTE     
+@tab  sprite_sprite_collisions      
+@tab 
+@item    BYTE     
+@tab  sprite_background_collisions  
+@tab 
+@item    BYTE     
+@tab  clear_collisions              
+@tab 
+@item    DWORD    
+@tab  idle_state                    
+@tab 
+@item    DWORD    
+@tab  vcbase                        
+@tab 
+@item    DWORD    
+@tab  vc                            
+@tab 
+@item    DWORD    
+@tab  rc                            
+@tab 
+@item    DWORD    
+@tab  vmli                          
+@tab 
+@item    DWORD    
+@tab  bad_line                      
+@tab 
+@item    BYTE     
+@tab  light_pen.state               
+@tab 
+@item    BYTE     
+@tab  light_pen.triggered           
+@tab 
+@item    DWORD    
+@tab  light_pen.x                   
+@tab 
+@item    DWORD    
+@tab  light_pen.y                   
+@tab 
+@item    DWORD    
+@tab  light_pen.x_extra_bits        
+@tab 
+@item    CLOCK    
+@tab  light_pen.trigger_cycle       
+@tab 
+@item    BYTE     
+@tab  reg11_delay                   
+@tab 
+@item    DWORD    
+@tab  prefetch_cycles               
+@tab 
+@item    DWORD    
+@tab  sprite_display_bits           
+@tab 
+@item    BYTE     
+@tab  sprite_dma                    
+@tab 
+@item    BYTE     
+@tab  last_color_reg                
+@tab 
+@item    BYTE     
+@tab  last_color_value              
+@tab 
+@item    BYTE     
+@tab  last_read_phi1                
+@tab 
+@item    BYTE     
+@tab  last_bus_phi2                 
+@tab 
+@item    BYTE     
+@tab  vborder                       
+@tab 
+@item    BYTE     
+@tab  set_vborder                   
+@tab 
+@item    BYTE     
+@tab  main_border                   
+@tab 
+@item    BYTE     
+@tab  refresh_counter               
+@tab 
+@item    ARRAY    
+@tab  color_ram                     
+@tab  0x400
+@end multitable
+
+@i{ src/viciisc/vicii-snapshot.c }
+@sp 1

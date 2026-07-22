@@ -1,0 +1,92 @@
+@c generated, do not edit
+
+@b{The VIC20ROM module}
+
+
+Version numbers: Major 1, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    UBYTE 
+@tab  CONFIG          
+@tab        
+@tab  Bit 0: 1 = ROM block $2*** enabled
+@item          
+@tab                  
+@tab        
+@tab      1: 1 = ROM block $3*** enabled
+@item          
+@tab                  
+@tab        
+@tab      2: 1 = ROM block $4*** enabled
+@item          
+@tab                  
+@tab        
+@tab      3: 1 = ROM block $5*** enabled
+@item          
+@tab                  
+@tab        
+@tab      4: 1 = ROM block $6*** enabled
+@item          
+@tab                  
+@tab        
+@tab      5: 1 = ROM block $7*** enabled
+@item          
+@tab                  
+@tab        
+@tab      6: 1 = ROM block $A*** enabled
+@item          
+@tab                  
+@tab        
+@tab      7: 1 = ROM block $B*** enabled
+@item    ARRAY 
+@tab  KERNAL          
+@tab        
+@tab  8k KERNAL ROM $e000-$ffff
+@item    ARRAY 
+@tab  BASIC           
+@tab        
+@tab  8k BASIC ROM $c000-$dfff
+@item    ARRAY 
+@tab  CHARGEN         
+@tab        
+@tab  4k CHARGEN ROM
+@item    ARRAY 
+@tab  BLK1A           
+@tab        
+@tab  4k ROM $2*** (if CONFIG & 1)
+@item    ARRAY 
+@tab  BLK1B           
+@tab        
+@tab  4k ROM $3*** (if CONFIG & 2)
+@item    ARRAY 
+@tab  BLK3A           
+@tab        
+@tab  4k ROM $6*** (if CONFIG & 16)
+@item    ARRAY 
+@tab  BLK3B           
+@tab        
+@tab  4k ROM $7*** (if CONFIG & 32)
+@item    ARRAY 
+@tab  BLK5A           
+@tab        
+@tab  4k ROM $A*** (if CONFIG & 64)
+@item    ARRAY 
+@tab  BLK5B           
+@tab        
+@tab  4k ROM $B*** (if CONFIG & 128)
+@item    ARRAY 
+@tab  BLK2A           
+@tab  1.1+  
+@tab  4k ROM $4*** (if CONFIG & 4)
+@item    ARRAY 
+@tab  BLK2B           
+@tab  1.1+  
+@tab  4k ROM $5*** (if CONFIG & 8)
+@end multitable
+
+@i{ src/vic20/vic20memsnapshot.c }
+@sp 1

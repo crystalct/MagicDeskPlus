@@ -1,0 +1,36 @@
+@c generated, do not edit
+
+@b{The SID module}
+
+
+Version numbers: Major 1, Minor 5.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  sids     
+@tab    1.2+  
+@tab  amount of extra sids
+@item    BYTE  
+@tab  sound    
+@tab    1.2+  
+@tab  sound active flag
+@item    BYTE  
+@tab  engine   
+@tab    1.2+  
+@tab  sound engine
+@item    BYTE  
+@tab  model    
+@tab    1.4+  
+@tab  SID model
+@item    ARRAY 
+@tab  sid data 
+@tab    1.1+  
+@tab  32 BYTES of SID registers
+@end multitable
+
+@i{ src/sid/sid-snapshot.c }
+@sp 1

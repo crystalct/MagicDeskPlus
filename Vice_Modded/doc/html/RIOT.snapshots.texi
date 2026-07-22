@@ -1,0 +1,45 @@
+@c generated, do not edit
+
+@b{The RIOT module}
+
+
+Version numbers: Major 0, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    UBYTE 
+@tab  ORA          
+@tab  Port A output register
+@item    UBYTE 
+@tab  DDRA         
+@tab  Port A data direction register
+@item    UBYTE 
+@tab  ORB          
+@tab  Port B output register
+@item    UBYTE 
+@tab  DDRB         
+@tab  Port B data direction register
+@item    UBYTE 
+@tab  EDGECTRL     
+@tab  edge control value: Bit 0/1: A0/A1 address bits written to edgecontrol registers
+@item    UBYTE 
+@tab  IRQFL        
+@tab  IRQ fl: Bit 6/7: see RIOT IRQ flag  Bit 0: state of IRQ line (1=active)
+@item    UBYTE 
+@tab  N            
+@tab  current timer value
+@item    UWORD 
+@tab  divider      
+@tab  Pre-scale divider value (1, 8, 64, or 1024)
+@item    UWORD 
+@tab  rest         
+@tab  cycles that the divider has done since last counter tick
+@item    UBYTE 
+@tab  irqen        
+@tab  0= timer IRQ disabled, 1= enabled
+@end multitable
+
+@i{ src/core/riotcore.c }
+@sp 1

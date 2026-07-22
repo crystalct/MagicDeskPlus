@@ -1,0 +1,90 @@
+@c generated, do not edit
+
+@b{The VIC-I module}
+
+
+Version numbers: Major 0, Minor 4.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    DWORD    
+@tab  interlace_enabled         
+@tab 
+@item    DWORD    
+@tab  interlace_field           
+@tab 
+@item    CLOCK    
+@tab  framestart_cycle          
+@tab 
+@item    BYTE     
+@tab  raster_cycle              
+@tab 
+@item    WORD     
+@tab  raster_line               
+@tab 
+@item    WORD     
+@tab  area                      
+@tab 
+@item    WORD     
+@tab  fetch_state               
+@tab 
+@item    DWORD    
+@tab  raster_line               
+@tab 
+@item    DWORD    
+@tab  text_cols                 
+@tab 
+@item    DWORD    
+@tab  text_lines                
+@tab 
+@item    DWORD    
+@tab  pending_text_cols         
+@tab 
+@item    DWORD    
+@tab  line_was_blank            
+@tab 
+@item    DWORD    
+@tab  memptr                    
+@tab 
+@item    DWORD    
+@tab  memptr_inc                
+@tab 
+@item    DWORD    
+@tab  row_counter               
+@tab 
+@item    DWORD    
+@tab  buf_offset                
+@tab 
+@item    BYTE     
+@tab  light_pen.state           
+@tab 
+@item    BYTE     
+@tab  light_pen.triggered       
+@tab 
+@item    DWORD    
+@tab  light_pen.x               
+@tab 
+@item    DWORD    
+@tab  light_pen.y               
+@tab 
+@item    DWORD    
+@tab  light_pen.x_extra_bits    
+@tab 
+@item    CLOCK    
+@tab  light_pen.trigger_cycle   
+@tab 
+@item    BYTE     
+@tab  vbuf                      
+@tab 
+@item    ARRAY    
+@tab  color ram                 
+@tab  0x400 bytes of color ram data ($9400 - $97ff) FIXME: is this really correct?
+@item    10*BYTE  
+@tab  registers                 
+@tab  10 VIC-I registers
+@end multitable
+
+@i{ src/vic20/vic-snapshot.c }
+@sp 1

@@ -1,0 +1,10 @@
+prefix=/ucrt64
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libresidfp
+Description: cycle exact SID emulation library.
+Version: 1.0.2
+Libs: -L${libdir} -lresidfp
+Cflags: -I${includedir}

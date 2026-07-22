@@ -1,0 +1,84 @@
+@c generated, do not edit
+
+@b{The PETROM module}
+
+
+Version numbers: Major 1, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    UBYTE 
+@tab  CONFIG     
+@tab        
+@tab  Bit 0: 1= $9*** ROM included
+@item          
+@tab             
+@tab        
+@tab      1: 1= $a*** ROM included
+@item          
+@tab             
+@tab        
+@tab      2: 1= $b*** ROM included
+@item          
+@tab             
+@tab        
+@tab      3: 1= $e900-$efff ROM included
+@item          
+@tab             
+@tab        
+@tab      4: 1= $9000-$ffff 6809 ROM
+@item          
+@tab             
+@tab        
+@tab            and upper half CHARGEN ROM included
+@item    ARRAY 
+@tab  KERNAL     
+@tab        
+@tab  4k KERNAL ROM image $f000-$ffff
+@item    ARRAY 
+@tab  EDITOR     
+@tab        
+@tab  2k EDITOR ROM image $e000-$e800
+@item    ARRAY 
+@tab  CHARGEN    
+@tab        
+@tab  2k CHARGEN ROM image
+@item    ARRAY 
+@tab  ROM9       
+@tab        
+@tab  4k $9*** ROM (if CONFIG & 1)
+@item    ARRAY 
+@tab  ROMA       
+@tab        
+@tab  4k $A*** ROM (if CONFIG & 2)
+@item    ARRAY 
+@tab  ROMB       
+@tab        
+@tab  4k $B*** ROM (if CONFIG & 4)
+@item    ARRAY 
+@tab  ROMC       
+@tab        
+@tab  4k $C*** ROM
+@item    ARRAY 
+@tab  ROMD       
+@tab        
+@tab  4k $D*** ROM
+@item    ARRAY 
+@tab  ROME9      
+@tab        
+@tab  7 blocks $e900-$efff ROM (if CONFIG & 8)
+@item    ARRAY 
+@tab  ROM6809    
+@tab  1.1+  
+@tab  24k $A000-$FFFF ROM   (if CONFIG & 16)
+@item    ARRAY 
+@tab  CHARGEN(2) 
+@tab  1.1+  
+@tab  upper half of CHARGEN (if CONFIG & 16)
+@end multitable
+
+@i{ src/pet/petmemsnapshot.c }
+@sp 1

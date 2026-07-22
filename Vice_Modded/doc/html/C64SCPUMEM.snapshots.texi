@@ -1,0 +1,60 @@
+@c generated, do not edit
+
+@b{The C64SCPUMEM module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  mem_pport            
+@tab 
+@item    BYTE  
+@tab  mem_reg_soft_1mhz    
+@tab 
+@item    BYTE  
+@tab  mem_reg_sys_1mhz     
+@tab 
+@item    BYTE  
+@tab  mem_reg_hwenable     
+@tab 
+@item    BYTE  
+@tab  mem_reg_dosext       
+@tab 
+@item    BYTE  
+@tab  mem_reg_ramlink      
+@tab 
+@item    BYTE  
+@tab  mem_reg_optim        
+@tab 
+@item    BYTE  
+@tab  mem_reg_bootmap      
+@tab 
+@item    BYTE  
+@tab  mem_reg_simm         
+@tab 
+@item    BYTE  
+@tab  exrom                
+@tab 
+@item    BYTE  
+@tab  game                 
+@tab 
+@item    DWORD 
+@tab  mem_simm_ram_mask    
+@tab 
+@item    ARRAY 
+@tab  mem_ram              
+@tab  SCPU64_RAM_SIZE
+@item    ARRAY 
+@tab  mem_sram             
+@tab  SCPU64_SRAM_SIZE
+@item    ARRAY 
+@tab  mem_simm_ram         
+@tab  mem_simm_ram_mask + 1
+@end multitable
+
+@i{ src/scpu64/scpu64memsnapshot.c }
+@sp 1

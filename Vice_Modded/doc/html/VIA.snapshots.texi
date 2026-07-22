@@ -1,0 +1,116 @@
+@c generated, do not edit
+
+@b{The VIA module}
+
+
+Version numbers: Major 2, Minor 2.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    UBYTE 
+@tab  ORA                  
+@tab        
+@tab  Output register A
+@item    UBYTE 
+@tab  DDRA                 
+@tab        
+@tab  Data direction register A
+@item    UBYTE 
+@tab  ORB                  
+@tab        
+@tab  Output register B
+@item    UBYTE 
+@tab  DDRB                 
+@tab        
+@tab  Data direction register B
+@item    UWORD 
+@tab  T1L                  
+@tab        
+@tab  timer 1 latch value
+@item    UWORD 
+@tab  T1C                  
+@tab        
+@tab  timer 1 count value
+@item    UBYTE 
+@tab  T2LL                 
+@tab        
+@tab  Timer 2 latch lo
+@item    UBYTE 
+@tab  T2LH                 
+@tab        
+@tab  Timer 2 latch hi
+@item    UBYTE 
+@tab  T2CL                 
+@tab        
+@tab  timer 2 count value lo
+@item    UBYTE 
+@tab  T2CH                 
+@tab        
+@tab  timer 2 count value hi
+@item    UWORD 
+@tab  T2C                  
+@tab        
+@tab  timer 2 counter
+@item    UBYTE 
+@tab  RUNFL                
+@tab        
+@tab  bit 7: timer 1 will generate IRQ on underflow; bit 6: timer 2 will generate IRQ on underflow
+@item    UBYTE 
+@tab  SR                   
+@tab        
+@tab  shift register value
+@item    UBYTE 
+@tab  ACR                  
+@tab        
+@tab  auxiliary control register
+@item    UBYTE 
+@tab  PCR                  
+@tab        
+@tab  peripherial control register
+@item    UBYTE 
+@tab  IFR                  
+@tab        
+@tab  active interrupts
+@item    UBYTE 
+@tab  IER                  
+@tab        
+@tab  interrupt masks
+@item    UBYTE 
+@tab  PB7                  
+@tab        
+@tab  bit 7 = pb7 state
+@item    UBYTE 
+@tab  SRHBITS              
+@tab        
+@tab  number of half-bits to shift out on SR
+@item    UBYTE 
+@tab  CABSTATE             
+@tab        
+@tab  bit 7 = ca2 state, bit6 = cb2 state, bit5 = cb1
+@item    UBYTE 
+@tab  ILA                  
+@tab        
+@tab  input latch port A  (see ACR bit 0)
+@item    UBYTE 
+@tab  ILB                  
+@tab        
+@tab  input latch port B  (see ACR bit 1)
+@item    UBYTE 
+@tab  t2_irq_allowed       
+@tab  2.2+  
+@tab 
+@item    UBYTE 
+@tab  t2_underflow_alarm   
+@tab  2.2+  
+@tab  0 if not; 1+time delta if set.
+@item    UBYTE 
+@tab  t2_shift_alarm       
+@tab  2.2+  
+@tab  0 if not; 1+time delta if set.
+@end multitable
+
+@i{ src/core/viacore.c }
+@sp 1

@@ -1,0 +1,66 @@
+@c generated, do not edit
+
+@b{The TED module}
+
+
+Version numbers: Major 1, Minor 5.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item     DWORD   
+@tab  last_emulate_line_clk      
+@tab 
+@item     BYTE    
+@tab  AllowBadLines              
+@tab   flag: if true, bad lines can happen
+@item     BYTE    
+@tab  BadLine                    
+@tab   flag: this is a bad line
+@item     BYTE    
+@tab  Blank                      
+@tab   flag: draw lines in border color
+@item     40*BYTE 
+@tab  ColorBuf                   
+@tab   character memory buffer (loaded at bad line)
+@item     BYTE    
+@tab  IdleState                  
+@tab   flag: idle state enabled
+@item     40*BYTE 
+@tab  MatrixBuf                  
+@tab   video matrix buffer (loaded at bad line)
+@item     DWORD   
+@tab  RamBase                    
+@tab   pointer to the start of RAM seen by the TED
+@item     BYTE    
+@tab  RasterCycle                
+@tab   current ted.raster cycle
+@item     WORD    
+@tab  RasterLine                 
+@tab   current ted.raster line
+@item     64*BYTE 
+@tab  Registers                  
+@tab   TED registers
+@item     DWORD   
+@tab  ted_raster_counter         
+@tab 
+@item     WORD    
+@tab  Vc                         
+@tab   internal TED counter
+@item     BYTE    
+@tab  mem_counter_inc            
+@tab   (VcInc) value to add to Vc at the end of this line
+@item     WORD    
+@tab  VcBase                     
+@tab   internal TED memory pointer
+@item     BYTE    
+@tab  VideoInt                   
+@tab   status of TED IRQ (ted.irq_status)
+@item     DWORD   
+@tab  FetchEventTick             
+@tab   ticks for the next "fetch" (DMA) event
+@end multitable
+
+@i{ src/plus4/ted-snapshot.c }
+@sp 1

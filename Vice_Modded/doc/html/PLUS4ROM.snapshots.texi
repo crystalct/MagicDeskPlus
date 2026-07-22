@@ -1,0 +1,33 @@
+@c generated, do not edit
+
+@b{The PLUS4ROM module}
+
+
+Version numbers: Major 1, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY 
+@tab  kernal rom      
+@tab  PLUS4_KERNAL_ROM_SIZE
+@item    ARRAY 
+@tab  basic rom       
+@tab  PLUS4_BASIC_ROM_SIZE
+@item    ARRAY 
+@tab  extromlo1       
+@tab  PLUS4_BASIC_ROM_SIZE
+@item    ARRAY 
+@tab  extromlo3       
+@tab  PLUS4_BASIC_ROM_SIZE
+@item    ARRAY 
+@tab  extromhi1       
+@tab  PLUS4_KERNAL_ROM_SIZE
+@item    ARRAY 
+@tab  extromhi3       
+@tab  PLUS4_KERNAL_ROM_SIZE
+@end multitable
+
+@i{ src/plus4/plus4memsnapshot.c }
+@sp 1

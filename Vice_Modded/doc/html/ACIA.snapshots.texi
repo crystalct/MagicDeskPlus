@@ -1,0 +1,36 @@
+@c generated, do not edit
+
+@b{The ACIA module}
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    UBYTE 
+@tab  TDR     
+@tab  Transmit Data Register
+@item    UBYTE 
+@tab  RDR     
+@tab  Receiver Data Register
+@item    UBYTE 
+@tab  SR      
+@tab  Status Register (includes state of IRQ line)
+@item    UBYTE 
+@tab  CMD     
+@tab  Command Register
+@item    UBYTE 
+@tab  CTRL    
+@tab  Control Register
+@item    UBYTE 
+@tab  IN_TX   
+@tab  0 = no data to tx; 1 = Data is being transmitted;
+@item    QWORD 
+@tab  TICKSTX 
+@tab  ticks till the next TDR empty interrupt
+@item    QWORD 
+@tab  TICKSRX 
+@tab  ticks till the next RDF empty interrupt
+@end multitable
+
+@i{ src/aciacore.c }
+@sp 1

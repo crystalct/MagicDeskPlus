@@ -1,0 +1,30 @@
+@c generated, do not edit
+
+@b{The PLUS4MEM module}
+
+
+Version numbers: Major 1, Minor 0.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE  
+@tab  pport.data       
+@tab 
+@item    BYTE  
+@tab  pport.dir        
+@tab 
+@item    BYTE  
+@tab  pport.data_out   
+@tab 
+@item    BYTE  
+@tab  mem_config       
+@tab 
+@item    ARRAY 
+@tab  mem_ram          
+@tab  PLUS4_RAM_SIZE
+@end multitable
+
+@i{ src/plus4/plus4memsnapshot.c }
+@sp 1

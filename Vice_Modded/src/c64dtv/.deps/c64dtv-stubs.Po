@@ -1,0 +1,98 @@
+c64dtv-stubs.o: c64dtv-stubs.c ../../src/vice.h ../../src/config.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdbool.h \
+ C:/msys64/ucrt64/include/stdlib.h C:/msys64/ucrt64/include/corecrt.h \
+ C:/msys64/ucrt64/include/_mingw.h C:/msys64/ucrt64/include/_mingw_mac.h \
+ C:/msys64/ucrt64/include/_mingw_secapi.h \
+ C:/msys64/ucrt64/include/vadefs.h \
+ C:/msys64/ucrt64/include/corecrt_wstdlib.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/limits.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/syslimits.h \
+ C:/msys64/ucrt64/include/limits.h C:/msys64/ucrt64/include/crtdefs.h \
+ C:/msys64/ucrt64/include/sec_api/stdlib_s.h \
+ C:/msys64/ucrt64/include/malloc.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/mm_malloc.h \
+ C:/msys64/ucrt64/include/errno.h ../../src/c64/cart/c64cartmem.h \
+ ../../src/types.h ../../src/vice.h C:/msys64/ucrt64/include/inttypes.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdint.h \
+ C:/msys64/ucrt64/include/stdint.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stddef.h \
+ C:/msys64/ucrt64/include/stddef.h C:/msys64/ucrt64/include/sys/types.h \
+ C:/msys64/ucrt64/include/_mingw_off_t.h ../../src/c64/c64cart.h \
+ ../../src/c64/cart/dqbb.h ../../src/c64/cart/expert.h \
+ ../../src/c64/cart/retroreplay.h ../../src/c64/cart/mmc64.h \
+ C:/msys64/ucrt64/include/stdio.h \
+ C:/msys64/ucrt64/include/corecrt_stdio_config.h \
+ C:/msys64/ucrt64/include/swprintf.inl \
+ C:/msys64/ucrt64/include/sec_api/stdio_s.h \
+ ../../src/c64/cart/mmcreplay.h ../../src/cartridge.h ../../src/types.h \
+ ../../src/sound.h ../../src/snapshot.h ../../src/c64/c64parallel.h \
+ ../../src/c64/cart/clockport.h ../../src/datasette/datasette.h \
+ ../../src/core/rtc/ds1307.h ../../src/machine.h ../../src/mididrv.h \
+ ../../src/pet/petpia.h ../../src/rs232drv/rsuser.h \
+ ../../src/core/rtc/rtc-58321a.h C:/msys64/ucrt64/include/time.h \
+ C:/msys64/ucrt64/include/sys/timeb.h \
+ C:/msys64/ucrt64/include/sec_api/sys/timeb_s.h \
+ C:/msys64/ucrt64/include/_timeval.h \
+ C:/msys64/ucrt64/include/pthread_time.h \
+ C:/msys64/ucrt64/include/pthread_compat.h ../../src/tapeport/tapecart.h \
+ ../../src/tapeport/tapeport.h ../../src/userport/userport_wic64.h
+../../src/vice.h:
+../../src/config.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdbool.h:
+C:/msys64/ucrt64/include/stdlib.h:
+C:/msys64/ucrt64/include/corecrt.h:
+C:/msys64/ucrt64/include/_mingw.h:
+C:/msys64/ucrt64/include/_mingw_mac.h:
+C:/msys64/ucrt64/include/_mingw_secapi.h:
+C:/msys64/ucrt64/include/vadefs.h:
+C:/msys64/ucrt64/include/corecrt_wstdlib.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/limits.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/syslimits.h:
+C:/msys64/ucrt64/include/limits.h:
+C:/msys64/ucrt64/include/crtdefs.h:
+C:/msys64/ucrt64/include/sec_api/stdlib_s.h:
+C:/msys64/ucrt64/include/malloc.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/mm_malloc.h:
+C:/msys64/ucrt64/include/errno.h:
+../../src/c64/cart/c64cartmem.h:
+../../src/types.h:
+../../src/vice.h:
+C:/msys64/ucrt64/include/inttypes.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdint.h:
+C:/msys64/ucrt64/include/stdint.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stddef.h:
+C:/msys64/ucrt64/include/stddef.h:
+C:/msys64/ucrt64/include/sys/types.h:
+C:/msys64/ucrt64/include/_mingw_off_t.h:
+../../src/c64/c64cart.h:
+../../src/c64/cart/dqbb.h:
+../../src/c64/cart/expert.h:
+../../src/c64/cart/retroreplay.h:
+../../src/c64/cart/mmc64.h:
+C:/msys64/ucrt64/include/stdio.h:
+C:/msys64/ucrt64/include/corecrt_stdio_config.h:
+C:/msys64/ucrt64/include/swprintf.inl:
+C:/msys64/ucrt64/include/sec_api/stdio_s.h:
+../../src/c64/cart/mmcreplay.h:
+../../src/cartridge.h:
+../../src/types.h:
+../../src/sound.h:
+../../src/snapshot.h:
+../../src/c64/c64parallel.h:
+../../src/c64/cart/clockport.h:
+../../src/datasette/datasette.h:
+../../src/core/rtc/ds1307.h:
+../../src/machine.h:
+../../src/mididrv.h:
+../../src/pet/petpia.h:
+../../src/rs232drv/rsuser.h:
+../../src/core/rtc/rtc-58321a.h:
+C:/msys64/ucrt64/include/time.h:
+C:/msys64/ucrt64/include/sys/timeb.h:
+C:/msys64/ucrt64/include/sec_api/sys/timeb_s.h:
+C:/msys64/ucrt64/include/_timeval.h:
+C:/msys64/ucrt64/include/pthread_time.h:
+C:/msys64/ucrt64/include/pthread_compat.h:
+../../src/tapeport/tapecart.h:
+../../src/tapeport/tapeport.h:
+../../src/userport/userport_wic64.h:

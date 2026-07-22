@@ -1,0 +1,99 @@
+@c generated, do not edit
+
+@b{The VIC-II module}
+
+
+Version numbers: Major 1, Minor 3.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    BYTE     
+@tab  AllowBadLines     
+@tab  flag: if true, bad lines can happen
+@item    BYTE     
+@tab  BadLine           
+@tab  flag: this is a bad line
+@item    BYTE     
+@tab  Blank             
+@tab  flag: draw lines in border color
+@item    ARRAY    
+@tab  ColorBuf          
+@tab  40 bytes, character memory buffer (loaded at bad line)
+@item    ARRAY    
+@tab  ColorRam          
+@tab  1024 bytes,  contents of color RAM
+@item    BYTE     
+@tab  IdleState         
+@tab  flag: idle state enabled
+@item    BYTE     
+@tab  LPTrigger         
+@tab  flag: light pen has been triggered
+@item    BYTE     
+@tab  LPX               
+@tab  light pen X
+@item    BYTE     
+@tab  LPY               
+@tab  light pen Y
+@item    ARRAY    
+@tab  MatrixBuf         
+@tab  40 bytes, video matrix buffer (loaded at bad line)
+@item    BYTE     
+@tab  NewSpriteDmaMask  
+@tab  value for SpriteDmaMask after drawing sprites
+@item    DWORD    
+@tab  RamBase           
+@tab  pointer to the start of RAM seen by the VIC
+@item    BYTE     
+@tab  RasterCycle       
+@tab  current vicii.raster cycle
+@item    WORD     
+@tab  RasterLine        
+@tab  current vicii.raster line
+@item    64*BYTE  
+@tab  Registers         
+@tab  VIC-II registers
+@item    BYTE     
+@tab  SbCollMask        
+@tab  sprite-background collisions so far
+@item    BYTE     
+@tab  SpriteDmaMask     
+@tab  sprites having DMA turned on
+@item    BYTE     
+@tab  SsCollMask        
+@tab  sprite-sprite collisions so far
+@item    BYTE     
+@tab  VBank             
+@tab  location of memory bank
+@item    WORD     
+@tab  Vc                
+@tab  internal VIC-II counter
+@item    BYTE     
+@tab  VcAdd             
+@tab  value to add to Vc at the end of this line (vicii.mem_counter_inc)
+@item    WORD     
+@tab  VcBase            
+@tab  internal VIC-II memory pointer
+@item    BYTE     
+@tab  VideoInt          
+@tab  status of VIC-II IRQ (vicii.irq_status)
+@item    BYTE     
+@tab  SpriteXMemPtr     
+@tab  sprite memory pointer
+@item    BYTE     
+@tab  SpriteXMemPtrInc  
+@tab  value to add to the MemPtr after fetch
+@item    BYTE     
+@tab  SpriteXExpFlipFlop
+@tab  sprite expansion flip-flop
+@item    DWORD    
+@tab  FetchEventTick    
+@tab  ticks for the next "fetch" (DMA) event
+@item    BYTE     
+@tab  FetchEventType    
+@tab  type of event (0: matrix, 1: sprite check, 2: sprite fetch)
+@end multitable
+
+@i{ src/vicii/vicii-snapshot.c }
+@sp 1

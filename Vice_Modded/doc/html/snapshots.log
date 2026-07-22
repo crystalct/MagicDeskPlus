@@ -1,0 +1,5170 @@
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/aciacore.c
+__MODULE__=ACIA
+   Type | Name | Description
+   UBYTE | TDR     | Transmit Data Register
+   UBYTE | RDR     | Receiver Data Register
+   UBYTE | SR      | Status Register (includes state of IRQ line)
+   UBYTE | CMD     | Command Register
+   UBYTE | CTRL    | Control Register
+   UBYTE | IN_TX   | 0 = no data to tx; 1 = Data is being transmitted;
+   QWORD | TICKSTX | ticks till the next TDR empty interrupt
+   QWORD | TICKSRX | ticks till the next RDF empty interrupt
+
+TEXI TABLEFILE:ACIA.snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/gtk3/actions-snapshot.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/gtk3/ui.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/gtk3/uimachinemenu.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/gtk3/uisettings.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/gtk3/uismartattach.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/gtk3/uisnapshot.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/gtk3/uistatusbar.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/gtk3/widgets/base/filechooserhelpers.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/gtk3/widgets/settings_snapshot.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/gtk3/widgets/settings_supersnapshotv5.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/sdl/actions-snapshot.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/sdl/menu_c64cart.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/sdl/menu_snapshot.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/sdl/ui.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/sdl/uifilereq.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/sdl/x128_ui.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/sdl/x64dtv_ui.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/sdl/x64sc_ui.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/sdl/x64_ui.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/sdl/xcbm2_ui.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/sdl/xcbm5x0_ui.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/sdl/xpet_ui.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/sdl/xplus4_ui.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/sdl/xscpu64_ui.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/sdl/xvic_ui.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/shared/hwsiddrv/hardsid-unix-drv.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/shared/hwsiddrv/hardsid-win32-drv.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/shared/hwsiddrv/hs-unix-linux.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/shared/hwsiddrv/hs-win32-dll.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/shared/hwsiddrv/us-unixwin-device.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/shared/hwsiddrv/usbsid-unixwin-drv.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/arch/shared/uiactions.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/autostart.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c128/c128-snapshot.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c128/c128.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c128/c128drive.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c128/c128mem.c
+
+
+TABLES:2
+__INFILE__=/home/crystal/vice/vice/doc/../src/c128/c128memsnapshot.c
+__MODULE__=C128ROM
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   ARRAY | KERNAL  | 8192 BYTES of KERNAL ROM data
+   ARRAY | BASIC LO| 16384 BYTES of BASIC ROM data
+   ARRAY | BASIC HI| 16384 BYTES of BASIC ROM data
+   ARRAY | CHARGEN | 8192 BYTES of CHARGEN ROM data
+
+TEXI TABLEFILE:C128ROM.snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/c128/c128memsnapshot.c
+__INFILE__=/home/crystal/vice/vice/doc/../src/c128/c128memsnapshot.c
+__MODULE__=C128MEM
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Version | Description
+   11 * BYTE  | mmu regs            |   0.0   | dump of mmu registers
+   ARRAY      | RAM                 |   0.0   | 0x40000 BYTES of RAM data
+
+TEXI TABLEFILE:C128MEM.snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/c128/c128memsnapshot.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c128/cart/c128cart.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c128/cart/comal80.c
+__MODULE__=COMAL80C128
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | comal80_register     | bank register value
+   ARRAY | ext_function_rom     | (0x8000 * 5) + 0x4000 bytes of ROM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c128/cart/generic.c
+__MODULE__=CART128GENERIC
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   ARRAY | ext_function_rom     | 0x8000 bytes of ROM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c128/cart/gmod2c128.c
+__MODULE__=CARTGMOD2C128
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | c128gmod2_bank   |
+   ARRAY | flash_data       | GMOD2_FLASH_SIZE
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c128/cart/magicdesk128.c
+__MODULE__=MAGICDESK128
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | md128reg             |
+   BYTE  | rombank              |
+   BYTE  | bankmask             |
+   ARRAY | ext_function_rom     | 0x40*0x4000 bytes of ROM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c128/cart/partner128.c
+__MODULE__=PARTNER128
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | regvalue             |
+   BYTE  | rambank              |
+   BYTE  | isdefreezing         |
+   ARRAY | nmivector            | 2 bytes
+   ARRAY | ext_function_rom     | PARTNER_ROM_SIZE
+   ARRAY | rambanks             | PARTNER_RAM_SIZE
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c128/cart/warpspeed128.c
+__MODULE__=WARPSPEED128
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   ARRAY | ext_function_rom     | 0x4000 bytes of ROM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c1541-stubs.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/c64-memory-hacks.c
+__MODULE__=C64MEMHACKS
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE | hacks | which memory hack is active
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c64/c64-snapshot.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c64/c64.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c64/c64drive.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/c64gluelogic.c
+__MODULE__=C64GLUE
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE | type         | glue logic type
+   BYTE | old vbank    | old video bank
+   BYTE | alarm active | alarm is active
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c64/c64mem.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c64/c64memsc.c
+
+
+TABLES:2
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/c64memsnapshot.c
+__MODULE__=C64ROM
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   ARRAY | KERNAL  | 8192 BYTES of KERNAL ROM data
+   ARRAY | BASIC   | 8192 BYTES of BASIC ROM data
+   ARRAY | CHARGEN | 4096 BYTES of CHARGEN ROM data
+
+TEXI TABLEFILE:C64ROM.snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/c64memsnapshot.c
+__MODULE__=C64MEM
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | pport data          |   0.0+  | CPU port data register
+   BYTE  | pport dir           |   0.0+  | CPU port direction register
+   BYTE  | EXROM               |   0.0+  | EXROM line state
+   BYTE  | GAME                |   0.0+  | GAME line state
+   ARRAY | RAM                 |   0.0+  | 65536 BYTES of RAM data
+   BYTE  | pport data out      |   0.0+  | CPU port data out lines state
+   BYTE  | pport data read     |   0.0+  | CPU port data in lines state
+   BYTE  | pport dir read      |   0.0+  | CPU port direction in lines state
+   DWORD | pport bit6 clock    |   0.1   | CPU port bit 6 falloff clock
+   DWORD | pport bit7 clock    |   0.1   | CPU port bit 7 falloff clock
+   BYTE  | pport bit 6         |   0.1   | CPU port bit 6 state
+   BYTE  | pport bit 7         |   0.1   | CPU port bit 7 state
+   BYTE  | pport bit 6 falloff |   0.1   | CPU port bit 6 discharge flag
+   BYTE  | pport bit 7 falloff |   0.1   | CPU port bit 7 discharge flag
+
+TEXI TABLEFILE:C64MEM.snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c64/c64parallel.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c64/c64rom.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/c64_256k.c
+__MODULE__=C64_256K
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   WORD  | base     | base address of the control registers
+   BYTE  | DDA      | register A direction
+   BYTE  | PRA      | register A data
+   BYTE  | CRA      | register A control
+   BYTE  | DDB      | register B direction
+   BYTE  | PRB      | register B data
+   BYTE  | CRB      | register B control
+   BYTE  | vbank    | video bank
+   BYTE  | segment0 | segment 0 bank
+   BYTE  | segment1 | segment 1 bank
+   BYTE  | segment2 | segment 2 bank
+   BYTE  | segment3 | segment 3 bank
+   ARRAY | RAM      | 262144 BYTES of RAM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/actionreplay.c
+__MODULE__=CARTAR
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | active | cartridge is active
+   ARRAY | ROML   | 32768 BYTES of ROML data
+   ARRAY | ROMH   | 32768 BYTES of ROMH data
+   ARRAY | RAM    | 8192 BYES of RAM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/actionreplay2.c
+__MODULE__=CARTAR2
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | enabled     | cartidge enabled flag
+   DWORD | cap enable  | capacitor enable counter
+   DWORD | cap disable | capacitor disable counter
+   ARRAY | ROML        | 16768 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/actionreplay3.c
+__MODULE__=CARTAR3
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | active   | cartridge active flag
+   BYTE  | register | cartridge register
+   ARRAY | ROML     | 16768 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/actionreplay4.c
+__MODULE__=CARTAR4
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | active | cartridge active flag
+   ARRAY | ROML   | 32768 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/atomicpower.c
+__MODULE__=CARTAP
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | active      | cartridge active flag
+   BYTE  | ram at a000 | RAM at $A000 flag
+   ARRAY | ROML        | 32768 BYTES of ROML data
+   ARRAY | RAM         | 8192 BYTES of RAM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/bisplus.c
+__MODULE__=CARTBB3
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Version | Description
+   BYTE  | bis_rom_enabled    |   1.0   | 1 if ROM is enabled (informal)
+   BYTE  | bis_rom_kb         |   1.0   | 2/4/8 kb ROM
+   ARRAY | ROML               |   1.0   | 8192 of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/blackbox3.c
+__MODULE__=CARTBB3
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Version | Description
+   BYTE  | bb3_rom_enabled    |   1.0   | 1 if ROM is enabled (informal)
+   ARRAY | ROML               |   1.0   | 8192 of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/blackbox4.c
+__MODULE__=CARTBB4
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Version | Description
+   BYTE  | bb4_rom_enabled    |   1.0   | 1 if ROM is enabled (informal)
+   ARRAY | ROML               |   1.0   | 8192 of ROML data
+   ARRAY | ROMH               |   1.0   | 8192 of ROMH data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/blackbox8.c
+__MODULE__=CARTBB8
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | ROML banks  |   1.1   | amount of ROML banks
+   BYTE  | register    |   1.1   | register
+   ARRAY | ROML        |   1.1   | 32768 or 65536 BYTES of ROML data
+   ARRAY | ROMH        |   1.1   | 32768 or 65536 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/blackbox9.c
+__MODULE__=CARTBLACKBOX9
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | currmode   | cartridge mode
+   BYTE  | currbank   | selected bank
+   ARRAY | ROML       | 8192 bytes of ROM data
+   ARRAY | ROMH       | 8192 bytes of ROM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/bmpdataturbo.c
+__MODULE__=CARTBMPDATATURBO
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | ROM 8000 |   0.1   | ROM at $8000 flag
+   ARRAY | ROML     |   0.0+  | 8192 BYTES of ROML data
+   ARRAY | ROMH     |   0.0+  | 8192 BYTES of ROMH data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/c64-generic.c
+__MODULE__=CARTGENERICC64
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   ARRAY | ROML | 8192 BYTES of ROML data
+   ARRAY | ROMH | 8192 BYTES of ROMH data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/c64-midi.c
+__MODULE__=CARTMIDI
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | mode | midi mode
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c64/cart/c64acia1.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c64/cart/c64cart.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/c64carthooks.c
+__MODULE__=C64CART
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | num carts                        | number of active cartridges
+   DWORD | mem_cartridge_type               |
+   BYTE  | game                             |
+   BYTE  | exrom                            |
+   DWORD | romh_bank                        |
+   DWORD | roml_bank                        |
+   BYTE  | export_ram                       |
+   BYTE  | ultimax_phi1                     |
+   BYTE  | ultimax_phi2                     |
+   CLOCK | cart_freeze_alarm_time           |
+   CLOCK | cart_nmi_alarm_time              |
+   BYTE  | export_slot1.game                |
+   BYTE  | export_slot1.exrom               |
+   BYTE  | export_slot1.ultimax_phi1        |
+   BYTE  | export_slot1.ultimax_phi2        |
+   BYTE  | export_slotmain.game             |
+   BYTE  | export_slotmain.exrom            |
+   BYTE  | export_slotmain.ultimax_phi1     |
+   BYTE  | export_slotmain.ultimax_phi2     |
+   BYTE  | export_passthrough.game          |
+   BYTE  | export_passthrough.exrom         |
+   BYTE  | export_passthrough.ultimax_phi1  |
+   BYTE  | export_passthrough.ultimax_phi2  |
+   DWORD | reserved                         |
+   DWORD | reserved                         |
+   DWORD | reserved                         |
+   DWORD | reserved                         |
+   ARRAY | cart ids                         | <num cart> IDs of active cartridges
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c64/cart/c64cartmem.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c64/cart/c64tpi.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/capture.c
+__MODULE__=CARTCAPTURE
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | enabled         | cartridge enabled flag
+   BYTE  | freeze pressed  | freeze button pressed flag
+   BYTE  | register enable | register enable flag
+   BYTE  | ROMH enable     | ROMH enable flag
+   ARRAY | ROMH            | 8192 BYTES of ROMH data
+   ARRAY | RAM             | 8192 BYTES of RAM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/comal80.c
+__MODULE__=CARTCOMAL
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=2
+   Type | Name | Description
+   BYTE  | register | control register
+   BYTE  | extra rom| image contains extra eprom
+   BYTE  | revision | hardware variant
+   ARRAY | ROML     | 32768 or 65536 BYTES of ROML data
+   ARRAY | ROMH     | 32768 or 65536 BYTES of ROMH data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/cpmcart.c
+__MODULE__=CPMCART
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   DWORD | CLK            | main CPU clock
+   BYTE  | A              | A register
+   BYTE  | B              | B register
+   BYTE  | C              | C register
+   BYTE  | D              | D register
+   BYTE  | E              | E register
+   BYTE  | F              | F register
+   BYTE  | H              | H register
+   BYTE  | L              | L register
+   BYTE  | IXH            | IXH register
+   BYTE  | IXL            | IXL register
+   BYTE  | IYH            | IYH register
+   BYTE  | IYL            | IYL register
+   WORD  | SP             | stack pointer register
+   DWORD | PC             | program counter register
+   BYTE  | I              | I register
+   BYTE  | R              | R register
+   BYTE  | IFF1           | IFF1 register
+   BYTE  | IFF2           | IFF2 register
+   BYTE  | im mode        | im mode flag
+   BYTE  | A2             | A2 register
+   BYTE  | B2             | B2 register
+   BYTE  | C2             | C2 register
+   BYTE  | D2             | D2 register
+   BYTE  | E2             | E2 register
+   BYTE  | F2             | F2 register
+   BYTE  | H2             | H2 register
+   BYTE  | L2             | L2 register
+   DWORD | opcode info    | last opcode info
+   DWORD | opcode address | last opcode address
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c64/cart/cs8900io.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/delaep256.c
+__MODULE__=CARTDELAEP256
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | regval |   0.1   | register
+   BYTE  | bank   |   0.0+  | current bank
+   ARRAY | ROML   |   0.0+  | 262144 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/delaep64.c
+__MODULE__=CARTDELAEP64
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | regval |   0.1   | register
+   BYTE  | bank   |   0.0+  | current bank
+   ARRAY | ROML   |   0.0+  | 73728 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/delaep7x8.c
+__MODULE__=CARTDELAEP7X8
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | regval |   0.1   | register
+   BYTE  | bank   |   0.0+  | current bank
+   ARRAY | ROML   |   0.0+  | 65536 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/diashowmaker.c
+__MODULE__=CARTDSM
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | active |   0.1   | cartridge active flag
+   ARRAY | ROML   |   0.0+  | 8192 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/digimax.c
+__MODULE__=CARTDIGIMAX
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   DWORD | base       | base address of the control registers
+   ARRAY | sound data | 4 BYTES of sound data
+   BYTE  | voice 0    | voice 0 data
+   BYTE  | voice 1    | voice 1 data
+   BYTE  | voice 2    | voice 2 data
+   BYTE  | voice 3    | voice 3 data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/dinamic.c
+__MODULE__=CARTDINAMIC
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | bank | current bank
+   ARRAY | ROML | 8192 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/dqbb.c
+__MODULE__=CARTDQBB
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | enabled    | cartridge enabled flag
+   BYTE  | read write | read/write flag
+   BYTE  | a000 map   | $A000 mapped flag (GAME line)
+   BYTE  | off        | dqbb off flag
+   BYTE  | register   | register
+   BYTE  | exrom      | state of EXROM line
+   BYTE  | size       | RAM size in kb
+   BYTE  | bank       | selected ram bank
+   ARRAY | RAM        | <size> BYTES of RAM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/drean.c
+__MODULE__=CARTDREAN
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | regval     | bank register value
+   BYTE  | bankmask   | bank mask
+   ARRAY | roml_banks | 4 * 8192 bytes of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/ds12c887rtc.c
+__MODULE__=CARTDS12C887RTC
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   DWORD | base     | base address of the RTC
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/easycalc.c
+__MODULE__=CARTEASYCALC
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   ARRAY | ROML | 8192 BYTES of ROML data
+   ARRAY | ROMH | 16384 BYTES of ROMH data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/easyflash.c
+__MODULE__=CARTEF
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | jumper     | jumper
+   BYTE  | register 0 | register 0
+   BYTE  | register 2 | register 2
+   ARRAY | RAM        | 256 BYTES of RAM data
+   ARRAY | ROML       | 524288 BYTES of ROML data
+   ARRAY | ROMH       | 524288 BYTES of ROMH data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/epyxfastload.c
+__MODULE__=CARTEPYX
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | active |   0.1   | cartridge active flag
+   DWORD | alarm  |   0.0+  | alarm time
+   ARRAY | ROML   |   0.0+  | 8192 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c64/cart/ethernetcart.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/exos.c
+__MODULE__=CARTEXOS
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   ARRAY | ROMH | 8192 BYTES of ROMH data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/expert.c
+__MODULE__=CARTEXPERT
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | mode            | cartridge mode
+   BYTE  | register enable | register enable flag
+   BYTE  | RAM writable    | RAM writable flag
+   BYTE  | RAMH enable     | RAMH enable flag
+   ARRAY | RAM             | 8192 BYTES of RAM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/final.c
+__MODULE__=CARTFINALV1
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | active |   0.1   | cartridge active flag
+   ARRAY | ROML   |   0.0+  | 8192 BYTES of ROML data
+   ARRAY | ROMH   |   0.0+  | 8192 BYTES of ROMH data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/final3.c
+__MODULE__=CARTFC3
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=2
+   Type | Name | Version | Description
+   BYTE  | ROML banks  |   1.2   | amount of ROML banks
+   BYTE  | register    |   1.2   | register
+   BYTE  | reg enabled |   0.0+  | register enabled flag
+   ARRAY | ROML        |   1.1+  | 32768 or 131072 BYTES of ROML data
+   ARRAY | ROMH        |   1.1+  | 32768 or 131072 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/finalplus.c
+__MODULE__=CARTFCP
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | enable    | cartridge enabled flag
+   BYTE  | bit7      | bit 7 of the register
+   BYTE  | ROML bank | ROML bank
+   BYTE  | ROMH bank | ROMH bank
+   ARRAY | ROML      | 16384 BYTES of ROML data
+   ARRAY | ROMH      | 8192 BYTES of ROMH data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/formel64.c
+__MODULE__=CARTF64
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | enabled   | cartridge enabled flag
+   ARRAY | ROMH      | 32768 BYTES of ROMH data
+   BYTE  | CTRL A    | control register A
+   BYTE  | CTRL B    | control register B
+   BYTE  | DATA A    | data register A
+   BYTE  | DATA B    | data register B
+   BYTE  | DIR A     | direction register A
+   BYTE  | DIR B     | direction register B
+   BYTE  | CA2       | CA2 line flag
+   BYTE  | CA2 state | CA2 line state
+   BYTE  | CB2       | CB2 line flag
+   BYTE  | CB2 state | CB2 line state
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/freezeframe.c
+__MODULE__=CARTFREEZEF
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | ROM 8000 |   0.1   | ROM $8000 active flag
+   BYTE  | ROM E000 |   0.1   | ROM $E000 active flag
+   ARRAY | ROML     |   0.0+  | 8192 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/freezeframe2.c
+__MODULE__=CARTFFMK2
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Version | Description
+   BYTE  | ROML toggle  |   0.0+  | ROML toggle flag
+   BYTE  | freeze mode  |   0.0+  | flag: are we in freeze mode
+   ARRAY | ROML         |   0.0+  | 8192 BYTES of ROML data
+   ARRAY | ROMH         |   0.0+  | 8192 BYTES of ROMH data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/freezemachine.c
+__MODULE__=CARTFREEZEM
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | ROM A14      |   0.0+  | A14 line state
+   BYTE  | ROML toggle  |   0.0+  | ROML toggle flag
+   BYTE  | allow toggle |   0.1   | allow toggle flag
+   ARRAY | ROML         |   0.0+  | 16384 BYTES of ROML data
+   ARRAY | ROMH         |   0.0+  | 16384 BYTES of ROMH data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/funplay.c
+__MODULE__=CARTFUNPLAY
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | regval |   1.1   | register
+   BYTE  | bank   |   0.0+  | current bank
+   ARRAY | ROML   |   1.0+  | 131072 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/gamekiller.c
+__MODULE__=CARTGK
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | disable | cartridge disable flag
+   ARRAY | ROMH    | 8192 BYTES of ROMH data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/georam.c
+__MODULE__=GEORAM
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | io swap |   0.1   | VIC20 I/O swap flag
+   DWORD | size    |   0.0+  | size in KiB
+   ARRAY | regs    |   0.0+  | 2 BYTES of register data
+   ARRAY | RAM     |   0.0+  | 65536, 131072, 262144, 524288, 1048576, 2097152 or 4194304 BYTES of RAM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/gmod2.c
+__MODULE__=CARTGMOD2
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=2
+   Type | Name | Description
+   BYTE  | gmod2_cmode      |
+   BYTE  | gmod2_bank       |
+   ARRAY | flash_data       | GMOD2_FLASH_SIZE
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/gmod3.c
+__MODULE__=CARTGMOD3
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | gmod3_cmode  |
+   BYTE  | gmod3_bank   |
+   ARRAY | gmod3_rom    | GMOD3_16MB_FLASH_SIZE
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/gs.c
+__MODULE__=CARTGS
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | regval     | bank register value
+   BYTE  | currbank   | current bank
+   ARRAY | roml_banks | 64 * 8192 bytes of ROM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/hyperbasic.c
+__MODULE__=CARTHYPERBASIC
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Version | Description
+   BYTE  | regval    |   0.0   | register
+   ARRAY | ROML      |   0.0   | 65536 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/ide64.c
+__MODULE__=CARTIDE
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   WORD  | version   | IDE64 version
+   ARRAY | ROML      | 65536 (3.x) / 131072 (4.1) / 524288 (4.2) BYTES of ROML data
+   ARRAY | RAM       | 32768 BYTES of RAM data
+   DWORD | bank      | current bank
+   DWORD | config    | current config
+   DWORD | kill port | kill port flag
+   DWORD | idrive    | idrive
+   WORD  | in d030   | input state of $d030 register
+   WORD  | out d030  | output state of $d030 register
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/ieeeflash64.c
+__MODULE__=CARTIEEEFLASH64
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   ARRAY | ROMH | 8192 BYTES of ROMH data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/isepic.c
+__MODULE__=CARTISEPIC
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | enabled | cartridge enabled flag
+   BYTE  | switch  | switch flag
+   BYTE  | page    | current page
+   ARRAY | RAM     | 2048 BYTES of RAM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/kcs.c
+__MODULE__=CARTKCS
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=3
+   Type | Name | Version | Description
+   BYTE  | config |   0.2   | current configuration
+   ARRAY | ROML   |   0.0+  | 8192 BYTES of ROML data
+   ARRAY | ROMH   |   0.0+  | 8192 BYTES of ROMH data
+   ARRAY | RAM    |   0.0+  | 128 BYTES of RAM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/kingsoft.c
+__MODULE__=CARTKINGSOFT
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | mode | mode
+   ARRAY | ROML | 8192 BYTES of ROML data
+   ARRAY | ROMH | 16384 BYTES of ROMH data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/ltkernal.c
+__MODULE__=CARTLTK
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE   | rom           | ltk_rom
+   BYTE   | raml          | ltk_raml
+   BYTE   | ramh          | ltk_ramh
+   BYTE   | ramwrite      | ltk_ramwrite
+   BYTE   | freeze        | ltk_freeze
+   BYTE   | on            | ltk_on
+   BYTE   | in2           | ltk_in2
+   BYTE   | io            | ltk_io
+   BYTE   | port          | ltk_port
+   DWORD  | alarm_time    | ltk_alarm_time
+   ARRAY  | ROML          | 8192 BYTES of ROML data (boot rom, $8000-$9FFF)
+   ARRAY  | export_ram0   | 16384 BYTES of export RAM data (RAML & RAMH)
+   MC6821 | SNAPSHOT6821  | ltk_6821
+   SCSI   | SNAPSHOTSCSI  | ltk_scsi
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/mach5.c
+__MODULE__=CARTMACH5
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | active |   0.1   | cartridge active flag
+   ARRAY | ROML   |   0.0+  | 8192 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/magicdesk.c
+__MODULE__=CARTMAGICD
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=3
+   Type | Name | Description
+   BYTE  | regval     | bank register value
+   BYTE  | bankmask   | bank mask
+   ARRAY | roml_banks | 128 * 8192 bytes of ROM data
+   BYTE  | sram_enabled   | SRAM enabled flag
+   BYTE  | eeprom_enabled | EEPROM enabled flag
+   BYTE  | page_reg   | page register value
+   BYTE  | ctrl_reg   | control register value
+   ARRAY | sram_ram   | SRAM data (131072 bytes, only if sram_enabled != 0)
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/magicdesk16.c
+__MODULE__=CARTMD16
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=2
+   Type | Name | Description
+   BYTE  | regval     | bank register value
+   BYTE  | bankmask   | bank mask
+   ARRAY | roml_banks | 128 * 8192 bytes of ROML data
+   ARRAY | romh_banks | 128 * 8192 bytes of ROMH data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/magicformel.c
+__MODULE__=CARTMF
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | RAM page      | current RAM page
+   BYTE  | I/O-1 enable  | I/O-1 enable flag
+   BYTE  | kernal enable | kernal enable flag
+   BYTE  | freeze enable | freeze enable flag
+   BYTE  | export game   | game line state
+   BYTE  | hw version    | hardware version
+   ARRAY | ROML          | 131072 BYTES of ROML data
+   ARRAY | RAM           | 8192 BYTES of RAM data
+   BYTE  | CTRL A        | A control register
+   BYTE  | CTRL B        | B control register
+   BYTE  | DATA A        | A data register
+   BYTE  | DATA B        | B data register
+   BYTE  | DIR A         | A direction register
+   BYTE  | DIR B         | B direction register
+   BYTE  | CA2           | CA2 line flag
+   BYTE  | CA2 state     | CA2 line state
+   BYTE  | CB2           | CB2 line flag
+   BYTE  | CB2 state     | CB2 line state
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c64/cart/magicvoice.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/maxbasic.c
+__MODULE__=CARTMAXBASIC
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   ARRAY | ROML | 8192 BYTES of ROML data
+   ARRAY | ROMH | 8192 BYTES of ROMH data
+   ARRAY | RAM  | 2048 BYTES of RAM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/megabyter.c
+__MODULE__=CARTMEGABYTER
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | register 0 | register 0
+   BYTE  | register 2 | register 2
+   ARRAY | ROML       | 1048576 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/mikroass.c
+__MODULE__=CARTMIKROASS
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   ARRAY | ROML | 8192 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/mmc64.c
+__MODULE__=CARTMMC64
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | clockport enable  | clockport enable flag
+   WORD  | clockport address | clockport address
+   BYTE  | bios write        | bios writable flag
+   BYTE  | bit 7 unlocked    | bit 7 unlocked flag
+   ARRAY | unlocking         | 2 BYTES of unlocking data
+   BYTE  | bios changed      | bios changed flag
+   BYTE  | flash jumper      | flash jumper state
+   BYTE  | write protect     | write protect flag
+   BYTE  | active            | cartridge active flag
+   BYTE  | SPI mode          | SPI mode
+   BYTE  | extrom            | extrom flag
+   BYTE  | flash mode        | flash mode
+   BYTE  | cport             | cport
+   BYTE  | speed             | speed
+   BYTE  | cardsel           | cardsel
+   BYTE  | biossel           | biossel
+   BYTE  | extexrom          | EXROM line state
+   BYTE  | extgame           | GAME line state
+   BYTE  | revision          | MMC64 revision
+   BYTE  | SD type           | SD type
+   BYTE  | image readonly    | image read-only flag
+   ARRAY | BIOS              | 8194 BYTES of BIOS data
+   BYTE  | BIOS offset       | BIOS offset
+   BYTE  | BIOS type         | BIOS type
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c64/cart/mmcreplay.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/multimax.c
+__MODULE__=CARTMULTIMAX
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | currbank     | current ROM bank
+   BYTE  | reg_enabled  | flag, is the register enabled?
+   ARRAY | ROML         | 512K of ROML data
+   ARRAY | ROMH         | 512K of ROMH data
+   ARRAY | RAM          | 2048 BYTES of RAM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/ocean.c
+__MODULE__=CARTOCEAN
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | bank      | current bank
+   BYTE  | IO1 mask  | I/O-1 mask
+   BYTE  | register  | register
+   DWORD | ROML size | ROML size
+   ARRAY | ROML      | 524288 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/pagefox.c
+__MODULE__=CARTPAGEFOX
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | enabled |   0.1   | cartridge enabled flag
+   BYTE  | bank    |   0.0+  | current bank
+   ARRAY | RAM     |   0.0+  | 32768 BYTES of RAM data
+   ARRAY | ROML    |   0.0+  | 32768 BYTES of ROML data
+   ARRAY | ROMH    |   0.0+  | 32768 BYTES of ROMH data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/partner64.c
+__MODULE__=CARTPARTNER64
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | active | cartridge is active
+   ARRAY | ROML   | 8192 BYTES of ROML data
+   ARRAY | ROMH   | 8192 BYTES of ROMH data
+   ARRAY | RAM    | 8192 BYES of RAM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/profidos.c
+__MODULE__=CARTPROFIDOS
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   ARRAY | ROMH | $4000 BYTES of ROMH data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/prophet64.c
+__MODULE__=CARTP64
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | bank     |   0.1   | current bank
+   BYTE  | register |   0.1   | register
+   ARRAY | ROML     |   0.0+  | 262144 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/ramcart.c
+__MODULE__=CARTRAMCART
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | enabled   | cartridge enabled flag
+   BYTE  | readonly  | read-only flag
+   DWORD | BSIZE     | RAM size in BYTES
+   BYTE  | KBSIZE    | RAM size in KB
+   ARRAY | registers | 2 BYTES of register data
+   ARRAY | RAM       | 65536 or 131072 BYTES of RAM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/ramlink.c
+__MODULE__=CARTRAMLINK
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   INT32  | cardsizemb     | rl_cardsizemb
+   UINT32 | rombase        | rl_rombase
+   UINT32 | kernbase       | rl_kernbase
+   UINT32 | rambase        | rl_rambase
+   UINT32 | cardaddr       | rl_cardaddr
+   UINT32 | io1mode        | rl_io1mode
+   UINT32 | reu_trap       | rl_reu_trap
+   BYTE   | on             | rl_on
+   BYTE   | dos            | rl_dos
+   ARRAY  | i8255a_i       | 3 internal inputs for I8255A
+   ARRAY  | i8255a_o       | 3 internal outputs for I8255A
+   ARRAY  | rom            | rl_rom 64 KiB for firmware
+   ARRAY  | ram            | rl_ram 8 KiB for SRAM
+   I8255A | SNAPSHOTI8255A | rl_8255
+   ARRAY  | rl_card        | Contents of RAMCARD (cardsibemb) in MiB
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/retroreplay.c
+__MODULE__=CARTRR
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=3
+   Type | Name | Version | Description
+   BYTE  | revision          |   0.1+  | RR revision
+   BYTE  | active            |   0.0+  | cartridge active flag
+   BYTE  | frozen            |   0.2+  | frozen flag
+   BYTE  | cmode             |   0.3   | cmode
+   BYTE  | clockport enabled |   0.0+  | clockport enabled flag
+   BYTE  | bank              |   0.0+  | current bank
+   BYTE  | write once        |   0.0+  | write once flag
+   BYTE  | allow bank        |   0.0+  | allow bank flag
+   BYTE  | no freeze         |   0.0+  | no freeze flag
+   BYTE  | REU mapping       |   0.0+  | REU mapping flag
+   BYTE  | RAM at a000       |   0.1+  | RAM at $A000 flag
+   BYTE  | flash jumper      |   0.0+  | flash jumper state
+   BYTE  | bank jumper       |   0.0+  | bank jumper state
+   BYTE  | ROM offset        |   0.0+  | ROM offset
+   ARRAY | ROML              |   0.0+  | 131072 BYTES of ROML data
+   ARRAY | RAM               |   0.0+  | 32768 BYTES of RAM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/reu.c
+__MODULE__=REU1764
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   DWORD | size      | size of REU in KB
+   ARRAY | registers | 16 BYTES of register data
+   ARRAY | RAM       | 131072, 262144, 524288, 1048576, 2097152, 4194304, 8388608 or 16777216 BYTES of RAM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/rexep256.c
+__MODULE__=CARTREXEP256
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | regval       |   0.1   | register
+   ARRAY | EPROM sizes  |   0.0+  | 8 WORDS of EPROM sizes in BYTES
+   ARRAY | ROML offsets |   0.0+  | 8 BYTES of EPROM ofsets
+   ARRAY | ROML         |   0.0+  | 270336 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/rexramfloppy.c
+__MODULE__=CARTRRF
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | cart_enabled     | cartridge active flag
+   BYTE  | ram_enabled      | RAM enabled at $8000
+   BYTE  | ram_writeable    | RAM is writeable
+   BYTE  | ram_bank         | currently selected RAM bank
+   ARRAY | ROML             | 8192 BYTES of ROML data
+   ARRAY | RAM              | 256k BYTES of RAM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/rexutility.c
+__MODULE__=CARTREXUTIL
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | active |   0.1   | cartridge active flag
+   ARRAY | ROML   |   0.0+  | 524288 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/rgcd.c
+__MODULE__=CARTRGCD
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=4
+   Type | Name | Version | Description
+   BYTE  | regval   |   0.1+  | register
+   BYTE  | disabled |   0.2   | cartridge disabled flag
+   BYTE  | revision |   0.3   | hw revision
+   BYTE  | mask     |   0.4   | bank mask
+   ARRAY | ROML     |   0.1+  | 65536 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/ross.c
+__MODULE__=CARTROSS
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | is32k |   0.1   | cart is 32KB flag
+   BYTE  | bank  |   0.0+  | current bank
+   ARRAY | ROML  |   0.0+  | 16384 BYTES of ROML data
+   ARRAY | ROMH  |   0.0+  | 16384 BYTES of ROMH data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c64/cart/rrnetmk3.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/sdbox.c
+__MODULE__=CARTSDBOX
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Version | Description
+   BYTE  | regval       |   1.0   | register
+   BYTE  | currbank     |   1.0   | current bank
+   BYTE  | reg_enable   |   1.0   | flag: is the register enabled
+   BYTE  | regs         |   1.0   | 4 bytes of "RAM"
+   ARRAY | ROML         |   1.0   | 8*8k BYTES of ROML data
+   ARRAY | ROMH         |   1.0   | 8*8k BYTES of ROMH data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/sfx_soundexpander.c
+__MODULE__=CARTSFXSE
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | IO swap               |   0.1   | VIC20 I/O swap flag
+   DWORD | chip type             |   0.0+  | chip type
+   BYTE  | sound command         |   0.0+  | sound command
+   DWORD | ch 0 slot 0 ar        |   0.0+  | channel 0, slot 0, ar
+   DWORD | ch 0 slot 0 dr        |   0.0+  | channel 0, slot 0, dr
+   DWORD | ch 0 slot 0 rr        |   0.0+  | channel 0, slot 0, rr
+   BYTE  | ch 0 slot 0 KSR       |   0.0+  | channel 0, slot 0, KSR
+   BYTE  | ch 0 slot 0 ksl       |   0.0+  | channel 0, slot 0, ksl
+   BYTE  | ch 0 slot 0 ksr       |   0.0+  | channel 0, slot 0, ksr
+   BYTE  | ch 0 slot 0 mul       |   0.0+  | channel 0, slot 0, mul
+   DWORD | ch 0 slot 0 Cnt       |   0.0+  | channel 0, slot 0, Cnt
+   DWORD | ch 0 slot 0 Incr      |   0.0+  | channel 0, slot 0, Incr
+   BYTE  | ch 0 slot 0 FB        |   0.0+  | channel 0, slot 0, FB
+   DWORD | ch 0 slot 0 connect1  |   0.0+  | channel 0, slot 0, connect1
+   DWORD | ch 0 slot 0 op1 out 0 |   0.0+  | channel 0, slot 0, op1 out 0
+   DWORD | ch 0 slot 0 op1 out 1 |   0.0+  | channel 0, slot 0, op1 out 1
+   BYTE  | ch 0 slot 0 CON       |   0.0+  | channel 0, slot 0, CON
+   BYTE  | ch 0 slot 0 eg type   |   0.0+  | channel 0, slot 0, eg type
+   BYTE  | ch 0 slot 0 state     |   0.0+  | channel 0, slot 0, state
+   DWORD | ch 0 slot 0 TL        |   0.0+  | channel 0, slot 0, TL
+   DWORD | ch 0 slot 0 TLL       |   0.0+  | channel 0, slot 0, TLL
+   DWORD | ch 0 slot 0 volume    |   0.0+  | channel 0, slot 0, volume
+   DWORD | ch 0 slot 0 sl        |   0.0+  | channel 0, slot 0, sl
+   BYTE  | ch 0 slot 0 eg sh ar  |   0.0+  | channel 0, slot 0, eg sh ar
+   BYTE  | ch 0 slot 0 eg sel ar |   0.0+  | channel 0, slot 0, eg sel ar
+   BYTE  | ch 0 slot 0 eg sh dr  |   0.0+  | channel 0, slot 0, eg sh dr
+   BYTE  | ch 0 slot 0 eg sel dr |   0.0+  | channel 0, slot 0, eg sel dr
+   BYTE  | ch 0 slot 0 eg sh rr  |   0.0+  | channel 0, slot 0, eg sh rr
+   BYTE  | ch 0 slot 0 eg sel rr |   0.0+  | channel 0, slot 0, eg sel rr
+   DWORD | ch 0 slot 0 key       |   0.0+  | channel 0, slot 0, key
+   DWORD | ch 0 slot 0 AMmask    |   0.0+  | channel 0, slot 0, AMmask
+   BYTE  | ch 0 slot 0 vib       |   0.0+  | channel 0, slot 0, vib
+   WORD  | ch 0 slot 0 wavetable |   0.0+  | channel 0, slot 0, wavetable
+   DWORD | ch 0 slot 1 ar        |   0.0+  | channel 0, slot 1, ar
+   DWORD | ch 0 slot 1 dr        |   0.0+  | channel 0, slot 1, dr
+   DWORD | ch 0 slot 1 rr        |   0.0+  | channel 0, slot 1, rr
+   BYTE  | ch 0 slot 1 KSR       |   0.0+  | channel 0, slot 1, KSR
+   BYTE  | ch 0 slot 1 ksl       |   0.0+  | channel 0, slot 1, ksl
+   BYTE  | ch 0 slot 1 ksr       |   0.0+  | channel 0, slot 1, ksr
+   BYTE  | ch 0 slot 1 mul       |   0.0+  | channel 0, slot 1, mul
+   DWORD | ch 0 slot 1 Cnt       |   0.0+  | channel 0, slot 1, Cnt
+   DWORD | ch 0 slot 1 Incr      |   0.0+  | channel 0, slot 1, Incr
+   BYTE  | ch 0 slot 1 FB        |   0.0+  | channel 0, slot 1, FB
+   DWORD | ch 0 slot 1 connect1  |   0.0+  | channel 0, slot 1, connect1
+   DWORD | ch 0 slot 1 op1 out 0 |   0.0+  | channel 0, slot 1, op1 out 0
+   DWORD | ch 0 slot 1 op1 out 1 |   0.0+  | channel 0, slot 1, op1 out 1
+   BYTE  | ch 0 slot 1 CON       |   0.0+  | channel 0, slot 1, CON
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/sfx_soundsampler.c
+__MODULE__=CARTSFXSS
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | IO swap    |   0.1   | VIC20 I/O swap flag
+   BYTE  | sound data |   0.0+  | sound data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/shortbus.c
+__MODULE__=SHORTBUS
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | amount         | amount of active shortbus devices
+   BYTE  | digimax active | digimax active flag
+   BYTE  | duart active   | duart active flag
+   BYTE  | etfe active    | etfe active flag
+   BYTE  | eth64 active   | eth64 active flag
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/shortbus_digimax.c
+__MODULE__=SHORTBUSDIGIMAX
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   DWORD | base       | base address
+   ARRAY | sound data | 4 BYTES of sound data
+   BYTE  | voice 0    | voice 0 state
+   BYTE  | voice 1    | voice 1 state
+   BYTE  | voice 2    | voice 2 state
+   BYTE  | voice 3    | voice 3 state
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c64/cart/shortbus_etfe.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/silverrock128.c
+__MODULE__=CARTSILVERROCK128
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | regval |   0.1   | register
+   BYTE  | bank   |   0.0+  | current bank
+   ARRAY | ROML   |   0.0+  | 262144 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/simonsbasic.c
+__MODULE__=CARTSIMON
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | a000 enable |   0.1   | ROM at $A000 flag
+   ARRAY | ROML        |   0.0+  | 8192 BYTES of ROML data
+   ARRAY | ROMH        |   0.0+  | 8192 BYTES of ROMH data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/snapshot64.c
+__MODULE__=CARTSNAP64
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | ROM config | ROM configuration
+   ARRAY | ROML       | 4096 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/stardos.c
+__MODULE__=CARTSTARDOS
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   DWORD | stardos_alarm_time   | alarm time for cap discharge
+   DWORD | cap_voltage          | cap voltage
+   BYTE  | roml_enable          | is roml enabled?
+   ARRAY | roml_banks           | 8192 bytes of ROML data
+   ARRAY | romh_banks           | 8192 bytes of ROMH data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/stb.c
+__MODULE__=CARTSTB
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | bank   |   0.1   | current bank
+   BYTE  | active |   0.1   | cartridge active flag
+   ARRAY | ROML   |   0.0+  | 16384 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/superexplode5.c
+__MODULE__=CARTSE5
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | bank |   0.1   | current bank
+   ARRAY | ROML |   0.0+  | 16384 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/supergames.c
+__MODULE__=CARTSUPERGAMES
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=2
+   Type | Name | Version | Description
+   BYTE  | mode        |   0.2   | current mode
+   BYTE  | regval      |   0.2   | register
+   BYTE  | bank        |   0.0+  | current bank
+   BYTE  | reg latched |   0.1   | register latched flag
+   ARRAY | ROML        |   0.0+  | 32768 BYTES of ROML data
+   ARRAY | ROMH        |   0.0+  | 32768 BYTES of ROMH data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/supersnapshot.c
+__MODULE__=CARTSS5
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=3
+   Type | Name | Version | Description
+   BYTE  | ROM bank    |   0.2   | current ROM bank
+   BYTE  | register    |   0.2   | register
+   BYTE  | ROM config  |   0.0+  | ROM configuration
+   BYTE  | RAM bank    |   0.0+  | current RAM bank
+   BYTE  | 32K enabled |   0.1+  | 32KB enabled flag
+   BYTE  | ROM disable |   0.1+  | ROM disable flag
+   BYTE  | ROM banks   |   0.3   | number of ROM banks (4 or 8)
+   ARRAY | ROML        |   0.0+  | 0x8000 or 0x10000 BYTES of ROML data
+   ARRAY | ROMH        |   0.0+  | 0x8000 or 0x10000 BYTES of ROMH data
+   ARRAY | RAM         |   0.0+  | 32768 BYTES of RAM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/supersnapshot4.c
+__MODULE__=CARTSS4
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | RAM config | RAM configuration
+   BYTE  | ROM config | ROM configuration
+   ARRAY | ROML       | 16384 BYTES of ROML data
+   ARRAY | ROMH       | 16384 BYTES of ROMH data
+   ARRAY | RAM        | 8192 BYTES of RAM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c64/cart/turbomaster.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/turtlegraphics.c
+__MODULE__=CARTTURTLEGFX
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=2
+   Type | Name | Version | Description
+   BYTE  | bank   |   0.1   | current bank
+   BYTE  | active |   0.1   | cartridge active flag
+   ARRAY | ROML   |   0.0+  | 16384 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/uc1.c
+__MODULE__=CARTUC1
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=2
+   Type | Name | Description
+   BYTE  | regval           |
+   BYTE  | bankmask         |
+   ARRAY | roml_banks       | 0x2000 * MAXBANKS
+   ARRAY | romh_banks       | 0x2000 * MAXBANKS
+   ARRAY | cart_ram         | CART_RAM_SIZE
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/uc2.c
+__MODULE__=CARTUC2
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=2
+   Type | Name | Description
+   BYTE  | regA         | bank register value
+   BYTE  | regB         | mode
+   BYTE  | bankmask     | bank mask
+   ARRAY | roml_banks   | 32 * 8192 bytes of ROML data
+   ARRAY | romh_banks   | 32 * 8192 bytes of ROMH data
+   ARRAY | cart_ram     | 512kiB of RAM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/warpspeed.c
+__MODULE__=CARTWARP
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | ROM 8000 |   0.1   | ROM at $8000 flag
+   ARRAY | ROML     |   0.0+  | 8192 BYTES of ROML data
+   ARRAY | ROMH     |   0.0+  | 8192 BYTES of ROMH data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/westermann.c
+__MODULE__=CARTWEST
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | ROM a000 |   0.1   | ROM at $A000 flag
+   ARRAY | ROML     |   0.0+  | 8192 BYTES of ROML data
+   ARRAY | ROMH     |   0.0+  | 8192 BYTES of ROMH data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/zaxxon.c
+__MODULE__=CARTZAXXON
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   ARRAY | ROML | 8192 BYTES of ROML data
+   ARRAY | ROMH | 16384 BYTES of ROMH data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/cart/zippcode48.c
+__MODULE__=CARTZIPP
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | active |   0.1   | cartridge active flag
+   DWORD | alarm  |   0.0+  | alarm time
+   ARRAY | ROML   |   0.0+  | 8192 BYTES of ROML data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/plus256k.c
+__MODULE__=PLUS256K
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | register      | register
+   BYTE  | video bank    | current video bank
+   BYTE  | low bank      | current low bank
+   BYTE  | high bank     | current high bank
+   BYTE  | write protect | write protect flag
+   ARRAY | RAM           | 262144 BYTES of RAM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/plus60k.c
+__MODULE__=PLUS60K
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   WORD  | base     | base address of register
+   BYTE  | register | register
+   ARRAY | RAM      | 61440 BYTES of RAM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c64/vsid-snapshot.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c64/vsid-stubs.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c64/vsid.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c64/vsidmem.c
+
+
+TABLES:2
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/vsidmemsnapshot.c
+__MODULE__=C64VSIDROM
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   ARRAY | KERNAL  | 8192 BYTES of KERNAL ROM data
+   ARRAY | BASIC   | 8192 BYTES of BASIC ROM data
+   ARRAY | CHARGEN | 4096 BYTES of CHARGEN ROM data
+
+TEXI TABLEFILE:snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/vsidmemsnapshot.c
+   Type | Name | Version | Description
+   BYTE  | pport data          |   0.0+  | CPU port data register
+   BYTE  | pport dir           |   0.0+  | CPU port direction register
+   BYTE  | EXROM               |   0.0+  | EXROM line state
+   BYTE  | GAME                |   0.0+  | GAME line state
+   ARRAY | RAM                 |   0.0+  | 65536 BYTES of RAM data
+   BYTE  | pport data out      |   0.0+  | CPU port data out lines state
+   BYTE  | pport data read     |   0.0+  | CPU port data in lines state
+   BYTE  | pport dir read      |   0.0+  | CPU port direction in lines state
+
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/vsidmemsnapshot.c
+__MODULE__=C64VSIDMEM
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | pport data          |   0.0+  | CPU port data register
+   BYTE  | pport dir           |   0.0+  | CPU port direction register
+   BYTE  | EXROM               |   0.0+  | EXROM line state
+   BYTE  | GAME                |   0.0+  | GAME line state
+   ARRAY | RAM                 |   0.0+  | 65536 BYTES of RAM data
+   BYTE  | pport data out      |   0.0+  | CPU port data out lines state
+   BYTE  | pport data read     |   0.0+  | CPU port data in lines state
+   BYTE  | pport dir read      |   0.0+  | CPU port direction in lines state
+
+TEXI TABLEFILE:snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64/vsidmemsnapshot.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c64dtv/c64dtv-snapshot.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c64dtv/c64dtv-stubs.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/c64dtv/c64dtv.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64dtv/c64dtvblitter.c
+__MODULE__=C64DTVBLITTER
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   ARRAY | regs              | 32 BYTES of register data
+   DWORD | source A off      | source A offset
+   DWORD | source B off      | source B offset
+   DWORD | dest off          | destination offset
+   DWORD | busy              | busy flag
+   DWORD | IRQ               | IRQ state
+   DWORD | on IRQ            | on IRQ flag
+   DWORD | active            | blitter active flag
+   ARRAY | source A data     | 4 BYTES of source A data
+   DWORD | source A data off | source A data offset
+   DWORD | source A fetched  | source A fetched counter
+   ARRAY | source B data     | 4 BYTES of source B data
+   DWORD | source B data off | source B data offset
+   BYTE  | source A          | source A
+   BYTE  | source B          | source B
+   DWORD | count             | blitter count
+   DWORD | state             | blitter state
+   DWORD | source A line off | source A line offset
+   DWORD | source B line off | source B line offset
+   DWORD | dest line off     | destination line offset
+   BYTE  | last A            | last A
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64dtv/c64dtvdma.c
+__MODULE__=C64DTVDMA
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   ARRAY | regs            | 32 BYTES of register data
+   DWORD | source off      | source offset
+   DWORD | dest off        | destination offset
+   DWORD | busy            | DMA busy flag
+   DWORD | IRQ             | DMA IRQ state
+   DWORD | on IRQ          | on IRQ
+   DWORD | active          | DMA active flag
+   BYTE  | data            | DMA data
+   BYTE  | data swap       | DMA data swap flag
+   DWORD | count           | DMA counter
+   DWORD | state           | DMA state
+   DWORD | source line off | source line offset
+   DWORD | dest line off   | destination line offset
+   BYTE  | source mem type | source memory type
+   BYTE  | dest mem type   | destination memory type
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:2
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64dtv/c64dtvmemsnapshot.c
+__MODULE__=C64DTVROM
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   ARRAY | c64dtvflash_mem      | 0x200000
+   BYTE  | c64dtvflash_state    |
+   ARRAY | c64dtvflash_mem_lock | 39
+
+TEXI TABLEFILE:C64DTVROM.snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64dtv/c64dtvmemsnapshot.c
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64dtv/c64dtvmemsnapshot.c
+__MODULE__=C64DTVMEM
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | pport.data               |
+   BYTE  | pport.dir                |
+   ARRAY | mem_ram                  | 0x200000
+   BYTE  | c64dtvmem_memmapper[0]   |
+   BYTE  | c64dtvmem_memmapper[1]   |
+   BYTE  | pport.data_out           |
+   BYTE  | pport.data_read          |
+   BYTE  | pport.dir_read           |
+
+TEXI TABLEFILE:C64DTVMEM.snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64dtv/c64dtvmemsnapshot.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/c64dtv/hummeradc.c
+__MODULE__=HUMMERADC
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | hummeradc_value      |
+   BYTE  | hummeradc_channel    |
+   BYTE  | hummeradc_control    |
+   BYTE  | hummeradc_chanattr   |
+   BYTE  | hummeradc_chanwakeup |
+   BYTE  | hummeradc_prev       |
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/cbm2/cart/cbm2-generic.c
+__MODULE__=CARTGENERICCBM2
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=2
+   Type | Name | Version | Description
+   ARRAY | ROM C1            |   0.1+  | 4kiB of ROM data
+   ARRAY | ROM C2            |   0.1+  | 8kiB of ROM data
+   ARRAY | ROM C4            |   0.1+  | 8kiB of ROM data
+   ARRAY | ROM C6            |   0.1+  | 8kiB of ROM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/cbm2/cart/cbm2cart.c
+__MODULE__=CBM2CART
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | number_of_carts      | number of attached carts
+   BYTE  | mem_cartridge_type   | main type
+   ARRAY | cart_ids             | number_of_carts * DWORD cartridge IDs
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/cbm2/cbm2-snapshot.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/cbm2/cbm2.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/cbm2/cbm2acia1.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/cbm2/cbm2drive.c
+
+
+TABLES:2
+__INFILE__=/home/crystal/vice/vice/doc/../src/cbm2/cbm2memsnapshot.c
+__MODULE__=CBM2MEM
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Description
+   UBYTE | MEMSIZE  | Memory size in 128KiB blocks (1=128KiB,2=256KiB, 4=512KiB, 8=1024KiB)
+   UBYTE | CONFIG   | Bit 0 = $f0800-$f0fff RAM
+         |          |     1 = $f1000-$f1fff RAM
+         |          |     2 = $f2000-$f3fff RAM
+         |          |     3 = $f4000-$f5fff RAM
+         |          |     4 = $f6000-$f7fff RAM
+         |          |     5 = $fc000-$fcfff RAM
+         |          |     6: 1= RAM starts at 0 (C500), videoram is
+         |          |           1k VIC-II video, 1k colorram
+         |          |        0= RAM starts at 0x10000 (others),
+         |          |           videoram is 2k crtc videoram
+   UBYTE | HWCONFIG | Bit 0-1: ModelLine
+   UBYTE | EXECBANK | CPU exec bank register
+   UBYTE | INDBANK  | CPU indirect bank register
+   ARRAY | SYSRAM   | 2k system RAM, Bank15 $f0000-$f07ff
+   ARRAY | VIDEO    | 2k video RAM, Bank15 $fd000-$fd7ff
+   ARRAY | RAM      | RAM dump, size according to MEMSIZE
+   ARRAY | RAM08    | (only if memsize < 1M) 2k for cart08_ram CONFIG & 1 : 2KiB RAM $f0800-$f0fff
+   ARRAY | RAM1     | (only if memsize < 1M) 4k for cart1_ram CONFIG & 2 : 4KiB RAM $f1000-$f1fff
+   ARRAY | RAM2     | (only if memsize < 1M) 8k for cart2_ram CONFIG & 4 : 8KiB RAM $f2000-$f3fff
+   ARRAY | RAM4     | (only if memsize < 1M) 8k for cart4_ram CONFIG & 8 : 8KiB RAM $f4000-$f5fff
+   ARRAY | RAM6     | (only if memsize < 1M) 8k for cart6_ram CONFIG & 16 : 8KiB RAM $f6000-$f7fff
+   ARRAY | RAMC     | (only if memsize < 1M) 4k for cartC_ram CONFIG & 32 : 4KiB RAM $fc000-$fcfff
+
+TEXI TABLEFILE:CBM2MEM.snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/cbm2/cbm2memsnapshot.c
+__MODULE__=CBM2ROM
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Description
+   UBYTE | CONFIG   | Bit 1: cart1 ROM included
+         |          |     2: cart2 ROM included
+         |          |     3: cart4 ROM included
+         |          |     4: cart6 ROM included
+         |          |     5: chargen is of C510 type (VIC-II)
+   ARRAY | KERNAL   | 8k Kernal ROM ($e000-$ffff)
+   ARRAY | BASIC    | 16k Basic ROM ($8000-$bfff)
+   ARRAY | CHARGEN  | 4k chargen ROM image ($c*** for VIC-II)
+   ARRAY | ROM1     | 4k for cart1 (if config & 2)
+   ARRAY | ROM2     | 8k for cart2 (if config & 4)
+   ARRAY | ROM4     | 8k for cart4 (if config & 8)
+   ARRAY | ROM6     | 8k for cart6 (if config & 16)
+
+TEXI TABLEFILE:CBM2ROM.snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/cbm2/cbm5x0-snapshot.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/cbm2/cbm5x0.c
+__MODULE__=C500DATA
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   DWORD  | IRQCLK    | CPU clock ticks until next 50 Hz IRQ
+
+TEXI TABLEFILE:C500DATA.snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/cbm2/cbm5x0mem.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/core/ata.c
+__MODULE__=ATA
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=7
+   Type | Name | Description
+   STRING | filename                |
+   DWORD  | type                    |
+   WORD   | geometry.cylinders      |
+   BYTE   | geometry.heads          |
+   BYTE   | geometry.sectors        |
+   DWORD  | geometry.size           |
+   BYTE   | error                   |
+   BYTE   | features                |
+   BYTE   | sector_count            |
+   BYTE   | sector_count_internal   |
+   BYTE   | sector                  |
+   WORD   | cylinder                |
+   BYTE   | head,dev<<4,lba<<6,legacy   |
+   BYTE   | control                 |
+   BYTE   | cmd                     |
+   BYTE   | power                   |
+   ARRAY  | packet                  | sizeof(packet)
+   WORD   | bufp                    |
+   ARRAY  | buffer                  | sector_size
+   WORD   | cylinders               |
+   BYTE   | heads                   |
+   BYTE   | sectors                 |
+   DWORD  | pos                     |
+   DWORD  | pos / sector_size       |
+   BYTE   | wcache                  |
+   BYTE   | lookahead               |
+   BYTE   | busy                    |
+   CLOCK  | spindle_clk             |
+   CLOCK  | head_clk                |
+   CLOCK  | standby_clk             |
+   DWORD  | standby                 |
+   DWORD  | standby_max             |
+
+TEXI TABLEFILE:ATA.snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/core/ciacore.c
+__MODULE__=CIA
+__SNAP_MAJOR__=2
+__SNAP_MINOR__=5
+   Type | Name | Version | Description
+   UBYTE | ORA              |       | Output register A
+   UBYTE | ORB              |       | Output register B
+   UBYTE | DDRA             |       | Data direction register A
+   UBYTE | DDRB             |       | Data direction register B
+   UWORD | TA               |       | Timer A counter value
+   UWORD | TB               |       | Timer B counter value
+   UBYTE | TOD_TEN          |       | Time of Day - current tenth of second
+   UBYTE | TOD_SEC          |       | Time of Day - current seconds
+   UBYTE | TOD_MIN          |       | Time of Day - current minutes
+   UBYTE | TOD_HR           |       | Time of Day - current hours
+   UBYTE | SDR              |       | contents of shift register
+   UBYTE | IER              |       | mask of enabled interrupt masks
+   UBYTE | CRA              |       | Control register A
+   UBYTE | CRB              |       | Control register B
+   UWORD | TAL              |       | Timer A latch value
+   UWORD | TBL              |       | Timer B latch value
+   UBYTE | IFR              |       | mask of currently active interrupts
+   UBYTE | PBSTATE          |       | Bit 6/7 reflect the PB6/7 toggle bit state.Bit 2/3 reflect the corresponding port bit state.
+   UBYTE | SRHBITS          |       | number of half-bits to still shift in/out SDR
+   UBYTE | ALARM_TEN        |       | Time of Day - alarm tenth of second
+   UBYTE | ALARM_SEC        |       | Time of Day - alarm seconds
+   UBYTE | ALARM_MIN        |       | Time of Day - alarm minutes
+   UBYTE | ALARM_HR         |       | Time of Day - alarm hours
+   UBYTE | READICR          |       | current clock minus the clock when ICR was read last plus 128.
+   UBYTE | TODLATCHED       |       | Bit 0: 1= latched for reading, Bit 1: 2=stopped for writing
+   UBYTE | TODL_TEN         |       | Time of Day - latched tenth of second
+   UBYTE | TODL_SEC         |       | Time of Day - latched seconds
+   UBYTE | TODL_MIN         |       | Time of Day - latched minutes
+   UBYTE | TODL_HR          |       | Time of Day - latched hours
+   DWORD | TOD_TICKS        |       | clk ticks till next tenth of second
+   UBYTE | IRQ              |       | 0=IRQ line inactive, 1=IRQ line active
+   WORD  | TA state         | 1.1+  | Timer A state bits (see ciatimer.h)
+   WORD  | TB state         | 1.1+  | Timer B state bits (see ciatimer.h)
+   BYTE  | SHIFTER          | 1.2+  | actual shift register (original data)
+   BYTE  | SDR_VALID        | 1.2+  | data in SDR valid to be shifted
+   BYTE  | irq_enabled      | 1.2+  | IRQ enabled
+   BYTE  | todtickcounter   | 1.2+  | TOD tick counter
+   BYTE  | SHIFTER_HI       | 2.3+  | high byte of SHIFTER
+   BYTE  | SDR_ALARM        | 2.3+  | if an sdr_alarm is pending and when
+   BYTE  | SP_CNT_IN        | 2.3+  | input state of SP and CNT
+   DWORD | SDR_DELAY        | 2.4+  | event/history bits for the serial data register
+   BYTE  | SP_CNT_OUT       | 2.4+  | output state of SP and CNT
+   DWORD | IFR_DELAY        | 2.5+  | event/history bits for the interrupt flag reg.
+   BYTE  | ACK_IRQFLAGS     | 2.5+  | flags in IFR to acknowledge, i.e. clear.
+   BYTE  | NEW_IRQFLAGS     | 2.5+  | new flags in IFR that were set recently.
+
+TEXI TABLEFILE:CIA.snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/core/ciatimer.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/core/cs8900.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/core/flash040core.c
+__MODULE__=FLASH040
+__SNAP_MAJOR__=2
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE   | state                   |
+   BYTE   | base_state              |
+   BYTE   | program_byte            |
+   ARRAY  | erase_mask              | FLASH040_ERASE_MASK_SIZE
+   BYTE   | last_read               |
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/core/flash800core.c
+__MODULE__=FLASH800
+__SNAP_MAJOR__=2
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE   | state                   |
+   BYTE   | base_state              |
+   BYTE   | program_byte            |
+   ARRAY  | erase_mask              | FLASH800_ERASE_MASK_SIZE
+   BYTE   | last_read               |
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/core/fmopl.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/core/i8255a.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/core/m93c86.c
+__MODULE__=M93C86
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | eeprom_cs            |
+   BYTE  | eeprom_clock         |
+   BYTE  | eeprom_data_in       |
+   BYTE  | eeprom_data_out      |
+   BYTE  | input_shiftreg       |
+   BYTE  | input_count          |
+   BYTE  | output_shiftreg      |
+   BYTE  | output_count         |
+   BYTE  | command              |
+   BYTE  | addr                 |
+   BYTE  | data0                |
+   BYTE  | data1                |
+   BYTE  | write_enable_status  |
+   BYTE  | ready_busy_status    |
+   ARRAY | m93c86_data          | 2048 bytes of ROM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/core/mc6821core.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/core/riotcore.c
+__MODULE__=RIOT
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   UBYTE | ORA          | Port A output register
+   UBYTE | DDRA         | Port A data direction register
+   UBYTE | ORB          | Port B output register
+   UBYTE | DDRB         | Port B data direction register
+   UBYTE | EDGECTRL     | edge control value: Bit 0/1: A0/A1 address bits written to edgecontrol registers
+   UBYTE | IRQFL        | IRQ fl: Bit 6/7: see RIOT IRQ flag  Bit 0: state of IRQ line (1=active)
+   UBYTE | N            | current timer value
+   UWORD | divider      | Pre-scale divider value (1, 8, 64, or 1024)
+   UWORD | rest         | cycles that the divider has done since last counter tick
+   UBYTE | irqen        | 0= timer IRQ disabled, 1= enabled
+
+TEXI TABLEFILE:RIOT.snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/core/rtc/bq4830y.c
+__MODULE__=RTC_BQ4830Y
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE   | clock halt          | clock halt flag
+   DWORD  | clock halt latch hi | high DWORD of clock halt offset
+   DWORD  | clock halt latch lo | low DWORD of clock halt offset
+   BYTE   | read latch          | read latch flag
+   BYTE   | write latch         | write latch flag
+   DWORD  | latch hi            | high DWORD of the read/write offset
+   DWORD  | latch lo            | low DWORD of the read/write offset
+   DWORD  | offset hi           | high DWORD of the RTC offset
+   DWORD  | offset lo           | low DWORD of the RTC offset
+   DWORD  | old offset hi       | high DWORD of the old RTC offset
+   DWORD  | old offset lo       | low DWORD of the old RTC offset
+   ARRAY  | clock regs          | 8 BYTES of register data
+   ARRAY  | old clock regs      | 8 BYTES of old register data
+   ARRAY  | clock regs changed  | 8 BYTES of changed register data
+   ARRAY  | RAM                 | 32768 BYTES of RAM data
+   ARRAY  | old RAM             | 32768 BYTES of old RAM data
+   STRING | device              | device name STRING
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/core/rtc/ds1202_1302.c
+__MODULE__=RTC_DS1202_1302
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE   | rtc type            | RTC type
+   BYTE   | clock halt          | clock halt flag
+   DWORD  | clock halt latch hi | high DWORD of clock halt offset
+   DWORD  | clock halt latch lo | low DWORD of clock halt offset
+   BYTE   | am pm               | AM/PM flag
+   BYTE   | write protect       | write protect flag
+   DWORD  | latch hi            | high DWORD of latch offset
+   DWORD  | latch lo            | low DWORD of latch offset
+   DWORD  | offset hi           | high DWORD of RTC offset
+   DWORD  | offset lo           | low DWORD of RTC offset
+   DWORD  | old offset hi       | high DWORD of old RTC offset
+   DWORD  | old offset lo       | low DWORD of old RTC offset
+   ARRAY  | clock regs          | 8 BYTES of register data
+   ARRAY  | old clock regs      | 8 BYTES of old register data
+   BYTE   | trickle charge      | trickle charge
+   ARRAY  | RAM                 | 32 BYTES of RAM data
+   ARRAY  | old RAM             | 32 BYTES of old RAM data
+   BYTE   | state               | current RTC read/write state
+   BYTE   | reg                 | current register
+   BYTE   | bit                 | current bit
+   BYTE   | output bit          | current output bit
+   BYTE   | io byte             | current I/O BYTE
+   BYTE   | sclk                | SCLK line state
+   BYTE   | clock register      | clock register flag
+   STRING | device              | device name STRING
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/core/rtc/ds1216e.c
+__MODULE__=RTC_DS1216E
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE   | reset              | reset flag
+   BYTE   | inactive           | inactive flag
+   BYTE   | 12hours            | 12 hours flag
+   BYTE   | pattern pos        | pattern position
+   BYTE   | pattern ignore     | pattern ignore flag
+   BYTE   | output             | current output bit
+   BYTE   | output pos         | current output position
+   BYTE   | day offset         | day of week offset
+   BYTE   | day latch          | day of week latch
+   DWORD  | latch hi           | high DWORD of the latch offset
+   DWORD  | latch lo           | low DWORD of the latch offset
+   DWORD  | offset hi          | high DWORD of the RTC offset
+   DWORD  | offset lo          | low DWORD of the RTC offset
+   DWORD  | old offset hi      | high DWORD of the old RTC offset
+   DWORD  | old offset lo      | low DWORD of the old RTC offset
+   ARRAY  | clock regs         | 8 BYTES of register data
+   ARRAY  | old clock regs     | 8 BYTES of old register data
+   ARRAY  | clock regs changed | 8 BYTES of changed register data
+   STRING | device             | device name STRING
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/core/rtc/ds12c887.c
+__MODULE__=RTC_DS12C887
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE   | clock halt          | clock halt flag
+   DWORD  | clock halt latch hi | high DWORD of the clock halt offset
+   DWORD  | clock halt latch lo | low DWORD of the clock halt offset
+   BYTE   | am pm               | AM/PM flag
+   BYTE   | set                 | RTC set in progress flag
+   DWORD  | set latch hi        | high DWORD of the set offset
+   DWORD  | set latch lo        | low DWORD of the set offset
+   DWORD  | offset hi           | high DWORD of the RTC offset
+   DWORD  | offset lo           | low DWORD of the RTC offset
+   DWORD  | old offset hi       | high DWORD of the old RTC offset
+   DWORD  | old offset lo       | low DWORD of the old RTC offset
+   BYTE   | bcd                 | BCD mode flag
+   BYTE   | alarm flag          | alarm flag
+   BYTE   | end of update flag  | end of update flag
+   ARRAY  | clock regs          | 11 BYTES of register data
+   ARRAY  | old clock regs      | 11 BYTES of old register data
+   ARRAY  | clock regs changed  | 11 BYTES of changed register data
+   ARRAY  | ctrl regs           | 2 BYTES of control register data
+   ARRAY  | RAM                 | 128 BYTES of RAM data
+   ARRAY  | old RAM             | 128 BYTES of old RAM data
+   BYTE   | reg                 | current register
+   BYTE   | prev second         | previous second
+   STRING | device              | device name STRING
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/core/rtc/ds1307.c
+__MODULE__=RTC_DS1307
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE   | clock halt          | clock halt flag
+   DWORD  | clock halt latch hi | high DWORD of clock halt offset
+   DWORD  | clock halt latch lo | low DWORD of clock halt offset
+   BYTE   | am pm               | AM/PM flag
+   DWORD  | latch hi            | high DWORD of latch offset
+   DWORD  | latch lo            | low DWORD of latch offset
+   DWORD  | offset hi           | high DWORD of RTC offset
+   DWORD  | offset lo           | low DWORD of RTC offset
+   DWORD  | old offset hi       | high DWORD of old RTC offset
+   DWORD  | old offset lo       | low DWORD of old RTC offset
+   ARRAY  | clock regs          | 8 BYTES of register data
+   ARRAY  | old clock regs      | 8 BYTES of old register data
+   ARRAY  | clock regs for read | 8 BYTES of register read data
+   ARRAY  | RAM                 | 56 BYTES of RAM data
+   ARRAY  | old RAM             | 56 BYTES of old RAM data
+   BYTE   | state               | current state
+   BYTE   | reg                 | current register
+   BYTE   | reg ptr             | register pointer
+   BYTE   | bit                 | current bit
+   BYTE   | io byte             | current I/O BYTE
+   BYTE   | sclk                | SCLK line state
+   BYTE   | data                | DATA line state
+   BYTE   | clock register      | clock register flag
+   STRING | device              | device name STRING
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/core/rtc/ds1602.c
+__MODULE__=RTC_DS1602
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   DWORD  | latch hi      | high DWORD of latch offset
+   DWORD  | latch lo      | low DWORD of latch offset
+   DWORD  | offset 0 hi   | high DWORD of RTC offset 0
+   DWORD  | offset 0 lo   | low DWORD of RTC offset 0
+   DWORD  | offset hi     | high DWORD of RTC offset
+   DWORD  | offset lo     | low DWORD of RTC offset
+   DWORD  | old offset hi | high DWORD of old RTC offset
+   DWORD  | old offset lo | low DWORD of old RTC offset
+   DWORD  | reg           | current register
+   BYTE   | state         | current state
+   BYTE   | bit           | current bit
+   BYTE   | io byte       | current I/O BYTE
+   BYTE   | rst           | RST line state
+   BYTE   | clk           | CLK line state
+   BYTE   | data line in  | DATA in line state
+   BYTE   | data line out | DATA out line state
+   STRING | device        | device name STRING
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/core/rtc/pcf8583.c
+__MODULE__=RTC_PCF8583
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE   | clock halt          | clock halt flag
+   DWORD  | clock halt latch hi | high DWORD of clock halt offset
+   DWORD  | clock halt latch lo | low DWORD of clock halt offset
+   BYTE   | am pm               | AM/PM flag
+   DWORD  | read bit shift      | special case bit pattern shift
+   DWORD  | latch hi            | high DWORD of latch offset
+   DWORD  | latch lo            | low DWORD of latch offset
+   DWORD  | offset hi           | high DWORD of RTC offset
+   DWORD  | offset lo           | low DWORD of RTC offset
+   DWORD  | old offset hi       | high DWORD of old RTC offset
+   DWORD  | old offset lo       | low DWORD of old RTC offset
+   ARRAY  | clock regs          | 16 BYTES of register data
+   ARRAY  | old clock regs      | 16 BYTES of old register data
+   ARRAY  | clock regs for read | 16 BYTES of clock read register data
+   ARRAY  | RAM                 | 240 BYTES of RAM data
+   ARRAY  | old RAM             | 240 BYTES of old RAM data
+   BYTE   | state               | current state
+   BYTE   | reg                 | current register
+   BYTE   | reg ptr             | current register pointer
+   BYTE   | bit                 | current bit
+   BYTE   | io byte             | current I/O BYTE
+   BYTE   | sclk                | SCLK line state
+   BYTE   | data                | DATA line state
+   BYTE   | clock register      | current clock register
+   STRING | device              | device name STRING
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/core/rtc/rtc-58321a.c
+__MODULE__=RTC_58321A
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE   | stop          | stop flag
+   BYTE   | 24 hours      | 24 hours flag
+   BYTE   | address       | current address
+   DWORD  | latch hi      | high DWORD of latch offset
+   DWORD  | latch lo      | low DWORD of latch offset
+   DWORD  | offset hi     | high DWORD of RTC offset
+   DWORD  | offset lo     | low DWORD of RTC offset
+   DWORD  | old offset hi | high DWORD of old RTC offset
+   DWORD  | old offset lo | low DWORD of old RTC offset
+   STRING | device        | device name STRING
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/core/rtc/rtc-72421.c
+__MODULE__=RTC_72421
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE   | stop          | stop flag
+   BYTE   | 24 hours      | 24 hours flag
+   BYTE   | day offset    | offset for day of week
+   BYTE   | day latch     | latch for day of week
+   BYTE   | day           | day of week (needed for above 2)
+   DWORD  | latch hi      | high DWORD of latch offset
+   DWORD  | latch lo      | low DWORD of latch offset
+   DWORD  | offset hi     | high DWORD of RTC offset
+   DWORD  | offset lo     | low DWORD of RTC offset
+   DWORD  | old offset hi | high DWORD of old RTC offset
+   DWORD  | old offset lo | low DWORD of old RTC offset
+   STRING | device        | device name string
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/core/scsi.c
+__MODULE__=SCSI
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE   | state              | state
+   BYTE   | target             | target
+   BYTE   | databus            | databus
+   BYTE   | ack                | ack
+   BYTE   | req                | req
+   BYTE   | bsyi               | bsyi
+   BYTE   | bsyo               | bsyo
+   BYTE   | sel                | sel
+   BYTE   | rst                | rst
+   BYTE   | atn                | atn
+   BYTE   | cd                 | cd
+   bYTE   | io                 | io
+   BYTE   | msg                | msg
+   BYTE   | link               | link
+   BYTE   | status             | status
+   BYTE   | lun                | lun
+   BYTE   | command            | command
+   BYTE   | sensekey           | sensekey
+   BYTE   | asc                | asc
+   BYTE   | msg_after_status   | msg_after_status
+   DWORD  | seq                | seq
+   DWORD  | cmd_size           | cmd_size
+   DWORD  | address            | address
+   DWORD  | blocks             | blocks
+   DWORD  | data_max           | data_max
+   DWORD  | max_imagesize      | max_imagesize
+   ARRAY  | cmd_buf            | 256 bytes of cmd_buf
+   ARRAY  | data_buf           | 512 bytes of data_buf
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/core/ser-eeprom.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/core/spi-flash.c
+__MODULE__=EN25QH128A
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE   | eeprom_cs               |
+   BYTE   | eeprom_clock            |
+   BYTE   | eeprom_data_in          |
+   BYTE   | eeprom_data_out         |
+   BYTE   | input_shiftreg          |
+   BYTE   | input_count             |
+   BYTE   | output_shiftreg         |
+   BYTE   | output_count            |
+   BYTE   | command                 |
+   BYTE   | addr                    |
+   BYTE   | write_enable_status     |
+   BYTE   | ready_busy_status       |
+   ARRAY  | spi_flash_data          | MAX_ROM_SIZE
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/core/spi-sdcard.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/core/t6721.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/core/tpicore.c
+__MODULE__=TPI
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Description
+   UBYTE | PRA        | Port A output register
+   UBYTE | PRB        | Port B output register
+   UBYTE | PRC        | Port C output register (doubles as IRQ latch register)
+   UBYTE | DDRA       | Port A data direction register
+   UBYTE | DDRB       | Port B data direction register
+   UBYTE | DDRC       | Port C data direction register (doubles as IRQ mask register)
+   UBYTE | CR         | Control Register
+   UBYTE | AIR        | Active interrupt register
+   UBYTE | STACK      | irq sources saved on stack
+   UBYTE | CABSTATE   | state of CA and CB pins. Bit 7 = state of CA, Bit 6 = state of CB
+
+TEXI TABLEFILE:TPI.snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/core/viacore.c
+__MODULE__=VIA
+__SNAP_MAJOR__=2
+__SNAP_MINOR__=2
+   Type | Name | Version | Description
+   UBYTE | ORA                  |       | Output register A
+   UBYTE | DDRA                 |       | Data direction register A
+   UBYTE | ORB                  |       | Output register B
+   UBYTE | DDRB                 |       | Data direction register B
+   UWORD | T1L                  |       | timer 1 latch value
+   UWORD | T1C                  |       | timer 1 count value
+   UBYTE | T2LL                 |       | Timer 2 latch lo
+   UBYTE | T2LH                 |       | Timer 2 latch hi
+   UBYTE | T2CL                 |       | timer 2 count value lo
+   UBYTE | T2CH                 |       | timer 2 count value hi
+   UWORD | T2C                  |       | timer 2 counter
+   UBYTE | RUNFL                |       | bit 7: timer 1 will generate IRQ on underflow; bit 6: timer 2 will generate IRQ on underflow
+   UBYTE | SR                   |       | shift register value
+   UBYTE | ACR                  |       | auxiliary control register
+   UBYTE | PCR                  |       | peripherial control register
+   UBYTE | IFR                  |       | active interrupts
+   UBYTE | IER                  |       | interrupt masks
+   UBYTE | PB7                  |       | bit 7 = pb7 state
+   UBYTE | SRHBITS              |       | number of half-bits to shift out on SR
+   UBYTE | CABSTATE             |       | bit 7 = ca2 state, bit6 = cb2 state, bit5 = cb1
+   UBYTE | ILA                  |       | input latch port A  (see ACR bit 0)
+   UBYTE | ILB                  |       | input latch port B  (see ACR bit 1)
+   UBYTE | t2_irq_allowed       | 2.2+  |
+   UBYTE | t2_underflow_alarm   | 2.2+  | 0 if not; 1+time delta if set.
+   UBYTE | t2_shift_alarm       | 2.2+  | 0 if not; 1+time delta if set.
+
+TEXI TABLEFILE:VIA.snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/crtc/crtc-snapshot.c
+__MODULE__=CRTC
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=2
+   Type | Name | Version | Description
+    WORD    | VADDR_MASK        |       | Mask of the address bits valid when accessing the video memory
+    WORD    | VADDR_CHARSWITCH  |       | If one bit in the video address is used to switch the character generator, it is masked here.
+    WORD    | VADDR_CHAROFFSET  |       | The offset in characters in the character generator that CHARSWITCH switches.
+    WORD    | VADDR_REVSWITCH   |       | If one bit in the video address inverts the screen, it is masked here.
+    WORD    | CHARGEN_MASK      |       | size of character generator in byte - 1
+    WORD    | CHARGEN_OFFSET    |       | offset given by external circuitry
+    BYTE    | HW_CURSOR         |       | external hardware cursor circuitry enabled
+    BYTE    | HW_COLS           |       | number of displayed columns during one character clock cycle
+    BYTE    | HW_BLANK          |       | set if the hardware blank feature is available CRTC register
+ 20 BYTE    | REGISTERS         |       | register DUMP of the CRTC registers 0-19.
+    BYTE    | REGNO             |       | The current index in the CRTC register file
+    BYTE    | CHAR              |       | The current cycle within the current rasterline
+    BYTE    | CHARLINE          |       | The current character line
+    BYTE    | YCOUNTER          |       | The current rasterline in the character
+    BYTE    | CRSRCNT           |       | Framecounter for the blinking cursor
+    BYTE    | CRSRSTATE         |       | if set the hardware cursor is visible
+    BYTE    | CRSRLINES         |       | set if ycounter is within the active cursor rasterlines for a char
+    WORD    | CHARGEN_REL       |       | relative base of currently used character generator in ROM (in byte)
+    WORD    | SCREEN_REL        |       | screen address to load the counter at the beginning of the next rasterline
+    WORD    | VSYNC             |       | number of rasterlines left within vsync; 0 = not in vsync
+    BYTE    | VENABLE           |       | vertical enable flipflop; 1= display, 0= blank.
+    WORD    | SCREEN_WIDTH      |       | width of the current display window
+    WORD    | SCREEN_HEIGHT     |       | height of the current display window
+    WORD    | SCREEN_XOFFSET    |       | x position where the first character in a line starts in the window
+    WORD    | HJITTER           |       |  but only after adding this jitter
+    WORD    | SCREEN_YOFFSET    |       | x position where the first character in a line starts in the window
+    WORD    | FRAMELINES        |       |  expected number of rasterlines for the current frame
+    WORD    | CURRENT_LINE      |       | current rasterline as seen from the CRTC
+    BYTE    | FLAG              | 1.1+  | Bit 0: If 1 then bit in VADDR_REVSWITCH must be set for reverse; if 0 then bit must be cleared for reverse.
+
+TEXI TABLEFILE:CRTC.snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/datasette/datasette.c
+__MODULE__=DATASETTE
+   Type | Name | Description
+   BYTE  | datasette_motor                  |
+   BYTE  | notape_mode                      |
+   CLOCK | last_write_clk                   |
+   CLOCK | motor_stop_clk                   |
+   BYTE  | datasette_alarm_pending          |
+   CLOCK | alarm_clk                        |
+   CLOCK | datasette_long_gap_pending       |
+   CLOCK | datasette_long_gap_elapsed       |
+   BYTE  | datasette_last_direction         |
+   DWORD | datasette_counter_offset         |
+   BYTE  | reset_datasette_with_maincpu     |
+   DWORD | datasette_zero_gap_delay         |
+   DWORD | datasette_speed_tuning           |
+   DWORD | datasette_tape_wobble_frequency  |
+   DWORD | datasette_tape_wobble_amplitude  |
+   DWORD | datasette_tape_azimuth_error     |
+   BYTE  | fullwave                         |
+   CLOCK | fullwave_gap                     |
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/debug.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/drive/drive-snapshot.c
+__MODULE__=DRIVE
+__SNAP_MAJOR__=2
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE       | has_tde[unit]               |
+   BYTE       | has_drives[unit]            |
+   DWORD      | sync_factor                 |
+   CLOCK      | attach_clk                  |
+   BYTE       | byte_ready_level            |
+   BYTE       | unit->clock_frequency       |
+   WORD       | current_half_track + (side * DRIVE_HALFTRACKS_1571)) |
+   CLOCK      | detach_clk                  |
+   BYTE       | extend_image_policy         |
+   DWORD      | GCR_head_offset             |
+   BYTE       | GCR_read                    |
+   BYTE       | GCR_write_value             |
+   BYTE       | unit->idling_method         |
+   BYTE       | unit->parallel_cable        |
+   BYTE       | read_only                   |
+   DWORD      | rotation_table_ptr[unr]     |
+   DWORD      | unit->type                  |
+   DWORD      | snap_accum                  |
+   CLOCK      | snap_rotation_last_clk      |
+   DWORD      | snap_bit_counter            |
+   DWORD      | snap_zero_count             |
+   WORD       | snap_last_read_data         |
+   BYTE       | snap_last_write_data        |
+   DWORD      | snap_seed                   |
+   DWORD      | snap_speed_zone             |
+   DWORD      | snap_ue7_dcba               |
+   DWORD      | snap_ue7_counter            |
+   DWORD      | snap_uf4_counter            |
+   DWORD      | snap_fr_randcount           |
+   DWORD      | snap_filter_counter         |
+   DWORD      | snap_filter_state           |
+   DWORD      | snap_filter_last_state      |
+   DWORD      | snap_write_flux             |
+   DWORD      | snap_PulseHeadPosition      |
+   DWORD      | snap_xorShift32             |
+   DWORD      | snap_so_delay               |
+   DWORD      | snap_cycle_index            |
+   CLOCK      | snap_ref_advance            |
+   DWORD      | snap_req_ref_cycles         |
+   CLOCK      | attach_detach_clk           |
+   BYTE       | byte_ready_edge             |
+   BYTE       | byte_ready_active           |
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/drive/drivecpu.c
+__MODULE__=DRIVECPU
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=3
+   Type | Name | Description
+   CLOCK | clock                |
+   UBYTE | a                    |
+   UBYTE | x                    |
+   UBYTE | y                    |
+   UBYTE | sp                   |
+   WORD  | pc                   |
+   UBYTE | status               |
+   DWORD | last_opcode_info     |
+   CLOCK | last_clk             |
+   CLOCK | cycle_accum          |
+   CLOCK | last_exc_cycles      |
+   CLOCK | stop_clk             |
+   UBYTE | cpu_last_data        |
+   ARRAY | drive RAM            | size depends on drive
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/drive/drivecpu65c02.c
+__MODULE__=DRIVECPU65C02
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=3
+   Type | Name | Description
+   CLOCK | clock                |
+   UBYTE | a                    |
+   UBYTE | x                    |
+   UBYTE | y                    |
+   UBYTE | sp                   |
+   WORD  | pc                   |
+   UBYTE | status               |
+   DWORD | last_opcode_info     |
+   CLOCK | last_clk             |
+   CLOCK | cycle_accum          |
+   CLOCK | last_exc_cycles      |
+   CLOCK | stop_clk             |
+   UBYTE | cpu_last_data        |
+   ARRAY | drive RAM            | size depends on drive
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/drive/driverom.c
+__MODULE__=DRIVEROM
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Description
+   ARRAY      | drive ROM                   | size depends on drive
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/drive/iec/cmdhd.c
+__MODULE__=CMDHD
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE     | LEDs                  |
+   ARRAY    | i8255a_i              | 3
+   ARRAY    | i8255a_o              | 3
+   BYTE     | scsi_dir              |
+   BYTE     | preadyff              |
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/drive/iec/fdd.c
+__MODULE__=FDD
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE   | number                  |
+   BYTE   | disk_change             |
+   BYTE   | write_protect           |
+   BYTE   | track                   |
+   BYTE   | tracks                  |
+   BYTE   | head                    |
+   BYTE   | sectors                 |
+   BYTE   | motor                   |
+   BYTE   | rate                    |
+   BYTE   | sector_size             |
+   BYTE   | iso                     |
+   BYTE   | gap2                    |
+   BYTE   | gap3                    |
+   BYTE   | head_invert             |
+   BYTE   | disk_rate               |
+   DWORD  | image_sectors           |
+   DWORD  | index_count             |
+   DWORD  | raw.head                |
+   BYTE   | raw.track_head          |
+   BYTE   | raw.dirty               |
+   ARRAY  | raw.data                | raw.size
+   ARRAY  | raw.sync                | (raw.size + 7) >> 3
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/drive/iec/iec.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/drive/iec/via1d1541.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/drive/iec/via4000.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/drive/iec/wd1770.c
+__MODULE__=WD1770
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE   | data                    |
+   BYTE   | track                   |
+   BYTE   | sector                  |
+   BYTE   | status                  |
+   BYTE   | cmd                     |
+   WORD   | crc                     |
+   BYTE   | command                 |
+   DWORD  | type                    |
+   DWORD  | step                    |
+   DWORD  | byte_count              |
+   DWORD  | tmp                     |
+   DWORD  | direction               |
+   CLOCK  | clk                     |
+   BYTE   | irq                     |
+   BYTE   | dden                    |
+   BYTE   | sync                    |
+   BYTE   | is1772                  |
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/drive/iecieee/iecieee.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/drive/iecieee/via2d.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/drive/ieee/fdc.c
+__MODULE__=FDC
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | STATE    | FDC state
+   DWORD | CLK      | clk ticks till next fdc invocation
+   BYTE  | NDRV     | number of drives (1 or 2)
+   BYTE  | LTRACK0  | last track
+   BYTE  | LSECTOR0 | last sector
+   BYTE  | LTRACK1  | last track (if ndrv == 2)
+   BYTE  | LSECTOR1 | last sector (if ndrv == 2)
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/drive/ieee/ieee.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/drive/ieee/via1d2031.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/drive/tcbm/tcbm.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/event.c
+__MODULE__=EVENT
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   DWORD   | type                   |
+   CLOCK   | clock                  |
+   DWORD   | size                   |
+   ARRAY   | data                   |
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/interrupt.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/bbrtc.c
+__MODULE__=BBRTC
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | RST  | reset line state
+   BYTE  | CLK  | clock line state
+   BYTE  | DATA | data line state
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/joyport/cardkey.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/joyport/coplin_keypad.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/cx21.c
+__MODULE__=CX21
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | PORT | PORT register state
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/joyport/cx85.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/inception.c
+__MODULE__=INCEPTION
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | COUNTER | counter value
+   BYTE  | CLOCK   | clock line state
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/joyport.c
+__MODULE__=JOYPORT
+   Type | Name | Description
+   BYTE  | device id           | device id connected to this joystick port
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/joyport/joyport_diag_586220_harness.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/joyport_io_sim.c
+__MODULE__=JPIOSIM
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | DATA OUT | data out value
+   BYTE  | DATA IN  | data in value
+   BYTE  | POTX     | pot-x state
+   BYTE  | POTY     | pot-y state
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/joystick.c
+__MODULE__=JOYSTICK
+   Type | Name | Description
+   WORD  | joystick value      | current/last value read from the joystick port
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/lightpen.c
+__MODULE__=LIGHTPEN
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | value    | lightpen return value
+   BYTE  | type     | lightpen type
+   DWORD | buttons  | buttons state
+   DWORD | button y | button Y state
+   DWORD | button x | button X state
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/joyport/mouse.c
+
+
+TABLES:3
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/mouse_1351.c
+__MODULE__=MOUSE_1351
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE   | digital value          | digital pins return value
+
+TEXI TABLEFILE:snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/mouse_1351.c
+__MODULE__=MOUSE_MICROMYS
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE   | digital value          | digital pins return value
+   DWORD  | up down counter        | up down counter
+   DWORD  | up down pulse end      | up down pulse end
+
+TEXI TABLEFILE:snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/mouse_1351.c
+__MODULE__=MOUSE_SMART
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE   | digital value          | digital pins return value
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/mouse_digital.c
+__MODULE__=MOUSE_DIGITAL
+   Type | Name | Description
+   BYTE  | digital value        | digital pins return value
+   DWORD | buttons              | buttons state
+   BYTE  | new x                | X
+   BYTE  | new y                | Y
+   BYTE  | last x               | last X
+   BYTE  | last y               | last Y
+   DWORD | digital state        | state
+   DWORD | clock_vert_move      | last trigger clock (Vertical)
+   DWORD | clock_hori_move      | last trigger clock (Horizontal)
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/mouse_neos.c
+__MODULE__=MOUSE_NEOS
+   Type | Name | Description
+   BYTE  | digital value        | digital pins return value
+   DWORD | buttons              | buttons state
+   BYTE  | neos x               | neos X
+   BYTE  | neos y               | neos Y
+   BYTE  | neos last x          | neos last X
+   BYTE  | neos last y          | neos last Y
+   DWORD | neos state           | state
+   DWORD | neos prev            | previous state
+   DWORD | last trigger         | last trigger clock
+   DWORD | neos time out cycles | time out cycles
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:2
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/mouse_paddle.c
+__MODULE__=PADDLES
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | digital value          | digital pins return value
+   BYTE  | paddle 1 x-value       | paddle 1 x-value
+   BYTE  | paddle 1 y-value       | paddle 1 y-value
+   BYTE  | old paddle 1 x-value   | old paddle 1 x-value
+   BYTE  | old paddle 1 y-value   | old paddle 1 y-value
+
+TEXI TABLEFILE:snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/mouse_paddle.c
+__MODULE__=KOALAPAD
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | digital value          | digital pins return value
+   BYTE  | paddle 1 x-value       | paddle 1 x-value
+   BYTE  | paddle 1 y-value       | paddle 1 y-value
+   BYTE  | old paddle 1 x-value   | old paddle 1 x-value
+   BYTE  | old paddle 1 y-value   | old paddle 1 y-value
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:3
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/mouse_quadrature.c
+__MODULE__=MOUSE_AMIGA
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE   | digital value          | digital pins return value
+   BYTE   | quadrature X           | quadrature X
+   BYTE   | quadrature Y           | quadrature Y
+   BYTE   | polled joyval          | polled joyval
+   DWORD  | buttons                | buttons state
+
+TEXI TABLEFILE:snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/mouse_quadrature.c
+__MODULE__=MOUSE_CX22
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE   | digital value          | digital pins return value
+   BYTE   | quadrature X           | quadrature X
+   BYTE   | quadrature Y           | quadrature Y
+   BYTE   | polled joyval          | polled joyval
+
+TEXI TABLEFILE:snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/mouse_quadrature.c
+__MODULE__=MOUSE_ST
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE   | digital value          | digital pins return value
+   BYTE   | quadrature X           | quadrature X
+   BYTE   | quadrature Y           | quadrature Y
+   BYTE   | polled joyval          | polled joyval
+   DWORD  | buttons                | buttons state
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/multijoy.c
+__MODULE__=MULTIJOY
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | ADDRESS | which joystick is active
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/ninja_snespad.c
+__MODULE__=NINJASNESPAD
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | COUNTER | counter value
+   BYTE  | LATCH   | latch line state
+   BYTE  | CLOCK   | clock line state
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/paperclip2.c
+__MODULE__=PAPERCLIP2
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   DWORD | counter | counter
+   BYTE  | command | command
+   BYTE  | state   | state
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/paperclip64.c
+__MODULE__=PAPERCLIP64
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   DWORD | counter | counter
+   BYTE  | command | command
+   BYTE  | state   | state
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/paperclip64e.c
+__MODULE__=PAPERCLIP64E
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   DWORD | counter | counter
+   BYTE  | command | command
+   BYTE  | state   | state
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/paperclip64sc.c
+__MODULE__=PAPERCLIP64SC
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   DWORD | counter | counter
+   BYTE  | command | command
+   BYTE  | state   | state
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/powerpad.c
+__MODULE__=POWERPAD
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | COUNTER | counter value
+   BYTE  | CLEAR   | clear line state
+   BYTE  | CLOCK   | clock line state
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/protopad.c
+__MODULE__=PROTOPAD
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | COUNTER     | counter value
+   BYTE  | CLOCK       | clock line state
+   BYTE  | MODE        | mode line state
+   BYTE  | DPADMODE    | dpad up mode state
+   BYTE  | PERMRAPID   | permanent rapid mode state
+   BYTE  | RAPIDSPEED  | rapid speed selection
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/joyport/rushware_keypad.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/joyport/sampler2bit.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/joyport/sampler4bit.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/joyport/script64_dongle.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/spaceballs.c
+__MODULE__=SPACEBALLS
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | GROUNDS | userport PBx state
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/trapthem_snespad.c
+__MODULE__=TRAPTHEMSNESPAD
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=2
+   Type | Name | Description
+   BYTE  | COUNTER | counter value
+   BYTE  | LATCH   | latch line state
+   BYTE  | CLOCK   | clock line state
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/vizawrite64_dongle.c
+__MODULE__=VIZAWRITE64
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | COUNTER | counter value
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/joyport/waasoft_dongle.c
+__MODULE__=WAASOFT
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | COUNTER | counter value
+   BYTE  | RESET   | reset line state
+   BYTE  | CLOCK   | clock line state
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/keyboard.c
+__MODULE__=KEYBOARD
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=1
+   Type | Name | Description
+   WORD ARRAY  | keyarr         |
+   WORD ARRAY  | rev_keyarr     |
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/keymap.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/main65816cpu.c
+__MODULE__=MAIN65816CPU
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=3
+   Type | Name | Description
+   CLOCK | main clock           |
+   UBYTE | a                    |
+   UBYTE | b                    |
+   WORD  | x                    |
+   WORD  | y                    |
+   WORD  | sp                   |
+   WORD  | dpr                  |
+   UBYTE | pbr                  |
+   UBYTE | dbr                  |
+   UBYTE | emul                 |
+   WORD  | pc                   |
+   UBYTE | status               |
+   DWORD | last_opcode_info     |
+
+TEXI TABLEFILE:MAIN65816CPU.snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/mainc64cpu.c
+__MODULE__=MAINC64CPU
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=5
+   Type | Name | Description
+   CLOCK | main clock           |
+   UBYTE | a                    |
+   UBYTE | x                    |
+   UBYTE | y                    |
+   UBYTE | sp                   |
+   WORD  | pc                   |
+   UBYTE | status               |
+   DWORD | last_opcode_info     |
+   DWORD | ane_log_level        |
+   DWORD | lxa_log_level        |
+   DWORD | maincpu_jammed       |
+   DWORD | maincpu_ba_low_flags |
+
+TEXI TABLEFILE:MAINC64CPU.snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/maincpu.c
+__MODULE__=MAINCPU
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=3
+   Type | Name | Description
+   CLOCK | main clock           |
+   UBYTE | a                    |
+   UBYTE | x                    |
+   UBYTE | y                    |
+   UBYTE | sp                   |
+   WORD  | pc                   |
+   UBYTE | status               |
+   BYTE  | r3                   |
+   BYTE  | r4                   |
+   BYTE  | r5                   |
+   BYTE  | r6                   |
+   BYTE  | r7                   |
+   BYTE  | r8                   |
+   BYTE  | r9                   |
+   BYTE  | r10                  |
+   BYTE  | r11                  |
+   BYTE  | r12                  |
+   BYTE  | r13                  |
+   BYTE  | r14                  |
+   BYTE  | r15                  |
+   BYTE  | ACM                  |
+   BYTE  | YXM                  |
+   4*BYTE| burst_cache          |
+   WORD  | burst_addr           |
+   DWORD | dtvclockneg          |
+   DWORD | last_opcode_info     |
+   DWORD | ane_log_level        |
+   DWORD | lxa_log_level        |
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/mainviccpu.c
+__MODULE__=MAINVIC20CPU
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=5
+   Type | Name | Description
+   CLOCK | main clock           |
+   UBYTE | a                    |
+   UBYTE | x                    |
+   UBYTE | y                    |
+   UBYTE | sp                   |
+   WORD  | pc                   |
+   UBYTE | status               |
+   DWORD | last_opcode_info     |
+   DWORD | ane_log_level        |
+   DWORD | lxa_log_level        |
+   DWORD | maincpu_jammed       |
+
+TEXI TABLEFILE:MAINVIC20CPU.snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/midi.c
+__MODULE__=MIDI
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | ctrl         | control
+   BYTE  | status       | status
+   BYTE  | rxdata       | RX data
+   BYTE  | rxdata       | TX data
+   BYTE  | last read    | last read value
+   DWORD | ticks        | midi ticks
+   BYTE  | intx         | intx
+   BYTE  | rx irq       | RX IRQ
+   BYTE  | rx irq       | TX IRQ
+   BYTE  | alarm active | alarm active flag
+   BYTE  | IRQ          | IRQ
+   DWORD | IRQ res      | IRQ res
+   BYTE  | mode         | midi mode
+   DWORD | int num      | interrupt number
+   DWORD | alarm clk    | alarm clock
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/monitor/monitor.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/monitor/monitor_binary.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/monitor/mon_breakpoint.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/monitor/mon_command.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/monitor/mon_parse.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/network.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/pet/6809.c
+__MODULE__=CPU6809
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=1
+   Type | Name | Description
+   CLOCK | clock        | the current CPU clock value. All other clock values are relative to this.
+   WORD  | x            | the x register
+   WORD  | y            | the y register
+   WORD  | u            | the u register
+   WORD  | s            | the s register
+   WORD  | pc           | the program counter register
+   BYTE  | dp           | the direct page register
+   BYTE  | cc           | the condition code register
+   BYTE  | a            | the a register
+   BYTE  | b            | the b register
+   WORD  | v            | the V register (for 6309 compatibility)
+   BYTE  | e            | the e register (for 6309 compatibility)
+   BYTE  | f            | the f register (for 6309 compatibility)
+   BYTE  | md           | the md register (for 6309 compatibility)
+
+TEXI TABLEFILE:CPU6809.snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/pet/pet-snapshot.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/pet/pet.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/pet/petacia1.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/pet/petdrive.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/pet/petdww.c
+__MODULE__=DWWMEM
+   Type | Name | Description
+   WORD  | RAM size     | size, 0 if not allocated
+   ARRAY | RAM data     | "RAM size" bytes RAM content
+
+TEXI TABLEFILE:DWWMEM.snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/pet/pethre.c
+__MODULE__=HREMEM
+   Type | Name | Description
+   WORD  | reg_E888             |
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:2
+__INFILE__=/home/crystal/vice/vice/doc/../src/pet/petmemsnapshot.c
+__MODULE__=PETMEM
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=3
+   Type | Name | Version | Description
+   UBYTE   | CONFIG      |       | Bits 0-3: 0 = 40 col PET without CRTC
+           |             |       |           1 = 40 col PET with CRTC
+           |             |       |           2 = 80 col PET (with CRTC)
+           |             |       |           3 = SuperPET
+           |             |       |           4 = 8096
+           |             |       |           5 = 8296
+           |             |       | Bit 6: 1= RAM at $9***
+           |             |       | Bit 7: 1= RAM at $A***
+   UBYTE   | KEYBOARD    |       | 0 = UK business
+           |             |       | 1 = graphics
+   UBYTE   | MEMSIZE     |       | memory size of low 32k in k (4,8,16,32)
+   UBYTE   | CONF8X96    |       | 8x96 configuration register
+   UBYTE   | SUPERPET    |       | SuperPET config:
+           |             |       | Bit 0: spet_ramen,  1= RAM enabled
+           |             |       |     1: spet_ramwp,  1= RAM write protected
+           |             |       |     2: spet_ctrlwp, 1= CTRL reg write prot.
+           |             |       |     3: spet_diag,   0= diag active
+           |             |       |     4-7: spet_bank, RAM block in use
+   ARRAY   | RAM         |       | 4-32k RAM (not 8296, dep. on MEMSIZE)
+   ARRAY   | VRAM        |       | 2/4k RAM (not 8296, dep in CONFIG)
+   ARRAY   | EXTRAM      |       | 64k (SuperPET and 8096 only)
+   ARRAY   | RAM         |       | 128k RAM (8296 only)
+   BYTE    | POSITIONAL  | 1.1+  | bit 0=0 = symbolic keyboard mapping
+           |             |       |      =1 = positional keyboard mapping
+   BYTE    | EOIBLANK    | 1.2+  | bit 0=0: EOI does not blank screen
+           |             |       |      =1: EOI does blank screen
+           |             |       | bit 1=0: Screen memory like 3000 and later
+           |             |       |       1: Screen memory like 2001
+   WORD    | CPU_SWITCH  | 1.3+  | 6502 / 6809 / PROG
+   BYTE    | VAL         | 1.3+  | 6702 dongle state information
+   BYTE    | PREVODD     | 1.3+  |
+   BYTE    | WANTODD     | 1.3+  |
+   WORD[8] | SHIFT       | 1.3+  |
+   BYTE    | SuperPET 2  | 1.3+  | Extra bits due to the Super-OS-9 MMU.
+           |             |       | Bit 5: FIRQ disabled.
+           |             |       | Bit 6: expansion memory in OS-9 flat mode.
+
+TEXI TABLEFILE:PETMEM.snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/pet/petmemsnapshot.c
+__MODULE__=PETROM
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   UBYTE | CONFIG     |       | Bit 0: 1= $9*** ROM included
+         |            |       |     1: 1= $a*** ROM included
+         |            |       |     2: 1= $b*** ROM included
+         |            |       |     3: 1= $e900-$efff ROM included
+         |            |       |     4: 1= $9000-$ffff 6809 ROM
+         |            |       |           and upper half CHARGEN ROM included
+   ARRAY | KERNAL     |       | 4k KERNAL ROM image $f000-$ffff
+   ARRAY | EDITOR     |       | 2k EDITOR ROM image $e000-$e800
+   ARRAY | CHARGEN    |       | 2k CHARGEN ROM image
+   ARRAY | ROM9       |       | 4k $9*** ROM (if CONFIG & 1)
+   ARRAY | ROMA       |       | 4k $A*** ROM (if CONFIG & 2)
+   ARRAY | ROMB       |       | 4k $B*** ROM (if CONFIG & 4)
+   ARRAY | ROMC       |       | 4k $C*** ROM
+   ARRAY | ROMD       |       | 4k $D*** ROM
+   ARRAY | ROME9      |       | 7 blocks $e900-$efff ROM (if CONFIG & 8)
+   ARRAY | ROM6809    | 1.1+  | 24k $A000-$FFFF ROM   (if CONFIG & 16)
+   ARRAY | CHARGEN(2) | 1.1+  | upper half of CHARGEN (if CONFIG & 16)
+
+TEXI TABLEFILE:PETROM.snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/pet/petpia1.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/pet/petpia2.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/piacore.c
+__MODULE__=PIA
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Description
+   UBYTE   | ORA         | Output register A
+   UBYTE   | DDRA        | Data Direction Register A
+   UBYTE   | CTRLA       | Control Register A
+   UBYTE   | ORB         | Output register B
+   UBYTE   | DDRB        | Data Direction Register B
+   UBYTE   | CTRLB       | Control Register B
+   UBYTE   | CABSTATE    |   Bit 7 = state of CA2, Bit 6 = state of CB2
+
+TEXI TABLEFILE:PIA.snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/plus4/cart/jacint1mb.c
+__MODULE__=CARTJACINT1MB
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | bankreg           |   0.1+  | state of banking register
+   ARRAY | ROM               |   0.1+  | 1MiB of ROM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/plus4/cart/magiccart.c
+__MODULE__=CARTMAGIC
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | bankreg           |   0.1+  | state of banking register
+   DWORD | filesize          |   0.1+  | size of the ROM
+   ARRAY | ROM               |   0.1+  | 512KiB/1MiB/2MiB of ROM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/plus4/cart/multicart.c
+__MODULE__=CARTMULTI
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | bankreg           |   0.1+  | state of banking register
+   DWORD | filesize          |   0.1+  | size of the ROM (combined)
+   ARRAY | ROM C1LO          |   0.1+  | 1MiB/2MiB of ROM data
+   ARRAY | ROM C1HI          |   0.1+  | 1MiB/2MiB of ROM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/plus4/cart/plus4-generic.c
+__MODULE__=CARTGENERICPLUS4
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=2
+   Type | Name | Version | Description
+   ARRAY | ROM C1LO          |   0.1+  | 16kiB of ROM data
+   ARRAY | ROM C1HI          |   0.1+  | 16kiB of ROM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/plus4/cart/plus4cart.c
+__MODULE__=PLUS4CART
+   Type | Name | Description
+   BYTE  | number_of_carts      | number of attached carts
+   BYTE  | mem_cartridge_type   | main type
+   ARRAY | cart_ids             | number_of_carts * DWORD cartridge IDs
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/plus4/cart/speedy.c
+__MODULE__=CARTSPEEDY
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   BYTE  | freeze_active     |   0.1+  | was freeze pressed?
+   BYTE  | freeze_active_q   |   0.1+  | was freeze activated?
+   ARRAY | ROM               |   0.1+  | 8KiB of ROM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/plus4/plus4-snapshot.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/plus4/plus4-stubs.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/plus4/plus4.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/plus4/plus4acia.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/plus4/plus4drive.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/plus4/plus4memcsory256k.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/plus4/plus4memhannes256k.c
+
+
+TABLES:2
+__INFILE__=/home/crystal/vice/vice/doc/../src/plus4/plus4memsnapshot.c
+__MODULE__=PLUS4MEM
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | pport.data       |
+   BYTE  | pport.dir        |
+   BYTE  | pport.data_out   |
+   BYTE  | mem_config       |
+   ARRAY | mem_ram          | PLUS4_RAM_SIZE
+
+TEXI TABLEFILE:PLUS4MEM.snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/plus4/plus4memsnapshot.c
+__MODULE__=PLUS4ROM
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Description
+   ARRAY | kernal rom      | PLUS4_KERNAL_ROM_SIZE
+   ARRAY | basic rom       | PLUS4_BASIC_ROM_SIZE
+   ARRAY | extromlo1       | PLUS4_BASIC_ROM_SIZE
+   ARRAY | extromlo3       | PLUS4_BASIC_ROM_SIZE
+   ARRAY | extromhi1       | PLUS4_KERNAL_ROM_SIZE
+   ARRAY | extromhi3       | PLUS4_KERNAL_ROM_SIZE
+
+TEXI TABLEFILE:PLUS4ROM.snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/plus4/plus4memsnapshot.c
+__INFILE__=/home/crystal/vice/vice/doc/../src/plus4/plus4memsnapshot.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/plus4/plus4parallel.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/plus4/plus4pio1.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/plus4/ted-snapshot.c
+__MODULE__=TED
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=5
+   Type | Name | Description
+    DWORD   | last_emulate_line_clk      |
+    BYTE    | AllowBadLines              |  flag: if true, bad lines can happen
+    BYTE    | BadLine                    |  flag: this is a bad line
+    BYTE    | Blank                      |  flag: draw lines in border color
+    40*BYTE | ColorBuf                   |  character memory buffer (loaded at bad line)
+    BYTE    | IdleState                  |  flag: idle state enabled
+    40*BYTE | MatrixBuf                  |  video matrix buffer (loaded at bad line)
+    DWORD   | RamBase                    |  pointer to the start of RAM seen by the TED
+    BYTE    | RasterCycle                |  current ted.raster cycle
+    WORD    | RasterLine                 |  current ted.raster line
+    64*BYTE | Registers                  |  TED registers
+    DWORD   | ted_raster_counter         |
+    WORD    | Vc                         |  internal TED counter
+    BYTE    | mem_counter_inc            |  (VcInc) value to add to Vc at the end of this line
+    WORD    | VcBase                     |  internal TED memory pointer
+    BYTE    | VideoInt                   |  status of TED IRQ (ted.irq_status)
+    DWORD   | FetchEventTick             |  ticks for the next "fetch" (DMA) event
+
+TEXI TABLEFILE:TED.snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/plus4/ted.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/printerdrv/interface-userport.c
+__MODULE__=UPPRINTER
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | value  | return value
+   BYTE  | strobe | strobe flag
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/raster/raster-snapshot.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/rs232drv/rsuser.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/scpu64/scpu64-snapshot.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/scpu64/scpu64-stubs.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/scpu64/scpu64.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/scpu64/scpu64cpu.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/scpu64/scpu64gluelogic.c
+__MODULE__=SCPU64GLUE
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | glue_logic_type     |
+   BYTE  | old_vbank           |
+   BYTE  | glue_alarm_active   |
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/scpu64/scpu64mem.c
+
+
+TABLES:2
+__INFILE__=/home/crystal/vice/vice/doc/../src/scpu64/scpu64memsnapshot.c
+__MODULE__=C64SCPUROM
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   ARRAY | mem_chargen_rom      | SCPU64_CHARGEN_ROM_SIZE
+   ARRAY | scpu64rom_scpu64_rom | SCPU64_SCPU64_ROM_MAXSIZE
+
+TEXI TABLEFILE:C64SCPUROM.snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/scpu64/scpu64memsnapshot.c
+__INFILE__=/home/crystal/vice/vice/doc/../src/scpu64/scpu64memsnapshot.c
+__MODULE__=C64SCPUMEM
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | mem_pport            |
+   BYTE  | mem_reg_soft_1mhz    |
+   BYTE  | mem_reg_sys_1mhz     |
+   BYTE  | mem_reg_hwenable     |
+   BYTE  | mem_reg_dosext       |
+   BYTE  | mem_reg_ramlink      |
+   BYTE  | mem_reg_optim        |
+   BYTE  | mem_reg_bootmap      |
+   BYTE  | mem_reg_simm         |
+   BYTE  | exrom                |
+   BYTE  | game                 |
+   DWORD | mem_simm_ram_mask    |
+   ARRAY | mem_ram              | SCPU64_RAM_SIZE
+   ARRAY | mem_sram             | SCPU64_SRAM_SIZE
+   ARRAY | mem_simm_ram         | mem_simm_ram_mask + 1
+
+TEXI TABLEFILE:C64SCPUMEM.snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/scpu64/scpu64memsnapshot.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/serial/fsdrive-snapshot.c
+__MODULE__=FSDRIVE
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/serial/fsdrive.c
+__MODULE__=FSDRIVE
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/sid/catweaselmkiii.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/sid/fastsid.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/sid/hardsid.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/sid/parsid.c
+
+
+TABLES:14
+__INFILE__=/home/crystal/vice/vice/doc/../src/sid/sid-snapshot.c
+__MODULE__=SID
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=5
+   Type | Name | Version | Description
+   BYTE  | sids     |   1.2+  | amount of extra sids
+   BYTE  | sound    |   1.2+  | sound active flag
+   BYTE  | engine   |   1.2+  | sound engine
+   BYTE  | model    |   1.4+  | SID model
+   ARRAY | sid data |   1.1+  | 32 BYTES of SID registers
+
+TEXI TABLEFILE:SID.snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/sid/sid-snapshot.c
+__MODULE__=SID2
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=5
+   Type | Name | Version | Description
+   WORD  | address  |   1.2+  | SID address
+   ARRAY | sid data |   1.2+  | 32 BYTES of SID registers
+
+TEXI TABLEFILE:snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/sid/sid-snapshot.c
+__MODULE__=SID3
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=5
+   Type | Name | Version | Description
+   WORD  | address  |   1.2+  | SID address
+   ARRAY | sid data |   1.2+  | 32 BYTES of SID registers
+
+TEXI TABLEFILE:snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/sid/sid-snapshot.c
+__MODULE__=SID4
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=5
+   Type | Name | Version | Description
+   WORD  | address  |   1.4+  | SID address
+   ARRAY | sid data |   1.4+  | 32 BYTES of SID registers
+
+TEXI TABLEFILE:snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/sid/sid-snapshot.c
+__MODULE__=SID5
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=5
+   Type | Name | Version | Description
+   WORD  | address  |   1.5+  | SID address
+   ARRAY | sid data |   1.5+  | 32 BYTES of SID registers
+
+TEXI TABLEFILE:snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/sid/sid-snapshot.c
+__MODULE__=SID6
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=5
+   Type | Name | Version | Description
+   WORD  | address  |   1.5+  | SID address
+   ARRAY | sid data |   1.5+  | 32 BYTES of SID registers
+
+TEXI TABLEFILE:snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/sid/sid-snapshot.c
+__MODULE__=SID7
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=5
+   Type | Name | Version | Description
+   WORD  | address  |   1.5+  | SID address
+   ARRAY | sid data |   1.5+  | 32 BYTES of SID registers
+
+TEXI TABLEFILE:snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/sid/sid-snapshot.c
+__MODULE__=SID8
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=5
+   Type | Name | Version | Description
+   WORD  | address  |   1.5+  | SID address
+   ARRAY | sid data |   1.5+  | 32 BYTES of SID registers
+
+TEXI TABLEFILE:snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/sid/sid-snapshot.c
+__MODULE__=SIDFASTSID
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=4
+   Type | Name | Description
+   DWORD  | factor          | speed factor
+   ARRAY  | d               | 32 BYTES of register data
+   BYTE   | has3            | voice 3 enable flag
+   BYTE   | vol             | 4-bit volume value
+   ARRAY  | adrs            | 16 DWORDS of ADSR counter step values for each adsr values
+   ARRAY  | sz              | 16 DWORDS of sustain values compared to 31-bit ADSR counter
+   DWORD  | speed1          | internal constant used for sample rate dependent calculations
+   BYTE   | update          | structure needs updating flag
+   BYTE   | newsid          | new SID flag
+   BYTE   | laststore       | last store
+   BYTE   | laststorebit    | last store bit
+   DWORD  | laststoreclk    | CLOCK of the last store
+   DWORD  | emulatefilter   | emulate filters flag
+   DOUBLE | filterDy        | filter Dy
+   DOUBLE | filterResDy     | filter Res Dy
+   BYTE   | filterType      | filter type
+   BYTE   | filterCurType   | current filter type
+   WORD   | filterValue     | filter value
+   ARRAY  | voice nr        | 3 DWORDS of voice numbers
+   ARRAY  | voice f         | 3 DWORDS of voice counter value data
+   ARRAY  | voice fs        | 3 DWORDS of voice counter step data
+   ARRAY  | voice noise     | 3 BYTES of voice noise flag data
+   ARRAY  | voice adsr      | 3 DWORDS of voice 31-bit ADSR counter data
+   ARRAY  | voice adsrs     | 3 DWORDS of voice ADSR counter step data
+   ARRAY  | voice adsrz     | 3 DWORDS of voice ADSR sustain level compared to the 31-bit counter data
+   ARRAY  | voice sync      | 3 BYTES of voice hard sync flag data
+   ARRAY  | voice filter    | 3 BYTES of voice filter flag data
+   ARRAY  | voice update    | 3 BYTES of voice structure needs updating flag data
+   ARRAY  | voice gateflip  | 3 BYTES of voice do multiple gate flips flag data
+   ARRAY  | voice adsrm     | 3 BYTES of voice ADSR mode data
+   ARRAY  | voice attack    | 3 BYTES of voice 4-bit attack value data
+   ARRAY  | voice decay     | 3 BYTES of voice 4-bit decay value data
+   ARRAY  | voice sustain   | 3 BYTES of voice 4-bit sustain value data
+   ARRAY  | voice release   | 3 BYTES of voice 4-bit release value data
+   ARRAY  | voice rv        | 3 DWORDS of voice noise shift reguster data
+   ARRAY  | voice wt        | 3 BYTES of voice wavetable index data
+   ARRAY  | voice wt_offset | 3 WORDS of voice wavetable offset data
+   ARRAY  | voice wtpf      | 3 DWORDS of voice 32-bit offset data
+   ARRAY  | voice wtl       | 3 DWORDS of voice wavetable length data
+   ARRAY  | voice wtr[0]    | 3 WORDS of ring modulation flag data
+   ARRAY  | voice wtr[1]    | 3 WORDS of ring modulation flag data
+   ARRAY  | voice filtIO    | 3 BYTES of filtIO data
+   ARRAY  | voice filtLow   | 3 DOUBLES of filtLow data
+   ARRAY  | voice filtRef   | 3 DOUBLES of filtRef data
+
+TEXI TABLEFILE:snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/sid/sid-snapshot.c
+__MODULE__=SIDRESID
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=4
+   Type | Name | Description
+   ARRAY | regs                       | 32 BYTES of SID registers
+   BYTE  | bus value                  | bus value
+   DWORD | bus value ttl              | bus value ttl
+   ARRAY | accumulator                | 3 DWORDS of accumulator data
+   ARRAY | shift register             | 3 DWORDS of shift register data
+   ARRAY | rate counter               | 3 WORDS of rate counter data
+   ARRAY | exponential counter        | 3 WORDS of exponential counter data
+   ARRAY | envelope counter           | 3 BYTES of envelope counter data
+   ARRAY | envelope state             | 3 BYTES of envelope state data
+   ARRAY | hold zero                  | 3 BYTES of hold zero flag data
+   ARRAY | rate counter period        | 3 WORDS of rate counter period data
+   ARRAY | exponential counter period | 3 WORDS of exponential counter period data
+   ARRAY | envelope pipeline          | 3 BYTES of envelope pipeline data
+   ARRAY | shift pipeline             | 3 BYTES of shift pipeline data
+   ARRAY | shift register reset       | 3 DWORDS of shift register reset data
+   ARRAY | floating output ttl        | 3 DWORDS of floating output ttl data
+   ARRAY | pulse output               | 3 WORDS of pulse output data
+   BYTE  | write pipeline             | write pipeline
+   BYTE  | write address              | write address
+   BYTE  | voice mask                 | voice mask
+
+TEXI TABLEFILE:SIDRESID.snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/sid/sid-snapshot.c
+__MODULE__=SIDCWMKIII
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=4
+   Type | Name | Description
+   BYTE  | ntsc              | NTSC flag
+   DWORD | cycles per second | cycles per second
+   ARRAY | registers         | 32 BYTES of register data
+
+TEXI TABLEFILE:snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/sid/sid-snapshot.c
+__MODULE__=SIDHARDSID
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=4
+   Type | Name | Version | Description
+   ARRAY | registers          |   1.2+  | 32 BYTES of register data
+   DWORD | main clock         |   1.2+  | main clock
+   DWORD | alarm clock        |   1.2+  | alarm clock
+   DWORD | last access clock  |   1.2+  | last access clock
+   DWORD | last access ms     |   1.2+  | last access ms
+   DWORD | last access chipno |   1.2+  | last access chipno
+   DWORD | chip used          |   1.2+  | chip used
+   ARRAY | device map         |   1.2+  | 2 DWORDS of device map data
+   ARRAY | extra device map   |   1.3   | 2 DWORDS of device map data
+
+TEXI TABLEFILE:snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/sid/sid-snapshot.c
+__MODULE__=SIDPARSID
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=4
+   Type | Name | Description
+   ARRAY | registers | 32 BYTES of register data
+   BYTE  | ctr port  | control port state
+
+TEXI TABLEFILE:snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/sid/sid-snapshot.c
+__MODULE__=SIDUSBSID
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=4
+   Type | Name | Description
+   ARRAY | registers            | (0x20 * 4) BYTES of register data
+   QWORD | main clk             |
+   QWORD | alarm clk            |
+   BYTE  | lastaccess_chipno    |
+
+TEXI TABLEFILE:snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/sid/sid-snapshot.c
+__INFILE__=/home/crystal/vice/vice/doc/../src/sid/sid-snapshot.c
+__INFILE__=/home/crystal/vice/vice/doc/../src/sid/sid-snapshot.c
+__INFILE__=/home/crystal/vice/vice/doc/../src/sid/sid-snapshot.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/sid/sid.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/sid/usbsid.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/snapshot.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/sound.c
+
+
+TABLES:3
+__INFILE__=/home/crystal/vice/vice/doc/../src/tape/tape-snapshot.c
+__INFILE__=/home/crystal/vice/vice/doc/../src/tape/tape-snapshot.c
+__MODULE__=T64IMAGE
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=1
+   Type | Name | Description
+   DWORD | t64_size                         |
+   ARRAY | t64 file data                    |
+
+TEXI TABLEFILE:snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/tape/tape-snapshot.c
+__INFILE__=/home/crystal/vice/vice/doc/../src/tape/tape-snapshot.c
+__INFILE__=/home/crystal/vice/vice/doc/../src/tape/tape-snapshot.c
+__MODULE__=TAPIMAGE
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Description
+   DWORD | tap_size                         |
+   ARRAY | tap file data                    |
+
+TEXI TABLEFILE:snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/tape/tape-snapshot.c
+__INFILE__=/home/crystal/vice/vice/doc/../src/tape/tape-snapshot.c
+__INFILE__=/home/crystal/vice/vice/doc/../src/tape/tape-snapshot.c
+__MODULE__=TAPE
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | read_only                        |
+   BYTE  | type                             |
+   BYTE  | t64->current_file_number         |
+   DWORD | t64->current_file_seek_position  |
+   DWORD | tap->size                        |
+   BYTE  | tap->version                     |
+   BYTE  | tap->system                      |
+   DWORD | tap->current_file_seek_position  |
+   DWORD | tap->offset                      |
+   DWORD | tap->cycle_counter               |
+   DWORD | tap->cycle_counter_total         |
+   DWORD | tap->counter                     |
+   DWORD | tap->mode                        |
+   DWORD | tap->read_only                   |
+   DWORD | tap->has_changed                 |
+
+TEXI TABLEFILE:snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/tape/tape-snapshot.c
+   Type | Name | Description
+   BYTE  | read_only                        |
+   BYTE  | type                             |
+   BYTE  | t64->current_file_number         |
+   DWORD | t64->current_file_seek_position  |
+   DWORD | tap->size                        |
+   BYTE  | tap->version                     |
+   BYTE  | tap->system                      |
+   DWORD | tap->current_file_seek_position  |
+   DWORD | tap->offset                      |
+   DWORD | tap->cycle_counter               |
+   DWORD | tap->cycle_counter_total         |
+   DWORD | tap->counter                     |
+   DWORD | tap->mode                        |
+   DWORD | tap->read_only                   |
+   DWORD | tap->has_changed                 |
+
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/tapeport/cp-clockf83.c
+__MODULE__=TP_CP_CLOCK_F83
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | motor | motor state
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/tapeport/dtl-basic-dongle.c
+__MODULE__=TP_DTLBASIC
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   DWORD | counter | counter
+   DWORD | write   | write line state
+   DWORD | sense   | sense line state
+   DWORD | state   | device state
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/tapeport/sense-dongle.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/tapeport/tapecart.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/tapeport/tapeport.c
+__MODULE__=TAPEPORT
+   Type | Name | Description
+   BYTE  | active             | tapeport active flag
+   BYTE  | id1                | device id port 1
+   BYTE  | id2                | device id port 2
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/tapeport/tape_diag_586220_harness.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/tapeport/wordcraft-dongle.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/tools/cartconv/c64-cartridges.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/userport/userport.c
+__MODULE__=USERPORT
+   Type | Name | Description
+   BYTE  | active             | userport active flag
+   BYTE  | id                 | device id
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/userport/userport_4bit_sampler.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/userport/userport_8bss.c
+__MODULE__=UP8BSS
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | channel | channel flag
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/userport/userport_dac.c
+__MODULE__=UPDAC
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | sound data | sound data
+   BYTE  | voice      | voice
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/userport/userport_diag_586220_harness.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/userport/userport_diag_pin.c
+__MODULE__=UPDIAGPIN
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | address | current state of the diag pin
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/userport/userport_digimax.c
+__MODULE__=UPDIGIMAX
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | address | current register address
+   ARRAY | sound   | 4 BYTES of sound data
+   BYTE  | voice 0 | voice 0 data
+   BYTE  | voice 1 | voice 1 data
+   BYTE  | voice 2 | voice 2 data
+   BYTE  | voice 3 | voice 3 data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/userport/userport_funmp3.c
+
+
+TABLES:3
+__INFILE__=/home/crystal/vice/vice/doc/../src/userport/userport_hks_joystick.c
+__MODULE__=UPJOYHIT
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | retval | current serial port brigde value
+
+TEXI TABLEFILE:snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/userport/userport_hks_joystick.c
+__MODULE__=UPJOYKINGSOFT
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | retval | current serial port brigde value
+
+TEXI TABLEFILE:snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/userport/userport_hks_joystick.c
+__MODULE__=UPJOYSTARBYTE
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | retval | current serial port bridge value
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/userport/userport_hummer_joystick.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/userport/userport_io_sim.c
+__MODULE__=UPIOSIM
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=2
+   Type | Name | Description
+   BYTE  | PBX IN  | port b in state
+   BYTE  | PBX OUT | port b out state
+   BYTE  | PAX IN  | port a in state
+   BYTE  | PAX OUT | port a out state
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/userport/userport_joystick.c
+__MODULE__=UP_JOY_CGA
+   Type | Name | Description
+   BYTE  | select | joyport select
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/userport/userport_petscii_snespad.c
+__MODULE__=UPPETSCII
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=2
+   Type | Name | Description
+   BYTE  | COUNTER | current count
+   BYTE  | CLOCK   | clock line state
+   BYTE  | LATCH   | latch line state
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/userport/userport_ps2mouse.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/userport/userport_rtc_58321a.c
+__MODULE__=UP_RTC_58321A
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | read    | read line active
+   BYTE  | rtcsave | save rtc offset when detaching
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/userport/userport_rtc_ds1307.c
+__MODULE__=UPRTCDS1307
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  |   SDA    | SDA line state
+   BYTE  |   SCL    | SCL line state
+   BYTE  | rtc save | save rtc offset upon detacht
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/userport/userport_spt_joystick.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/userport/userport_superpad64.c
+__MODULE__=UPSUPERPAD64
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | COUNTER | current count
+   BYTE  | LATCH   | latch line state
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/userport/userport_synergy_joystick.c
+__MODULE__=UPJOYSYNERGY
+   Type | Name | Description
+   BYTE  | select | joyport select
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/userport/userport_v8_joystick.c
+__MODULE__=UPJOYV8
+   Type | Name | Description
+   BYTE  | select | joyport select
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/userport/userport_wic64.c
+__MODULE__=UPWIC64
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | input_state    |
+   BYTE  | input_length   |
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/userport/userport_woj_joystick.c
+__MODULE__=UP_JOY_WOJ
+   Type | Name | Description
+   BYTE  | select | joyport select
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/vdc/vdc-snapshot.c
+__MODULE__=VDC
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/vdc/vdc.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/vdrive/vdrive-snapshot.c
+__MODULE__=VDRIVEIMAGE
+__SNAP_MAJOR__=2
+__SNAP_MINOR__=0
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/vdrive/vdrive.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/vic20/cart/behrbonz.c
+__MODULE__=BEHRBONZ
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=2
+   Type | Name | Description
+   BYTE  | bank_reg         |
+   BYTE  | reset_mode       |
+   BYTE  | write_once       |
+   ARRAY | cart_rom         | 0x200000 bytes of ROM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/vic20/cart/finalexpansion.c
+__MODULE__=FINALEXPANSION
+__SNAP_MAJOR__=2
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | register_a       |
+   BYTE  | register_b       |
+   BYTE  | lock_bit         |
+   ARRAY | cart_ram         | CART_RAM_SIZE
+   ARRAY | flash_data       | CART_ROM_SIZE
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:2
+__INFILE__=/home/crystal/vice/vice/doc/../src/vic20/cart/ioramcart.c
+__MODULE__=IO2RAMCART
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   ARRAY | RAM  | 1024 BYTES of RAM data
+
+TEXI TABLEFILE:snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/vic20/cart/ioramcart.c
+__MODULE__=IO3RAMCART
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   ARRAY | RAM  | 1024 BYTES of RAM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/vic20/cart/megacart.c
+__MODULE__=MEGACART
+__SNAP_MAJOR__=2
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | bank_low_reg     |
+   BYTE  | bank_high_reg    |
+   BYTE  | oe_flop          |
+   BYTE  | nvram_en_flop    |
+   ARRAY | cart_ram         | 0x8000 bytes of RAM data
+   ARRAY | cart_rom         | 0x200000 bytes of ROM data
+   ARRAY | cart_nvram       | 0x2000 bytes of NVRAM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/vic20/cart/mikroassembler.c
+__MODULE__=MIKROASSEMBLER
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Description
+   ARRAY | cart_ram         | 0x400 * 3 bytes of RAM data
+   ARRAY | cart_rom         | 0x400 * 8 bytes of ROM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/vic20/cart/minimon.c
+__MODULE__=MINIMON
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   BYTE  | active            | cartridge active flag
+   BYTE  | io rom            | cartridge rom in io
+   BYTE  | bios write        | bios writable flag
+   BYTE  | image readonly    | image read-only flag
+   BYTE  | bios changed      | bios changed flag
+   ARRAY | BIOS              | 2048 bytes of BIOS data ($9800-$9FFF)
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/vic20/cart/rabbit.c
+__MODULE__=RABBIT
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   ARRAY | cart_rom | 2 * 0x400 bytes of ROM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/vic20/cart/superexpander.c
+__MODULE__=SUPEREXPANDER
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=0
+   Type | Name | Description
+   ARRAY | cart_ram             | 0x400 * 3 bytes of RAM data
+   ARRAY | cart_rom             | 0x400 * 4 bytes of ROM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/vic20/cart/ultimem.c
+__MODULE__=ULTIMEM
+__SNAP_MAJOR__=2
+__SNAP_MINOR__=0
+   Type | Name | Description
+   ARRAY | ultimem          |
+   ARRAY | cart_ram         |
+   ARRAY | cart_rom         |
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/vic20/cart/vic-fp.c
+__MODULE__=VICFLASHPLUGIN
+__SNAP_MAJOR__=2
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | cart_bank_reg    |
+   BYTE  | cart_cfg_reg     |
+   ARRAY | cart_ram         | CART_RAM_SIZE
+   ARRAY | cart_rom         | CART_ROM_SIZE
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/vic20/cart/vic20-generic.c
+__MODULE__=CARTGENERICVIC20
+__SNAP_MAJOR__=2
+__SNAP_MINOR__=1
+   Type | Name | Description
+   DWORD | generic_ram_blocks   | flags for ram blocks
+   DWORD | generic_rom_blocks   | flags for rom blocks
+   ARRAY | cart_ram             | 0x9000 bytes of RAM data
+   ARRAY | cart_rom             | 0x9000 bytes of ROM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/vic20/cart/vic20-ieee488.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/vic20/cart/vic20-midi.c
+__MODULE__=CARTMIDI
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   BYTE  | mode | midi mode
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/vic20/cart/vic20-sidcart.c
+__MODULE__=SIDCART
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=0
+   Type | Name | Description
+   WORD  | address | sidcart address
+   BYTE  | clock   | sidcart clock
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/vic20/cart/vic20cart.c
+__MODULE__=VIC20CART
+__SNAP_MAJOR__=2
+__SNAP_MINOR__=1
+   Type | Name | Description
+   DWORD | vic20cart_type       |
+   BYTE  | number_of_carts      | number of attached carts
+   ARRAY | cart_ids             | number_of_carts * DWORD cartridge IDs
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/vic20/cart/writenow.c
+__MODULE__=WRITENOW
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=1
+   Type | Name | Description
+   ARRAY | cart_rom   | 8 * 0x400 bytes of ROM data
+
+TEXI TABLEFILE:snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/vic20/vic-snapshot.c
+__MODULE__=VIC-I
+__SNAP_MAJOR__=0
+__SNAP_MINOR__=4
+   Type | Name | Description
+   DWORD    | interlace_enabled         |
+   DWORD    | interlace_field           |
+   CLOCK    | framestart_cycle          |
+   BYTE     | raster_cycle              |
+   WORD     | raster_line               |
+   WORD     | area                      |
+   WORD     | fetch_state               |
+   DWORD    | raster_line               |
+   DWORD    | text_cols                 |
+   DWORD    | text_lines                |
+   DWORD    | pending_text_cols         |
+   DWORD    | line_was_blank            |
+   DWORD    | memptr                    |
+   DWORD    | memptr_inc                |
+   DWORD    | row_counter               |
+   DWORD    | buf_offset                |
+   BYTE     | light_pen.state           |
+   BYTE     | light_pen.triggered       |
+   DWORD    | light_pen.x               |
+   DWORD    | light_pen.y               |
+   DWORD    | light_pen.x_extra_bits    |
+   CLOCK    | light_pen.trigger_cycle   |
+   BYTE     | vbuf                      |
+   ARRAY    | color ram                 | 0x400 bytes of color ram data ($9400 - $97ff) FIXME: is this really correct?
+   10*BYTE  | registers                 | 10 VIC-I registers
+
+TEXI TABLEFILE:VIC-I.snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/vic20/vic.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/vic20/vic20-snapshot.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/vic20/vic20.c
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/vic20/vic20drive.c
+
+
+TABLES:2
+__INFILE__=/home/crystal/vice/vice/doc/../src/vic20/vic20memsnapshot.c
+__MODULE__=VIC20MEM
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   UBYTE | CONFIG          |       | Bit 0: 1 = expansion block 0 RAM enabled
+         |                 |       |     1: 1 = expansion block 1 RAM enabled
+         |                 |       |     2: 1 = expansion block 2 RAM enabled
+         |                 |       |     3: 1 = expansion block 3 RAM enabled
+         |                 |       |     5: 1 = expansion block 5 RAM enabled
+   UBYTE | cpu_last_data   | 1.1+  |
+   UBYTE | v_bus_last_data | 1.1+  |
+   UBYTE | v_bus_last_high | 1.1+  |
+   ARRAY | RAM0            |       | 1k RAM $0000-$03ff
+   ARRAY | RAM1            |       | 4k RAM $1000-$1fff
+   ARRAY | BLK0            |       | 3k RAM $0400-$0fff (if blk 0 RAM enabled)
+   ARRAY | BLK1            |       | 8k RAM $2000-$3fff (if blk 1 RAM enabled)
+   ARRAY | BLK2            |       | 8k RAM $4000-$5fff (if blk 2 RAM enabled)
+   ARRAY | BLK3            |       | 8k RAM $6000-$7fff (if blk 3 RAM enabled)
+   ARRAY | BLK5            |       | 8k RAM $A000-$Bfff (if blk 5 RAM enabled)
+
+TEXI TABLEFILE:VIC20MEM.snapshots.texi
+__INFILE__=/home/crystal/vice/vice/doc/../src/vic20/vic20memsnapshot.c
+__MODULE__=VIC20ROM
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=1
+   Type | Name | Version | Description
+   UBYTE | CONFIG          |       | Bit 0: 1 = ROM block $2*** enabled
+         |                 |       |     1: 1 = ROM block $3*** enabled
+         |                 |       |     2: 1 = ROM block $4*** enabled
+         |                 |       |     3: 1 = ROM block $5*** enabled
+         |                 |       |     4: 1 = ROM block $6*** enabled
+         |                 |       |     5: 1 = ROM block $7*** enabled
+         |                 |       |     6: 1 = ROM block $A*** enabled
+         |                 |       |     7: 1 = ROM block $B*** enabled
+   ARRAY | KERNAL          |       | 8k KERNAL ROM $e000-$ffff
+   ARRAY | BASIC           |       | 8k BASIC ROM $c000-$dfff
+   ARRAY | CHARGEN         |       | 4k CHARGEN ROM
+   ARRAY | BLK1A           |       | 4k ROM $2*** (if CONFIG & 1)
+   ARRAY | BLK1B           |       | 4k ROM $3*** (if CONFIG & 2)
+   ARRAY | BLK3A           |       | 4k ROM $6*** (if CONFIG & 16)
+   ARRAY | BLK3B           |       | 4k ROM $7*** (if CONFIG & 32)
+   ARRAY | BLK5A           |       | 4k ROM $A*** (if CONFIG & 64)
+   ARRAY | BLK5B           |       | 4k ROM $B*** (if CONFIG & 128)
+   ARRAY | BLK2A           | 1.1+  | 4k ROM $4*** (if CONFIG & 4)
+   ARRAY | BLK2B           | 1.1+  | 4k ROM $5*** (if CONFIG & 8)
+
+TEXI TABLEFILE:VIC20ROM.snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/vicii/vicii-snapshot.c
+__MODULE__=VIC-II
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=3
+   Type | Name | Description
+   BYTE     | AllowBadLines     | flag: if true, bad lines can happen
+   BYTE     | BadLine           | flag: this is a bad line
+   BYTE     | Blank             | flag: draw lines in border color
+   ARRAY    | ColorBuf          | 40 bytes, character memory buffer (loaded at bad line)
+   ARRAY    | ColorRam          | 1024 bytes,  contents of color RAM
+   BYTE     | IdleState         | flag: idle state enabled
+   BYTE     | LPTrigger         | flag: light pen has been triggered
+   BYTE     | LPX               | light pen X
+   BYTE     | LPY               | light pen Y
+   ARRAY    | MatrixBuf         | 40 bytes, video matrix buffer (loaded at bad line)
+   BYTE     | NewSpriteDmaMask  | value for SpriteDmaMask after drawing sprites
+   DWORD    | RamBase           | pointer to the start of RAM seen by the VIC
+   BYTE     | RasterCycle       | current vicii.raster cycle
+   WORD     | RasterLine        | current vicii.raster line
+   64*BYTE  | Registers         | VIC-II registers
+   BYTE     | SbCollMask        | sprite-background collisions so far
+   BYTE     | SpriteDmaMask     | sprites having DMA turned on
+   BYTE     | SsCollMask        | sprite-sprite collisions so far
+   BYTE     | VBank             | location of memory bank
+   WORD     | Vc                | internal VIC-II counter
+   BYTE     | VcAdd             | value to add to Vc at the end of this line (vicii.mem_counter_inc)
+   WORD     | VcBase            | internal VIC-II memory pointer
+   BYTE     | VideoInt          | status of VIC-II IRQ (vicii.irq_status)
+   BYTE     | SpriteXMemPtr     | sprite memory pointer
+   BYTE     | SpriteXMemPtrInc  | value to add to the MemPtr after fetch
+   BYTE     | SpriteXExpFlipFlop| sprite expansion flip-flop
+   DWORD    | FetchEventTick    | ticks for the next "fetch" (DMA) event
+   BYTE     | FetchEventType    | type of event (0: matrix, 1: sprite check, 2: sprite fetch)
+
+TEXI TABLEFILE:VIC-II.snapshots.texi
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/vicii/viciidtv-snapshot.c
+__MODULE__=DTVVIC
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=3
+   Type | Name | Description
+   BYTE    | AllowBadLines          | flag: if true, bad lines can happen
+   BYTE    | BadLine                | flag: this is a bad line
+   BYTE    | Blank                  | flag: draw lines in border color
+   40*BYTE | ColorBuf               | character memory buffer (loaded at bad line)
+   BYTE    | IdleState              | flag: idle state enabled
+   BYTE    | LPTrigger              | flag: light pen has been triggered
+   BYTE    | LPX                    | light pen X
+   BYTE    | LPY                    | light pen Y
+   40*BYTE | MatrixBuf              | video matrix buffer (loaded at bad line)
+   BYTE    | NewSpriteDmaMask       | value for SpriteDmaMask after drawing sprites
+   DWORD   | RamBase                | pointer to the start of RAM seen by the VIC
+   BYTE    | RasterCycle            | current vicii.raster cycle
+   WORD    | RasterLine             | current vicii.raster line
+   80*BYTE | Registers              | VIC-II registers
+   x       | DTVstuff               | DTV stuff goes here
+   BYTE    | SbCollMask             | sprite-background collisions so far
+   BYTE    | SpriteDmaMask          | sprites having DMA turned on
+   BYTE    | SsCollMask             | sprite-sprite collisions so far
+   BYTE    | VBank                  | location of memory bank
+   WORD    | Vc                     | internal VIC-II counter
+   BYTE    | VcAdd                  | value to add to Vc at the end of this line (vicii.mem_counter_inc)
+   WORD    | VcBase                 | internal VIC-II memory pointer
+   BYTE    | VideoInt               | status of VIC-II IRQ (vicii.irq_status)
+   BYTE    | SpriteXMemPtr          | sprite memory pointer
+   BYTE    | SpriteXMemPtrInc       | value to add to the MemPtr after fetch
+   BYTE    | SpriteXExpFlipFlop     | sprite expansion flip-flop
+   DWORD   | FetchEventTick         | ticks for the next "fetch" (DMA) event
+   BYTE    | FetchEventType         | type of event (0: matrix, 1: sprite check, 2: sprite fetch)
+
+TEXI TABLEFILE:DTVVIC.snapshots.texi
+
+
+TABLES:0
+no table:  /home/crystal/vice/vice/doc/../src/viciisc/vicii-draw-cycle.c
+
+
+TABLES:1
+__INFILE__=/home/crystal/vice/vice/doc/../src/viciisc/vicii-snapshot.c
+__MODULE__=VIC-IISC
+__SNAP_MAJOR__=1
+__SNAP_MINOR__=4
+   Type | Name | Description
+   ARRAY    | regs                          | 0x40 BYTES state from vicii_s, in the same order
+   DWORD    | raster_cycle                  |
+   DWORD    | cycle_flags                   |
+   DWORD    | raster_line                   |
+   BYTE     | start_of_frame                |
+   BYTE     | irq_status                    |
+   DWORD    | raster_irq_line               |
+   BYTE     | raster_irq_triggered          |
+   ARRAY    | vbuf                          | VICII_SCREEN_TEXTCOLS
+   ARRAY    | cbuf                          | VICII_SCREEN_TEXTCOLS
+   BYTE     | gbuf                          |
+   DWORD    | dbuf_offset                   |
+   ARRAY    | dbuf                          | VICII_DRAW_BUFFER_SIZE
+   DWORD    | ysmooth                       |
+   BYTE     | allow_bad_lines               |
+   BYTE     | sprite_sprite_collisions      |
+   BYTE     | sprite_background_collisions  |
+   BYTE     | clear_collisions              |
+   DWORD    | idle_state                    |
+   DWORD    | vcbase                        |
+   DWORD    | vc                            |
+   DWORD    | rc                            |
+   DWORD    | vmli                          |
+   DWORD    | bad_line                      |
+   BYTE     | light_pen.state               |
+   BYTE     | light_pen.triggered           |
+   DWORD    | light_pen.x                   |
+   DWORD    | light_pen.y                   |
+   DWORD    | light_pen.x_extra_bits        |
+   CLOCK    | light_pen.trigger_cycle       |
+   BYTE     | reg11_delay                   |
+   DWORD    | prefetch_cycles               |
+   DWORD    | sprite_display_bits           |
+   BYTE     | sprite_dma                    |
+   BYTE     | last_color_reg                |
+   BYTE     | last_color_value              |
+   BYTE     | last_read_phi1                |
+   BYTE     | last_bus_phi2                 |
+   BYTE     | vborder                       |
+   BYTE     | set_vborder                   |
+   BYTE     | main_border                   |
+   BYTE     | refresh_counter               |
+   ARRAY    | color_ram                     | 0x400
+
+TEXI TABLEFILE:VIC-IISC.snapshots.texi
+
+

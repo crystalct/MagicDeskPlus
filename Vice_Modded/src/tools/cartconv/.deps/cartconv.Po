@@ -1,0 +1,96 @@
+cartconv.o: cartconv.c ../../../src/vice.h ../../../src/config.h \
+ C:/msys64/ucrt64/include/assert.h C:/msys64/ucrt64/include/crtdefs.h \
+ C:/msys64/ucrt64/include/corecrt.h C:/msys64/ucrt64/include/_mingw.h \
+ C:/msys64/ucrt64/include/_mingw_mac.h \
+ C:/msys64/ucrt64/include/_mingw_secapi.h \
+ C:/msys64/ucrt64/include/vadefs.h C:/msys64/ucrt64/include/ctype.h \
+ C:/msys64/ucrt64/include/corecrt_wctype.h \
+ C:/msys64/ucrt64/include/stdlib.h \
+ C:/msys64/ucrt64/include/corecrt_wstdlib.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/limits.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/syslimits.h \
+ C:/msys64/ucrt64/include/limits.h \
+ C:/msys64/ucrt64/include/sec_api/stdlib_s.h \
+ C:/msys64/ucrt64/include/malloc.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/mm_malloc.h \
+ C:/msys64/ucrt64/include/errno.h C:/msys64/ucrt64/include/stdio.h \
+ C:/msys64/ucrt64/include/corecrt_stdio_config.h \
+ C:/msys64/ucrt64/include/_mingw_off_t.h \
+ C:/msys64/ucrt64/include/swprintf.inl \
+ C:/msys64/ucrt64/include/sec_api/stdio_s.h \
+ C:/msys64/ucrt64/include/string.h \
+ C:/msys64/ucrt64/include/corecrt_memory.h \
+ C:/msys64/ucrt64/include/sec_api/string_s.h \
+ C:/msys64/ucrt64/include/strings.h C:/msys64/ucrt64/include/unistd.h \
+ C:/msys64/ucrt64/include/io.h C:/msys64/ucrt64/include/process.h \
+ C:/msys64/ucrt64/include/corecrt_startup.h \
+ C:/msys64/ucrt64/include/sys/types.h C:/msys64/ucrt64/include/getopt.h \
+ C:/msys64/ucrt64/include/pthread_unistd.h ../../../src/version.h \
+ ../../../src/cartridge.h ../../../src/types.h ../../../src/vice.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdbool.h \
+ C:/msys64/ucrt64/include/inttypes.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdint.h \
+ C:/msys64/ucrt64/include/stdint.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stddef.h \
+ C:/msys64/ucrt64/include/stddef.h ../../../src/sound.h \
+ ../../../src/machine.h cartconv.h c64-cartridges.h c64-saver.h \
+ c128-cartridges.h c128-saver.h cbm2-cartridges.h cbm2-saver.h crt.h \
+ plus4-cartridges.h vic20-cartridges.h
+../../../src/vice.h:
+../../../src/config.h:
+C:/msys64/ucrt64/include/assert.h:
+C:/msys64/ucrt64/include/crtdefs.h:
+C:/msys64/ucrt64/include/corecrt.h:
+C:/msys64/ucrt64/include/_mingw.h:
+C:/msys64/ucrt64/include/_mingw_mac.h:
+C:/msys64/ucrt64/include/_mingw_secapi.h:
+C:/msys64/ucrt64/include/vadefs.h:
+C:/msys64/ucrt64/include/ctype.h:
+C:/msys64/ucrt64/include/corecrt_wctype.h:
+C:/msys64/ucrt64/include/stdlib.h:
+C:/msys64/ucrt64/include/corecrt_wstdlib.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/limits.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/syslimits.h:
+C:/msys64/ucrt64/include/limits.h:
+C:/msys64/ucrt64/include/sec_api/stdlib_s.h:
+C:/msys64/ucrt64/include/malloc.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/mm_malloc.h:
+C:/msys64/ucrt64/include/errno.h:
+C:/msys64/ucrt64/include/stdio.h:
+C:/msys64/ucrt64/include/corecrt_stdio_config.h:
+C:/msys64/ucrt64/include/_mingw_off_t.h:
+C:/msys64/ucrt64/include/swprintf.inl:
+C:/msys64/ucrt64/include/sec_api/stdio_s.h:
+C:/msys64/ucrt64/include/string.h:
+C:/msys64/ucrt64/include/corecrt_memory.h:
+C:/msys64/ucrt64/include/sec_api/string_s.h:
+C:/msys64/ucrt64/include/strings.h:
+C:/msys64/ucrt64/include/unistd.h:
+C:/msys64/ucrt64/include/io.h:
+C:/msys64/ucrt64/include/process.h:
+C:/msys64/ucrt64/include/corecrt_startup.h:
+C:/msys64/ucrt64/include/sys/types.h:
+C:/msys64/ucrt64/include/getopt.h:
+C:/msys64/ucrt64/include/pthread_unistd.h:
+../../../src/version.h:
+../../../src/cartridge.h:
+../../../src/types.h:
+../../../src/vice.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdbool.h:
+C:/msys64/ucrt64/include/inttypes.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdint.h:
+C:/msys64/ucrt64/include/stdint.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stddef.h:
+C:/msys64/ucrt64/include/stddef.h:
+../../../src/sound.h:
+../../../src/machine.h:
+cartconv.h:
+c64-cartridges.h:
+c64-saver.h:
+c128-cartridges.h:
+c128-saver.h:
+cbm2-cartridges.h:
+cbm2-saver.h:
+crt.h:
+plus4-cartridges.h:
+vic20-cartridges.h:

@@ -1,0 +1,51 @@
+@c generated, do not edit
+
+@b{The MAINC64CPU module}
+
+
+Version numbers: Major 1, Minor 5.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    CLOCK 
+@tab  main clock           
+@tab 
+@item    UBYTE 
+@tab  a                    
+@tab 
+@item    UBYTE 
+@tab  x                    
+@tab 
+@item    UBYTE 
+@tab  y                    
+@tab 
+@item    UBYTE 
+@tab  sp                   
+@tab 
+@item    WORD  
+@tab  pc                   
+@tab 
+@item    UBYTE 
+@tab  status               
+@tab 
+@item    DWORD 
+@tab  last_opcode_info     
+@tab 
+@item    DWORD 
+@tab  ane_log_level        
+@tab 
+@item    DWORD 
+@tab  lxa_log_level        
+@tab 
+@item    DWORD 
+@tab  maincpu_jammed       
+@tab 
+@item    DWORD 
+@tab  maincpu_ba_low_flags 
+@tab 
+@end multitable
+
+@i{ src/mainc64cpu.c }
+@sp 1

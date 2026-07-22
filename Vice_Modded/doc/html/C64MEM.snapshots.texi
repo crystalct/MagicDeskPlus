@@ -1,0 +1,72 @@
+@c generated, do not edit
+
+@b{The C64MEM module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item    BYTE  
+@tab  pport data          
+@tab    0.0+  
+@tab  CPU port data register
+@item    BYTE  
+@tab  pport dir           
+@tab    0.0+  
+@tab  CPU port direction register
+@item    BYTE  
+@tab  EXROM               
+@tab    0.0+  
+@tab  EXROM line state
+@item    BYTE  
+@tab  GAME                
+@tab    0.0+  
+@tab  GAME line state
+@item    ARRAY 
+@tab  RAM                 
+@tab    0.0+  
+@tab  65536 BYTES of RAM data
+@item    BYTE  
+@tab  pport data out      
+@tab    0.0+  
+@tab  CPU port data out lines state
+@item    BYTE  
+@tab  pport data read     
+@tab    0.0+  
+@tab  CPU port data in lines state
+@item    BYTE  
+@tab  pport dir read      
+@tab    0.0+  
+@tab  CPU port direction in lines state
+@item    DWORD 
+@tab  pport bit6 clock    
+@tab    0.1   
+@tab  CPU port bit 6 falloff clock
+@item    DWORD 
+@tab  pport bit7 clock    
+@tab    0.1   
+@tab  CPU port bit 7 falloff clock
+@item    BYTE  
+@tab  pport bit 6         
+@tab    0.1   
+@tab  CPU port bit 6 state
+@item    BYTE  
+@tab  pport bit 7         
+@tab    0.1   
+@tab  CPU port bit 7 state
+@item    BYTE  
+@tab  pport bit 6 falloff 
+@tab    0.1   
+@tab  CPU port bit 6 discharge flag
+@item    BYTE  
+@tab  pport bit 7 falloff 
+@tab    0.1   
+@tab  CPU port bit 7 discharge flag
+@end multitable
+
+@i{ src/c64/c64memsnapshot.c }
+@sp 1

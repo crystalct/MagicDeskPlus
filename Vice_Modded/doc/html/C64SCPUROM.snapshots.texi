@@ -1,0 +1,21 @@
+@c generated, do not edit
+
+@b{The C64SCPUROM module}
+
+
+Version numbers: Major 0, Minor 1.
+
+@multitable @columnfractions .2 .3 .5
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Description}
+@item    ARRAY 
+@tab  mem_chargen_rom      
+@tab  SCPU64_CHARGEN_ROM_SIZE
+@item    ARRAY 
+@tab  scpu64rom_scpu64_rom 
+@tab  SCPU64_SCPU64_ROM_MAXSIZE
+@end multitable
+
+@i{ src/scpu64/scpu64memsnapshot.c }
+@sp 1

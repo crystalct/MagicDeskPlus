@@ -1,0 +1,132 @@
+@c generated, do not edit
+
+@b{The CRTC module}
+
+
+Version numbers: Major 1, Minor 2.
+
+@multitable @columnfractions .2 .3 .1 .4
+@item @b{Type}
+@tab @b{Name}
+@tab @b{Version}
+@tab @b{Description}
+@item     WORD    
+@tab  VADDR_MASK        
+@tab        
+@tab  Mask of the address bits valid when accessing the video memory
+@item     WORD    
+@tab  VADDR_CHARSWITCH  
+@tab        
+@tab  If one bit in the video address is used to switch the character generator, it is masked here.
+@item     WORD    
+@tab  VADDR_CHAROFFSET  
+@tab        
+@tab  The offset in characters in the character generator that CHARSWITCH switches.
+@item     WORD    
+@tab  VADDR_REVSWITCH   
+@tab        
+@tab  If one bit in the video address inverts the screen, it is masked here.
+@item     WORD    
+@tab  CHARGEN_MASK      
+@tab        
+@tab  size of character generator in byte - 1
+@item     WORD    
+@tab  CHARGEN_OFFSET    
+@tab        
+@tab  offset given by external circuitry
+@item     BYTE    
+@tab  HW_CURSOR         
+@tab        
+@tab  external hardware cursor circuitry enabled
+@item     BYTE    
+@tab  HW_COLS           
+@tab        
+@tab  number of displayed columns during one character clock cycle
+@item     BYTE    
+@tab  HW_BLANK          
+@tab        
+@tab  set if the hardware blank feature is available CRTC register
+@item  20 BYTE    
+@tab  REGISTERS         
+@tab        
+@tab  register DUMP of the CRTC registers 0-19.
+@item     BYTE    
+@tab  REGNO             
+@tab        
+@tab  The current index in the CRTC register file
+@item     BYTE    
+@tab  CHAR              
+@tab        
+@tab  The current cycle within the current rasterline
+@item     BYTE    
+@tab  CHARLINE          
+@tab        
+@tab  The current character line
+@item     BYTE    
+@tab  YCOUNTER          
+@tab        
+@tab  The current rasterline in the character
+@item     BYTE    
+@tab  CRSRCNT           
+@tab        
+@tab  Framecounter for the blinking cursor
+@item     BYTE    
+@tab  CRSRSTATE         
+@tab        
+@tab  if set the hardware cursor is visible
+@item     BYTE    
+@tab  CRSRLINES         
+@tab        
+@tab  set if ycounter is within the active cursor rasterlines for a char
+@item     WORD    
+@tab  CHARGEN_REL       
+@tab        
+@tab  relative base of currently used character generator in ROM (in byte)
+@item     WORD    
+@tab  SCREEN_REL        
+@tab        
+@tab  screen address to load the counter at the beginning of the next rasterline
+@item     WORD    
+@tab  VSYNC             
+@tab        
+@tab  number of rasterlines left within vsync; 0 = not in vsync
+@item     BYTE    
+@tab  VENABLE           
+@tab        
+@tab  vertical enable flipflop; 1= display, 0= blank.
+@item     WORD    
+@tab  SCREEN_WIDTH      
+@tab        
+@tab  width of the current display window
+@item     WORD    
+@tab  SCREEN_HEIGHT     
+@tab        
+@tab  height of the current display window
+@item     WORD    
+@tab  SCREEN_XOFFSET    
+@tab        
+@tab  x position where the first character in a line starts in the window
+@item     WORD    
+@tab  HJITTER           
+@tab        
+@tab   but only after adding this jitter
+@item     WORD    
+@tab  SCREEN_YOFFSET    
+@tab        
+@tab  x position where the first character in a line starts in the window
+@item     WORD    
+@tab  FRAMELINES        
+@tab        
+@tab   expected number of rasterlines for the current frame
+@item     WORD    
+@tab  CURRENT_LINE      
+@tab        
+@tab  current rasterline as seen from the CRTC
+@item     BYTE    
+@tab  FLAG              
+@tab  1.1+  
+@tab  Bit 0: If 1 then bit in VADDR_REVSWITCH must be set for reverse; if 0 then bit must be cleared for reverse.
+@end multitable
+
+@i{ src/crtc/crtc-snapshot.c }
+@sp 1

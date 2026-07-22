@@ -1,0 +1,59 @@
+video-render-crtmono.o: video-render-crtmono.c ../../src/vice.h \
+ ../../src/config.h C:/msys64/ucrt64/include/stdio.h \
+ C:/msys64/ucrt64/include/corecrt_stdio_config.h \
+ C:/msys64/ucrt64/include/corecrt.h C:/msys64/ucrt64/include/_mingw.h \
+ C:/msys64/ucrt64/include/_mingw_mac.h \
+ C:/msys64/ucrt64/include/_mingw_secapi.h \
+ C:/msys64/ucrt64/include/vadefs.h \
+ C:/msys64/ucrt64/include/_mingw_off_t.h \
+ C:/msys64/ucrt64/include/swprintf.inl \
+ C:/msys64/ucrt64/include/sec_api/stdio_s.h ../../src/log.h \
+ ../../src/machine.h ../../src/types.h ../../src/vice.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdbool.h \
+ C:/msys64/ucrt64/include/inttypes.h C:/msys64/ucrt64/include/crtdefs.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdint.h \
+ C:/msys64/ucrt64/include/stdint.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stddef.h \
+ C:/msys64/ucrt64/include/stddef.h C:/msys64/ucrt64/include/sys/types.h \
+ render1x1.h ../../src/types.h ../../src/video.h render1x1rgbi.h \
+ render1x2.h render1x2rgbi.h ../../src/viewport.h render2x2.h \
+ render2x2rgbi.h render2x4.h render2x4rgbi.h renderscale2x.h \
+ ../../src/resources.h video-render.h
+../../src/vice.h:
+../../src/config.h:
+C:/msys64/ucrt64/include/stdio.h:
+C:/msys64/ucrt64/include/corecrt_stdio_config.h:
+C:/msys64/ucrt64/include/corecrt.h:
+C:/msys64/ucrt64/include/_mingw.h:
+C:/msys64/ucrt64/include/_mingw_mac.h:
+C:/msys64/ucrt64/include/_mingw_secapi.h:
+C:/msys64/ucrt64/include/vadefs.h:
+C:/msys64/ucrt64/include/_mingw_off_t.h:
+C:/msys64/ucrt64/include/swprintf.inl:
+C:/msys64/ucrt64/include/sec_api/stdio_s.h:
+../../src/log.h:
+../../src/machine.h:
+../../src/types.h:
+../../src/vice.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdbool.h:
+C:/msys64/ucrt64/include/inttypes.h:
+C:/msys64/ucrt64/include/crtdefs.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stdint.h:
+C:/msys64/ucrt64/include/stdint.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stddef.h:
+C:/msys64/ucrt64/include/stddef.h:
+C:/msys64/ucrt64/include/sys/types.h:
+render1x1.h:
+../../src/types.h:
+../../src/video.h:
+render1x1rgbi.h:
+render1x2.h:
+render1x2rgbi.h:
+../../src/viewport.h:
+render2x2.h:
+render2x2rgbi.h:
+render2x4.h:
+render2x4rgbi.h:
+renderscale2x.h:
+../../src/resources.h:
+video-render.h:
