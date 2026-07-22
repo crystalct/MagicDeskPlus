@@ -35,6 +35,7 @@ Integrare un software di gestione direttamente nella ROM della cartuccia eleva l
 ### 5. Tocco grafico e restyling degli Sprite
 A coronamento di questo lavoro di restyling, è stato applicato anche un importante tocco grafico: alcuni sprite dei personaggi sono stati ridisegnati meticolosamente per assomigliare il più possibile alle illustrazioni originali e ai "ritratti" dei personaggi.
 
+![newsprites](./murder.png)
 ---
 
 ### Perchè non una versione su EasyFlash?
