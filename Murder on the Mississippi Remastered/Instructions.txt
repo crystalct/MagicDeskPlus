@@ -1,0 +1,8 @@
+After launching x64sc.exe (the modified version found in the Vice_Modded/GTK3VICE-3.10-win32/bin folder), 
+go to Preferences > Settings and select Cartridges > Magic Desk. 
+
+Then, select the binary image files for both SRAM and EEPROM (you can find these files in the folder). 
+
+Finally, enable "Enable Magic Desk Plus emulation." 
+
+You can now launch the CRT file.
